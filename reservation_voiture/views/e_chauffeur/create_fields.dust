@@ -1,0 +1,139 @@
+<div id="fields" class="row">
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_civilite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_civilite">
+                        {@__ key="entity.e_chauffeur.f_civilite"/}&nbsp;
+                        {@inline_help field="f_civilite"}
+                        <i data-field="f_civilite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="form-control select" name="f_civilite">
+                        <option value="">{@__ key="select.default" /}</option>
+                        {#enum_radio.e_chauffeur.f_civilite}
+                        {@eq key="monsieur" value="{.value}" }
+                        <option value="{.value}" selected=""> {.translation} </option>
+                        {:else}
+                        <option value="{.value}"> {.translation} </option>
+                        {/eq}
+                        {/enum_radio.e_chauffeur.f_civilite}
+                    </select>
+                </div>
+            </div>
+            <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_nom" class="required">
+                        {@__ key="entity.e_chauffeur.f_nom"/}&nbsp;
+                        {@inline_help field="f_nom"}
+                        <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_chauffeur.f_nom" /}' name="f_nom" value="" type="text" maxlength="255" required="">
+                </div>
+            </div>
+            <div data-field="f_prenom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_prenom">
+                        {@__ key="entity.e_chauffeur.f_prenom"/}&nbsp;
+                        {@inline_help field="f_prenom"}
+                        <i data-field="f_prenom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_chauffeur.f_prenom" /}' name="f_prenom" value="" type="text" maxlength="255">
+                </div>
+            </div>
+            <div data-field="f_rue" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_rue">
+                        {@__ key="entity.e_chauffeur.f_rue"/}&nbsp;
+                        {@inline_help field="f_rue"}
+                        <i data-field="f_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_chauffeur.f_rue" /}' name="f_rue" value="" type="text" maxlength="255">
+                </div>
+            </div>
+            <div data-field="f_complement_rue" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_complement_rue">
+                        {@__ key="entity.e_chauffeur.f_complement_rue"/}&nbsp;
+                        {@inline_help field="f_complement_rue"}
+                        <i data-field="f_complement_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_chauffeur.f_complement_rue" /}' name="f_complement_rue" value="" type="text" maxlength="255">
+                </div>
+            </div>
+            <div data-field="f_lieu_dit" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_lieu_dit">
+                        {@__ key="entity.e_chauffeur.f_lieu_dit"/}&nbsp;
+                        {@inline_help field="f_lieu_dit"}
+                        <i data-field="f_lieu_dit" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_chauffeur.f_lieu_dit" /}' name="f_lieu_dit" value="" type="text" maxlength="255">
+                </div>
+            </div>
+            <div data-field="f_code_postal" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_code_postal">
+                        {@__ key="entity.e_chauffeur.f_code_postal"/}&nbsp;
+                        {@inline_help field="f_code_postal"}
+                        <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_chauffeur.f_code_postal" /}' name="f_code_postal" value="" type="text" maxlength="255">
+                </div>
+            </div>
+            <div data-field="f_ville" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_ville">
+                        {@__ key="entity.e_chauffeur.f_ville"/}&nbsp;
+                        {@inline_help field="f_ville"}
+                        <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_chauffeur.f_ville" /}' name="f_ville" value="" type="text" maxlength="255">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_langue" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_langue">
+                        {@__ key="entity.e_chauffeur.r_langue" /}
+                        {@inline_help field="r_langue"}
+                        <i data-field="r_langue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select multiple="" class="ajax form-control" name="r_langue" data-source="langue" data-using="f_nom" style="width:100%;">
+                        <option value="">{@__ key="select.default" /}</option>
+                        {#r_langue}
+                        <option value="{id}">{f_nom|string}</option>
+                        {/r_langue}
+                    </select>
+                </div>
+            </div>
+            <div data-field="f_voiture" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_voiture">
+                        {@__ key="entity.e_chauffeur.r_voiture" /}&nbsp;
+                        {@inline_help field="r_voiture"}
+                        <i data-field="r_voiture" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="ajax form-control" name="r_voiture" data-source="voiture" data-using="f_immatriculation">
+                        <option value="">{@__ key="select.default" /}</option>
+                        {#r_voiture}
+                        <option value="{id}" selected="">{f_immatriculation|string}</option>
+                        {/r_voiture}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

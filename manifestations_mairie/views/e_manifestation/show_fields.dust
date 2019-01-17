@@ -1,0 +1,292 @@
+<div class="nav-tabs-custom" id="tabs">
+    {^hideTab}
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">
+                {@__ key="entity.e_manifestation.label_entity" /}</a></li>
+        {@entityAccess entity="intervenant"}
+        <li><a id="r_intervenants-click" data-toggle="tab" data-tabtype="hasMany" href="#r_intervenants">
+                {@__ key="entity.e_manifestation.r_intervenants" /}</a></li>
+        {/entityAccess}
+        {@entityAccess entity="budget"}
+        <li><a id="r_budget-click" data-toggle="tab" href="#r_budget">
+                {@__ key="entity.e_manifestation.r_budget" /}</a></li>
+        {/entityAccess}
+    </ul>
+    {/hideTab}
+    <div class="tab-content" style="min-height:275px;">
+        <div id="home" class="tab-pane fade in active">
+            <div id="fields" class="row">
+                <div data-field="f_organisateur" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="f_organisateur">
+                            {@__ key="entity.e_manifestation.f_organisateur"/}&nbsp;
+                            {@inline_help field="f_organisateur"}
+                            <i data-field="f_organisateur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        {^f_organisateur}
+                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_organisateur" /}' name="f_organisateur" type="text" readonly="">
+                        {/f_organisateur}
+                        {#enum_radio.e_manifestation.f_organisateur}
+                        {@eq key=f_organisateur value="{.value}" }
+                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_organisateur" /}' name="f_organisateur" value="{.translation}" type="text" readonly="">
+                        {/eq}
+                        {/enum_radio.e_manifestation.f_organisateur}
+                    </div>
+                </div>
+                <div data-field="f_association" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="r_association">
+                            {@__ key="entity.e_manifestation.r_association"/} </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.r_association" /}' name="r_association" value="{r_association.f_nom|string}" type="text" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_service" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="r_service">
+                            {@__ key="entity.e_manifestation.r_service"/} </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.r_service" /}' name="r_service" value="{r_service.f_nom|string}" type="text" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_type_manifestation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="f_type_manifestation">
+                            {@__ key="entity.e_manifestation.f_type_manifestation"/}&nbsp;
+                            {@inline_help field="f_type_manifestation"}
+                            <i data-field="f_type_manifestation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        {^f_type_manifestation}
+                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_type_manifestation" /}' name="f_type_manifestation" type="text" readonly="">
+                        {/f_type_manifestation}
+                        {#enum_radio.e_manifestation.f_type_manifestation}
+                        {@eq key=f_type_manifestation value="{.value}" }
+                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_type_manifestation" /}' name="f_type_manifestation" value="{.translation}" type="text" readonly="">
+                        {/eq}
+                        {/enum_radio.e_manifestation.f_type_manifestation}
+                    </div>
+                </div>
+                <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="f_nom">
+                            {@__ key="entity.e_manifestation.f_nom"/}&nbsp;
+                            {@inline_help field="f_nom"}
+                            <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_lieu" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="f_lieu">
+                            {@__ key="entity.e_manifestation.f_lieu"/}&nbsp;
+                            {@inline_help field="f_lieu"}
+                            <i data-field="f_lieu" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_lieu" /}' name="f_lieu" value="{f_lieu}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+                    <div class="row">
+                        <div data-field="f_date_de_debut" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_date_de_debut">
+                                    {@__ key="entity.e_manifestation.f_date_de_debut"/}&nbsp;
+                                    {@inline_help field="f_date_de_debut"}
+                                    <i data-field="f_date_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_manifestation.f_date_de_debut" /}' value="{f_date_de_debut}" type="text" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-field="f_heure_de_debut" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_heure_de_debut">
+                                    {@__ key="entity.e_manifestation.f_heure_de_debut"/}&nbsp;
+                                    {@inline_help field="f_heure_de_debut"}
+                                    <i data-field="f_heure_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="bootstrap-timepicker">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_heure_de_debut" /}' value="{f_heure_de_debut|time}" type="text" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+                    <div class="row">
+                        <div data-field="f_date_de_fin" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_date_de_fin">
+                                    {@__ key="entity.e_manifestation.f_date_de_fin"/}&nbsp;
+                                    {@inline_help field="f_date_de_fin"}
+                                    <i data-field="f_date_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_manifestation.f_date_de_fin" /}' value="{f_date_de_fin}" type="text" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-field="f_heure_de_fin" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_heure_de_fin">
+                                    {@__ key="entity.e_manifestation.f_heure_de_fin"/}&nbsp;
+                                    {@inline_help field="f_heure_de_fin"}
+                                    <i data-field="f_heure_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="bootstrap-timepicker">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                        <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_heure_de_fin" /}' value="{f_heure_de_fin|time}" type="text" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-12 col-sm-12 col-xs-12 column">
+                    <div class="row">
+                        <div data-field="f_nature_manifestation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_nature_manifestation">
+                                    {@__ key="entity.e_manifestation.r_nature_manifestation" /}
+                                    {@inline_help field="r_nature_manifestation"}
+                                    <i data-field="r_nature_manifestation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <select multiple="" disabled="" readonly="" class="form-control" name="r_nature_manifestation" data-source="nature_manifestation" data-using="f_nom" style="width: 100%;">
+                                    {#r_nature_manifestation}
+                                    <option value="{f_nom|string}" selected="">{f_nom|string}</option>
+                                    {/r_nature_manifestation}
+                                </select>
+                            </div>
+                        </div>
+                        <div data-field="f_description" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_description">
+                                    {@__ key="entity.e_manifestation.f_description"/}&nbsp;
+                                    {@inline_help field="f_description"}
+                                    <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="show-textarea">{f_description|s}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+                    <div class="row">
+                        <div data-field="f_validation_securite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_validation_securite">
+                                    {@__ key="entity.e_manifestation.f_validation_securite"/}&nbsp;
+                                    {@inline_help field="f_validation_securite"}
+                                    <i data-field="f_validation_securite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                &nbsp;
+                                <br>
+                                {@ifTrue key=f_validation_securite} <input class="form-control input" name="f_validation_securite" value="{f_validation_securite}" type="checkbox" checked="" disabled="">
+                                {:else} <input class="form-control input" name="f_validation_securite" value="{f_validation_securite}" type="checkbox" disabled="">
+                                {/ifTrue}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+                    <div class="row">
+                        <div data-field="f_validation_gua" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_validation_gua">
+                                    {@__ key="entity.e_manifestation.f_validation_gua"/}&nbsp;
+                                    {@inline_help field="f_validation_gua"}
+                                    <i data-field="f_validation_gua" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                &nbsp;
+                                <br>
+                                {@ifTrue key=f_validation_gua} <input class="form-control input" name="f_validation_gua" value="{f_validation_gua}" type="checkbox" checked="" disabled="">
+                                {:else} <input class="form-control input" name="f_validation_gua" value="{f_validation_gua}" type="checkbox" disabled="">
+                                {/ifTrue}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <form action="/manifestation/delete" method="post">
+                    <div class="quicklinks">
+                        <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                            {@__ key="button.return"/}</a>
+                        {@actionAccess entity="manifestation" action="delete"}
+                        <button class="btn btn-danger btn-confirm">
+                            <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                            <span>{@__ key="button.delete"/}</span>
+                        </button>
+                        <input name="id" type="hidden" value="{e_manifestation.id}" class="form-control">
+                        {/actionAccess}
+                        {@actionAccess entity="manifestation" action="update"}
+                        <a href="/manifestation/update_form?id={e_manifestation.id}" class="btn btn-warning">
+                            <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {^hideButton}
+                        {@actionAccess entity="manifestation" action="create"}
+                        <a href="/manifestation/create_form" class="btn btn-success">
+                            <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.create"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {@actionAccess entity="manifestation" action="read"}
+                        <a href="/manifestation/list" type="submit" class="btn btn-primary">
+                            <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.list"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {/hideButton}
+                    </div>
+                </form>
+            </div>
+        </div>
+        {^hideTab}
+        {@entityAccess entity="intervenant"}
+        <div id="r_intervenants" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_intervenants" data-asso-foreignkey="fk_id_manifestation_intervenants" data-asso-flag="{id}" data-asso-source="e_manifestation" data-asso-url="manifestation">
+            <div class="ajax-content sub-tab-table"></div>
+        </div>
+        {/entityAccess}
+        {/hideTab}
+        {^hideTab}
+        {@entityAccess entity="budget"}
+        <div id="r_budget" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_budget" data-asso-foreignkey="fk_id_budget" data-asso-flag="{id}" data-asso-source="e_manifestation" data-asso-url="manifestation">
+            <div class="ajax-content"></div>
+        </div>
+        {/entityAccess}
+        {/hideTab}
+    </div>
+</div>

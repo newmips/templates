@@ -1,0 +1,128 @@
+create project Distribution
+
+create application Distribution
+
+
+create module Configuration
+
+
+// **************************
+// Editeur
+// **************************
+
+create entity Editeur
+set icon pencil
+add field Nom
+set field Nom required
+add field Adresse
+
+
+// **************************
+// Thème
+// **************************
+
+create entity Thème
+set icon clipboard
+add field Libellé
+
+
+// **************************
+// Localisation
+// **************************
+
+create entity Localisation
+set icon map
+add field Libellé
+set field Libellé required
+
+
+// **************************
+// Périodicité
+// **************************
+
+create entity Périodicité
+set icon calendar-plus-o
+add field Libellé
+set field Libellé required
+
+
+
+select module home
+
+
+// **************************
+// Périodique
+// **************************
+
+create entity Périodique
+set icon book
+add field Titre
+set field Titre required
+add field Titre parallèle
+
+add field Editeur related to Editeur using Nom
+set field Editeur required
+
+add field Thème related to Thème using Libellé
+
+add field Périodicité related to Périodicité using Libellé
+set field Périodicité required
+
+entity Périodique has many Publication
+
+
+// **************************
+// Publication
+// **************************
+
+select entity Publication
+add field ISSN with type code128
+set field ISSN required
+
+
+
+// **************************
+// Abonnement
+// **************************
+
+create entity Abonnement
+set icon refresh
+add field Périodique related to Périodique using Titre
+
+add field Localisation related to Localisation using Libellé
+set field Localisation required
+
+add field Date de début with type date and default value today
+
+add field Nombre de bulletins with type number
+add field Nombre de semaines with type number
+add field Nombre de mois with type number
+
+entity Abonnement has many Exemplaire
+
+
+add field Etat with type enum and values Arrivé, Manquant, Supprimé, En retard
+set field Etat required
+
+
+
+// **************************
+// Bulletin
+// **************************
+
+create entity Bulletin
+set icon file-text-o
+
+add field ISSN with type code128
+add field Numéro exemplaire
+add field Date d'arrivée with type date and default value today
+set field Date d'arrivée required
+
+
+add widget stats on entity Abonnement
+add widget stats on entity Bulletin
+add widget stats on entity Périodique
+
+// add widget last records on entity Bulletin limited to 10 records with columns Numéro exemplaire, Périodique, Périodicité, Date d'arrivée, Etat
+
+

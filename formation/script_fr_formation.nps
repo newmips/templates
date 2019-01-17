@@ -1,0 +1,188 @@
+create project Formation
+
+create application Formation
+
+
+add component Agenda
+
+// ******************************
+// ********* Formation  *********
+// ******************************
+
+create entity Formation
+set icon desktop
+add field Nom
+set field Nom required
+add field Description with type text
+add component local file storage with name Documents
+
+
+// ******************************
+// ********* Catégorie  *********
+// ******************************
+
+create entity Catégorie
+set icon square
+add field Nom
+set field Nom required
+add field Icône
+set field Icône required
+add field Couleur with type color
+
+// ******************************
+// ********* Module     *********
+// ******************************
+
+create entity Module
+set icon th-large
+add field Nom
+set field Nom required
+
+select entity Catégorie
+add field Module related to many Module using Nom
+
+
+// ******************************
+// ********* Fiche     *********
+// ******************************
+
+create entity Fiche
+set icon file-text-o
+add field Titre
+set field Titre required
+add field Premium with type boolean
+add field Contenu with type text
+add field Vidéo with type file
+set column Vidéo hidden
+set column Contenu hidden
+
+entity Module has many Activité
+select entity Activité
+add field Ordre with type number and default value 1
+add field Fiche related to many Fiche using Titre
+
+
+// ******************************
+// ********* Thème      *********
+// ******************************
+create entity Thème
+set icon square
+add field Nom
+set field Nom required
+
+
+// ******************************
+// ********* Sous-thème *********
+// ******************************
+create entity Sous-thème
+set icon th-large
+add field Nom
+set field Nom required
+
+
+// ******************************
+// ********* Question   *********
+// ******************************
+create entity Question
+set icon question-circle
+add field Label
+set field Label required
+add field Sous-thème related to Sous-thème using Nom
+add field Type de question with type enum and values Champ libre, Nombre, Liste déroulante, Cases à cocher, Cases à cocher multiples, Bouton Radio, Texte
+add field Question
+add field Obligatoire with type boolean
+
+// ----- Tab Choix -----
+entity Question has many Choix
+select entity Choix
+add field Valeur
+add field Bonne réponse with type boolean
+
+// ----- Tab Réponse -----
+entity Question has many Réponse
+select entity Réponse
+add field User related to User using login
+add field Valeur
+
+
+// ******************************
+// ********* Formulaire *********
+// ******************************
+create entity Formulaire
+set icon file-text-o
+add field Nom
+add field Thème related to Thème using Nom
+
+// ----- Tab Item -----
+entity Formulaire has many Item
+select entity Item
+add field Ordre with type number and default value 1
+set field Ordre required
+add field Type item with type radio and values Titre, Texte de présentation, Ligne de séparation, Question
+add field Titre
+add field Texte de présentation with type text
+add field Question related to Question using Label
+
+// ----- Tab Participants -----
+// entity Formulaire has many Participant
+// select entity Participant
+// add field Utilisateur related to User using login
+// add field Date soumission with type datetime
+
+
+
+// ******************************
+// ********* Enquête    *********
+// ******************************
+
+create entity Enquête
+set icon search
+add field Nom
+set field Nom required
+add field Date de début with type date
+add field Date de fin with type date
+add field Formulaire related to Formulaire using Nom
+
+entity Enquête has many Participant
+select entity Participant
+add field Utilisateur related to User using login
+add field Contacté with type boolean
+
+select entity Enquête
+add component local file storage with name Documentation
+
+
+// ******************************
+// ********* Résultat   *********
+// ******************************
+
+create entity Résultat
+set icon tasks
+add field Enquête related to Enquête using Nom
+add field Participant related to User using login
+add field Date soumission with type datetime
+add field Formulaire related to Formulaire using Nom
+add field Question related to Question using Label
+add field Type de question with type enum and values Champ libre, Nombre, Liste déroulante, Cases à cocher, Cases à cocher multiples, Bouton Radio, Texte
+add field Réponse
+add field Texte de réponse
+add field Exact with type boolean
+
+
+
+// ******************************
+//        Statistiques
+// ******************************
+
+select entity Catégorie
+add widget stat
+
+select entity Module
+add widget stat
+
+select entity Fiche
+add widget stat
+
+select entity Enquête
+add widget stat
+

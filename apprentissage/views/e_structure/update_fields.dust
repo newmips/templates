@@ -1,0 +1,266 @@
+<div id="fields" class="row">
+    <div data-field="f_siren" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_siren">
+                {@__ key="entity.e_structure.f_siren"/}&nbsp;
+                {@inline_help field="f_siren"}
+                <i data-field="f_siren" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_siren" /}' name="f_siren" value="{f_siren}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_siret" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_siret">
+                {@__ key="entity.e_structure.f_siret"/}&nbsp;
+                {@inline_help field="f_siret"}
+                <i data-field="f_siret" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_siret" /}' name="f_siret" value="{f_siret}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_denomination_sociale" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_denomination_sociale" class="required">
+                {@__ key="entity.e_structure.f_denomination_sociale"/}&nbsp;
+                {@inline_help field="f_denomination_sociale"}
+                <i data-field="f_denomination_sociale" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_denomination_sociale" /}' name="f_denomination_sociale" value="{f_denomination_sociale}" type="text" maxlength="255" required="">
+        </div>
+    </div>
+    <div data-field="f_rue" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_rue">
+                {@__ key="entity.e_structure.f_rue"/}&nbsp;
+                {@inline_help field="f_rue"}
+                <i data-field="f_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_rue" /}' name="f_rue" value="{f_rue}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_complement_rue" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_complement_rue">
+                {@__ key="entity.e_structure.f_complement_rue"/}&nbsp;
+                {@inline_help field="f_complement_rue"}
+                <i data-field="f_complement_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_complement_rue" /}' name="f_complement_rue" value="{f_complement_rue}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_lieu_dit" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_lieu_dit">
+                {@__ key="entity.e_structure.f_lieu_dit"/}&nbsp;
+                {@inline_help field="f_lieu_dit"}
+                <i data-field="f_lieu_dit" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_lieu_dit" /}' name="f_lieu_dit" value="{f_lieu_dit}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_code_postal" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_code_postal">
+                {@__ key="entity.e_structure.f_code_postal"/}&nbsp;
+                {@inline_help field="f_code_postal"}
+                <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_code_postal" /}' name="f_code_postal" value="{f_code_postal}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_ville" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_ville">
+                {@__ key="entity.e_structure.f_ville"/}&nbsp;
+                {@inline_help field="f_ville"}
+                <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_ville" /}' name="f_ville" value="{f_ville}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_telephone" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_telephone">
+                {@__ key="entity.e_structure.f_telephone"/}&nbsp;
+                {@inline_help field="f_telephone"}
+                <i data-field="f_telephone" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_telephone" /}' name="f_telephone" value="{f_telephone}" type="tel">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_email" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_email">
+                {@__ key="entity.e_structure.f_email"/}&nbsp;
+                {@inline_help field="f_email"}
+                <i data-field="f_email" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_email" /}' name="f_email" value="{f_email}" type="text" data-type="email">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_fax" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_fax">
+                {@__ key="entity.e_structure.f_fax"/}&nbsp;
+                {@inline_help field="f_fax"}
+                <i data-field="f_fax" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-fax"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_fax" /}' name="f_fax" value="{f_fax}" type="number">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_pays" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_pays">
+                {@__ key="entity.e_structure.f_pays"/}&nbsp;
+                {@inline_help field="f_pays"}
+                <i data-field="f_pays" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_pays" /}' name="f_pays" value="{f_pays}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_region" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_region">
+                {@__ key="entity.e_structure.f_region"/}&nbsp;
+                {@inline_help field="f_region"}
+                <i data-field="f_region" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="form-control select" name="f_region">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#enum_radio.e_structure.f_region}
+                {@eq key=f_region value="{.value}" }
+                <option value="{.value}" selected=""> {.translation} </option>
+                {:else}
+                <option value="{.value}"> {.translation} </option>
+                {/eq}
+                {/enum_radio.e_structure.f_region}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_forme_juridique" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_forme_juridique">
+                {@__ key="entity.e_structure.r_forme_juridique" /}&nbsp;
+                {@inline_help field="r_forme_juridique"}
+                <i data-field="r_forme_juridique" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="ajax form-control" name="r_forme_juridique" data-source="forme_juridique" data-using="f_nom">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#r_forme_juridique}
+                <option value="{id}" selected="">{f_nom|string}</option>
+                {/r_forme_juridique}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_type_de_structure" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_type_de_structure" class="required">
+                {@__ key="entity.e_structure.r_type_de_structure" /}&nbsp;
+                {@inline_help field="r_type_de_structure"}
+                <i data-field="r_type_de_structure" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="ajax form-control" name="r_type_de_structure" data-source="type_de_structure" data-using="f_nom" required="">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#r_type_de_structure}
+                <option value="{id}" selected="">{f_nom|string}</option>
+                {/r_type_de_structure}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_effectif" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_effectif">
+                {@__ key="entity.e_structure.f_effectif"/}&nbsp;
+                {@inline_help field="f_effectif"}
+                <i data-field="f_effectif" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_structure.f_effectif" /}' name="f_effectif" value="{f_effectif}" type="number" max="2147483648">
+        </div>
+    </div>
+    <div data-field="f_date_de_creation" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_date_de_creation">
+                {@__ key="entity.e_structure.f_date_de_creation"/}&nbsp;
+                {@inline_help field="f_date_de_creation"}
+                <i data-field="f_date_de_creation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_structure.f_date_de_creation" /}' name="f_date_de_creation" value="{f_date_de_creation}" type="text">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_date_de_fermeture" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_date_de_fermeture">
+                {@__ key="entity.e_structure.f_date_de_fermeture"/}&nbsp;
+                {@inline_help field="f_date_de_fermeture"}
+                <i data-field="f_date_de_fermeture" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_structure.f_date_de_fermeture" /}' name="f_date_de_fermeture" value="{f_date_de_fermeture}" type="text">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_date_de_mise_a_jour" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_date_de_mise_a_jour">
+                {@__ key="entity.e_structure.f_date_de_mise_a_jour"/}&nbsp;
+                {@inline_help field="f_date_de_mise_a_jour"}
+                <i data-field="f_date_de_mise_a_jour" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_structure.f_date_de_mise_a_jour" /}' name="f_date_de_mise_a_jour" value="{f_date_de_mise_a_jour}" type="text">
+            </div>
+        </div>
+    </div>
+</div>

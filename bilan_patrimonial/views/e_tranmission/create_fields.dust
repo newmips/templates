@@ -1,0 +1,116 @@
+<h4 class="page-header">
+	<i class="fa fa-search"></i>&nbsp;&nbsp;Zoom sur la transmission
+</h4>
+<div id="fields" class="row">
+    <div data-field="f_en_faveur_de" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_en_faveur_de">
+                {@__ key="entity.e_transmission.r_en_faveur_de" /}&nbsp;
+                {@inline_help field="r_en_faveur_de"}
+                <i data-field="r_en_faveur_de" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select style="width:100%;" class="ajax form-control" name="r_en_faveur_de" data-source="destinataire" data-using="f_nom">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#r_en_faveur_de}
+                <option value="{id}" selected="">{f_nom|string}</option>
+                {/r_en_faveur_de}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_nature" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_nature">
+                {@__ key="entity.e_transmission.f_nature"/}&nbsp;
+                {@inline_help field="f_nature"}
+                <i data-field="f_nature" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_transmission.f_nature" /}' name="f_nature" value="" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_montant" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_montant">
+                {@__ key="entity.e_transmission.f_montant"/}&nbsp;
+                {@inline_help field="f_montant"}
+                <i data-field="f_montant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-money"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_transmission.f_montant" /}' name="f_montant" value="" type="text" data-type="currency">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_pris" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_pris">
+                {@__ key="entity.e_transmission.f_pris"/}&nbsp;
+                {@inline_help field="f_pris"}
+                <i data-field="f_pris" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            &nbsp;
+            <br>
+            <input class="form-control input" name="f_pris" type="checkbox">
+        </div>
+    </div>
+    <div data-field="f_envisage" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_envisage">
+                {@__ key="entity.e_transmission.f_envisage"/}&nbsp;
+                {@inline_help field="f_envisage"}
+                <i data-field="f_envisage" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            &nbsp;
+            <br>
+            <input class="form-control input" name="f_envisage" type="checkbox">
+        </div>
+    </div>
+    <div data-field="f_mois" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_mois">
+                {@__ key="entity.e_transmission.f_mois"/}&nbsp;
+                {@inline_help field="f_mois"}
+                <i data-field="f_mois" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select style="width:100%;" class="form-control select" name="f_mois">
+                <option value="" selected="">
+                    {@__ key="select.default" /}
+                </option>
+                {#enum_radio.e_transmission.f_mois}
+                <option value="{.value}"> {.translation} </option>
+                {/enum_radio.e_transmission.f_mois}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_annee" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_annee">
+                {@__ key="entity.e_transmission.f_annee"/}&nbsp;
+                {@inline_help field="f_annee"}
+                <i data-field="f_annee" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_transmission.f_annee" /}' name="f_annee" value="" type="number" max="2147483648">
+        </div>
+    </div>
+    <div data-field="f_commentaires" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_commentaires">
+                {@__ key="entity.e_transmission.f_commentaires"/}&nbsp;
+                {@inline_help field="f_commentaires"}
+                <i data-field="f_commentaires" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_transmission.f_commentaires" /}' name="f_commentaires" id="f_commentaires_textareaid" type="text">{f_commentaires|s}</textarea>
+        </div>
+    </div>
+</div>

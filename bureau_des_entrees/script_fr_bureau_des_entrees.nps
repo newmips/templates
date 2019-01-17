@@ -1,0 +1,55 @@
+create project Demo
+create application Bureau des entrées
+
+create entity Service
+set icon users
+add field Nom
+set field Nom required
+add field Description with type regular text
+
+create entity Bureau
+set icon building-o
+add field Code
+add field Immeuble
+add field Capacité with type number
+add component address with name Adresse
+
+create entity Collaborateur
+set icon user
+add field Nom
+set field Nom required
+add field Prénom
+add field Service related to Service using Nom
+set column Service hidden
+add field Poste
+set column Poste hidden
+add field Email with type email
+add field Fixe with type phone
+add field Mobile with type phone
+add field Fax with type phone
+set column Fax hidden
+
+
+add field Bureaux related to many Bureau using Code
+
+add field Managers related to many Collaborateur using Nom
+
+entity Collaborateur has one Badge
+select entity Badge
+add field Référence with type code128
+set field Référence required
+add field Date d'emission with type date
+add field Date de fin de validité with type date
+add field Balance with type money
+
+
+entity Collaborateur has many Avantage called Avantages
+select entity Avantage
+add field Type d'avantage with type enum and values Téléphone, Voiture, Logement, Prime
+add field Titre
+add field Commentaires with type regular text
+
+select entity Collaborateur
+add component localfilestorage with name Documents
+add widget last records with columns Nom, Prénom, Email, Fixe, Mobile
+

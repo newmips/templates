@@ -1,0 +1,179 @@
+<h4 class="page-header">
+    <i class="fa fa-search"></i>&nbsp;&nbsp;Zoom sur vos impôts
+</h4>
+<div id="fields" class="row">
+    <div data-field="f_tranche" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+        <div class="form-group">
+            <label for="f_tranche">
+                {@__ key="entity.e_impots.f_tranche"/}&nbsp;
+                {@inline_help field="f_tranche"}
+                <i data-field="f_tranche" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_impots.f_tranche" /}' name="f_tranche" value="{f_tranche}" type="text" readonly="">
+        </div>
+    </div>
+    <div data-field="f_montant" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+        <div class="form-group">
+            <label for="f_montant">
+                {@__ key="entity.e_impots.f_montant"/}&nbsp;
+                {@inline_help field="f_montant"}
+                <i data-field="f_montant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-money"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_montant" /}' name="f_montant" value="{f_montant}" type="text" data-type="currency" readonly="">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_france" class="fieldLineHeight col-xs-12 col-sm-12 col-md-3" style="">
+        <div class="form-group">
+            <label for="f_france">
+                {@__ key="entity.e_impots.f_france"/}&nbsp;
+                {@inline_help field="f_france"}
+                <i data-field="f_france" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            &nbsp;
+            <br>
+            {@ifTrue key=f_france}
+            <input class="form-control input" name="f_france" value="{f_france}" type="checkbox" checked="" disabled="">
+            {:else}
+            <input class="form-control input" name="f_france" value="{f_france}" type="checkbox" disabled="">
+            {/ifTrue}
+        </div>
+    </div>
+    <div data-field="f_autre_pays" class="fieldLineHeight col-xs-12 col-sm-12 col-md-3" style="">
+        <div class="form-group">
+            <label for="f_autre_pays">
+                {@__ key="entity.e_impots.f_autre_pays"/}&nbsp;
+                {@inline_help field="f_autre_pays"}
+                <i data-field="f_autre_pays" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_autre_pays" /}' name="f_autre_pays" value="{f_autre_pays}" type="text" maxlength="255" readonly="">
+        </div>
+    </div>
+    <div data-field="f_regime_fiscal" class="fieldLineHeight col-xs-12 col-sm-12 col-md-3" style="">
+        <div class="form-group">
+            <label for="f_regime_fiscal">
+                {@__ key="entity.e_impots.f_regime_fiscal"/}&nbsp;
+                {@inline_help field="f_regime_fiscal"}
+                <i data-field="f_regime_fiscal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            {#enum_radio.e_impots.f_regime_fiscal}&nbsp;
+            <br>
+            {@eq key=f_regime_fiscal value="{.value}" }
+            <input class="form-control input" name="e_impots.f_regime_fiscal" value="{.value}" checked="" type="radio" disabled="">&nbsp;{.translation}
+            {:else}
+            <input class="form-control input" name="e_impots.f_regime_fiscal" value="{.value}" type="radio" disabled="">&nbsp;{.translation}
+            {/eq}
+            {/enum_radio.e_impots.f_regime_fiscal}
+        </div>
+    </div>
+    <div data-field="f_autres_regimes" class="fieldLineHeight col-xs-12 col-sm-12 col-md-3" style="">
+        <div class="form-group">
+            <label for="f_autres_regimes">
+                {@__ key="entity.e_impots.f_autres_regimes"/}&nbsp;
+                {@inline_help field="f_autres_regimes"}
+                <i data-field="f_autres_regimes" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_autres_regimes" /}' name="f_autres_regimes" value="{f_autres_regimes}" type="text" maxlength="255" readonly="">
+        </div>
+    </div>
+    <div data-field="f_ifi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_ifi">
+                {@__ key="entity.e_impots.f_ifi"/}&nbsp;
+                {@inline_help field="f_ifi"}
+                <i data-field="f_ifi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            {^f_ifi}
+            <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_ifi" /}' name="f_ifi" type="text" readonly="">
+            {/f_ifi}
+            {#enum_radio.e_impots.f_ifi}
+            {@eq key=f_ifi value="{.value}" }
+            <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_ifi" /}' name="f_ifi" value="{.translation}" type="text" readonly="">
+            {/eq}
+            {/enum_radio.e_impots.f_ifi}
+        </div>
+    </div>
+    <div data-field="f_montant_paye" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_montant_paye">
+                {@__ key="entity.e_impots.f_montant_paye"/}&nbsp;
+                {@inline_help field="f_montant_paye"}
+                <i data-field="f_montant_paye" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-money"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_montant_paye" /}' name="f_montant_paye" value="{f_montant_paye}" type="text" data-type="currency" readonly="">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_solutions_reduc_ir_ifi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_solutions_reduc_ir_ifi">
+                {@__ key="entity.e_impots.f_solutions_reduc_ir_ifi"/}&nbsp;
+                {@inline_help field="f_solutions_reduc_ir_ifi"}
+                <i data-field="f_solutions_reduc_ir_ifi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="show-textarea">{f_solutions_reduc_ir_ifi|s}</div>
+        </div>
+    </div>
+</div>
+<div class="actions">
+    <form action="/impots/delete" method="post">
+        <div class="quicklinks">
+            <span>
+                <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{@__ key="button.return"/}</a>
+            </span>
+            {@actionAccess entity="impots" action="delete"}
+            <span>
+                <button class="btn btn-danger">
+                    <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                    <span>{@__ key="button.delete"/}</span>
+            </button>
+            <input name="id" type="hidden" value="{e_impots.id}" class="form-control">
+            </span>
+            {/actionAccess}
+
+            {@actionAccess entity="impots" action="update"}
+            <span>
+                <a href="/impots/update_form?id={e_impots.id}" class="btn btn-warning">
+                    <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
+                    <span>{@__ key="button.update"/}</span>
+            </a>
+            </span>
+            {/actionAccess}
+            {^hideButton}
+            {@actionAccess entity="impots" action="create"}
+            <span>
+                    <a href="/impots/create_form" class="btn btn-success">
+                        <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
+                        <span>{@__ key="button.create"/}</span>
+            </a>
+            </span>
+            {/actionAccess}
+            {@actionAccess entity="impots" action="read"}
+            <span>
+                    <a href="/impots/list" type="submit" class="btn btn-primary">
+                        <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>
+                        <span>{@__ key="button.list"/}</span>
+            </a>
+            </span>
+            {/actionAccess}
+            {/hideButton}
+        </div>
+    </form>
+</div>

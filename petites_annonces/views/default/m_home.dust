@@ -1,0 +1,101 @@
+{>"layout_m_home"/}
+{<custom_css_2}
+<link href="/css/Datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/css/Datatables/buttons/buttons.dataTables.min.css" rel="stylesheet" type="text/css">
+{/custom_css_2}
+{<header}
+<h1>
+    {@__ key="module.m_home"/}
+    <small>
+        {@__ key="module.module"/}
+    </small>
+</h1>
+<ol class="breadcrumb">
+    <li>
+        <a href="/">
+            <i class="fa fa-home"></i>
+            {@__ key="module.home"/}
+        </a>
+    </li>
+    <!-- NEW MODULE -->
+</ol>
+{/header}
+
+{<content}
+<div class="row">
+    <div id="imgcontainer" media="screen and (min-width: 640px)" class="content-center">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 center" style="padding-top: 15px; padding-bottom: 300px;"><br>
+                <span style=" font-size: medium; font-weight: 600; color: #000000">{@__ key="entity.e_annonce.find" /} <span style="color: #F79502;">{e_annonce_stats} {@__ key="entity.e_annonce.plural_entity" /}</span>{@__ key="entity.e_annonce.find_last" /}</span>
+                <br>
+            </div>
+        </div><br>
+        <div class="row" style=" padding-bottom: 220px">
+            <div class="col-md-3"></div>
+            <div class="col-xs-12 col-md-3 center">
+                <a class="btn btn-info btn-lg" href="/default/search">
+                    <i class="fa fa-search"></i>&nbsp;&nbsp;
+                    {@__ key="entity.e_annonce.search" /}
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-3 col-sm-4 center">
+                <a class="btn btn-success btn-lg" href="/annonce/create_form">
+                    <i class="fa fa-plus"></i>&nbsp;&nbsp;
+                    {@__ key="entity.e_annonce.new" /}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/content}
+
+{<custom_js}
+<script type="text/javascript">
+    $(document).ready(function() {
+        /* Make the table horizontaly scrollable with mouse drag on it */
+        var x, y, top, left = 0,
+            down;
+        /* If we are scrolling horizontaly the datalist then don't trigger the click event to go on the show */
+        var scrolling = false;
+
+        $("tbody").css("cursor", "pointer");
+
+        $("tbody").mousedown(function(e) {
+            e.preventDefault();
+            down = true;
+            x = e.pageX;
+            left = $(".table-responsive").scrollLeft();
+        });
+
+        $("tbody").mousemove(function(e) {
+            if (down) {
+                scrolling = true;
+                var newX = e.pageX;
+                $(".table-responsive").scrollLeft(left - newX + x);
+            }
+        });
+
+        $("tbody").mouseup(function(e) {
+            down = false;
+            setTimeout(function() {
+                scrolling = false;
+            }, 500);
+        });
+        $("tbody").mouseleave(function(e) {
+            down = false;
+            setTimeout(function() {
+                scrolling = false;
+            }, 500);
+        });
+
+        $('tbody').on('click', 'tr', function(e) {
+            if ($(this).find('.dataTables_empty').length > 0 || $(e.target).hasClass("btn-danger"))
+                return;
+            if (!scrolling && $(this).find('td > a.btn-show:first').length > 0)
+                window.location = $(this).find('td > a.btn-show:first').attr('href');
+        });
+
+    });
+</script>
+{/custom_js}

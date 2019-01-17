@@ -1,0 +1,128 @@
+create project Interim
+
+create application Interim
+
+
+create module Paramètrage
+
+create entity Etablissement
+set icon hospital-o
+add field Nom
+set field Nom required
+
+create entity Pôle
+set icon h-square
+add field Nom
+set field Nom required
+
+create entity Service
+set icon medkit
+add field Nom
+set field Nom required
+
+create entity Métier
+set icon stethoscope
+add field Nom
+set field Nom required
+
+create entity Compétence spécifique
+set icon hand-paper-o
+add field Nom
+set field Nom required
+
+create entity Motif de remplacement
+set icon file-text-o
+add field Nom
+set field Nom required
+
+create entity Etat civil
+set icon square-o
+add field Nom
+set field Nom required
+
+create entity Type d'horaire
+set icon clock-o
+add field Nom
+set field Nom required
+
+
+
+select module home
+
+add component Agenda called Mes disponibilités
+
+create entity Professionnel
+set icon gear
+add field Civilité with type enum and values Madame, Monsieur
+add field Nom
+add field Prénom
+add field Etat civil related to Etat civil using Nom
+add field Adresse
+add field Code postal
+add field Ville
+add field Date de naissance with type date
+add field Téléphone with type phone
+add field Email with type email
+add field Acceptation règles with type boolean
+
+entity Professionnel has many Métier proposé called Métiers
+entity Professionnel has many Etablissement souhaité called Etablissements souhaités
+entity Professionnel has many existing Compétence spécifique using Nom called Compétences spécifiques
+entity Professionnel has many existing Type d'horaire using Nom
+entity Professionnel has one Disponibilité
+
+select entity Professionnel
+add component localfilestorage with name Documents
+
+select entity Métier proposé
+add field Métier related to Métier using Nom
+add field Validation manager with type boolean and default value true
+
+select entity Etablissement souhaité
+add field Etablissement related to Etablissement using Nom
+set field Etablissement required
+add field Service related to Service using Nom
+set field Service required
+add field Validation manager with type boolean and default value true
+
+select entity Disponibilité
+set icon calendar-plus-o
+add field Lundi with type boolean
+add field Mardi with type boolean
+add field Mercredi with type boolean
+add field Jeudi with type boolean
+add field Vendredi with type boolean
+add field Samedi with type boolean
+add field Dimanche with type boolean
+
+
+
+create entity Demande de remplacement
+set icon comment
+add field Etablissement related to Etablissement using Nom
+add field Pôle related to Pôle using Nom
+add field Service related to Service using Nom
+add field Métier related to Métier using Nom
+add field Compétence spécifique related to Compétence spécifique using Nom
+add field Date du remplacement with type date and default value today
+add field Nombre de positions with type number and default value 1
+add field Type d'horaire related to Type d'horaire using Nom
+add field Début de poste with type datetime
+add field Fin de poste with type datetime
+add field Nombre d'heures travaillées with type time
+add field Motif de remplacement related to Motif de remplacement using Nom
+add field Caractéristique demande with type enum and values 1er répondant, Choix du remplaçant and default value Choix du remplaçant
+add field Emetteur related to user using login
+add field Visibilité with type enum and values Interne, Externe, Les deux
+add field Début de publication with type date and default value today
+add field Fin de publication with type date
+
+entity Demande de remplacement has many Affectation
+select entity Affectation
+add field Professionnel related to Professionnel using Nom
+
+
+
+
+
+

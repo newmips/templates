@@ -1,0 +1,145 @@
+<h4 class="page-header">
+    Références
+</h4>
+<table id="table_e_references" data-url="/references/datalist" class="dataTable table table-bordered table-striped">
+    <thead class="main">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {@__ key="entity.e_references.id_entity"/}&nbsp;
+                {@__ key="entity.e_references.label_entity"/}
+            </th>
+            <th data-field="f_nom" data-col="f_nom" data-type="string">
+                {@__ key="entity.e_references.f_nom"/}
+            </th>
+            <th data-field="f_prenom" data-col="f_prenom" data-type="string">
+                {@__ key="entity.e_references.f_prenom"/}
+            </th>
+            <th data-field="f_adresse" data-col="f_adresse" data-type="string">
+                {@__ key="entity.e_references.f_adresse"/}
+            </th>
+            <th data-field="f_code_postal" data-col="f_code_postal" data-type="string">
+                {@__ key="entity.e_references.f_code_postal"/}
+            </th>
+            <th data-field="f_ville" data-col="f_ville" data-type="string">
+                {@__ key="entity.e_references.f_ville"/}
+            </th>
+            <th data-field="f_profession" data-col="f_profession" data-type="string">
+                {@__ key="entity.e_references.f_profession"/}
+            </th>
+            <th data-field="f_tel_domicile" data-col="f_tel_domicile" data-type="tel">
+                {@__ key="entity.e_references.f_tel_domicile"/}
+            </th>
+            <th data-field="f_tel_professionnel" data-col="f_tel_professionnel" data-type="tel">
+                {@__ key="entity.e_references.f_tel_professionnel"/}
+            </th>
+            <th data-field="f_numero_prospect" data-col="f_numero_prospect" data-type="integer">
+                {@__ key="entity.e_references.f_numero_prospect"/}
+            </th>
+            {@actionAccess entity="references" action="read"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="references" action="update"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="references" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <thead class="filters">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {@__ key="entity.e_references.id_entity"/}&nbsp;
+                {@__ key="entity.e_references.label_entity"/}
+            </th>
+            <th data-field="f_nom" data-col="f_nom" data-type="string">
+                {@__ key="entity.e_references.f_nom"/}
+            </th>
+            <th data-field="f_prenom" data-col="f_prenom" data-type="string">
+                {@__ key="entity.e_references.f_prenom"/}
+            </th>
+            <th data-field="f_adresse" data-col="f_adresse" data-type="string">
+                {@__ key="entity.e_references.f_adresse"/}
+            </th>
+            <th data-field="f_code_postal" data-col="f_code_postal" data-type="string">
+                {@__ key="entity.e_references.f_code_postal"/}
+            </th>
+            <th data-field="f_ville" data-col="f_ville" data-type="string">
+                {@__ key="entity.e_references.f_ville"/}
+            </th>
+            <th data-field="f_profession" data-col="f_profession" data-type="string">
+                {@__ key="entity.e_references.f_profession"/}
+            </th>
+            <th data-field="f_tel_domicile" data-col="f_tel_domicile" data-type="tel">
+                {@__ key="entity.e_references.f_tel_domicile"/}
+            </th>
+            <th data-field="f_tel_professionnel" data-col="f_tel_professionnel" data-type="tel">
+                {@__ key="entity.e_references.f_tel_professionnel"/}
+            </th>
+            <th data-field="f_numero_prospect" data-col="f_numero_prospect" data-type="integer">
+                {@__ key="entity.e_references.f_numero_prospect"/}
+            </th>
+            {@actionAccess entity="references" action="read"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="references" action="update"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="references" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <tbody>
+        {#e_references}
+        <tr id="bodyTR">
+            <td data-field="id">{id}</td>
+            <td data-field="f_nom" data-type="string">{f_nom}</td>
+            <td data-field="f_prenom" data-type="string">{f_prenom}</td>
+            <td data-field="f_adresse" data-type="string">{f_adresse}</td>
+            <td data-field="f_code_postal" data-type="string">{f_code_postal}</td>
+            <td data-field="f_ville" data-type="string">{f_ville}</td>
+            <td data-field="f_profession" data-type="string">{f_profession}</td>
+            <td data-field="f_tel_domicile" data-type="tel">{f_tel_domicile}</td>
+            <td data-field="f_tel_professionnel" data-type="tel">{f_tel_professionnel}</td>
+            <td data-field="f_numero_prospect" data-type="integer">{f_numero_prospect}</td>
+            {@eq key=for value="fieldset"}
+            {@actionAccess entity="references" action="update"}
+            <td>
+                <form class="fieldsetform">
+                    <input type="hidden" value="{id}" name="idRemove">
+                    <button type="submit" class="btn btn-danger btn-confirm"><i class="fa fa-times fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.remove" /}</span></button>
+                </form>
+            </td>
+            {/actionAccess}
+            {/eq}
+            {@eq key=for value="hasMany"}
+            {@actionAccess entity="references" action="read"}
+            <td>
+                <!--<a class="btn btn-primary" href="/references/show?id={id}&amp;hideButton=1"><i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.show" /}-->
+            </td>
+            {/actionAccess}
+            {/eq}
+            {@actionAccess entity="references" action="update"}
+            <td>
+                {@eq key=for value="hasMany"}
+                <a class="ajax btn btn-warning" data-id="{id}" data-href="/references/update_form?id={id}&amp;associationAlias={associationAlias}&amp;associationForeignKey={associationForeignKey}&amp;associationFlag={associationFlag}&amp;associationSource={associationSource}&amp;associationUrl={associationUrl}&amp;ajax=true"><i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update" /}</span></a>
+                {/eq}
+            </td>
+            {/actionAccess}
+            {@actionAccess entity="references" action="delete"}
+            <td>
+                {@eq key=for value="hasMany"}
+                <form action="/references/delete" class="ajax" method="post">
+                    <button class="btn btn-danger btn-confirm"><i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                        <span>{@__ key="button.delete" /}</span>
+                        <input name="id" value="{id}" type="hidden">
+                    </button>
+                </form>
+                {/eq}
+            </td>
+            {/actionAccess}
+        </tr>
+        {/e_references}
+    </tbody>
+</table>

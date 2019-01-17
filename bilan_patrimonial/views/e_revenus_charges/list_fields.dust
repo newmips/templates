@@ -1,0 +1,359 @@
+<table id="table_e_revenus_charges" data-url="/revenus_charges/datalist" class="dataTable table table-bordered table-striped">
+    <thead class="main">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {@__ key="entity.e_revenus_charges.id_entity"/}&nbsp;
+                {@__ key="entity.e_revenus_charges.label_entity"/}
+            </th>
+            <th data-field="f_rev_pro_vous" data-col="f_rev_pro_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_pro_vous"/}
+            </th>
+            <th data-field="f_rev_pro_conj" data-col="f_rev_pro_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_pro_conj"/}
+            </th>
+            <th data-field="f_rev_pro_foyer" data-col="f_rev_pro_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_pro_foyer"/}
+            </th>
+            <th data-field="f_rev_loyers_vous" data-col="f_rev_loyers_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_loyers_vous"/}
+            </th>
+            <th data-field="f_rev_loyers_conj" data-col="f_rev_loyers_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_loyers_conj"/}
+            </th>
+            <th data-field="f_rev_loyers_foyer" data-col="f_rev_loyers_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_loyers_foyer"/}
+            </th>
+            <th data-field="f_rev_div_vous" data-col="f_rev_div_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_div_vous"/}
+            </th>
+            <th data-field="f_rev_div_conj" data-col="f_rev_div_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_div_conj"/}
+            </th>
+            <th data-field="f_rev_div_foyer" data-col="f_rev_div_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_div_foyer"/}
+            </th>
+            <th data-field="f_rev_autres_vous" data-col="f_rev_autres_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_autres_vous"/}
+            </th>
+            <th data-field="f_rev_autres_conj" data-col="f_rev_autres_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_autres_conj"/}
+            </th>
+            <th data-field="f_rev_autres_foyer" data-col="f_rev_autres_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_autres_foyer"/}
+            </th>
+            <th data-field="f_rev_total_vous" data-col="f_rev_total_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_total_vous"/}
+            </th>
+            <th data-field="f_rev_total_conj" data-col="f_rev_total_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_total_conj"/}
+            </th>
+            <th data-field="f_rev_total_foyer" data-col="f_rev_total_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_total_foyer"/}
+            </th>
+            <th data-field="f_dep_remb_vous" data-col="f_dep_remb_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_remb_vous"/}
+            </th>
+            <th data-field="f_dep_remb_conj" data-col="f_dep_remb_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_remb_conj"/}
+            </th>
+            <th data-field="f_dep_remb_foyer" data-col="f_dep_remb_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_remb_foyer"/}
+            </th>
+            <th data-field="f_dep_pensions_vous" data-col="f_dep_pensions_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_pensions_vous"/}
+            </th>
+            <th data-field="f_dep_pensions_conj" data-col="f_dep_pensions_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_pensions_conj"/}
+            </th>
+            <th data-field="f_dep_pensions_foyer" data-col="f_dep_pensions_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_pensions_foyer"/}
+            </th>
+            <th data-field="f_dep_impots_vous" data-col="f_dep_impots_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_impots_vous"/}
+            </th>
+            <th data-field="f_dep_impots_conj" data-col="f_dep_impots_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_impots_conj"/}
+            </th>
+            <th data-field="f_dep_impots_foyer" data-col="f_dep_impots_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_impots_foyer"/}
+            </th>
+            <th data-field="f_dep_courantes_vous" data-col="f_dep_courantes_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_courantes_vous"/}
+            </th>
+            <th data-field="f_dep_courantes_conj" data-col="f_dep_courantes_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_courantes_conj"/}
+            </th>
+            <th data-field="f_dep_courantes_foyer" data-col="f_dep_courantes_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_courantes_foyer"/}
+            </th>
+            <th data-field="f_dep_total_vous" data-col="f_dep_total_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_total_vous"/}
+            </th>
+            <th data-field="f_dep_total_conj" data-col="f_dep_total_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_total_conj"/}
+            </th>
+            <th data-field="f_dep_total_foyer" data-col="f_dep_total_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_total_foyer"/}
+            </th>
+            <th data-field="f_dep_solde_vous" data-col="f_dep_solde_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_solde_vous"/}
+            </th>
+            <th data-field="f_dep_solde_conj" data-col="f_dep_solde_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_solde_conj"/}
+            </th>
+            <th data-field="f_dep_solde_foyer" data-col="f_dep_solde_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_solde_foyer"/}
+            </th>
+            <th data-field="f_correspondance" data-col="f_correspondance" data-type="enum">
+                {@__ key="entity.e_revenus_charges.f_correspondance"/}
+            </th>
+            <th data-field="f_montant_epargne_annuelle" data-col="f_montant_epargne_annuelle" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_montant_epargne_annuelle"/}
+            </th>
+            <th data-field="f_epargner_plus" data-col="f_epargner_plus" data-type="enum">
+                {@__ key="entity.e_revenus_charges.f_epargner_plus"/}
+            </th>
+            <th data-field="f_combien_epargne" data-col="f_combien_epargne" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_combien_epargne"/}
+            </th>
+            <th data-field="f_raisons" data-col="f_raisons" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_raisons"/}
+            </th>
+            <th data-field="f_matelas" data-col="f_matelas" data-type="enum">
+                {@__ key="entity.e_revenus_charges.f_matelas"/}
+            </th>
+            <th data-field="f_combien_matelas" data-col="f_combien_matelas" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_combien_matelas"/}
+            </th>
+            {@actionAccess entity="revenus_charges" action="read"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="revenus_charges" action="update"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="revenus_charges" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <thead class="filters">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {@__ key="entity.e_revenus_charges.id_entity"/}&nbsp;
+                {@__ key="entity.e_revenus_charges.label_entity"/}
+            </th>
+            <th data-field="f_rev_pro_vous" data-col="f_rev_pro_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_pro_vous"/}
+            </th>
+            <th data-field="f_rev_pro_conj" data-col="f_rev_pro_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_pro_conj"/}
+            </th>
+            <th data-field="f_rev_pro_foyer" data-col="f_rev_pro_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_pro_foyer"/}
+            </th>
+            <th data-field="f_rev_loyers_vous" data-col="f_rev_loyers_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_loyers_vous"/}
+            </th>
+            <th data-field="f_rev_loyers_conj" data-col="f_rev_loyers_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_loyers_conj"/}
+            </th>
+            <th data-field="f_rev_loyers_foyer" data-col="f_rev_loyers_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_loyers_foyer"/}
+            </th>
+            <th data-field="f_rev_div_vous" data-col="f_rev_div_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_div_vous"/}
+            </th>
+            <th data-field="f_rev_div_conj" data-col="f_rev_div_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_div_conj"/}
+            </th>
+            <th data-field="f_rev_div_foyer" data-col="f_rev_div_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_div_foyer"/}
+            </th>
+            <th data-field="f_rev_autres_vous" data-col="f_rev_autres_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_autres_vous"/}
+            </th>
+            <th data-field="f_rev_autres_conj" data-col="f_rev_autres_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_autres_conj"/}
+            </th>
+            <th data-field="f_rev_autres_foyer" data-col="f_rev_autres_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_autres_foyer"/}
+            </th>
+            <th data-field="f_rev_total_vous" data-col="f_rev_total_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_total_vous"/}
+            </th>
+            <th data-field="f_rev_total_conj" data-col="f_rev_total_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_total_conj"/}
+            </th>
+            <th data-field="f_rev_total_foyer" data-col="f_rev_total_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_rev_total_foyer"/}
+            </th>
+            <th data-field="f_dep_remb_vous" data-col="f_dep_remb_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_remb_vous"/}
+            </th>
+            <th data-field="f_dep_remb_conj" data-col="f_dep_remb_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_remb_conj"/}
+            </th>
+            <th data-field="f_dep_remb_foyer" data-col="f_dep_remb_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_remb_foyer"/}
+            </th>
+            <th data-field="f_dep_pensions_vous" data-col="f_dep_pensions_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_pensions_vous"/}
+            </th>
+            <th data-field="f_dep_pensions_conj" data-col="f_dep_pensions_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_pensions_conj"/}
+            </th>
+            <th data-field="f_dep_pensions_foyer" data-col="f_dep_pensions_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_pensions_foyer"/}
+            </th>
+            <th data-field="f_dep_impots_vous" data-col="f_dep_impots_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_impots_vous"/}
+            </th>
+            <th data-field="f_dep_impots_conj" data-col="f_dep_impots_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_impots_conj"/}
+            </th>
+            <th data-field="f_dep_impots_foyer" data-col="f_dep_impots_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_impots_foyer"/}
+            </th>
+            <th data-field="f_dep_courantes_vous" data-col="f_dep_courantes_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_courantes_vous"/}
+            </th>
+            <th data-field="f_dep_courantes_conj" data-col="f_dep_courantes_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_courantes_conj"/}
+            </th>
+            <th data-field="f_dep_courantes_foyer" data-col="f_dep_courantes_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_courantes_foyer"/}
+            </th>
+            <th data-field="f_dep_total_vous" data-col="f_dep_total_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_total_vous"/}
+            </th>
+            <th data-field="f_dep_total_conj" data-col="f_dep_total_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_total_conj"/}
+            </th>
+            <th data-field="f_dep_total_foyer" data-col="f_dep_total_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_total_foyer"/}
+            </th>
+            <th data-field="f_dep_solde_vous" data-col="f_dep_solde_vous" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_solde_vous"/}
+            </th>
+            <th data-field="f_dep_solde_conj" data-col="f_dep_solde_conj" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_solde_conj"/}
+            </th>
+            <th data-field="f_dep_solde_foyer" data-col="f_dep_solde_foyer" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_dep_solde_foyer"/}
+            </th>
+            <th data-field="f_correspondance" data-col="f_correspondance" data-type="enum">
+                {@__ key="entity.e_revenus_charges.f_correspondance"/}
+            </th>
+            <th data-field="f_montant_epargne_annuelle" data-col="f_montant_epargne_annuelle" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_montant_epargne_annuelle"/}
+            </th>
+            <th data-field="f_epargner_plus" data-col="f_epargner_plus" data-type="enum">
+                {@__ key="entity.e_revenus_charges.f_epargner_plus"/}
+            </th>
+            <th data-field="f_combien_epargne" data-col="f_combien_epargne" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_combien_epargne"/}
+            </th>
+            <th data-field="f_raisons" data-col="f_raisons" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_raisons"/}
+            </th>
+            <th data-field="f_matelas" data-col="f_matelas" data-type="enum">
+                {@__ key="entity.e_revenus_charges.f_matelas"/}
+            </th>
+            <th data-field="f_combien_matelas" data-col="f_combien_matelas" data-type="string">
+                {@__ key="entity.e_revenus_charges.f_combien_matelas"/}
+            </th>
+            {@actionAccess entity="revenus_charges" action="read"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="revenus_charges" action="update"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="revenus_charges" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <tbody>
+        {#e_revenus_charges}
+        <tr id="bodyTR">
+            <td data-field="id">{id}</td>
+            <td data-field="f_rev_pro_vous" data-type="string">{f_rev_pro_vous}</td>
+            <td data-field="f_rev_pro_conj" data-type="string">{f_rev_pro_conj}</td>
+            <td data-field="f_rev_pro_foyer" data-type="string">{f_rev_pro_foyer}</td>
+            <td data-field="f_rev_loyers_vous" data-type="string">{f_rev_loyers_vous}</td>
+            <td data-field="f_rev_loyers_conj" data-type="string">{f_rev_loyers_conj}</td>
+            <td data-field="f_rev_loyers_foyer" data-type="string">{f_rev_loyers_foyer}</td>
+            <td data-field="f_rev_div_vous" data-type="string">{f_rev_div_vous}</td>
+            <td data-field="f_rev_div_conj" data-type="string">{f_rev_div_conj}</td>
+            <td data-field="f_rev_div_foyer" data-type="string">{f_rev_div_foyer}</td>
+            <td data-field="f_rev_autres_vous" data-type="string">{f_rev_autres_vous}</td>
+            <td data-field="f_rev_autres_conj" data-type="string">{f_rev_autres_conj}</td>
+            <td data-field="f_rev_autres_foyer" data-type="string">{f_rev_autres_foyer}</td>
+            <td data-field="f_rev_total_vous" data-type="string">{f_rev_total_vous}</td>
+            <td data-field="f_rev_total_conj" data-type="string">{f_rev_total_conj}</td>
+            <td data-field="f_rev_total_foyer" data-type="string">{f_rev_total_foyer}</td>
+            <td data-field="f_dep_remb_vous" data-type="string">{f_dep_remb_vous}</td>
+            <td data-field="f_dep_remb_conj" data-type="string">{f_dep_remb_conj}</td>
+            <td data-field="f_dep_remb_foyer" data-type="string">{f_dep_remb_foyer}</td>
+            <td data-field="f_dep_pensions_vous" data-type="string">{f_dep_pensions_vous}</td>
+            <td data-field="f_dep_pensions_conj" data-type="string">{f_dep_pensions_conj}</td>
+            <td data-field="f_dep_pensions_foyer" data-type="string">{f_dep_pensions_foyer}</td>
+            <td data-field="f_dep_impots_vous" data-type="string">{f_dep_impots_vous}</td>
+            <td data-field="f_dep_impots_conj" data-type="string">{f_dep_impots_conj}</td>
+            <td data-field="f_dep_impots_foyer" data-type="string">{f_dep_impots_foyer}</td>
+            <td data-field="f_dep_courantes_vous" data-type="string">{f_dep_courantes_vous}</td>
+            <td data-field="f_dep_courantes_conj" data-type="string">{f_dep_courantes_conj}</td>
+            <td data-field="f_dep_courantes_foyer" data-type="string">{f_dep_courantes_foyer}</td>
+            <td data-field="f_dep_total_vous" data-type="string">{f_dep_total_vous}</td>
+            <td data-field="f_dep_total_conj" data-type="string">{f_dep_total_conj}</td>
+            <td data-field="f_dep_total_foyer" data-type="string">{f_dep_total_foyer}</td>
+            <td data-field="f_dep_solde_vous" data-type="string">{f_dep_solde_vous}</td>
+            <td data-field="f_dep_solde_conj" data-type="string">{f_dep_solde_conj}</td>
+            <td data-field="f_dep_solde_foyer" data-type="string">{f_dep_solde_foyer}</td>
+            <td data-field="f_correspondance" data-type="enum">{f_correspondance}</td>
+            <td data-field="f_montant_epargne_annuelle" data-type="string">{f_montant_epargne_annuelle}</td>
+            <td data-field="f_epargner_plus" data-type="enum">{f_epargner_plus}</td>
+            <td data-field="f_combien_epargne" data-type="string">{f_combien_epargne}</td>
+            <td data-field="f_raisons" data-type="string">{f_raisons}</td>
+            <td data-field="f_matelas" data-type="enum">{f_matelas}</td>
+            <td data-field="f_combien_matelas" data-type="string">{f_combien_matelas}</td>
+            {@eq key=for value="fieldset"}
+            {@actionAccess entity="revenus_charges" action="update"}
+            <td>
+                <form class="fieldsetform">
+                    <input type="hidden" value="{id}" name="idRemove">
+                    <button type="submit" class="btn btn-danger btn-confirm"><i class="fa fa-times fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.remove" /}</span></button>
+                </form>
+            </td>
+            {/actionAccess}
+            {/eq}
+            {@eq key=for value="hasMany"}
+            {@actionAccess entity="revenus_charges" action="read"}
+            <td>
+                <!--<a class="btn btn-primary" href="/revenus_charges/show?id={id}&amp;hideButton=1"><i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.show" /}-->
+            </td>
+            {/actionAccess}
+            {/eq}
+            {@actionAccess entity="revenus_charges" action="update"}
+            <td>
+                {@eq key=for value="hasMany"}
+                <a class="ajax btn btn-warning" data-id="{id}" data-href="/revenus_charges/update_form?id={id}&amp;associationAlias={associationAlias}&amp;associationForeignKey={associationForeignKey}&amp;associationFlag={associationFlag}&amp;associationSource={associationSource}&amp;associationUrl={associationUrl}&amp;ajax=true"><i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update" /}</span></a>
+                {/eq}
+            </td>
+            {/actionAccess}
+            {@actionAccess entity="revenus_charges" action="delete"}
+            <td>
+                {@eq key=for value="hasMany"}
+                <form action="/revenus_charges/delete" class="ajax" method="post">
+                    <button class="btn btn-danger btn-confirm"><i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                        <span>{@__ key="button.delete" /}</span>
+                        <input name="id" value="{id}" type="hidden">
+                    </button>
+                </form>
+                {/eq}
+            </td>
+            {/actionAccess}
+        </tr>
+        {/e_revenus_charges}
+    </tbody>
+</table>

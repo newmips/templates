@@ -1,0 +1,8 @@
+create project Produit
+create application Produit
+
+create entity Produit
+add field Code barre with type code128
+add field Nom
+add field Emplacement
+set icon file-text-o

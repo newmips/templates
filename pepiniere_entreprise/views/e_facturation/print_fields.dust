@@ -1,0 +1,120 @@
+<div id="fields" class="dontbreakitplz row">
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-12 col-sm-12 col-xs-12 column">
+        <div class="row">
+            <div data-field="f_annee" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_annee">
+                        {@__ key="entity.e_facturation.f_annee"/}&nbsp;
+                        {@inline_help field="f_annee"}
+                        <i data-field="f_annee" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_annee}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_facturation.f_annee" /}' name="f_annee_print" type="text" readonly="">
+                    {/f_annee}
+                    {#enum_radio.e_facturation.f_annee}
+                    {@eq key=f_annee value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_facturation.f_annee" /}' name="f_annee_print" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_facturation.f_annee}
+                </div>
+            </div>
+            <div data-field="f_periode" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_periode">
+                        {@__ key="entity.e_facturation.f_periode"/}&nbsp;
+                        {@inline_help field="f_periode"}
+                        <i data-field="f_periode" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_periode}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_facturation.f_periode" /}' name="f_periode_print" type="text" readonly="">
+                    {/f_periode}
+                    {#enum_radio.e_facturation.f_periode}
+                    {@eq key=f_periode value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_facturation.f_periode" /}' name="f_periode_print" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_facturation.f_periode}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+
+            <div data-field="f_date_de_debut" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_date_de_debut">
+                        {@__ key="entity.e_facturation.f_date_de_debut"/}&nbsp;
+                        {@inline_help field="f_date_de_debut"}
+                        <i data-field="f_date_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_facturation.f_date_de_debut" /}' value="{f_date_de_debut}" type="text" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+
+            <div data-field="f_date_de_fin" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_date_de_fin">
+                        {@__ key="entity.e_facturation.f_date_de_fin"/}&nbsp;
+                        {@inline_help field="f_date_de_fin"}
+                        <i data-field="f_date_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_facturation.f_date_de_fin" /}' value="{f_date_de_fin}" type="text" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div data-field="f_mode" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_mode">
+                {@__ key="entity.e_facturation.f_mode"/}&nbsp;
+                {@inline_help field="f_mode"}
+                <i data-field="f_mode" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            {#enum_radio.e_facturation.f_mode}
+            &nbsp;
+            <br>
+            <label>
+                {@eq key=f_mode value="{.value}" }
+                <input class="form-control input" name="e_facturation.f_mode_print" value="{.value}" checked="" type="radio" disabled="">&nbsp;{.translation}
+                {:else}
+                <input class="form-control input" name="e_facturation.f_mode_print" value="{.value}" type="radio" disabled="">&nbsp;{.translation}
+                {/eq}
+            </label>
+            {/enum_radio.e_facturation.f_mode}
+        </div>
+    </div>
+    <div data-field="f_facture" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_facture">
+                {@__ key="entity.e_facturation.r_facture" /}</label>
+            <select multiple="" disabled="" readonly="" class="regular-select form-control" name="r_facture" data-source="facture" data-using="f_titre" style="width:100%;">
+                {#r_facture}
+                <option value="{f_titre|string}" selected="">{f_titre|string}</option>
+                {/r_facture}
+            </select>
+        </div>
+    </div>
+</div>

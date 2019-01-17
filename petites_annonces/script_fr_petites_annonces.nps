@@ -1,0 +1,89 @@
+create project Annonces
+
+create application Annonces
+
+create module Configuration
+
+create entity Catégorie
+set icon folder-o
+add field Nom
+set field Nom required
+add field A classer with type checkbox
+entity Catégorie has many Sous-catégorie called Sous-catégories
+hide column ID
+
+select entity Sous-catégorie
+add field Nom
+set field Nom required
+hide column ID
+
+create entity Pays
+set icon flag
+add field Nom
+set field Nom required
+hide column ID
+
+create entity Région
+set icon map
+add field Nom
+set field Nom required
+hide column ID
+
+create entity Société
+set icon building-o
+add field Nom
+set field Nom required
+entity Société has many Site called Sites
+hide column ID
+
+select entity Site
+set icon map-marker
+add field Nom
+set field Nom required
+add component address with name Adresse
+
+select entity user
+add field Nom
+set field Nom required
+add field Téléphone with type phone
+add field Pays related to Pays using Nom
+add field Région related to Région using Nom
+add field Société related to Société using Nom
+add field Site related to Site using Nom
+
+
+select module home
+
+create entity Annonce
+set icon tag
+add field Catégorie related to Catégorie using Nom
+set field Catégorie required
+add field Sous-catégorie related to Sous-catégorie using Nom
+add field Type d'annonce with type radio and values Offre, Demande and default value Offre
+add field Nom
+add field Description with type regular text
+add field Prix with type money
+add field Photo 1 with type image
+add field Photo 2 with type image
+add field Photo 3 with type image
+add field Document 1 with type file
+add field Document 2 with type file
+add field Document 3 with type file
+add field Pays related to Pays using Nom
+add field Région related to Région using Nom
+add field Société related to Société using Nom
+add field Site related to Site using Nom
+add field Adresse with type adresse
+add field Contact related to user using Nom
+add component localfilestorage with name Documents
+add field Date expiration prévue with type date
+add field Fournisseur
+add component status with name Statut
+
+
+create module Reporting
+
+create entity Tableau de bord
+set icon tachometer
+
+

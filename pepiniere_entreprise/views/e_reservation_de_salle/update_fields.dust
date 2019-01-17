@@ -1,0 +1,85 @@
+<div id="fields" class="row">
+
+
+    <div data-field="f_date_de_reservation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+        <div class="form-group">
+            <label for="f_date_de_reservation" class="required">
+                {@__ key="entity.e_reservation_de_salle.f_date_de_reservation"/}&nbsp;
+                {@inline_help field="f_date_de_reservation"}
+                <i data-field="f_date_de_reservation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_reservation_de_salle.f_date_de_reservation" /}' name="f_date_de_reservation" value="{f_date_de_reservation}" type="text" required="">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_heure_de_reservation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+        <div class="form-group">
+            <label for="f_heure_de_reservation">
+                {@__ key="entity.e_reservation_de_salle.f_heure_de_reservation"/}&nbsp;
+                {@inline_help field="f_heure_de_reservation"}
+                <i data-field="f_heure_de_reservation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="bootstrap-timepicker">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <input class="form-control input timepicker" placeholder='{@__ key="entity.e_reservation_de_salle.f_heure_de_reservation" /}' name="f_heure_de_reservation" value="{f_heure_de_reservation}" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-field="f_duree" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_duree">
+                {@__ key="entity.e_reservation_de_salle.f_duree"/}&nbsp;
+                {@inline_help field="f_duree"}
+                <i data-field="f_duree" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_reservation_de_salle.f_duree" /}' name="f_duree" value="{f_duree}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_societe" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="r_societe">
+                {@__ key="entity.e_reservation_de_salle.r_societe" /}&nbsp;
+                {@inline_help field="r_societe"}
+                <i data-field="r_societe" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="ajax form-control" name="r_societe" data-source="societe" data-using="f_nom">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#r_societe}
+                <option value="{id}" selected="">{f_nom|string}</option>
+                {/r_societe}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_espace" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="r_espace">
+                {@__ key="entity.e_reservation_de_salle.r_espace" /}&nbsp;
+                {@inline_help field="r_espace"}
+                <i data-field="r_espace" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="ajax form-control" name="r_espace" data-source="espace" data-using="f_reference" data-sharedspace="f_partage" data-href="/espace/search">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#r_espace}
+                <option value="{id}" selected="">{f_reference|string}</option>
+                {/r_espace}
+            </select>
+        </div>
+    </div>
+</div>

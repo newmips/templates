@@ -1,0 +1,6 @@
+[{
+        "target": "e_agenda_event",
+        "relation": "hasMany",
+        "foreignKey": "fk_id_chantier_chantier",
+        "as": "r_events"
+}]

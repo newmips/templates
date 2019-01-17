@@ -1,0 +1,353 @@
+<div class="nav-tabs-custom" id="tabs">
+    {^hideTab}
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">
+                {@__ key="entity.e_annonce.label_entity" /}</a></li>
+        <li><a id="c_documents_1310-click" data-toggle="tab" href="#c_documents_1310">
+                {@__ key="component.c_documents_1310.label_component" /}</a></li>
+        {@entityAccess entity="history_e_annonce_s_statut"}
+        <li><a id="r_history_statut-click" data-toggle="tab" data-tabtype="hasMany" href="#r_history_statut">
+                {@__ key="entity.e_annonce.r_history_statut" /}</a></li>
+        {/entityAccess}
+    </ul>
+    {/hideTab}
+    <div class="tab-content" style="min-height:275px;">
+        <div id="home" class="tab-pane fade in active">
+            <div id="fields" class="row">
+                <div data-field="f_type_d_annonce" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                    <div class="form-group">
+                        <label for="f_type_d_annonce">
+                            {@__ key="entity.e_annonce.f_type_d_annonce"/}&nbsp;
+                            {@inline_help field="f_type_d_annonce"}
+                            <i data-field="f_type_d_annonce" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        {#enum_radio.e_annonce.f_type_d_annonce}
+                        &nbsp;
+                        <br>
+                        <label>
+                            {@eq key=f_type_d_annonce value="{.value}" }
+                            <input class="form-control input" name="e_annonce.f_type_d_annonce" value="{.value}" checked="" type="radio" disabled="">&nbsp;{.translation}
+                            {:else}
+                            <input class="form-control input" name="e_annonce.f_type_d_annonce" value="{.value}" type="radio" disabled="">&nbsp;{.translation}
+                            {/eq}
+                        </label>
+                        {/enum_radio.e_annonce.f_type_d_annonce}
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+                    <div class="row">
+                        <div data-field="f_categorie" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="r_categorie">
+                                    {@__ key="entity.e_annonce.r_categorie"/} </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_categorie" /}' name="r_categorie" value="{r_categorie.f_nom|string}" type="text" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_sous_categorie" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="r_sous_categorie">
+                                    {@__ key="entity.e_annonce.r_sous_categorie"/} </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_sous_categorie" /}' name="r_sous_categorie" value="{r_sous_categorie.f_nom|string}" type="text" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_nom">
+                                    {@__ key="entity.e_annonce.f_nom"/}&nbsp;
+                                    {@inline_help field="f_nom"}
+                                    <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_fournisseur" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_fournisseur">
+                                    {@__ key="entity.e_annonce.f_fournisseur"/}&nbsp;
+                                    {@inline_help field="f_fournisseur"}
+                                    <i data-field="f_fournisseur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.f_fournisseur" /}' name="f_fournisseur" value="{f_fournisseur}" type="text" maxlength="255" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_prix" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_prix">
+                                    {@__ key="entity.e_annonce.f_prix"/}&nbsp;
+                                    {@inline_help field="f_prix"}
+                                    <i data-field="f_prix" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-money"></i>
+                                    </div>
+                                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.f_prix" /}' name="f_prix" value="{f_prix}" type="text" data-type="currency" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-field="f_description" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_description">
+                                    {@__ key="entity.e_annonce.f_description"/}&nbsp;
+                                    {@inline_help field="f_description"}
+                                    <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="show-textarea">{f_description|s}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+                    <div class="row">
+                        <div data-field="f_contact" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="r_contact">
+                                    {@__ key="entity.e_annonce.r_contact"/} </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_contact" /}' name="r_contact" value="{r_contact.f_nom|string}" type="text" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_adresse" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_adresse">
+                                    {@__ key="entity.e_annonce.f_adresse"/}&nbsp;
+                                    {@inline_help field="f_adresse"}
+                                    <i data-field="f_adresse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.f_adresse" /}' name="f_adresse" value="{f_adresse}" type="text" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_site" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="r_site">
+                                    {@__ key="entity.e_annonce.r_site"/} </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_site" /}' name="r_site" value="{r_site.f_nom|string}" type="text" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_societe" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="r_societe">
+                                    {@__ key="entity.e_annonce.r_societe"/} </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_region" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="r_region">
+                                    {@__ key="entity.e_annonce.r_region"/} </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_region" /}' name="r_region" value="{r_region.f_nom|string}" type="text" readonly="">
+                            </div>
+                        </div>
+                        <div data-field="f_pays" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="r_pays">
+                                    {@__ key="entity.e_annonce.r_pays"/} </label>
+                                <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_pays" /}' name="r_pays" value="{r_pays.f_nom|string}" type="text" readonly="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-12 col-sm-12 col-xs-12 column">
+                    <div class="row">
+                        <div data-field="f_date_expiration_prevue" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_date_expiration_prevue">
+                                    {@__ key="entity.e_annonce.f_date_expiration_prevue"/}&nbsp;
+                                    {@inline_help field="f_date_expiration_prevue"}
+                                    <i data-field="f_date_expiration_prevue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_annonce.f_date_expiration_prevue" /}' value="{f_date_expiration_prevue}" type="text" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-4 col-sm-4 col-xs-4 column">
+                    <div class="row">
+                        <div data-field="f_photo_1" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_photo_1">
+                                    {@__ key="entity.e_annonce.f_photo_1"/}&nbsp;
+                                    {@inline_help field="f_photo_1"}
+                                    <i data-field="f_photo_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <a href="/default/download?entity=e_annonce&amp;f={f_photo_1.value}"><img src="data:image/;base64,{f_photo_1.buffer}" class="img img-responsive" data-type="picture" alt="{f_photo_1}" name="f_photo_1" readonly="" height="400" width="400"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-4 col-sm-4 col-xs-4 column">
+                    <div class="row">
+                        <div data-field="f_photo_2" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_photo_2">
+                                    {@__ key="entity.e_annonce.f_photo_2"/}&nbsp;
+                                    {@inline_help field="f_photo_2"}
+                                    <i data-field="f_photo_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <a href="/default/download?entity=e_annonce&amp;f={f_photo_2.value}"><img src="data:image/;base64,{f_photo_2.buffer}" class="img img-responsive" data-type="picture" alt="{f_photo_2}" name="f_photo_2" readonly="" height="400" width="400"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-4 col-sm-4 col-xs-4 column">
+                    <div class="row">
+                        <div data-field="f_photo_3" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_photo_3">
+                                    {@__ key="entity.e_annonce.f_photo_3"/}&nbsp;
+                                    {@inline_help field="f_photo_3"}
+                                    <i data-field="f_photo_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <a href="/default/download?entity=e_annonce&amp;f={f_photo_3.value}"><img src="data:image/;base64,{f_photo_3.buffer}" class="img img-responsive" data-type="picture" alt="{f_photo_3}" name="f_photo_3" readonly="" height="400" width="400"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-4 col-sm-4 col-xs-4 column">
+                    <div class="row">
+                        <div data-field="f_document_1" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_document_1">
+                                    {@__ key="entity.e_annonce.f_document_1"/}&nbsp;
+                                    {@inline_help field="f_document_1"}
+                                    <i data-field="f_document_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-download"></i>
+                                    </div>
+                                    <a href="/default/download?entity=e_annonce&amp;f={f_document_1}" class="form-control text-left" name="f_document_1">{f_document_1|filename}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-4 col-sm-4 col-xs-4 column">
+                    <div class="row">
+                        <div data-field="f_document_2" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_document_2">
+                                    {@__ key="entity.e_annonce.f_document_2"/}&nbsp;
+                                    {@inline_help field="f_document_2"}
+                                    <i data-field="f_document_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-download"></i>
+                                    </div>
+                                    <a href="/default/download?entity=e_annonce&amp;f={f_document_2}" class="form-control text-left" name="f_document_2">{f_document_2|filename}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-4 col-sm-4 col-xs-4 column">
+                    <div class="row">
+                        <div data-field="f_document_3" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_document_3">
+                                    {@__ key="entity.e_annonce.f_document_3"/}&nbsp;
+                                    {@inline_help field="f_document_3"}
+                                    <i data-field="f_document_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-download"></i>
+                                    </div>
+                                    <a href="/default/download?entity=e_annonce&amp;f={f_document_3}" class="form-control text-left" name="f_document_3">{f_document_3|filename}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <form action="/annonce/delete" method="post">
+                    <div class="quicklinks">
+                        <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                            {@__ key="button.return"/}</a>
+                        {@actionAccess entity="annonce" action="delete"}
+                        <button class="btn btn-danger btn-confirm">
+                            <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                            <span>{@__ key="button.delete"/}</span>
+                        </button>
+                        <input name="id" type="hidden" value="{e_annonce.id}" class="form-control">
+                        {/actionAccess}
+                        {@actionAccess entity="annonce" action="update"}
+                        <a href="/annonce/update_form?id={e_annonce.id}" class="btn btn-warning">
+                            <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {^hideButton}
+                        {@actionAccess entity="annonce" action="create"}
+                        <a href="/annonce/create_form" class="btn btn-success">
+                            <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.create"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {@actionAccess entity="annonce" action="read"}
+                        <a href="/annonce/list" type="submit" class="btn btn-primary">
+                            <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.list"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {/hideButton}
+                    </div>
+                </form>
+            </div>
+        </div>
+        {^hideTab}
+        <div id="c_documents_1310" class="ajax-tab tab-pane fade" data-tabtype="localfilestorage" data-asso-flag="{e_annonce.id}" data-asso-alias="c_documents_1310">
+            <div class="ajax-content"></div>
+        </div>
+        {/hideTab}
+        {^hideTab}
+        {@entityAccess entity="history_e_annonce_s_statut"}
+        <div id="r_history_statut" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_history_statut" data-asso-foreignkey="fk_id_annonce_history_statut" data-asso-flag="{id}" data-asso-source="e_annonce" data-asso-url="annonce">
+            <div class="ajax-content sub-tab-table"></div>
+        </div>
+        {/entityAccess}
+        {/hideTab}
+    </div>
+</div>

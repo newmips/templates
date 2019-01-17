@@ -1,0 +1,184 @@
+<div class="nav-tabs-custom" id="tabs">
+    {^hideTab}
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">{@__ key="entity.e_formation.label_entity" /}</a></li>
+        {@entityAccess entity="promotion"}
+        <li><a id="r_promotion-click" data-toggle="tab" data-tabtype="hasMany" href="#r_promotion">{@__ key="entity.e_formation.r_promotion" /}</a></li>
+        {/entityAccess}
+    </ul>
+    {/hideTab}
+    <div class="tab-content" style="min-height:275px;">
+        <div id="home" class="tab-pane fade in active">
+            <div id="fields" class="row">
+                <div data-field="f_intitule" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_intitule">
+                            {@__ key="entity.e_formation.f_intitule"/}&nbsp;
+                            {@inline_help field="f_intitule"}
+                            <i data-field="f_intitule" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_intitule" /}' name="f_intitule" value="{f_intitule}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_niveau_etudes" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="r_niveau_etudes">
+                            {@__ key="entity.e_formation.r_niveau_etudes"/} </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.r_niveau_etudes" /}' name="r_niveau_etudes" value="{r_niveau_etudes.f_nom|string}" type="text" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_reference" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_reference">
+                            {@__ key="entity.e_formation.f_reference"/}&nbsp;
+                            {@inline_help field="f_reference"}
+                            <i data-field="f_reference" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_reference" /}' name="f_reference" value="{f_reference}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_code_du_diplome" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_code_du_diplome">
+                            {@__ key="entity.e_formation.f_code_du_diplome"/}&nbsp;
+                            {@inline_help field="f_code_du_diplome"}
+                            <i data-field="f_code_du_diplome" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_code_du_diplome" /}' name="f_code_du_diplome" value="{f_code_du_diplome}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_etablissement_responsable" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="r_etablissement_responsable">
+                            {@__ key="entity.e_formation.r_etablissement_responsable"/} </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.r_etablissement_responsable" /}' name="r_etablissement_responsable" value="{r_etablissement_responsable.f_denomination_sociale|string}" type="text" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_rue" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_rue">
+                            {@__ key="entity.e_formation.f_rue"/}&nbsp;
+                            {@inline_help field="f_rue"}
+                            <i data-field="f_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_rue" /}' name="f_rue" value="{f_rue}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_complement_rue" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_complement_rue">
+                            {@__ key="entity.e_formation.f_complement_rue"/}&nbsp;
+                            {@inline_help field="f_complement_rue"}
+                            <i data-field="f_complement_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_complement_rue" /}' name="f_complement_rue" value="{f_complement_rue}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_lieu_dit" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_lieu_dit">
+                            {@__ key="entity.e_formation.f_lieu_dit"/}&nbsp;
+                            {@inline_help field="f_lieu_dit"}
+                            <i data-field="f_lieu_dit" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_lieu_dit" /}' name="f_lieu_dit" value="{f_lieu_dit}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_code_postal" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_code_postal">
+                            {@__ key="entity.e_formation.f_code_postal"/}&nbsp;
+                            {@inline_help field="f_code_postal"}
+                            <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_code_postal" /}' name="f_code_postal" value="{f_code_postal}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_ville" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_ville">
+                            {@__ key="entity.e_formation.f_ville"/}&nbsp;
+                            {@inline_help field="f_ville"}
+                            <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_ville" /}' name="f_ville" value="{f_ville}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_duree" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_duree">
+                            {@__ key="entity.e_formation.f_duree"/}&nbsp;
+                            {@inline_help field="f_duree"}
+                            <i data-field="f_duree" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_duree" /}' name="f_duree" value="{f_duree}" type="number" max="2147483648" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_cout" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_cout">
+                            {@__ key="entity.e_formation.f_cout"/}&nbsp;
+                            {@inline_help field="f_cout"}
+                            <i data-field="f_cout" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                            {/inline_help}
+                        </label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-money"></i>
+                            </div>
+                            <input class="form-control input" placeholder='{@__ key="entity.e_formation.f_cout" /}' name="f_cout" value="{f_cout}" type="text" data-type="currency" readonly="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <form action="/formation/delete" method="post">
+                    <div class="quicklinks">
+                        <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                            {@__ key="button.return"/}</a>
+                        {@actionAccess entity="formation" action="delete"}
+                        <button class="btn btn-danger btn-confirm">
+                            <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                            <span>{@__ key="button.delete"/}</span>
+                        </button>
+                        <input name="id" type="hidden" value="{e_formation.id}" class="form-control">
+                        {/actionAccess}
+                        {@actionAccess entity="formation" action="update"}
+                        <a href="/formation/update_form?id={e_formation.id}" class="btn btn-warning">
+                            <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {^hideButton}
+                        {@actionAccess entity="formation" action="create"}
+                        <a href="/formation/create_form" class="btn btn-success">
+                            <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.create"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {@actionAccess entity="formation" action="read"}
+                        <a href="/formation/list" type="submit" class="btn btn-primary">
+                            <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.list"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {/hideButton}
+                    </div>
+                </form>
+            </div>
+        </div>
+        {^hideTab}
+        {@entityAccess entity="promotion"}
+        <div id="r_promotion" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_promotion" data-asso-foreignkey="fk_id_formation" data-asso-flag="{id}" data-asso-source="e_formation" data-asso-url="formation">
+            <div class="ajax-content sub-tab-table"></div>
+        </div>
+        {/entityAccess}
+        {/hideTab}
+    </div>
+</div>

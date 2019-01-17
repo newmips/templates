@@ -1,0 +1,133 @@
+<div id="fields" class="row">
+    <div data-field="f_entreprise" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="r_entreprise">
+                {@__ key="entity.e_demande.r_entreprise"/} </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_demande.r_entreprise" /}' name="r_entreprise" value="{r_entreprise.f_nom|string}" type="text" readonly="">
+        </div>
+    </div>
+
+
+
+
+
+
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_jour" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_jour">
+                        {@__ key="entity.e_demande.f_jour"/}&nbsp;
+                        {@inline_help field="f_jour"}
+                        <i data-field="f_jour" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_demande.f_jour" /}' value="{f_jour}" type="text" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_heure" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_heure">
+                        {@__ key="entity.e_demande.f_heure"/}&nbsp;
+                        {@inline_help field="f_heure"}
+                        <i data-field="f_heure" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="bootstrap-timepicker">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_heure" /}' value="{f_heure|time}" type="text" readonly="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-12 col-sm-12 col-xs-12 column">
+        <div class="row">
+            <div data-field="f_nom_du_client" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_nom_du_client">
+                        {@__ key="entity.e_demande.f_nom_du_client"/}&nbsp;
+                        {@inline_help field="f_nom_du_client"}
+                        <i data-field="f_nom_du_client" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_nom_du_client" /}' name="f_nom_du_client" value="{f_nom_du_client}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_lieu" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_lieu">
+                        {@__ key="entity.e_demande.f_lieu"/}&nbsp;
+                        {@inline_help field="f_lieu"}
+                        <i data-field="f_lieu" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_lieu" /}' name="f_lieu" value="{f_lieu}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_exigence_particuliere" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_exigence_particuliere">
+                        {@__ key="entity.e_demande.f_exigence_particuliere"/}&nbsp;
+                        {@inline_help field="f_exigence_particuliere"}
+                        <i data-field="f_exigence_particuliere" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="show-textarea">{f_exigence_particuliere|s}</div>
+                </div>
+            </div>
+            <div data-field="f_demandeur" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_demandeur">
+                        {@__ key="entity.e_demande.r_demandeur"/} </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_demande.r_demandeur" /}' name="r_demandeur" value="{r_demandeur.f_login|string}" type="text" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="actions">
+    <form action="/demande/delete" method="post">
+        <div class="quicklinks">
+            <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                {@__ key="button.return"/}</a>
+            {@actionAccess entity="demande" action="delete"}
+            <button class="btn btn-danger btn-confirm">
+                <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                <span>{@__ key="button.delete"/}</span>
+            </button>
+            <input name="id" type="hidden" value="{e_demande.id}" class="form-control">
+            {/actionAccess}
+            {@actionAccess entity="demande" action="update"}
+            <a href="/demande/update_form?id={e_demande.id}" class="btn btn-warning">
+                <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update"/}</span>
+            </a>
+            {/actionAccess}
+            {^hideButton}
+            {@actionAccess entity="demande" action="create"}
+            <a href="/demande/create_form" class="btn btn-success">
+                <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.create"/}</span>
+            </a>
+            {/actionAccess}
+            {@actionAccess entity="demande" action="read"}
+            <a href="/demande/list" type="submit" class="btn btn-primary">
+                <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.list"/}</span>
+            </a>
+            {/actionAccess}
+            {/hideButton}
+        </div>
+    </form>
+</div>

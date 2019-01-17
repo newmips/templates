@@ -1,0 +1,583 @@
+<div id="fields" class="dontbreakitplz row">
+    <div class="row">
+        <div class="col-xs-3">
+            <img src="#" alt="Logo de l'entité gérante" />
+        </div>
+        <div class="col-xs-9 text-center">
+            <h3 style="background-color: #c0c0c0 !important;">
+                <b>ENTITÉ GÉRANTE : X</b>
+            </h3>
+            <h3 style="background-color: #c0c0c0 !important;">
+                <b>ETAT DE RECETTE DES REGIES</b>
+            </h3>
+            <br>
+            <span><b>A TRANSMETTRE A X EN X EXEMPLAIRE</b></span>
+            <br>
+        </div>
+    </div>
+    <div class="row" style="border: 1px solid black;">
+        <div class="col-xs-3 text-center" style="border-right: 1px solid black;">
+            <h4>
+                <b>CADRE A REMPLIR PAR LE SERVICE</b>
+            </h4>
+        </div>
+        <div class="col-xs-9">
+            <br>
+        </div>
+    </div>
+    <div class="row" style="border: 1px solid black;">
+        <div class="col-xs-3">
+            <br>
+            <div class="row">
+                <div class="col-xs-12">
+                    <span>N° et Libellé Budget : 1</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-7">
+                </div>
+                <div class="col-xs-5">
+                    <b>VILLE</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Exercice :</span>
+                </div>
+                <div class="col-xs-5">
+                    {f_annee}
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    N° de Libellé :
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5">
+                    Politique :
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Programme :</span>
+                </div>
+                <div class="col-xs-5">
+                    <span><b></b></span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Opération :</span>
+                </div>
+                <div class="col-xs-5">
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Ligne de crédit :</span>
+                </div>
+                <div class="col-xs-5">
+                    {r_ligne_de_credit.f_code}
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Chapitre :</span>
+                </div>
+                <div class="col-xs-5">
+                    <span><b>70</b></span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Nature :</span>
+                </div>
+                <div class="col-xs-5">
+                    <span><b>7066</b></span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Fonction :</span>
+                </div>
+                <div class="col-xs-5">
+                    <span><b>522</b></span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Code :</span>
+                </div>
+                <div class="col-xs-5">
+                    <span><b>RRF</b></span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Gestionnaire :</span>
+                </div>
+                <div class="col-xs-5">
+                    <span><b>AA32/AA57</b></span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Somme :</span>
+                </div>
+                <div class="col-xs-5">
+                    <span><b>{total}</b></span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>Nom du référent DIFG :</span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br><br><br><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>N° convention :<br>ou<br>Délibération du<br>(à joindre)<br>ou<br>N° décision :</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>du</span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br><br><br><br><br><br><br></div></div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <span>N° débiteur :</span>
+                </div>
+                <div class="col-xs-5">
+                    <span><b>{f_numero_debiteur}</b></span>
+                </div>
+            </div>
+            <div class="row"><div class="col-xs-12"><br><br><br><br></div></div>
+        </div>
+        <div class="col-xs-9" style="border-left: 1px solid black;">
+            <div class="row">
+                <div class="col-xs-12">
+                    <br>
+                    <b>Madame/Monsieur X  recevra de :</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <span>Nom et Prénom du régisseur : </span>
+                </div>
+                <div class="col-xs-6">
+                    <span><b>{r_regie.f_nom_regisseur}&nbsp;{r_regie.f_prenom_regisseur}</b></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <span>Nom de la régie :</span>
+                </div>
+                <div class="col-xs-6">
+                    <span><b>{r_regie.f_nom}</b></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <span>Numéro de la régie :</span>
+                </div>
+                <div class="col-xs-6">
+                    <span><b>{r_regie.f_numero_regie}</b></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <span>Adresse :</span>
+                </div>
+                <div class="col-xs-6">
+                    <span><b>{r_regie.f_adresse_1}<br>{r_regie.f_adresse_2}<br>{r_regie.f_code_postal} &nbsp;{r_regie.f_ville}</b></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <span>Téléphone :</span>
+                </div>
+                <div class="col-xs-6">
+                    <span><b>{r_regie.f_telephone}</b></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <span>la somme de (en toutes lettres) :</span>
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-xs-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <span>Période d'encaissement de la recette :</span>
+                </div>
+                <div class="col-xs-6">
+                    <span><b>{r_mois.f_nom}</b></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <span>Du :</span>&nbsp;&nbsp;
+                    <input class="datepicker-toconvert" value="{f_debut_de_periode|date}" type="text" readonly="">
+                </div>
+                <div class="col-xs-3">
+                </div>
+                <div class="col-xs-3">
+                    <span>Au :</span>&nbsp;&nbsp;
+                    <input class="datepicker-toconvert" value="{f_fin_de_periode|date}" type="text" readonly="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <span>Objet de la recette :</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <table width="100%">
+                        <tr style="background-color: #ffff00 !important;">
+                            <td><span><b>10D02263 : ACCUEIL DE LOISIRS ADOS</b></span></td>
+                            <td><span><b>LC</b></span></td>
+                            <td><span><b>Montant</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>PARTICIPATION USAGERS</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Espèces</span></td>
+                            <td><span>24839</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24839" moyen_de_paiement=2 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chèques</span></td>
+                            <td><span>24839</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24839" moyen_de_paiement=1 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>CHEQUES SPECIAUX</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV/CAF</span></td>
+                            <td><span>27602</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="27602" moyen_de_paiement=4 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV HORS CAF</span></td>
+                            <td><span>24840</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24840" moyen_de_paiement=5 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>CESU</span></td>
+                            <td><span>24840</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24840" moyen_de_paiement=3 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #ffff00 !important;">
+                            <td><span><b>10D02265 : ACTION JEUNESSE</b></span></td>
+                            <td><span><b>LC</b></span></td>
+                            <td><span><b>Montant</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>PARTICIPATION USAGERS</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Espèces</span></td>
+                            <td><span>24853</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24853" moyen_de_paiement=2 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chèques</span></td>
+                            <td><span>24853</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24853" moyen_de_paiement=1 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>CHEQUES SPECIAUX</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV/CAF</span></td>
+                            <td><span>27601</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="27601" moyen_de_paiement=4 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV HORS CAF</span></td>
+                            <td><span>24855</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24855" moyen_de_paiement=5 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>CESU</span></td>
+                            <td><span>24855</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24855" moyen_de_paiement=3 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #99cc00 !important;">
+                            <td><span><b>10D02285 : ANIMATION</b></span></td>
+                            <td><span><b>LC</b></span></td>
+                            <td><span><b>Montant</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>PARTICIPATION USAGERS</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Espèces</span></td>
+                            <td><span>24887</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24887" moyen_de_paiement=2 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chèques</span></td>
+                            <td><span>24887</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24887" moyen_de_paiement=1 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>CHEQUES SPECIAUX</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV/CAF</span></td>
+                            <td><span>24890</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24890" moyen_de_paiement=4 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV HORS CAF</span></td>
+                            <td><span>24890</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24890" moyen_de_paiement=5 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>CESU</span></td>
+                            <td><span>24890</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24890" moyen_de_paiement=3 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #99cc00 !important;">
+                            <td><span><b>10D02286 : VIE DE QUARTIER</b></span></td>
+                            <td><span><b>LC</b></span></td>
+                            <td><span><b>Montant</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>PARTICIPATION USAGERS</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Espèces</span></td>
+                            <td><span>27443</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="27443" moyen_de_paiement=2 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chèques</span></td>
+                            <td><span>27443</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="27443" moyen_de_paiement=1 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>CHEQUES SPECIAUX</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV/CAF</span></td>
+                            <td><span>27444</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="27444" moyen_de_paiement=4 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV HORS CAF</span></td>
+                            <td><span>27444</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="27444" moyen_de_paiement=5 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>CESU</span></td>
+                            <td><span>27444</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="27444" moyen_de_paiement=3 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><span><b>TOTAL GENERAL</b></span></td>
+                            <td><span><b>{total}</b></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-xs-6">
+                    <table width="100%">
+                        <tr style="background-color: #ff99cc !important;">
+                            <td><span><b>16D06195 : ALSH EXTRA ANNE FRANCK</b></span></td>
+                            <td><span><b>LC</b></span></td>
+                            <td><span><b>Montant</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>PARTICIPATION USAGERS</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Espèces</span></td>
+                            <td><span>31441</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31441" moyen_de_paiement=2 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chèques</span></td>
+                            <td><span>31441</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31441" moyen_de_paiement=1 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>CHEQUES SPECIAUX</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV/CAF</span></td>
+                            <td><span>31444</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31444" moyen_de_paiement=4 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV HORS CAF</span></td>
+                            <td><span>31442</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31442" moyen_de_paiement=5 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>CESU</span></td>
+                            <td><span>31442</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31442" moyen_de_paiement=3 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #ff99cc !important;">
+                            <td><span><b>16D06196 : ALSH EXTRA ANNE FRANCK</b></span></td>
+                            <td><span><b>LC</b></span></td>
+                            <td><span><b>Montant</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>PARTICIPATION USAGERS</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Espèces</span></td>
+                            <td><span>31449</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31449" moyen_de_paiement=2 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chèques</span></td>
+                            <td><span>31449</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31449" moyen_de_paiement=1 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>CHEQUES SPECIAUX</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV/CAF</span></td>
+                            <td><span>31452</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31452" moyen_de_paiement=4 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV HORS CAF</span></td>
+                            <td><span>31450</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31450" moyen_de_paiement=5 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>CESU</span></td>
+                            <td><span>31450</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="31450" moyen_de_paiement=3 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #99cc00 !important;">
+                            <td><span><b>10D02284 : ACTIONS FAMILLES</b></span></td>
+                            <td><span><b>LC</b></span></td>
+                            <td><span><b>Montant</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>PARTICIPATION USAGERS</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Espèces</span></td>
+                            <td><span>24919</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24919" moyen_de_paiement=2 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Chèques</span></td>
+                            <td><span>24919</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24919" moyen_de_paiement=1 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0; text-align: center">
+                            <td colspan="3"><span><b>CHEQUES SPECIAUX</b></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV/CAF</span></td>
+                            <td><span>24920</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24920" moyen_de_paiement=4 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>ANCV HORS CAF</span></td>
+                            <td><span>24920</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24920" moyen_de_paiement=5 /}</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>CESU</span></td>
+                            <td><span>24920</span></td>
+                            <td style="text-align: right;"><span> {@valeurs valeurs=valeurs code="24920" moyen_de_paiement=3 /}</span></td>
+                        </tr>
+                        <tr style="background-color: #e6e6e6 !important;">
+                            <td colspan="3"><span>&nbsp;</span></td>
+                        </tr>
+                        <tr style="background-color: #e6e6e6 !important;">
+                            <td colspan="3"><span>&nbsp;</span></td>
+                        </tr>
+                        <tr style="background-color: #e6e6e6 !important;">
+                            <td colspan="3"><span>&nbsp;</span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0;text-align: right">
+                            <td colspan="2"><span><b>ESPECES =</b></span></td>
+                            <td style="text-align: right;"><span><b>{total_especes}</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0;text-align: right">
+                            <td colspan="2"><span><b>CHEQUES BANCAIRES =</b></span></td>
+                            <td style="text-align: right;"><span><b>{total_cheques}</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0;text-align: right">
+                            <td colspan="2"><span><b>CHEQUES ANCV/CAF =<br>CHEQUES ANCV =</b></span></td>
+                            <td style="text-align: right;"><span><b> {total_ancv}</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0;text-align: right">
+                            <td colspan="2"><span><b>CHEQUES CESU =</b></span></td>
+                            <td style="text-align: right;"><span><b>{total_cesu}</b></span></td>
+                        </tr>
+                        <tr style="background-color: #c0c0c0;text-align: right">
+                            <td colspan="2"><span><b>TOTAL =</b></span></td>
+                            <td style="text-align: right;"><span><b>{total}</b></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    &nbsp;
+                </div>
+                <div class="col-xs-6">
+                    <br>
+                    <span><b>N° de Bordereau (ANCV) :</b></span>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="border: 1px solid;">
+        <div class="col-xs-12"><br></div>
+        <div class="col-xs-3">
+            <span>Nom du régisseur : {r_regie.f_nom_regisseur}&nbsp;{r_regie.f_prenom_regisseur}</span>
+        </div>
+        <div class="col-xs-3">
+            <span>{session.passport.user.f_nom}&nbsp;{session.passport.user.f_prenom}</span>
+        </div>
+        <div class="col-xs-3">
+            <span>Signature :</span>
+        </div>
+        <div class="col-xs-3">
+            <span>&nbsp;</span>
+        </div>
+        <div class="col-xs-12"><br><br><br></div>
+    </div>
+    <div class="row" style="border: 1px solid;">
+        <div class="col-xs-12"><span><b>CADRE RESERVE A LA DIFG</b></span></div>
+    </div>
+    <div class="row" style="border: 1px solid;">
+        <div class="col-xs-12"><br></div>
+        <div class="col-xs-12"><span>N° de titre :</b></span></div>
+        <div class="col-xs-12"><br></div>
+        <div class="col-xs-12"><span>Date :</b></span></div>
+        <div class="col-xs-12"><br></div>
+    </div>
+

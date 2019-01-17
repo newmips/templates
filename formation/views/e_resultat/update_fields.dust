@@ -1,0 +1,157 @@
+<div id="fields" class="row">
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_enquete" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_enquete">
+                        {@__ key="entity.e_resultat.r_enquete" /}&nbsp;
+                        {@inline_help field="r_enquete"}
+                        <i data-field="r_enquete" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="ajax form-control" name="r_enquete" data-source="enquete" data-using="f_nom">
+                        <option value="">
+                            {@__ key="select.default" /}
+                        </option>
+                        {#r_enquete}
+                        <option value="{id}" selected="">{f_nom|string}</option>
+                        {/r_enquete}
+                    </select>
+                </div>
+            </div>
+            <div data-field="f_participant" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_participant">
+                        {@__ key="entity.e_resultat.r_participant" /}&nbsp;
+                        {@inline_help field="r_participant"}
+                        <i data-field="r_participant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="ajax form-control" name="r_participant" data-source="user" data-using="f_login">
+                        <option value="">
+                            {@__ key="select.default" /}
+                        </option>
+                        {#r_participant}
+                        <option value="{id}" selected="">{f_login|string}</option>
+                        {/r_participant}
+                    </select>
+                </div>
+            </div>
+            <div data-field="f_date_soumission" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_date_soumission">
+                        {@__ key="entity.e_resultat.f_date_soumission"/}&nbsp;
+                        {@inline_help field="f_date_soumission"}
+                        <i data-field="f_date_soumission" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
+                        </div>
+                        <input class="form-control input datetimepicker datetimepicker-toconvert" placeholder='{@__ key="entity.e_resultat.f_date_soumission" /}' name="f_date_soumission" value="{f_date_soumission}" type="text">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_formulaire" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_formulaire">
+                        {@__ key="entity.e_resultat.r_formulaire" /}&nbsp;
+                        {@inline_help field="r_formulaire"}
+                        <i data-field="r_formulaire" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="ajax form-control" name="r_formulaire" data-source="formulaire" data-using="f_nom">
+                        <option value="">
+                            {@__ key="select.default" /}
+                        </option>
+                        {#r_formulaire}
+                        <option value="{id}" selected="">{f_nom|string}</option>
+                        {/r_formulaire}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_question" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_question">
+                        {@__ key="entity.e_resultat.r_question" /}&nbsp;
+                        {@inline_help field="r_question"}
+                        <i data-field="r_question" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="ajax form-control" name="r_question" data-source="question" data-using="f_label">
+                        <option value="">
+                            {@__ key="select.default" /}
+                        </option>
+                        {#r_question}
+                        <option value="{id}" selected="">{f_label|string}</option>
+                        {/r_question}
+                    </select>
+                </div>
+            </div>
+            <div data-field="f_type_de_question" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_type_de_question">
+                        {@__ key="entity.e_resultat.f_type_de_question"/}&nbsp;
+                        {@inline_help field="f_type_de_question"}
+                        <i data-field="f_type_de_question" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="form-control select" name="f_type_de_question">
+                        <option value="">
+                            {@__ key="select.default" /}
+                        </option>
+                        {#enum_radio.e_resultat.f_type_de_question}
+                        {@eq key=f_type_de_question value="{.value}" }
+                        <option value="{.value}" selected=""> {.translation} </option>
+                        {:else}
+                        <option value="{.value}"> {.translation} </option>
+                        {/eq}
+                        {/enum_radio.e_resultat.f_type_de_question}
+                    </select>
+                </div>
+            </div>
+            <div data-field="f_reponse" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_reponse">
+                        {@__ key="entity.e_resultat.f_reponse"/}&nbsp;
+                        {@inline_help field="f_reponse"}
+                        <i data-field="f_reponse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.f_reponse" /}' name="f_reponse" value="{f_reponse}" type="text" maxlength="255">
+                </div>
+            </div>
+            <div data-field="f_texte_de_reponse" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_texte_de_reponse">
+                        {@__ key="entity.e_resultat.f_texte_de_reponse"/}&nbsp;
+                        {@inline_help field="f_texte_de_reponse"}
+                        <i data-field="f_texte_de_reponse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.f_texte_de_reponse" /}' name="f_texte_de_reponse" value="{f_texte_de_reponse}" type="text" maxlength="255">
+                </div>
+            </div>
+            <div data-field="f_exact" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_exact">
+                        {@__ key="entity.e_resultat.f_exact"/}&nbsp;
+                        {@inline_help field="f_exact"}
+                        <i data-field="f_exact" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_exact} <input class="form-control input" name="f_exact" value="{f_exact}" type="checkbox" checked="">
+                    {:else} <input class="form-control input" name="f_exact" value="{f_exact}" type="checkbox">
+                    {/ifTrue}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

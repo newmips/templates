@@ -1,0 +1,39 @@
+create project Demo
+
+create application Index thématique
+
+create entity Index
+set icon pencil
+add field Nom
+entity Index has many Entrée called A
+entity Index has many Entrée called B
+entity Index has many Entrée called C
+entity Index has many Entrée called D
+entity Index has many Entrée called E
+entity Index has many Entrée called F
+entity Index has many Entrée called G
+entity Index has many Entrée called H
+entity Index has many Entrée called I
+entity Index has many Entrée called J
+entity Index has many Entrée called K
+entity Index has many Entrée called L
+entity Index has many Entrée called M
+entity Index has many Entrée called N
+entity Index has many Entrée called O
+entity Index has many Entrée called P
+entity Index has many Entrée called Q
+entity Index has many Entrée called R
+entity Index has many Entrée called S
+entity Index has many Entrée called T
+entity Index has many Entrée called U
+entity Index has many Entrée called V
+entity Index has many Entrée called W
+entity Index has many Entrée called X
+entity Index has many Entrée called Y
+entity Index has many Entrée called Z
+
+select entity Entrée
+add field Nom
+add field Référence
+add field URL
+

@@ -1,0 +1,70 @@
+{
+    "e_media": {
+        "f_type": [
+            {
+                "value": "mail",
+                "translations": {
+                    "fr-FR": "Mail",
+                    "en-EN": "Mail"
+                }
+            },
+            {
+                "value": "notification",
+                "translations": {
+                    "fr-FR": "Notification",
+                    "en-EN": "Notification"
+                }
+            },
+            {
+                "value": "sms",
+                "translations": {
+                    "fr-FR": "SMS",
+                    "en-EN": "SMS"
+                }
+            }
+        ]
+    },
+    "e_action": {
+        "f_execution": [
+            {
+                "value": "immediate",
+                "translations": {
+                    "fr-FR": "Immédiate",
+                    "en-EN": "Immédiate"
+                }
+            },
+            {
+                "value": "differee",
+                "translations": {
+                    "fr-FR": "Différée",
+                    "en-EN": "Différée"
+                }
+            }
+        ]
+    },
+    "e_chantier": {
+        "f_statut": [
+            {
+                "value": "demande",
+                "translations": {
+                    "fr-FR": "Demandé",
+                    "en-EN": "Requested"
+                }
+            },
+            {
+                "value": "planifie",
+                "translations": {
+                    "fr-FR": "Planifié",
+                    "en-EN": "Planned"
+                }
+            },
+            {
+                "value": "termine",
+                "translations": {
+                    "fr-FR": "Terminé",
+                    "en-EN": "Closed"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,106 @@
+create project Pepinière
+
+create application Pepinière
+
+select module home
+
+add component Agenda
+
+create entity Espace
+add field Référence
+add field Surface with type float
+add field Description with type text
+add field Partagé with type boolean
+set icon square-o
+
+create entity Société
+add field Logo with type image
+set column Logo hidden
+add field Nom
+set field Nom required
+add field SIRET
+set field SIRET required
+add field Téléphone with type phone
+add field Email with type email
+set icon building-o
+
+entity Société has many Responsable called Responsables
+select entity Responsable
+add field Nom
+set field Nom required
+add field Prénom
+add field Fonction
+add field Email with type email
+add field Téléphone with type phone
+
+select entity Société
+add component localfilestorage with name Documents
+
+create entity Facture
+add field Année with type enum and values 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030
+set field Année required
+add field Période with type enum and values Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre
+set field Période required
+add field Date de début with type date
+add field Date de fin with type date
+add field Titre
+set field Titre required
+add field Société related to Société using Nom
+add field Date de création with type datetime and default value now
+set column Date de création hidden
+add field Date échéance with type datetime and default value now
+set column Date échéance hidden
+set icon file-text-o
+entity Facture has many Ligne de facture
+add component print with name Impression
+
+create entity Item
+add field Nom
+set field Nom required
+add field Tarif HT with type money
+add field TVA with type float and default value 20
+set icon tag
+
+select entity Ligne de facture
+add field Item related to Item using Nom
+add field Quantité with type float and default value 1
+add field Montant unitaire with type money
+add field Montant HT calculé with type money
+add field TVA with type float and default value 20
+add field Montant TTC with type money
+
+create entity Bail
+add field Société related to Société using Nom
+add field Date de début with type date
+add field Date de fin with type date
+add field Espaces related to many Espace using Référence
+add field Factures related to many Facture using Titre
+add component localfilestorage with name Documents
+
+create entity Facturation
+add field Année with type enum and values 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030
+set field Année required
+add field Période with type enum and values Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre
+set field Période required
+add field Date de début with type date
+add field Date de fin with type date
+add field Mode with type radio and values Manuelle, Programmée
+add field Facture related to many Facture using Titre
+set icon bullseye
+
+create entity Réservation de salle
+set icon pencil
+add field Date de réservation with type date
+set field Date de réservation required
+add field Heure de réservation with type time
+add field Durée
+add field Société related to Société using Nom
+add field Espace related to Espace using Référence
+
+add widget info on entity Espace
+add widget info on entity Société
+add widget info on entity Bail
+
+select entity agenda event
+delete field place
+add field Espace related to Espace using Référence

@@ -1,0 +1,413 @@
+<div id="fields" class="dontbreakitplz row">
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_civilite" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_civilite">
+                        {@__ key="entity.e_auteur.f_civilite"/}&nbsp;
+                        {@inline_help field="f_civilite"}
+                        <i data-field="f_civilite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_civilite}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_civilite" /}' name="f_civilite_print" type="text" readonly="">
+                    {/f_civilite}
+                    {#enum_radio.e_auteur.f_civilite}
+                    {@eq key=f_civilite value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_civilite" /}' name="f_civilite_print" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_auteur.f_civilite}
+                </div>
+            </div>
+            <div data-field="f_pseudonyme" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_pseudonyme">
+                        {@__ key="entity.e_auteur.f_pseudonyme"/}&nbsp;
+                        {@inline_help field="f_pseudonyme"}
+                        <i data-field="f_pseudonyme" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_pseudonyme" /}' name="f_pseudonyme_print" value="{f_pseudonyme}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_nom" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_nom">
+                        {@__ key="entity.e_auteur.f_nom"/}&nbsp;
+                        {@inline_help field="f_nom"}
+                        <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_nom" /}' name="f_nom_print" value="{f_nom}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_prenom" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_prenom">
+                        {@__ key="entity.e_auteur.f_prenom"/}&nbsp;
+                        {@inline_help field="f_prenom"}
+                        <i data-field="f_prenom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_prenom" /}' name="f_prenom_print" value="{f_prenom}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_date_de_naissance" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_date_de_naissance">
+                        {@__ key="entity.e_auteur.f_date_de_naissance"/}&nbsp;
+                        {@inline_help field="f_date_de_naissance"}
+                        <i data-field="f_date_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_auteur.f_date_de_naissance" /}' value="{f_date_de_naissance}" type="text" readonly="">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_lieu_de_naissance" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_lieu_de_naissance">
+                        {@__ key="entity.e_auteur.f_lieu_de_naissance"/}&nbsp;
+                        {@inline_help field="f_lieu_de_naissance"}
+                        <i data-field="f_lieu_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_lieu_de_naissance" /}' name="f_lieu_de_naissance_print" value="{f_lieu_de_naissance}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_numero_de_ss" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_numero_de_ss">
+                        {@__ key="entity.e_auteur.f_numero_de_ss"/}&nbsp;
+                        {@inline_help field="f_numero_de_ss"}
+                        <i data-field="f_numero_de_ss" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_numero_de_ss" /}' name="f_numero_de_ss_print" value="{f_numero_de_ss}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_telephone_mobile" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_telephone_mobile">
+                        {@__ key="entity.e_auteur.f_telephone_mobile"/}&nbsp;
+                        {@inline_help field="f_telephone_mobile"}
+                        <i data-field="f_telephone_mobile" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_telephone_mobile" /}' name="f_telephone_mobile_print" value="{f_telephone_mobile}" type="tel" readonly="">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_telephone_fixe" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_telephone_fixe">
+                        {@__ key="entity.e_auteur.f_telephone_fixe"/}&nbsp;
+                        {@inline_help field="f_telephone_fixe"}
+                        <i data-field="f_telephone_fixe" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_telephone_fixe" /}' name="f_telephone_fixe_print" value="{f_telephone_fixe}" type="tel" readonly="">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_email" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_email">
+                        {@__ key="entity.e_auteur.f_email"/}&nbsp;
+                        {@inline_help field="f_email"}
+                        <i data-field="f_email" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_email" /}' name="f_email_print" value="{f_email}" type="text" data-type="email" readonly="">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_rue" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_rue">
+                        {@__ key="entity.e_auteur.f_rue"/}&nbsp;
+                        {@inline_help field="f_rue"}
+                        <i data-field="f_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_rue" /}' name="f_rue_print" value="{f_rue}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_complement_rue" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_complement_rue">
+                        {@__ key="entity.e_auteur.f_complement_rue"/}&nbsp;
+                        {@inline_help field="f_complement_rue"}
+                        <i data-field="f_complement_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_complement_rue" /}' name="f_complement_rue_print" value="{f_complement_rue}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_code_postal" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_code_postal">
+                        {@__ key="entity.e_auteur.f_code_postal"/}&nbsp;
+                        {@inline_help field="f_code_postal"}
+                        <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_code_postal" /}' name="f_code_postal_print" value="{f_code_postal}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_ville" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_ville">
+                        {@__ key="entity.e_auteur.f_ville"/}&nbsp;
+                        {@inline_help field="f_ville"}
+                        <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_ville" /}' name="f_ville_print" value="{f_ville}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_pays" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_pays">
+                        {@__ key="entity.e_auteur.f_pays"/}&nbsp;
+                        {@inline_help field="f_pays"}
+                        <i data-field="f_pays" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_pays" /}' name="f_pays_print" value="{f_pays}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_genre_litteraire" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_genre_litteraire">
+                        {@__ key="entity.e_auteur.f_genre_litteraire"/}&nbsp;
+                        {@inline_help field="f_genre_litteraire"}
+                        <i data-field="f_genre_litteraire" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_genre_litteraire}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_genre_litteraire" /}' name="f_genre_litteraire_print" type="text" readonly="">
+                    {/f_genre_litteraire}
+                    {#enum_radio.e_auteur.f_genre_litteraire}
+                    {@eq key=f_genre_litteraire value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_genre_litteraire" /}' name="f_genre_litteraire_print" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_auteur.f_genre_litteraire}
+                </div>
+            </div>
+            <div data-field="f_editeur" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="r_editeur">
+                        {@__ key="entity.e_auteur.r_editeur"/} </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.r_editeur" /}' name="r_editeur" value="{r_editeur.f_nom|string}" type="text" readonly="">
+                </div>
+            </div>
+            <div data-field="f_livre" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_livre">
+                        {@__ key="entity.e_auteur.r_livre" /}</label>
+                    <select multiple="" disabled="" readonly="" class="regular-select form-control" name="r_livre" data-source="livre" data-using="f_nom" style="width:100%;">
+                        {#r_livre}
+                        <option value="{f_nom|string}" selected="">{f_nom|string}</option>
+                        {/r_livre}
+                    </select>
+                </div>
+            </div>
+            <div data-field="f_categorie_prix" class="fieldLineHeight col-xs-6" style="">
+                <div class="form-group">
+                    <label for="f_categorie_prix">
+                        {@__ key="entity.e_auteur.f_categorie_prix"/}&nbsp;
+                        {@inline_help field="f_categorie_prix"}
+                        <i data-field="f_categorie_prix" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_categorie_prix}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_categorie_prix" /}' name="f_categorie_prix_print" type="text" readonly="">
+                    {/f_categorie_prix}
+                    {#enum_radio.e_auteur.f_categorie_prix}
+                    {@eq key=f_categorie_prix value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_categorie_prix" /}' name="f_categorie_prix_print" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_auteur.f_categorie_prix}
+                </div>
+            </div>
+            <div data-field="f_prix_des_lecteurs" class="fieldLineHeight col-xs-6" style="">
+                <div class="form-group">
+                    <label for="f_prix_des_lecteurs">
+                        {@__ key="entity.e_auteur.f_prix_des_lecteurs"/}&nbsp;
+                        {@inline_help field="f_prix_des_lecteurs"}
+                        <i data-field="f_prix_des_lecteurs" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_prix_des_lecteurs} <input class="form-control input" name="f_prix_des_lecteurs_print" value="{f_prix_des_lecteurs}" type="checkbox" checked="" disabled="">
+                    {:else} <input class="form-control input" name="f_prix_des_lecteurs_print" value="{f_prix_des_lecteurs}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_horaire_arrivee" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_horaire_arrivee">
+                        {@__ key="entity.e_auteur.f_horaire_arrivee"/}&nbsp;
+                        {@inline_help field="f_horaire_arrivee"}
+                        <i data-field="f_horaire_arrivee" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
+                        </div>
+                        <input class="form-control input datetimepicker-toconvert" placeholder='{@__ key="entity.e_auteur.f_horaire_arrivee" /}' value="{f_horaire_arrivee}" type="text" readonly="">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_horaire_depart" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_horaire_depart">
+                        {@__ key="entity.e_auteur.f_horaire_depart"/}&nbsp;
+                        {@inline_help field="f_horaire_depart"}
+                        <i data-field="f_horaire_depart" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
+                        </div>
+                        <input class="form-control input datetimepicker-toconvert" placeholder='{@__ key="entity.e_auteur.f_horaire_depart" /}' value="{f_horaire_depart}" type="text" readonly="">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_hotel" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="r_hotel">
+                        {@__ key="entity.e_auteur.r_hotel"/} </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.r_hotel" /}' name="r_hotel" value="{r_hotel.f_nom|string}" type="text" readonly="">
+                </div>
+            </div>
+            <div data-field="f_nombre_nuitees" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_nombre_nuitees">
+                        {@__ key="entity.e_auteur.f_nombre_nuitees"/}&nbsp;
+                        {@inline_help field="f_nombre_nuitees"}
+                        <i data-field="f_nombre_nuitees" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_nombre_nuitees" /}' name="f_nombre_nuitees_print" value="{f_nombre_nuitees}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+            <div data-field="f_moyen_de_transport" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_moyen_de_transport">
+                        {@__ key="entity.e_auteur.f_moyen_de_transport"/}&nbsp;
+                        {@inline_help field="f_moyen_de_transport"}
+                        <i data-field="f_moyen_de_transport" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_moyen_de_transport}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_moyen_de_transport" /}' name="f_moyen_de_transport_print" type="text" readonly="">
+                    {/f_moyen_de_transport}
+                    {#enum_radio.e_auteur.f_moyen_de_transport}
+                    {@eq key=f_moyen_de_transport value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_auteur.f_moyen_de_transport" /}' name="f_moyen_de_transport_print" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_auteur.f_moyen_de_transport}
+                </div>
+            </div>
+            <div data-field="f_presence_cocktail" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_presence_cocktail">
+                        {@__ key="entity.e_auteur.f_presence_cocktail"/}&nbsp;
+                        {@inline_help field="f_presence_cocktail"}
+                        <i data-field="f_presence_cocktail" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_presence_cocktail} <input class="form-control input" name="f_presence_cocktail_print" value="{f_presence_cocktail}" type="checkbox" checked="" disabled="">
+                    {:else} <input class="form-control input" name="f_presence_cocktail_print" value="{f_presence_cocktail}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_presence_nocturne" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_presence_nocturne">
+                        {@__ key="entity.e_auteur.f_presence_nocturne"/}&nbsp;
+                        {@inline_help field="f_presence_nocturne"}
+                        <i data-field="f_presence_nocturne" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_presence_nocturne} <input class="form-control input" name="f_presence_nocturne_print" value="{f_presence_nocturne}" type="checkbox" checked="" disabled="">
+                    {:else} <input class="form-control input" name="f_presence_nocturne_print" value="{f_presence_nocturne}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dontbreakitplz">
+    {@entityAccess entity="accompagnant" }
+    <div id="r_accompagnant_print" class="row">
+        <div class="col-xs-12">
+            <h3>
+                {@__ key="entity.e_accompagnant.name_entity" /}
+            </h3>
+            <hr>
+        </div>
+        <div class="col-xs-12">
+            {#r_accompagnant e_accompagnant=r_accompagnant}
+            {@eq key=id value=e_accompagnant[0].id}
+            {>"e_accompagnant/list_fields" associationAlias="r_accompagnant" associationForeignKey="" associationFlag="" associationSource="" associationUrl="" for="hasMany" /}
+            {/eq}
+            {:else}
+            {>"e_accompagnant/list_fields" /}
+            {/r_accompagnant}
+        </div>
+        <br>
+    </div>
+    {/entityAccess}
+</div>
+<div class="dontbreakitplz">
+    {@entityAccess entity="transfert" }
+    <div id="r_transfert_print" class="row">
+        <div class="col-xs-12">
+            <h3>
+                {@__ key="entity.e_transfert.name_entity" /}
+            </h3>
+            <hr>
+        </div>
+        <div class="col-xs-12">
+            {#r_transfert e_transfert=r_transfert}
+            {@eq key=id value=e_transfert[0].id}
+            {>"e_transfert/list_fields" associationAlias="r_transfert" associationForeignKey="" associationFlag="" associationSource="" associationUrl="" for="hasMany" /}
+            {/eq}
+            {:else}
+            {>"e_transfert/list_fields" /}
+            {/r_transfert}
+        </div>
+        <br>
+    </div>
+    {/entityAccess}
+</div>

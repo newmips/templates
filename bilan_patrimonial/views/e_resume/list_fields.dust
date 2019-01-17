@@ -1,0 +1,110 @@
+<h4 class="page-header">
+    Pour nous résumer
+</h4>
+<table id="table_e_resume" data-url="/resume/datalist" class="dataTable table table-bordered table-striped">
+    <thead class="main">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {@__ key="entity.e_resume.id_entity"/}&nbsp;
+                {@__ key="entity.e_resume.label_entity"/}
+            </th>
+            <th data-field="f_preoccupations" data-col="f_preoccupations" data-type="text">
+                {@__ key="entity.e_resume.f_preoccupations"/}
+            </th>
+            <th data-field="f_horizons" data-col="f_horizons" data-type="text">
+                {@__ key="entity.e_resume.f_horizons"/}
+            </th>
+            <th data-field="f_moyens" data-col="f_moyens" data-type="text">
+                {@__ key="entity.e_resume.f_moyens"/}
+            </th>
+            <th data-field="f_souhaits_particuliers" data-col="f_souhaits_particuliers" data-type="text">
+                {@__ key="entity.e_resume.f_souhaits_particuliers"/}
+            </th>
+            {@actionAccess entity="resume" action="read"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="resume" action="update"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="resume" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <thead class="filters">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {@__ key="entity.e_resume.id_entity"/}&nbsp;
+                {@__ key="entity.e_resume.label_entity"/}
+            </th>
+            <th data-field="f_preoccupations" data-col="f_preoccupations" data-type="text">
+                {@__ key="entity.e_resume.f_preoccupations"/}
+            </th>
+            <th data-field="f_horizons" data-col="f_horizons" data-type="text">
+                {@__ key="entity.e_resume.f_horizons"/}
+            </th>
+            <th data-field="f_moyens" data-col="f_moyens" data-type="text">
+                {@__ key="entity.e_resume.f_moyens"/}
+            </th>
+            <th data-field="f_souhaits_particuliers" data-col="f_souhaits_particuliers" data-type="text">
+                {@__ key="entity.e_resume.f_souhaits_particuliers"/}
+            </th>
+            {@actionAccess entity="resume" action="read"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="resume" action="update"}
+            <th></th>
+            {/actionAccess}
+            {@actionAccess entity="resume" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <tbody>
+        {#e_resume}
+        <tr id="bodyTR">
+            <td data-field="id">{id}</td>
+            <td data-field="f_preoccupations" data-type="text">{f_preoccupations|s}</td>
+            <td data-field="f_horizons" data-type="text">{f_horizons|s}</td>
+            <td data-field="f_moyens" data-type="text">{f_moyens|s}</td>
+            <td data-field="f_souhaits_particuliers" data-type="text">{f_souhaits_particuliers|s}</td>
+            {@eq key=for value="fieldset"}
+            {@actionAccess entity="resume" action="update"}
+            <td>
+                <form class="fieldsetform">
+                    <input type="hidden" value="{id}" name="idRemove">
+                    <button type="submit" class="btn btn-danger btn-confirm"><i class="fa fa-times fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.remove" /}</span></button>
+                </form>
+            </td>
+            {/actionAccess}
+            {/eq}
+            {@eq key=for value="hasMany"}
+            {@actionAccess entity="resume" action="read"}
+            <td>
+                <!--<a class="btn btn-primary" href="/resume/show?id={id}&amp;hideButton=1"><i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.show" /}-->
+            </td>
+            {/actionAccess}
+            {/eq}
+            {@actionAccess entity="resume" action="update"}
+            <td>
+                {@eq key=for value="hasMany"}
+                <a class="ajax btn btn-warning" data-id="{id}" data-href="/resume/update_form?id={id}&amp;associationAlias={associationAlias}&amp;associationForeignKey={associationForeignKey}&amp;associationFlag={associationFlag}&amp;associationSource={associationSource}&amp;associationUrl={associationUrl}&amp;ajax=true"><i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update" /}</span></a>
+                {/eq}
+            </td>
+            {/actionAccess}
+            {@actionAccess entity="resume" action="delete"}
+            <td>
+                {@eq key=for value="hasMany"}
+                <form action="/resume/delete" class="ajax" method="post">
+                    <button class="btn btn-danger btn-confirm"><i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                        <span>{@__ key="button.delete" /}</span>
+                        <input name="id" value="{id}" type="hidden">
+                    </button>
+                </form>
+                {/eq}
+            </td>
+            {/actionAccess}
+        </tr>
+        {/e_resume}
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+create project Chantier
+create application Chantier
+
+add component Agenda
+create entity Chantier
+set icon cogs
+add field Nom
+set field Nom required
+add field Statut with type enum and values Demande, Planifie, Termine
+add field Description with type regular text
+
+select entity agenda event
+add field Chantier related to Chantier using Nom
+
+select entity agenda category
+add field IsChantier with type boolean
+

@@ -1,0 +1,286 @@
+<div id="fields" class="row">
+    <div data-field="f_entreprise" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_entreprise">
+                {@__ key="entity.e_employeur.r_entreprise" /}&nbsp;
+                {@inline_help field="r_entreprise"}
+                <i data-field="r_entreprise" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="ajax form-control" name="r_entreprise" data-source="structure" data-using="f_denomination_sociale">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#r_entreprise}
+                <option value="{id}" selected="">{f_denomination_sociale|string}</option>
+                {/r_entreprise}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_etablissement_public" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_etablissement_public">
+                {@__ key="entity.e_employeur.f_etablissement_public"/}&nbsp;
+                {@inline_help field="f_etablissement_public"}
+                <i data-field="f_etablissement_public" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            &nbsp;
+            <br>
+            {@ifTrue key=f_etablissement_public} <input class="form-control input" name="f_etablissement_public" value="{f_etablissement_public}" type="checkbox" checked="">
+            {:else} <input class="form-control input" name="f_etablissement_public" value="{f_etablissement_public}" type="checkbox">
+            {/ifTrue}
+        </div>
+    </div>
+    <div data-field="f_civilite" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_civilite">
+                {@__ key="entity.e_employeur.f_civilite"/}&nbsp;
+                {@inline_help field="f_civilite"}
+                <i data-field="f_civilite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="form-control select" name="f_civilite">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#enum_radio.e_employeur.f_civilite}
+                {@eq key=f_civilite value="{.value}" }
+                <option value="{.value}" selected=""> {.translation} </option>
+                {:else}
+                <option value="{.value}"> {.translation} </option>
+                {/eq}
+                {/enum_radio.e_employeur.f_civilite}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_nom" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_nom" class="required">
+                {@__ key="entity.e_employeur.f_nom"/}&nbsp;
+                {@inline_help field="f_nom"}
+                <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255" required="">
+        </div>
+    </div>
+    <div data-field="f_prenom" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_prenom">
+                {@__ key="entity.e_employeur.f_prenom"/}&nbsp;
+                {@inline_help field="f_prenom"}
+                <i data-field="f_prenom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_prenom" /}' name="f_prenom" value="{f_prenom}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_fonction" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_fonction">
+                {@__ key="entity.e_employeur.f_fonction"/}&nbsp;
+                {@inline_help field="f_fonction"}
+                <i data-field="f_fonction" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_fonction" /}' name="f_fonction" value="{f_fonction}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_denomination_sociale" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_denomination_sociale">
+                {@__ key="entity.e_employeur.f_denomination_sociale"/}&nbsp;
+                {@inline_help field="f_denomination_sociale"}
+                <i data-field="f_denomination_sociale" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_denomination_sociale" /}' name="f_denomination_sociale" value="{f_denomination_sociale}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_siret" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_siret">
+                {@__ key="entity.e_employeur.f_siret"/}&nbsp;
+                {@inline_help field="f_siret"}
+                <i data-field="f_siret" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_siret" /}' name="f_siret" value="{f_siret}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_rue" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_rue">
+                {@__ key="entity.e_employeur.f_rue"/}&nbsp;
+                {@inline_help field="f_rue"}
+                <i data-field="f_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_rue" /}' name="f_rue" value="{f_rue}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_complement_rue" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_complement_rue">
+                {@__ key="entity.e_employeur.f_complement_rue"/}&nbsp;
+                {@inline_help field="f_complement_rue"}
+                <i data-field="f_complement_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_complement_rue" /}' name="f_complement_rue" value="{f_complement_rue}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_lieu_dit" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_lieu_dit">
+                {@__ key="entity.e_employeur.f_lieu_dit"/}&nbsp;
+                {@inline_help field="f_lieu_dit"}
+                <i data-field="f_lieu_dit" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_lieu_dit" /}' name="f_lieu_dit" value="{f_lieu_dit}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_code_postal" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_code_postal">
+                {@__ key="entity.e_employeur.f_code_postal"/}&nbsp;
+                {@inline_help field="f_code_postal"}
+                <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_code_postal" /}' name="f_code_postal" value="{f_code_postal}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_ville" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_ville">
+                {@__ key="entity.e_employeur.f_ville"/}&nbsp;
+                {@inline_help field="f_ville"}
+                <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_ville" /}' name="f_ville" value="{f_ville}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_telephone" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_telephone">
+                {@__ key="entity.e_employeur.f_telephone"/}&nbsp;
+                {@inline_help field="f_telephone"}
+                <i data-field="f_telephone" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_telephone" /}' name="f_telephone" value="{f_telephone}" type="tel">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_email" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_email">
+                {@__ key="entity.e_employeur.f_email"/}&nbsp;
+                {@inline_help field="f_email"}
+                <i data-field="f_email" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_email" /}' name="f_email" value="{f_email}" type="text" data-type="email">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_type_de_structure" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_type_de_structure">
+                {@__ key="entity.e_employeur.r_type_de_structure" /}&nbsp;
+                {@inline_help field="r_type_de_structure"}
+                <i data-field="r_type_de_structure" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="ajax form-control" name="r_type_de_structure" data-source="type_de_structure" data-using="f_nom">
+                <option value="">
+                    {@__ key="select.default" /}
+                </option>
+                {#r_type_de_structure}
+                <option value="{id}" selected="">{f_nom|string}</option>
+                {/r_type_de_structure}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_employeur_specifique" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_employeur_specifique">
+                {@__ key="entity.e_employeur.f_employeur_specifique"/}&nbsp;
+                {@inline_help field="f_employeur_specifique"}
+                <i data-field="f_employeur_specifique" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_employeur_specifique" /}' name="f_employeur_specifique" value="{f_employeur_specifique}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_code_naf" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_code_naf">
+                {@__ key="entity.e_employeur.f_code_naf"/}&nbsp;
+                {@inline_help field="f_code_naf"}
+                <i data-field="f_code_naf" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_code_naf" /}' name="f_code_naf" value="{f_code_naf}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_effectif_salarie" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_effectif_salarie">
+                {@__ key="entity.e_employeur.f_effectif_salarie"/}&nbsp;
+                {@inline_help field="f_effectif_salarie"}
+                <i data-field="f_effectif_salarie" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_effectif_salarie" /}' name="f_effectif_salarie" value="{f_effectif_salarie}" type="number" max="2147483648">
+        </div>
+    </div>
+    <div data-field="f_chambre_consulaire" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_chambre_consulaire">
+                {@__ key="entity.e_employeur.f_chambre_consulaire"/}&nbsp;
+                {@inline_help field="f_chambre_consulaire"}
+                <i data-field="f_chambre_consulaire" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_chambre_consulaire" /}' name="f_chambre_consulaire" value="{f_chambre_consulaire}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_code_idcc" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_code_idcc">
+                {@__ key="entity.e_employeur.f_code_idcc"/}&nbsp;
+                {@inline_help field="f_code_idcc"}
+                <i data-field="f_code_idcc" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_employeur.f_code_idcc" /}' name="f_code_idcc" value="{f_code_idcc}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_adhesion_rac" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_adhesion_rac">
+                {@__ key="entity.e_employeur.f_adhesion_rac"/}&nbsp;
+                {@inline_help field="f_adhesion_rac"}
+                <i data-field="f_adhesion_rac" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            &nbsp;
+            <br>
+            {@ifTrue key=f_adhesion_rac} <input class="form-control input" name="f_adhesion_rac" value="{f_adhesion_rac}" type="checkbox" checked="">
+            {:else} <input class="form-control input" name="f_adhesion_rac" value="{f_adhesion_rac}" type="checkbox">
+            {/ifTrue}</div>
+    </div>
+</div>

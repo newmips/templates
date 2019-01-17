@@ -1,0 +1,138 @@
+<div class="nav-tabs-custom" id="tabs">
+    {^hideTab}
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">
+                {@__ key="entity.e_bail.label_entity" /}</a></li>
+        <li><a id="c_documents_827-click" data-toggle="tab" href="#c_documents_827">
+                {@__ key="component.c_documents_827.label_component" /}</a></li>
+    </ul>
+    {/hideTab}
+    <div class="tab-content" style="min-height:275px;">
+        <div id="home" class="tab-pane fade in active">
+            <div id="fields" class="row">
+                <div data-field="f_societe" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="r_societe">
+                            {@__ key="entity.e_bail.r_societe"/} </label>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_bail.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
+                    </div>
+                </div>
+
+
+
+
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+                    <div class="row">
+                        <div data-field="f_date_de_debut" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_date_de_debut">
+                                    {@__ key="entity.e_bail.f_date_de_debut"/}&nbsp;
+                                    {@inline_help field="f_date_de_debut"}
+                                    <i data-field="f_date_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bail.f_date_de_debut" /}' value="{f_date_de_debut}" type="text" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+                    <div class="row">
+                        <div data-field="f_date_de_fin" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_date_de_fin">
+                                    {@__ key="entity.e_bail.f_date_de_fin"/}&nbsp;
+                                    {@inline_help field="f_date_de_fin"}
+                                    <i data-field="f_date_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bail.f_date_de_fin" /}' value="{f_date_de_fin}" type="text" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 75px;" class="emptySpaceColumn col-md-12 col-sm-12 col-xs-12 column">
+                    <div class="row">
+                        <div data-field="f_factures" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_factures">
+                                    {@__ key="entity.e_bail.r_factures" /}
+                                    {@inline_help field="r_factures"}
+                                    <i data-field="r_factures" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <select multiple="" disabled="" readonly="" class="form-control" name="r_factures" data-source="facture" data-using="f_titre" style="width: 100%;">
+                                    {#r_factures}
+                                    <option value="{f_titre|string}" selected="">{f_titre|string}</option>
+                                    {/r_factures}
+                                </select>
+                            </div>
+                        </div>
+                        <div data-field="f_espaces" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                            <div class="form-group">
+                                <label for="f_espaces">
+                                    {@__ key="entity.e_bail.r_espaces" /}
+                                    {@inline_help field="r_espaces"}
+                                    <i data-field="r_espaces" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                                    {/inline_help}
+                                </label>
+                                <select multiple="" disabled="" readonly="" class="form-control" name="r_espaces" data-source="espace" data-using="f_reference" style="width: 100%;">
+                                    {#r_espaces}
+                                    <option value="{f_reference|string}" selected="">{f_reference|string}</option>
+                                    {/r_espaces}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <form action="/bail/delete" method="post">
+                    <div class="quicklinks">
+                        <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                            {@__ key="button.return"/}</a>
+                        {@actionAccess entity="bail" action="delete"}
+                        <button class="btn btn-danger btn-confirm">
+                            <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                            <span>{@__ key="button.delete"/}</span>
+                        </button>
+                        <input name="id" type="hidden" value="{e_bail.id}" class="form-control">
+                        {/actionAccess}
+                        {@actionAccess entity="bail" action="update"}
+                        <a href="/bail/update_form?id={e_bail.id}" class="btn btn-warning">
+                            <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {^hideButton}
+                        {@actionAccess entity="bail" action="create"}
+                        <a href="/bail/create_form" class="btn btn-success">
+                            <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.create"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {@actionAccess entity="bail" action="read"}
+                        <a href="/bail/list" type="submit" class="btn btn-primary">
+                            <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.list"/}</span>
+                        </a>
+                        {/actionAccess}
+                        {/hideButton}
+                    </div>
+                </form>
+            </div>
+        </div>
+        {^hideTab}
+        <div id="c_documents_827" class="ajax-tab tab-pane fade" data-tabtype="localfilestorage" data-asso-flag="{e_bail.id}" data-asso-alias="c_documents_827">
+            <div class="ajax-content"></div>
+        </div>
+        {/hideTab}
+    </div>
+</div>

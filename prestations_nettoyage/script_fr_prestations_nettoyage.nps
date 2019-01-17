@@ -1,0 +1,234 @@
+
+
+create project Prestations
+
+create application Prestations
+
+
+// **********************
+// User
+// **********************
+
+select entity User
+add field Nom
+add field Prénom
+
+
+
+
+create module Configuration
+
+
+// **********************
+// Type de prestation
+// **********************
+
+create entity Type de prestation
+set icon cog
+add field Nom
+set field Nom required
+
+
+
+// **********************
+// Type de ressource
+// **********************
+
+create entity Type de ressource
+set icon tasks
+add field Nom
+set field Nom required
+
+
+
+
+select module home
+
+
+add component Agenda
+
+
+// **********************
+// Client
+// **********************
+
+create entity Client
+set icon users
+add field Dénomination sociale
+set field Dénomination sociale required
+add field SIRET
+add field Adresse siège sociale
+add field Code postal siège sociale
+add field Ville siège sociale
+add field Téléphone with type phone
+add field Fax with type fax
+add field Email with type email
+add field Commercial related to User using Nom, Prénom
+
+
+// Contact
+
+entity Client has many Contact
+select entity Contact
+add field Nom
+set field Nom required
+add field Prénom
+add field Email with type email
+add field Téléphone with type phone
+
+
+// Bâtiment
+
+entity Client has many Bâtiment
+select entity Bâtiment
+add field Nom
+add field Adresse
+set field Adresse required
+add field Code postal
+add field Ville
+
+
+
+// **********************
+// Contrat
+// **********************
+
+create entity Contrat
+set icon file-text-o
+add field Client related to Client using Dénomination sociale
+add field Date de création with type date and default value today
+add field Date de début with type date
+set field Date de début required
+add field Nombre semaines with type number
+add field Contenu with type text
+
+
+// Prestations
+
+entity Contrat has many Prestation called Prestations
+select entity Prestation
+add field Bâtiment related to Bâtiment using Adresse, Code postal, Ville
+add field Type de prestation related to Type de prestation using Nom
+set field Type de prestation required
+add field Description
+add field Montant with type money
+add field Quantité with type double and default value 1.0
+add field Total HT with type money
+add field TVA with type double and default value 20.0
+add field Total TTC with type money
+
+
+// Impression
+
+select entity Contrat
+add component print with name Impression
+
+
+// Stockage de documents
+
+select entity Contrat
+add component localfilestorage called Documents
+
+
+
+// **********************
+// Ressource
+// **********************
+
+create entity Ressource
+set icon plus-circle
+add field Type de ressource related to Type de ressource using Nom
+add field Nom
+
+
+
+// **********************
+// Chantier
+// **********************
+
+create entity Chantier
+set icon cogs
+add field Nom
+add field Contrat related to Contrat
+set field Contrat required
+add field Type de prestation related to Type de prestation using Nom
+set field Type de prestation required
+
+// Réception
+
+entity Chantier has many Réception
+select entity Réception
+add field Contact related to Contact using Nom, Prénom
+add field Email with type email
+add field Lien with type url
+add field Date de réception with type date and default value today
+add field Signature
+
+
+// Impression
+select entity Chantier
+add component print called Impression
+
+
+// Stockage de documents
+
+select entity Chantier
+add component localfilestorage called Documents
+
+
+
+// **********************
+// Enquête
+// **********************
+
+create entity Enquête
+set icon search
+add field Client related to Client using Dénomination sociale
+add field Contact related to Contact using Nom, Prénom
+add field Email with type email
+add field Lien with type url
+
+
+
+
+
+
+
+create module Extranet
+
+// **********************
+// Questionnaire
+// **********************
+
+create entity Questionnaire
+set icon question-circle
+add field Enquête related to Enquête
+add field Client related to Client
+add field Contact related to Contact
+add field Votre nom
+add field Votre prénom
+add field Question 1 with type radio and values Pas satisfait, Peu satisfait, Moyennement, Satisfait, Très satisfait
+add field Question 2 with type text
+add field Question 3 with type radio and values Oui, Non
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+<h4 class="page-header">
+    Références
+</h4>
+<div id="fields" class="row">
+    <div data-field="f_nom" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_nom">
+                {@__ key="entity.e_references.f_nom"/}&nbsp;
+                {@inline_help field="f_nom"}
+                <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_references.f_nom" /}' name="f_nom" value="" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_prenom" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_prenom">
+                {@__ key="entity.e_references.f_prenom"/}&nbsp;
+                {@inline_help field="f_prenom"}
+                <i data-field="f_prenom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_references.f_prenom" /}' name="f_prenom" value="" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_adresse" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_adresse">
+                {@__ key="entity.e_references.f_adresse"/}&nbsp;
+                {@inline_help field="f_adresse"}
+                <i data-field="f_adresse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_references.f_adresse" /}' name="f_adresse" value="" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_code_postal" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_code_postal">
+                {@__ key="entity.e_references.f_code_postal"/}&nbsp;
+                {@inline_help field="f_code_postal"}
+                <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_references.f_code_postal" /}' name="f_code_postal" value="" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_ville" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_ville">
+                {@__ key="entity.e_references.f_ville"/}&nbsp;
+                {@inline_help field="f_ville"}
+                <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_references.f_ville" /}' name="f_ville" value="" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_profession" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_profession">
+                {@__ key="entity.e_references.f_profession"/}&nbsp;
+                {@inline_help field="f_profession"}
+                <i data-field="f_profession" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_references.f_profession" /}' name="f_profession" value="" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_tel_domicile" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_tel_domicile">
+                {@__ key="entity.e_references.f_tel_domicile"/}&nbsp;
+                {@inline_help field="f_tel_domicile"}
+                <i data-field="f_tel_domicile" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_references.f_tel_domicile" /}' name="f_tel_domicile" value="" type="tel">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_tel_professionnel" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_tel_professionnel">
+                {@__ key="entity.e_references.f_tel_professionnel"/}&nbsp;
+                {@inline_help field="f_tel_professionnel"}
+                <i data-field="f_tel_professionnel" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <input class="form-control input" placeholder='{@__ key="entity.e_references.f_tel_professionnel" /}' name="f_tel_professionnel" value="" type="tel">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_numero_prospect" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_numero_prospect">
+                {@__ key="entity.e_references.f_numero_prospect"/}&nbsp;
+                {@inline_help field="f_numero_prospect"}
+                <i data-field="f_numero_prospect" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_references.f_numero_prospect" /}' name="f_numero_prospect" value="" type="number" max="2147483648">
+        </div>
+    </div>
+</div>

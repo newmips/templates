@@ -1,0 +1,584 @@
+{
+    "app": {
+        "name": "Annonces"
+    },
+    "notification": {
+        "deleteAll": "Delete all notifications",
+        "icon": {
+            "choose": "Choose icon"
+        }
+    },
+    "login": {
+        "log_in": "Log in",
+        "reset_password": {
+            "title": "Forgotten password",
+            "success": "Your password has been reset..",
+            "successMail": "An email allowing you to reset your password has been sent to you.",
+            "userNotExist": "Error, this user does not exist.",
+            "cannotFindToken": "Error, can not find your reset token."
+        },
+        "first_connection": {
+            "title": "First connection",
+            "success": "Update done, you can now log in with your credentials.",
+            "userNotExist": "Error, this user does not exist or has already been activated.",
+            "alreadyHavePassword": "Operation is not possible, this user already has a password.",
+            "passwordNotMatch": "Sorry, passwords do not match. Password must contain at least 4 characters."
+        },
+        "authentication": "Connection",
+        "login": "Login",
+        "password": "Password",
+        "minimalLength": "(4 characters minimum)",
+        "confirm_password": "Confirm password",
+        "mail": "Email",
+        "remember_me": "Remember me",
+        "submit": "Submit"
+    },
+    "settings": {
+        "title": "Access managment",
+        "tool_menu": "Access configuration file",
+        "tool_success": "The access configuration file has been imported.",
+        "tool_title": "Import / Export access configuration",
+        "tool_export": "Export access configuration",
+        "tool_import": "Import access configuration",
+        "import_file_name": "access.json file:",
+        "tool_warning": "Warning, the file has to be the same structure of the current access.json file !",
+        "auth_component": {
+            "access_managment": "Access managment per group",
+            "action_managment": "Action managment per role",
+            "moduleList": "Modules",
+            "entityList": "Entities",
+            "grouplist": "Groups:",
+            "rolelist": "Roles:",
+            "entitylist": "Entities:",
+            "group": "Group",
+            "role": "Role",
+            "api_status": "API Status",
+            "api_doc": "API Documentation",
+            "action": {
+                "read": "Show",
+                "create": "Create",
+                "update": "Update",
+                "delete": "Delete"
+            },
+            "no_access_group_module": "Your group do not have access to this module.",
+            "no_access_group_entity": "Your group do not have access to this entity.",
+            "no_access_role": "Your role is not allowed to do this action on this entity."
+        },
+        "db_tool": {
+            "title": "DB Tool",
+            "export_title": "Export",
+            "import_title": "Import",
+            "all_db": "All the database",
+            "export_action": "Export",
+            "import_action": "Import",
+            "import_file": "SQL File",
+            "import_success": "The import has been successfully completed.",
+            "file_needed": "Missing import file.",
+            "wrong_db_pwd": "Wrong password.",
+            "modal_password_title": "Password confirmation",
+            "modal_password_content": "Please confirm the database password:",
+            "wrong_dialect": "Sorry, DB tools only work with MySQL for now.",
+            "no_choice": "Please choose what you want to export."
+        },
+        "import_export": {
+            "title": "Import / Export"
+        },
+        "legend": "Change your user settings",
+        "lang": "Language",
+        "login": "Login",
+        "email": "Email",
+        "firstname": "Firstname",
+        "lastname": "Lastname",
+        "phone": "Phone",
+        "my_account": "Profil account"
+    },
+    "navbar": {
+        "about": "About",
+        "help": "Help",
+        "support": "Support",
+        "editor": "Prototype carry out by Newmips"
+    },
+    "select": {
+        "default": "-- Choose --"
+    },
+    "module": {
+        "home": "Home",
+        "module": "Module",
+        "administration": "Administration",
+        "workspace": "My workspace",
+        "m_home": "Home",
+        "m_administration": "Administration",
+        "m_configuration": "Configuration",
+        "m_reporting": "Reporting"
+    },
+    "role": {
+        "administrator": "Administrator",
+        "developer": "Developer"
+    },
+    "button": {
+        "profile": "Profile",
+        "disconnect": "Disconnect",
+        "show": "Show",
+        "update": "Modify",
+        "delete": "Delete",
+        "create": "Create",
+        "list": "List",
+        "add": "Add",
+        "remove": "Remove",
+        "save": "Save",
+        "preview": "Preview",
+        "record": "Record",
+        "execute": "Execute",
+        "settings": "Settings",
+        "download": "Download",
+        "search": "Search",
+        "send": "Send",
+        "validation": "Validate",
+        "previous": "Previous",
+        "next": "Next",
+        "close": "Close",
+        "generate": "Generate",
+        "help": "Help",
+        "cancel": "Cancel",
+        "return": "Return",
+        "looking_for": "What are you looking for ? " ,
+        "search_reset": "Remove",
+        "date_creation_desc":"Most recent addition",
+        "sort_by": "Sort by:",
+        "date_creation_asc": "Least recent addition",
+        "prix_desc": "Rising price",
+        "prix_asc": "Low price"
+    },
+    "operation": {
+        "show": "Show",
+        "update": "Modify",
+        "create": "Create",
+        "delete": "Delete",
+        "list": "List",
+        "add": "Add"
+    },
+    "message": {
+        "create": {
+            "success": "Success ! Data registered with success.",
+            "failure": "Error ! No data registered. May ask to your administrator."
+        },
+        "update": {
+            "success": "Success ! Data modified with success.",
+            "failure": "Error ! No data modified. May ask to your administrator."
+        },
+        "delete": {
+            "success": "Success ! Data deleted with success.",
+            "failure": "Error ! No data deleted. May ask to your administrator.",
+            "question": "Are you sure you want to delete this entity ?"
+        },
+        "empty": "No data to display",
+        "unique": "This field must be unique:"
+    },
+    "entity": {
+        "e_user": {
+            "label_entity": "User",
+            "name_entity": "User",
+            "plural_entity": "User",
+            "id_entity": "ID",
+            "f_login": "Login",
+            "f_password": "password",
+            "f_email": "Email",
+            "f_token_password_reset": "token_password_reset",
+            "f_enabled": "enabled",
+            "r_role": "Role",
+            "r_group": "Group",
+            "r_notification": "notification",
+            "f_nom": "Nom",
+            "f_telephone": "Téléphone",
+            "r_pays": "Pays",
+            "r_region": "Région",
+            "r_societe": "Société",
+            "r_site": "Site"
+        },
+        "e_role": {
+            "label_entity": "Role",
+            "name_entity": "Role",
+            "plural_entity": "Role",
+            "id_entity": "ID",
+            "f_label": "Label",
+            "r_user": "user"
+        },
+        "e_group": {
+            "label_entity": "Group",
+            "name_entity": "Group",
+            "plural_entity": "Group",
+            "id_entity": "ID",
+            "f_label": "Label",
+            "r_user": "user"
+        },
+        "e_api_credentials": {
+            "label_entity": "API credentials",
+            "name_entity": "API credentials",
+            "plural_entity": "API credentials",
+            "id_entity": "ID",
+            "f_client_name": "Client Name",
+            "f_client_key": "Client Key",
+            "f_client_secret": "Client Secret",
+            "f_token": "Token",
+            "f_token_timeout_tmsp": "Token timeout TMSP",
+            "r_role": "Role",
+            "r_group": "Group"
+        },
+        "e_synchronization": {
+            "label_entity": "Synchronization",
+            "name_entity": "Synchronization",
+            "plural_entity": "Synchronization",
+            "id_entity": "ID",
+            "f_journal_backup_file": "Journal backup file",
+            "r_api_credentials": "API credentials"
+        },
+        "e_synchro_credentials": {
+            "label_entity": "Synchro credentials",
+            "name_entity": "Synchro credentials",
+            "plural_entity": "Synchro credentials",
+            "id_entity": "ID",
+            "f_cloud_host": "Cloud host",
+            "f_client_key": "Client key",
+            "f_client_secret": "Client secret"
+        },
+        "e_status": {
+            "label_entity": "Status",
+            "name_entity": "Status",
+            "plural_entity": "Status",
+            "id_entity": "ID",
+            "f_entity": "Entity",
+            "f_field": "Field",
+            "f_name": "Name",
+            "f_color": "Color",
+            "r_accepted_group": "Accepted group (No group means accepted for all)",
+            "f_position": "Position",
+            "f_default": "Is the default status",
+            "f_comment": "Comment",
+            "r_children": "Children",
+            "r_translations": "Translations",
+            "r_actions": "Actions",
+            "as_r_children": "Next status",
+            "apply_default": "Apply this status to entities without status",
+            "modal_title": "Comment",
+            "r_history_1310_5726": "history_1310_5726"
+        },
+        "e_translation": {
+            "label_entity": "Translation",
+            "name_entity": "Translation",
+            "plural_entity": "Translation",
+            "id_entity": "ID",
+            "f_language": "Language",
+            "f_value": "Value"
+        },
+        "e_media": {
+            "label_entity": "Media",
+            "name_entity": "Media",
+            "plural_entity": "Media",
+            "id_entity": "ID",
+            "f_type": "Type",
+            "f_name": "Name",
+            "f_target_entity": "Target entity",
+            "r_media_mail": "Media Mail",
+            "r_media_notification": "Media Notification",
+            "r_media_sms": "Media SMS"
+        },
+        "e_action": {
+            "label_entity": "Action",
+            "name_entity": "Action",
+            "plural_entity": "Action",
+            "id_entity": "ID",
+            "r_media": "Media",
+            "f_order": "Order",
+            "f_execution": "Execution"
+        },
+        "e_media_mail": {
+            "label_entity": "Media Mail",
+            "name_entity": "Media Mail",
+            "plural_entity": "Media Mail",
+            "id_entity": "ID",
+            "f_to": "To",
+            "f_cc": "Cc",
+            "f_cci": "Cci",
+            "f_from": "From",
+            "f_subject": "Subject",
+            "f_content": "Content"
+        },
+        "e_media_notification": {
+            "label_entity": "Media Notification",
+            "name_entity": "Media Notification",
+            "plural_entity": "Media Notification",
+            "id_entity": "ID",
+            "f_title": "Title",
+            "f_description": "Description",
+            "f_icon": "Icon",
+            "f_color": "Color",
+            "f_targets": "targets"
+        },
+        "e_media_sms": {
+            "label_entity": "Media SMS",
+            "name_entity": "Media SMS",
+            "plural_entity": "Media SMS",
+            "id_entity": "ID",
+            "f_message": "Message",
+            "f_phone_numbers": "Phone numbers"
+        },
+        "e_notification": {
+            "label_entity": "Notification",
+            "name_entity": "Notification",
+            "plural_entity": "Notification",
+            "id_entity": "ID",
+            "f_title": "Title",
+            "f_description": "Description",
+            "f_url": "URL",
+            "f_color": "Color",
+            "f_icon": "Icon",
+            "r_user": "user"
+        },
+        "e_inline_help": {
+            "label_entity": "Inline Help",
+            "name_entity": "Inline Help",
+            "plural_entity": "Inline Help",
+            "id_entity": "ID",
+            "f_entity": "Entity",
+            "f_field": "Field",
+            "f_content": "Content"
+        },
+        "e_categorie": {
+            "label_entity": "Catégorie",
+            "name_entity": "Catégorie",
+            "plural_entity": "Catégorie",
+            "id_entity": "ID",
+            "f_nom": "Nom",
+            "f_a_classer": "A classer",
+            "r_sous_categories": "Sous-catégories"
+        },
+        "e_sous_categorie": {
+            "label_entity": "Sous-catégorie",
+            "name_entity": "Sous-catégorie",
+            "plural_entity": "Sous-catégorie",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_pays": {
+            "label_entity": "Pays",
+            "name_entity": "Pays",
+            "plural_entity": "Pays",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_region": {
+            "label_entity": "Région",
+            "name_entity": "Région",
+            "plural_entity": "Région",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_societe": {
+            "label_entity": "Société",
+            "name_entity": "Société",
+            "plural_entity": "Société",
+            "id_entity": "ID",
+            "f_nom": "Nom",
+            "r_sites": "Sites"
+        },
+        "e_site": {
+            "label_entity": "Site",
+            "name_entity": "Site",
+            "plural_entity": "Site",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_annonce": {
+            "label_entity": "Annonce",
+            "name_entity": "Annonce",
+            "plural_entity": "Annonce",
+            "id_entity": "ID",
+            "r_categorie": "Catégorie",
+            "r_sous_categorie": "Sous-catégorie",
+            "f_type_d_annonce": "Type d'annonce",
+            "f_nom": "Nom",
+            "f_description": "Description",
+            "f_prix": "Prix",
+            "f_photo_1": "Photo 1",
+            "f_photo_2": "Photo 2",
+            "f_photo_3": "Photo 3",
+            "f_document_1": "Document 1",
+            "f_document_2": "Document 2",
+            "f_document_3": "Document 3",
+            "r_pays": "Pays",
+            "r_region": "Région",
+            "r_societe": "Société",
+            "r_site": "Site",
+            "f_adresse": "Adresse",
+            "r_contact": "Contact",
+            "f_date_expiration_prevue": "Date expiration prévue",
+            "f_fournisseur": "Fournisseur",
+            "r_history_statut": "History Statut",
+            "r_statut": "Statut",
+            "s_statut": "Statut",
+            "last": "Last ads",
+            "me" : "My ads",
+            "find" : "Find your equipment here",
+            "find_last": "publish on our app",
+            "search": "Find something particular",
+            "new": "Place an ad",
+            "records_found": "Ads found",
+            "chart1": "Announces published per site",
+            "chart2": "Announces published per month"
+        },
+        "e_history_e_annonce_s_statut": {
+            "label_entity": "History annonce statut",
+            "name_entity": "History annonce statut",
+            "plural_entity": "History annonce statut",
+            "id_entity": "ID",
+            "r_statut": "Statut",
+            "f_comment": "Comment",
+            "as_r_history_e_annonce_s_statut": "History annonce statut"
+        },
+        "e_tableau_de_bord": {
+            "label_entity": "Tableau de bord",
+            "name_entity": "Tableau de bord",
+            "plural_entity": "Tableau de bord",
+            "id_entity": "ID"
+        }
+    },
+    "synchro": {
+        "title": "Synchronisation",
+        "config": {
+            "title": "Configuration"
+        },
+        "process": {
+            "title": "Synchronisation",
+            "synchronize": "Synchronise",
+            "dumped": "Data dump generated",
+            "no_credentials": "No Synchro credentials found",
+            "connection_failed": "Impossible to connect with API."
+        }
+    },
+    "global_component": {
+        "local_file_storage": {
+            "filename": "Filename",
+            "wait_upload": "Uploading... Please wait.",
+            "required_file": "Some file / image upload fields are required, please fill them."
+        },
+        "contact_form": {
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "email": "Email",
+            "title": "Title",
+            "content": "Content"
+        },
+        "agenda": {
+            "menu": "Agenda",
+            "add_event": "Add new event",
+            "no_category": "No category",
+            "pending_event": "Pending event(s)",
+            "startHour": "Start hour",
+            "endHour": "End hour"
+        },
+        "print": {
+            "action": "Print"
+        }
+    },
+    "component": {
+        "c_db_tool": {
+            "label_component": "DB Tool"
+        },
+        "c_access_tool": {
+            "label_component": "Access file"
+        },
+        "c_import_export": {
+            "label_component": "Import / Export"
+        },
+        "c_access_settings_role": {
+            "label_component": "Role access"
+        },
+        "c_access_settings_group": {
+            "label_component": "Group access"
+        },
+        "c_access_settings_api": {
+            "label_component": "API access"
+        },
+        "status": {
+            "error": {
+                "illegal_status": "This status is not valid.",
+                "action_error": "One or more actions couldn't be executed. Verify that notifications are enabled or that you have a correct mail configuration."
+            },
+            "next_status": "Next status",
+            "available_status": "Available status",
+            "children": "Next statuses",
+            "insert_variable": "Insert variable...",
+            "choose_from_user": "Choose a user",
+            "choose_from_group": "Choose a group",
+            "choose_from_field": "Choose a field",
+            "choose_from_phone_field": "Choose a field with type email",
+            "choose_user_target": "Choose field related to user",
+            "notification_targets": "Notification targets",
+            "no_status_field": "There is no entity with a status component. Pease select an entity, create a status component and this page will allow you to configure it."
+        },
+        "c_address_1309": {
+            "search": "Enter an address",
+            "label_component": "Adresse",
+            "name_component": "Adresse",
+            "plural_component": "Adresse",
+            "id_component": "ID",
+            "f_c_address_housenumber": "Street number",
+            "f_c_address_street": "Street name",
+            "f_c_address_complement1": "Street complement",
+            "f_c_address_postcode": "Zipcode",
+            "f_c_address_city": "City",
+            "f_c_address_country": "Country",
+            "f_c_address_lat": "Latitude",
+            "f_c_address_lon": "Longitude",
+            "f_c_address_label": "Label"
+        },
+        "c_address_settings": {
+            "label_component": "Addresses settings",
+            "position": "Maps position",
+            "top": "Top",
+            "right": "Right",
+            "bottom": "Bottom",
+            "left": "Left",
+            "distance": "Display distance",
+            "settings": "Settings",
+            "enableMaps": "Enable Maps",
+            "entity": "Entity",
+            "zoomBar": "Display zoom bar",
+            "navigation": "Enable navigation",
+            "mousePosition": "Display mouse coordinate",
+            "addressNotValid": "Not valid address",
+            "info_c_address_maps": "To have a valid map, please use the field below to enter the address"
+        },
+        "c_documents_1310": {
+            "label_component": "Documents",
+            "name_component": "Documents",
+            "plural_component": "Documents"
+        }
+    },
+    "defaults": {
+        "widgets": {
+            "lastrecords": {
+                "label": "last records"
+            },
+            "stats": {
+                "more_info": "More info"
+            }
+        },
+        "createdAt": "Creation date"
+    },
+    "error": {
+        "404": {
+            "title": "We could not find what you were looking for.",
+            "title2": "Page not found.",
+            "textone": "Le lien que vous avez suivi peut être incorrect ou la page peut avoir été supprimée."
+        },
+        "title": "Error",
+        "contactAdmin": "Merci de contacter votre administrateur.",
+        "meanwhile": "Entre temps, vous pouvez ",
+        "goHome": "If you wish to return to the homepage, click here",
+        "goBack": "If you want to go back, click here",
+        "goBackText": "Go back",
+        "home": "Home",
+        "valueTooLong": "The given value is too long (>30)."
+    }
+}

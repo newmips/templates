@@ -1,0 +1,110 @@
+﻿create project Remplacement
+create application Remplacement
+
+//module Extranet
+
+add module Extranet
+
+//module Paramétrage
+
+add module Paramétrage
+
+//entity Etablissement
+
+add entity Etablissement
+set icon building-o
+add field Nom
+set field Nom required
+add field Service
+set field Service required
+
+//entity service
+
+add entity Compétence
+set icon id-card-o
+add field Service
+set field Service required
+add field Etablissement
+set field Etablissement required
+
+//entity Poste
+add entity Poste
+set icon suitcase
+add field Nom
+set field Nom required
+
+//entity Motif
+add entity Motif
+set icon comment
+add field Nom
+set field Nom required
+
+
+//component Agenda
+select module Home
+add component agenda
+
+//entité Candidat
+
+add entity Candidat
+set icon user
+add field Civilité with type radio and values Madame, Monsieur
+set field Civilité required
+add Field Nom
+set field Nom required
+add field Prénom
+set field Prénom required
+add field Service actuel related to Etablissement using Nom, Service  
+set field Service actuel required
+add field Poste related to Poste using Nom
+add field Mail with type mail
+set field Mail required
+add field Telephone with type phone
+add field Compétences related to many Compétence using Service
+entity Candidat has many Disponibilité called Disponibilités
+
+//entité Disponibilté
+
+select entity Disponibilité
+add field Date de début with type date
+add field Date de fin with type date
+add field Heure de début with type time
+add field Heure de fin with type time
+add field Nombres d'heures with type decimal
+
+
+//entité Demande
+
+add entity Demande
+set icon wpforms
+add field Titre
+set field Titre required
+add field Motif related to Motif using Nom
+set field Motif required
+add component status
+add field Service concerné related to Etablissement using Service
+set field Service concerné required
+add field Poste related to Poste using Nom
+set field Poste required
+add field Date début with type date
+set field Date début required
+add field Date fin with type date
+add field Horaire début with type time
+set field Horaire début required
+add field Horaire fin with type time
+set field Horaire fin required
+add field Mode Diffusion with type enum and values Express, Normal
+set field Mode Diffusion required
+add field Nombre d'heures with type decimal
+add field Description with type text
+Entity Demande has many preset Candidat using Nom, Prénom
+
+// has many preset Candidat vers demande
+
+select entity Candidat
+entity Candidat has many preset Demande using Titre called Offre
+
+add widget stat on entity Demande
+add widget stat on entity Candidat
+
+

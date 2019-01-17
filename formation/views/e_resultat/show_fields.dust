@@ -1,0 +1,141 @@
+<div id="fields" class="row">
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_enquete" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_enquete">
+                        {@__ key="entity.e_resultat.r_enquete"/} </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.r_enquete" /}' name="r_enquete" value="{r_enquete.f_nom|string}" type="text" readonly="">
+                </div>
+            </div>
+            <div data-field="f_participant" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_participant">
+                        {@__ key="entity.e_resultat.r_participant"/} </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.r_participant" /}' name="r_participant" value="{r_participant.f_login|string}" type="text" readonly="">
+                </div>
+            </div>
+            <div data-field="f_date_soumission" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_date_soumission">
+                        {@__ key="entity.e_resultat.f_date_soumission"/}&nbsp;
+                        {@inline_help field="f_date_soumission"}
+                        <i data-field="f_date_soumission" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
+                        </div>
+                        <input class="form-control input datetimepicker-toconvert" placeholder='{@__ key="entity.e_resultat.f_date_soumission" /}' value="{f_date_soumission}" type="text" readonly="">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_formulaire" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_formulaire">
+                        {@__ key="entity.e_resultat.r_formulaire"/} </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.r_formulaire" /}' name="r_formulaire" value="{r_formulaire.f_nom|string}" type="text" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_question" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="r_question">
+                        {@__ key="entity.e_resultat.r_question"/} </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.r_question" /}' name="r_question" value="{r_question.f_label|string}" type="text" readonly="">
+                </div>
+            </div>
+            <div data-field="f_type_de_question" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_type_de_question">
+                        {@__ key="entity.e_resultat.f_type_de_question"/}&nbsp;
+                        {@inline_help field="f_type_de_question"}
+                        <i data-field="f_type_de_question" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_type_de_question}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.f_type_de_question" /}' name="f_type_de_question" type="text" readonly="">
+                    {/f_type_de_question}
+                    {#enum_radio.e_resultat.f_type_de_question}
+                    {@eq key=f_type_de_question value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.f_type_de_question" /}' name="f_type_de_question" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_resultat.f_type_de_question}
+                </div>
+            </div>
+            <div data-field="f_reponse" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_reponse">
+                        {@__ key="entity.e_resultat.f_reponse"/}&nbsp;
+                        {@inline_help field="f_reponse"}
+                        <i data-field="f_reponse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.f_reponse" /}' name="f_reponse" value="{f_reponse}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_texte_de_reponse" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_texte_de_reponse">
+                        {@__ key="entity.e_resultat.f_texte_de_reponse"/}&nbsp;
+                        {@inline_help field="f_texte_de_reponse"}
+                        <i data-field="f_texte_de_reponse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_resultat.f_texte_de_reponse" /}' name="f_texte_de_reponse" value="{f_texte_de_reponse}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+            <div data-field="f_exact" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_exact">
+                        {@__ key="entity.e_resultat.f_exact"/}&nbsp;
+                        {@inline_help field="f_exact"}
+                        <i data-field="f_exact" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_exact} <input class="form-control input" name="f_exact" value="{f_exact}" type="checkbox" checked="" disabled="">
+                    {:else} <input class="form-control input" name="f_exact" value="{f_exact}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="actions">
+    <form action="/resultat/delete" method="post">
+        <div class="quicklinks">
+            <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                {@__ key="button.return"/}</a>
+            {@actionAccess entity="resultat" action="delete"}
+            <button class="btn btn-danger btn-confirm">
+                <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                <span>{@__ key="button.delete"/}</span>
+            </button>
+            <input name="id" type="hidden" value="{e_resultat.id}" class="form-control">
+            {/actionAccess}
+            {@actionAccess entity="resultat" action="update"}
+            <a href="/resultat/update_form?id={e_resultat.id}" class="btn btn-warning">
+                <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update"/}</span>
+            </a>
+            {/actionAccess}
+            {^hideButton}
+            {@actionAccess entity="resultat" action="create"}
+            <a href="/resultat/create_form" class="btn btn-success">
+                <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.create"/}</span>
+            </a>
+            {/actionAccess}
+            {@actionAccess entity="resultat" action="read"}
+            <a href="/resultat/list" type="submit" class="btn btn-primary">
+                <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.list"/}</span>
+            </a>
+            {/actionAccess}
+            {/hideButton}
+        </div>
+    </form>
+</div>

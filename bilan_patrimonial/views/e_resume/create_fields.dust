@@ -1,0 +1,49 @@
+<h4 class="page-header">
+    Pour nous résumer
+</h4>
+<div id="fields" class="row">
+    <div data-field="f_preoccupations" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <h4 for="f_preoccupations">
+                {@__ key="entity.e_resume.f_preoccupations"/}&nbsp;
+                {@inline_help field="f_preoccupations"}
+                <i data-field="f_preoccupations" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </h4>
+            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_resume.f_preoccupations" /}' name="f_preoccupations" id="f_preoccupations_textareaid" type="text">{f_preoccupations|s}</textarea>
+        </div>
+    </div>
+    <div data-field="f_horizons" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <h4 for="f_horizons">
+                {@__ key="entity.e_resume.f_horizons"/}&nbsp;
+                {@inline_help field="f_horizons"}
+                <i data-field="f_horizons" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </h4>
+            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_resume.f_horizons" /}' name="f_horizons" id="f_horizons_textareaid" type="text">{f_horizons|s}</textarea>
+        </div>
+    </div>
+    <div data-field="f_moyens" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <h4 for="f_moyens">
+                {@__ key="entity.e_resume.f_moyens"/}&nbsp;
+                {@inline_help field="f_moyens"}
+                <i data-field="f_moyens" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </h4>
+            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_resume.f_moyens" /}' name="f_moyens" id="f_moyens_textareaid" type="text">{f_moyens|s}</textarea>
+        </div>
+    </div>
+    <div data-field="f_souhaits_particuliers" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <h4 for="f_souhaits_particuliers">
+                {@__ key="entity.e_resume.f_souhaits_particuliers"/}&nbsp;
+                {@inline_help field="f_souhaits_particuliers"}
+                <i data-field="f_souhaits_particuliers" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </h4>
+            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_resume.f_souhaits_particuliers" /}' name="f_souhaits_particuliers" id="f_souhaits_particuliers_textareaid" type="text">{f_souhaits_particuliers|s}</textarea>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,601 @@
+{
+    "app": {
+        "name": "Budget associations"
+    },
+    "notification": {
+        "deleteAll": "Supprimer toutes les notifications",
+        "icon": {
+            "choose": "Choisir une icône"
+        }
+    },
+    "login": {
+        "log_in": "Log in",
+        "reset_password": {
+            "title": "Mot de passe oublié",
+            "success": "Votre mot de passe a bien été reinitialisé.",
+            "successMail": "Un email vous permettant de réinitialiser votre mot de passe vous a bien été envoyé.",
+            "userNotExist": "Erreur, cet utilisateur n'existe pas.",
+            "cannotFindToken": "Erreur, impossible de retrouver votre token de réinitialisation."
+        },
+        "first_connection": {
+            "title": "Première connexion",
+            "success": "Mise à jour effectuée, vous pouvez désormais vous connecter avec vos identifiants.",
+            "userNotExist": "Erreur, cet utilisateur n'existe pas ou a déjà été activé.",
+            "alreadyHavePassword": "Opération impossible, cet utilisateur possède déjà un mot de passe.",
+            "passwordNotMatch": "Désolé, les mots de passe ne correspondent pas. Le mot de passe doit faire minimum 4 caractères."
+        },
+        "authentication": "Connexion",
+        "login": "Login",
+        "password": "Mot de passe",
+        "minimalLength": "(4 caractères minimum)",
+        "confirm_password": "Confirmation du mot de passe",
+        "mail": "Mail",
+        "remember_me": "Se souvenir de moi",
+        "submit": "Soumettre"
+    },
+    "settings": {
+        "title": "Gestion des accès",
+        "tool_menu": "Fichier configuration des accès",
+        "tool_success": "Le fichier de configuration des accès a bien été importé.",
+        "tool_title": "Importer / Exporter la configuration des accès",
+        "tool_export": "Exporter la configuration des accès",
+        "tool_import": "Importer une configuration d'accès",
+        "import_file_name": "Fichier access.json:",
+        "tool_warning": "Attention, le fichier doit etre de la même structure que le access.json actuel ! Sinon l'application ne sera plus utilisable.",
+        "auth_component": {
+            "access_managment": "Gestion des accès par groupe",
+            "action_managment": "Gestion des actions par rôle",
+            "moduleList": "Modules",
+            "entityList": "Entités",
+            "grouplist": "Groupes:",
+            "rolelist": "Rôles:",
+            "entitylist": "Entités:",
+            "group": "Groupe",
+            "role": "Rôle",
+            "api_status": "Status de l'API",
+            "api_doc": "Documentation de l'API",
+            "action": {
+                "read": "Afficher",
+                "create": "Créer",
+                "update": "Modifier",
+                "delete": "Supprimer"
+            },
+            "no_access_group_module": "Votre groupe n'a pas accès à ce module.",
+            "no_access_group_entity": "Votre groupe n'a pas accès à cette entité.",
+            "no_access_role": "Votre rôle n'a pas accès à cette action sur cette entité."
+        },
+        "db_tool": {
+            "title": "Outil BDD",
+            "export_title": "Export",
+            "import_title": "Import",
+            "export_action": "Exporter",
+            "all_db": "Toute la base de donnée",
+            "import_action": "Importer",
+            "import_file": "Fichier SQL",
+            "import_success": "L'import a bien été effectué.",
+            "file_needed": "Merci d'ajouter le fichier d'import.",
+            "wrong_db_pwd": "Mot de passe incorrect.",
+            "modal_password_title": "Confirmation du mot de passe",
+            "modal_password_content": "Merci de confirmer le mot de passe de la base de données:",
+            "wrong_dialect": "Désolé, les outils de base de données ne fonctionne qu'avec MySQL pour le moment.",
+            "no_choice": "Merci de choisir ce que vous souhaitez exporter."
+        },
+        "import_export": {
+            "title": "Import / Export"
+        },
+        "legend": "Modifier vos paramètres",
+        "lang": "Langue",
+        "login": "Login",
+        "email": "Email",
+        "firstname": "Prénom",
+        "lastname": "Nom",
+        "phone": "Téléphone"
+    },
+    "navbar": {
+        "about": "A propos",
+        "help": "Aide",
+        "support": "Support"
+    },
+    "select": {
+        "default": "-- Choisir --"
+    },
+    "module": {
+        "home": "Accueil",
+        "module": "Module",
+        "administration": "Administration",
+        "workspace": "Espace de travail",
+        "m_home": "Accueil",
+        "m_administration": "Administration",
+        "m_parametres": "Paramètres"
+    },
+    "role": {
+        "administrator": "Administrateur",
+        "developer": "Développeur"
+    },
+    "button": {
+        "profile": "Profil",
+        "disconnect": "Se déconnecter",
+        "show": "Afficher",
+        "update": "Modifier",
+        "delete": "Supprimer",
+        "create": "Créer",
+        "list": "Lister",
+        "add": "Ajouter",
+        "remove": "Retirer",
+        "save": "Sauvegarder",
+        "preview": "Prévisualiser",
+        "record": "Enregistrer",
+        "execute": "Exécuter",
+        "settings": "Paramètres",
+        "download": "Télécharger",
+        "search": "Rechercher",
+        "send": "Envoyer",
+        "validation": "Valider",
+        "previous": "Précédent",
+        "next": "Suivant",
+        "close": "Fermer",
+        "generate": "Générer",
+        "help": "Aide",
+        "cancel": "Annuler",
+        "return": "Retour",
+        "delete_confirm": "Etes-vous sûr de vouloir supprimer cet enregistrement ?"
+    },
+    "operation": {
+        "show": "Afficher",
+        "update": "Modifier",
+        "create": "Créer",
+        "delete": "Supprimer",
+        "list": "Lister",
+        "add": "Ajouter"
+    },
+    "message": {
+        "create": {
+            "success": "Succès ! L'enregistrement a été créé en base de données.",
+            "failure": "Erreur ! L'enregistrement n'a pas été créé en base de données. Veuillez contacter votre administrateur."
+        },
+        "update": {
+            "success": "Succès ! L'enregistrement a été modifié en base de données.",
+            "failure": "Erreur ! L'enregistrement n'a pas été modifié en base de données. Veuillez contacter votre administrateur."
+        },
+        "delete": {
+            "success": "Succès ! L'enregistrement a été supprimé en base de données.",
+            "failure": "Erreur ! L'enregistrement n'a pas été supprimé en base de données. Veuillez contacter votre administrateur.",
+            "question": "Êtes-vous sûr de vouloir supprimer cette entité ?"
+        },
+        "empty": "Aucune donnée à afficher",
+        "unique": "Ce champ doit être unique:"
+    },
+    "entity": {
+        "e_user": {
+            "label_entity": "Utilisateur",
+            "name_entity": "Utilisateur",
+            "plural_entity": "Utilisateur",
+            "id_entity": "ID",
+            "f_login": "Identifiant",
+            "f_password": "password",
+            "f_email": "Email",
+            "f_token_password_reset": "token_password_reset",
+            "f_enabled": "enabled",
+            "r_role": "Rôle",
+            "r_group": "Groupe",
+            "r_notification": "notification",
+            "f_nom": "Nom",
+            "f_prenom": "Prénom",
+            "r_regie": "Régie"
+        },
+        "e_role": {
+            "label_entity": "Rôle",
+            "name_entity": "Rôle",
+            "plural_entity": "Rôle",
+            "id_entity": "ID",
+            "f_label": "Libellé",
+            "r_user": "user"
+        },
+        "e_group": {
+            "label_entity": "Groupe",
+            "name_entity": "Groupe",
+            "plural_entity": "Groupe",
+            "id_entity": "ID",
+            "f_label": "Libellé",
+            "r_user": "user"
+        },
+        "e_api_credentials": {
+            "label_entity": "Identifiant d'API",
+            "name_entity": "Identifiant d'API",
+            "plural_entity": "Identifiant d'API",
+            "id_entity": "ID",
+            "f_client_name": "Nom client",
+            "f_client_key": "Client Key",
+            "f_client_secret": "Client Secret",
+            "f_token": "Token",
+            "f_token_timeout_tmsp": "Token timeout TMSP",
+            "r_role": "Rôle",
+            "r_group": "Groupe"
+        },
+        "e_synchronization": {
+            "label_entity": "Synchronization",
+            "name_entity": "Synchronization",
+            "plural_entity": "Synchronization",
+            "id_entity": "ID",
+            "f_journal_backup_file": "Journal backup file",
+            "r_api_credentials": "API credentials"
+        },
+        "e_synchro_credentials": {
+            "label_entity": "Synchro credentials",
+            "name_entity": "Synchro credentials",
+            "plural_entity": "Synchro credentials",
+            "id_entity": "ID",
+            "f_cloud_host": "Cloud host",
+            "f_client_key": "Client key",
+            "f_client_secret": "Client secret"
+        },
+        "e_status": {
+            "label_entity": "Statut",
+            "name_entity": "Statut",
+            "plural_entity": "Statuts",
+            "id_entity": "ID",
+            "f_entity": "Entité",
+            "f_field": "Champ",
+            "f_name": "Nom",
+            "f_color": "Couleur",
+            "r_accepted_group": "Groupes acceptés (Aucun groupe signifie accepté pour tout le monde)",
+            "f_position": "Position",
+            "f_default": "Est le statut par défaut",
+            "f_comment": "Commentaire",
+            "r_children": "Children",
+            "r_translations": "Translations",
+            "r_actions": "Actions",
+            "as_r_children": "Statuts suivants",
+            "modal_title": "Commentaire",
+            "apply_default": "Appliquer ce statut aux entités sans statut"
+        },
+        "e_translation": {
+            "label_entity": "Traduction",
+            "name_entity": "Traduction",
+            "plural_entity": "Traductions",
+            "id_entity": "ID",
+            "f_language": "Langage",
+            "f_value": "Valeur",
+            "as_r_translations": "Traductions"
+        },
+        "e_media": {
+            "label_entity": "Média",
+            "name_entity": "Média",
+            "plural_entity": "Média",
+            "id_entity": "ID",
+            "f_type": "Type",
+            "f_name": "Nom",
+            "f_target_entity": "Entité ciblé",
+            "r_media_mail": "Media Mail",
+            "r_media_notification": "Media Notification",
+            "r_media_sms": "Media SMS",
+            "as_r_media": "Média",
+            "f_title": "Titre",
+            "f_description": "Description",
+            "f_icon": "Icône",
+            "f_color": "Couleur"
+        },
+        "e_action": {
+            "label_entity": "Action",
+            "name_entity": "Action",
+            "plural_entity": "Action",
+            "id_entity": "ID",
+            "r_media": "Media",
+            "f_order": "Ordre",
+            "f_execution": "Exécution"
+        },
+        "e_media_mail": {
+            "label_entity": "Media Mail",
+            "name_entity": "Media Mail",
+            "plural_entity": "Media Mail",
+            "id_entity": "ID",
+            "f_to": "Destinataire",
+            "f_cc": "Cc",
+            "f_cci": "Cci",
+            "f_from": "Expéditeur",
+            "f_subject": "Sujet",
+            "f_content": "Contenu"
+        },
+        "e_media_notification": {
+            "label_entity": "Média Notification",
+            "name_entity": "Média Notification",
+            "plural_entity": "Média Notification",
+            "id_entity": "ID",
+            "f_title": "Titre",
+            "f_description": "Description",
+            "f_icon": "Icône",
+            "f_color": "Couleur",
+            "f_targets": "targets",
+            "as_r_media_notification": "Média Notification",
+            "r_target_groups": "Groupes ciblés",
+            "r_target_users": "Utilisateurs ciblés"
+        },
+        "e_media_sms": {
+            "label_entity": "Media SMS",
+            "name_entity": "Media SMS",
+            "plural_entity": "Media SMS",
+            "id_entity": "ID",
+            "f_message": "Message",
+            "f_phone_numbers": "Phone numbers"
+        },
+        "e_notification": {
+            "label_entity": "Notification",
+            "name_entity": "Notification",
+            "plural_entity": "Notification",
+            "id_entity": "ID",
+            "f_title": "Titre",
+            "f_description": "Description",
+            "f_url": "URL",
+            "f_color": "Couleur",
+            "f_icon": "Icône",
+            "r_user": "user",
+            "as_r_notification": "Notification"
+        },
+        "e_inline_help": {
+            "label_entity": "Aide en ligne",
+            "name_entity": "Aide en ligne",
+            "plural_entity": "Aides en ligne",
+            "id_entity": "ID",
+            "f_entity": "Entité",
+            "f_field": "Champ",
+            "f_content": "Contenu"
+        },
+        "e_operation": {
+            "label_entity": "Opération",
+            "name_entity": "Opération",
+            "plural_entity": "Opération",
+            "id_entity": "ID",
+            "f_code": "Code",
+            "f_libelle": "Libellé"
+        },
+        "e_moyen_de_paiement": {
+            "label_entity": "Moyen de paiement",
+            "name_entity": "Moyen de paiement",
+            "plural_entity": "Moyen de paiement",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_ligne_de_credit": {
+            "label_entity": "Ligne de crédit",
+            "name_entity": "Ligne de crédit",
+            "plural_entity": "Ligne de crédit",
+            "id_entity": "ID",
+            "f_code": "Code",
+            "f_libelle": "Libellé",
+            "r_operation": "Opération",
+            "r_moyen_de_paiement": "Moyen de paiement"
+        },
+        "e_secteur_analytique": {
+            "label_entity": "Secteur analytique",
+            "name_entity": "Secteur analytique",
+            "plural_entity": "Secteur analytique",
+            "id_entity": "ID",
+            "f_code": "Code",
+            "f_libelle": "Libellé"
+        },
+        "e_activite": {
+            "label_entity": "Activité",
+            "name_entity": "Activité",
+            "plural_entity": "Activité",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_programme": {
+            "label_entity": "Programme",
+            "name_entity": "Programme",
+            "plural_entity": "Programme",
+            "id_entity": "ID",
+            "f_code": "Code",
+            "f_libelle": "Libellé"
+        },
+        "e_banque_organisme": {
+            "label_entity": "Banque Organisme",
+            "name_entity": "Banque Organisme",
+            "plural_entity": "Banque Organisme",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_mois": {
+            "label_entity": "Mois",
+            "name_entity": "Mois",
+            "plural_entity": "Mois",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_periode": {
+            "label_entity": "Période",
+            "name_entity": "Période",
+            "plural_entity": "Période",
+            "id_entity": "ID",
+            "f_nom": "Nom"
+        },
+        "e_regie": {
+            "label_entity": "Régie",
+            "name_entity": "Régie",
+            "plural_entity": "Régie",
+            "id_entity": "ID",
+            "f_nom": "Nom",
+            "f_nom_regisseur": "Nom régisseur",
+            "f_prenom_regisseur": "Prénom régisseur",
+            "f_adresse_1": "Adresse 1",
+            "f_adresse_2": "Adresse 2",
+            "f_code_postal": "Code postal",
+            "f_ville": "Ville",
+            "f_telephone": "Téléphone",
+            "f_numero_regie": "Numéro Régie",
+            "f_numero_debiteur": "Numéro Débiteur"
+        },
+        "e_recette": {
+            "label_entity": "Recette",
+            "name_entity": "Recette",
+            "plural_entity": "Recette",
+            "id_entity": "ID",
+            "f_date": "Date",
+            "r_usager": "Usager",
+            "f_numero_de_recu": "Numéro de reçu",
+            "r_ligne_de_credit": "Ligne de crédit",
+            "r_secteur_analytique": "Secteur analytique",
+            "r_activite": "Activité",
+            "r_moyen_de_paiement": "Moyen de paiement",
+            "f_montant": "Montant",
+            "r_banque_organisme": "Banque Organisme",
+            "f_numero": "Numéro",
+            "f_remarque": "Remarque",
+            "r_regie": "Régie",
+            "f_nom_usager": "Nom",
+            "f_prenom_usager": "Prénom"
+        },
+        "e_etat_de_caisse": {
+            "label_entity": "Etat de caisse",
+            "name_entity": "Etat de caisse",
+            "plural_entity": "Etat de caisse",
+            "id_entity": "ID",
+            "r_regie": "Régie",
+            "r_mois": "Mois",
+            "f_annee": "Année",
+            "f_debut_de_periode": "Début de période",
+            "f_fin_de_periode": "Fin de période",
+            "r_especes": "Espèces",
+            "r_recap_especes": "Récap. espèces",
+            "r_recap_cheques": "Récap. chèques",
+            "r_recap_ancv": "Récap. ANCV",
+            "r_recap_cesu": "Récap. CESU",
+            "total_especes": "Total espèces",
+            "total_cheques": "Total chèques",
+            "total_cesu": "Total CESU",
+            "total_ancv": "Total ANCV"
+
+        },
+        "e_especes": {
+            "label_entity": "Espèces",
+            "name_entity": "Espèces",
+            "plural_entity": "Espèces",
+            "id_entity": "ID",
+            "f_total_espece": "Total espèce",
+            "f_500_euros": "500 euros",
+            "f_200_euros": "200 euros",
+            "f_100_euros": "100 euros",
+            "f_50_euros": "50 euros",
+            "f_20_euros": "20 euros",
+            "f_10_euros": "10 euros",
+            "f_5_euros": "5 euros",
+            "f_2_euros": "2 euros",
+            "f_1_euro": "1 euro",
+            "f_50_centimes": "50 centimes",
+            "f_20_centimes": "20 centimes",
+            "f_10_centimes": "10 centimes",
+            "f_5_centimes": "5 centimes",
+            "f_2_centimes": "2 centimes",
+            "f_1_centime": "1 centime"
+        }
+    },
+    "synchro": {
+        "title": "Synchronisation",
+        "configure": "Configurer données de chargement",
+        "list": "Lister les synchronisations",
+        "config": {
+            "title": "Configuration"
+        },
+        "process": {
+            "title": "Synchronisation",
+            "synchronize": "Synchroniser",
+            "dumped": "Données de chargement généré",
+            "no_credentials": "Aucun identifiant synchro trouvé",
+            "connection_failed": "Impossible de se connecter a l'API"
+        }
+    },
+    "global_component": {
+        "local_file_storage": {
+            "filename": "Nom du fichier",
+            "wait_upload": "Des fichiers sont en cours de téléchargement, merci de bien vouloir patienter.",
+            "required_file": "Des champs fichiers / images sont obligatoires, merci de les renseigner."
+        },
+        "contact_form": {
+            "firstname": "Prénom",
+            "lastname": "Nom",
+            "email": "Email",
+            "title": "Titre",
+            "content": "Contenu"
+        },
+        "agenda": {
+            "menu": "Agenda",
+            "add_event": "Ajouter un événement",
+            "no_category": "Pas de catégorie",
+            "pending_event": "Événement(s) en attente",
+            "startHour": "Heure de début",
+            "endHour": "Heure de fin"
+        },
+        "print": {
+            "action": "Imprimer"
+        }
+    },
+    "component": {
+        "c_db_tool": {
+            "label_component": "Outil BDD"
+        },
+        "c_access_tool": {
+            "label_component": "Fichier d'accès"
+        },
+        "c_import_export": {
+            "label_component": "Import / Export"
+        },
+        "c_access_settings_role": {
+            "label_component": "Accès des rôles"
+        },
+        "c_access_settings_group": {
+            "label_component": "Accès des groupes"
+        },
+        "c_access_settings_api": {
+            "label_component": "Accès à l'API"
+        },
+        "status": {
+            "error": {
+                "illegal_status": "Ce statut n'est pas valide.",
+                "action_error": "Une ou plusieurs actions n'ont pas pu être éxecutée. Verifiez que les notifications sont activées et verifiez votre configuration mail."
+            },
+            "next_status": "Statut suivant",
+            "available_status": "Statuts disponibles",
+            "children": "Statuts suivants",
+            "insert_variable": "Inserer une variable...",
+            "choose_from_user": "Sélectionner un utilisateur",
+            "choose_from_group": "Sélectionner un groupe",
+            "choose_from_field": "Sélectionner un champ",
+            "choose_from_phone_field": "Sélectionner un champ de type téléphone",
+            "choose_from_email_field": "Sélectionner un champ de type email",
+            "choose_user_target": "Sélectionner un champ lié à un utilisateur",
+            "notification_targets": "Cibles de la notification",
+            "no_status_field": "Aucune entité ne possède de composant Statut. Vous pouvez utiliser le générateur afin d'en ajouter un et ainsi le configurer ici."
+        },
+        "c_etat_recette_1570": {
+            "label_component": "Etat recette",
+            "name_component": "Etat recette",
+            "plural_component": "Etat recette"
+        }
+    },
+    "defaults": {
+        "widgets": {
+            "lastrecords": {
+                "label": "derniers enregistrements"
+            },
+            "stats": {
+                "more_info": "Plus d'infos"
+            }
+        },
+        "createdAt": "Date de création"
+    },
+    "error": {
+        "404": {
+            "title": "Nous n’avons pas pu trouver ce que vous souhaitiez.",
+            "title2": "Page introuvable.",
+            "textone": "Le lien que vous avez suivi peut être incorrect ou la page peut avoir été supprimée."
+        },
+        "title": "Erreur",
+        "contactAdmin": "Merci de contacter votre administrateur.",
+        "meanwhile": "Entre temps, vous pouvez ",
+        "goHome": "Si vous souhaitez retourner à la page d'accueil, cliquez-ici",
+        "goBack": "Si vous souhaitez revenir en arrière, cliquez-ici",
+        "goBackText": "Revenir en arrière",
+        "home": "Accueil",
+        "valueTooLong": "La valeur renseignée dépasse la longueur maximum autorisée(>30)."
+    }
+}

@@ -1,0 +1,63 @@
+<div id="fields" class="dontbreakitplz row">
+
+
+    <div data-field="f_date_de_reservation" class="fieldLineHeight col-xs-12" style="">
+        <div class="form-group">
+            <label for="f_date_de_reservation">
+                {@__ key="entity.e_reservation_de_salle.f_date_de_reservation"/}&nbsp;
+                {@inline_help field="f_date_de_reservation"}
+                <i data-field="f_date_de_reservation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_reservation_de_salle.f_date_de_reservation" /}' value="{f_date_de_reservation}" type="text" readonly="">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_heure_de_reservation" class="fieldLineHeight col-xs-12" style="">
+        <div class="form-group">
+            <label for="f_heure_de_reservation">
+                {@__ key="entity.e_reservation_de_salle.f_heure_de_reservation"/}&nbsp;
+                {@inline_help field="f_heure_de_reservation"}
+                <i data-field="f_heure_de_reservation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="bootstrap-timepicker">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_reservation_de_salle.f_heure_de_reservation" /}' value="{f_heure_de_reservation|time}" type="text" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-field="f_duree" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_duree">
+                {@__ key="entity.e_reservation_de_salle.f_duree"/}&nbsp;
+                {@inline_help field="f_duree"}
+                <i data-field="f_duree" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_reservation_de_salle.f_duree" /}' name="f_duree_print" value="{f_duree}" type="text" maxlength="255" readonly="">
+        </div>
+    </div>
+    <div data-field="f_societe" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_societe">
+                {@__ key="entity.e_reservation_de_salle.r_societe"/} </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_reservation_de_salle.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
+        </div>
+    </div>
+    <div data-field="f_espace" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_espace">
+                {@__ key="entity.e_reservation_de_salle.r_espace"/} </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_reservation_de_salle.r_espace" /}' name="r_espace" value="{r_espace.f_reference|string}" type="text" readonly="">
+        </div>
+    </div>
+</div>

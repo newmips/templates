@@ -1,0 +1,172 @@
+<div id="fields" class="dontbreakitplz row">
+    <div data-field="f_modele" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_modele">
+                {@__ key="entity.e_voiture.r_modele"/} </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_voiture.r_modele" /}' name="r_modele" value="{r_modele.f_nom|string}" type="text" readonly="">
+        </div>
+    </div>
+    <div data-field="f_immatriculation" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_immatriculation">
+                {@__ key="entity.e_voiture.f_immatriculation"/}&nbsp;
+                {@inline_help field="f_immatriculation"}
+                <i data-field="f_immatriculation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_voiture.f_immatriculation" /}' name="f_immatriculation_print" value="{f_immatriculation}" type="text" maxlength="255" readonly="">
+        </div>
+    </div>
+    <div data-field="f_hors_service" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_hors_service">
+                {@__ key="entity.e_voiture.f_hors_service"/}&nbsp;
+                {@inline_help field="f_hors_service"}
+                <i data-field="f_hors_service" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            &nbsp;
+            <br>
+            {@ifTrue key=f_hors_service} <input class="form-control input" name="f_hors_service_print" value="{f_hors_service}" type="checkbox" checked="" disabled="">
+            {:else} <input class="form-control input" name="f_hors_service_print" value="{f_hors_service}" type="checkbox" disabled="">
+            {/ifTrue}
+        </div>
+    </div>
+    <div data-field="f_date_achat" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_date_achat">
+                {@__ key="entity.e_voiture.f_date_achat"/}&nbsp;
+                {@inline_help field="f_date_achat"}
+                <i data-field="f_date_achat" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_voiture.f_date_achat" /}' value="{f_date_achat}" type="text" readonly="">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_kilometrage_releve" class="fieldLineHeight col-xs-12" style="">
+        <div class="form-group">
+            <label for="f_kilometrage_releve">
+                {@__ key="entity.e_voiture.f_kilometrage_releve"/}&nbsp;
+                {@inline_help field="f_kilometrage_releve"}
+                <i data-field="f_kilometrage_releve" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{@__ key="entity.e_voiture.f_kilometrage_releve" /}' name="f_kilometrage_releve_print" value="{f_kilometrage_releve}" type="number" max="2147483648" readonly="">
+        </div>
+    </div>
+    <div data-field="f_date_dernier_releve" class="fieldLineHeight col-xs-12" style="">
+        <div class="form-group">
+            <label for="f_date_dernier_releve">
+                {@__ key="entity.e_voiture.f_date_dernier_releve"/}&nbsp;
+                {@inline_help field="f_date_dernier_releve"}
+                <i data-field="f_date_dernier_releve" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_voiture.f_date_dernier_releve" /}' value="{f_date_dernier_releve}" type="text" readonly="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row" style="">
+            <div data-field="f_nombre_de_places" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_nombre_de_places">
+                        {@__ key="entity.e_voiture.f_nombre_de_places"/}&nbsp;
+                        {@inline_help field="f_nombre_de_places"}
+                        <i data-field="f_nombre_de_places" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_voiture.f_nombre_de_places" /}' name="f_nombre_de_places_print" value="{f_nombre_de_places}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+            <div data-field="f_nombre_de_bagages" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_nombre_de_bagages">
+                        {@__ key="entity.e_voiture.f_nombre_de_bagages"/}&nbsp;
+                        {@inline_help field="f_nombre_de_bagages"}
+                        <i data-field="f_nombre_de_bagages" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_voiture.f_nombre_de_bagages" /}' name="f_nombre_de_bagages_print" value="{f_nombre_de_bagages}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_wifi" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_wifi">
+                        {@__ key="entity.e_voiture.f_wifi"/}&nbsp;
+                        {@inline_help field="f_wifi"}
+                        <i data-field="f_wifi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_wifi} <input class="form-control input" name="f_wifi_print" value="{f_wifi}" type="checkbox" checked="" disabled="">
+                    {:else} <input class="form-control input" name="f_wifi_print" value="{f_wifi}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_telephone" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_telephone">
+                        {@__ key="entity.e_voiture.f_telephone"/}&nbsp;
+                        {@inline_help field="f_telephone"}
+                        <i data-field="f_telephone" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_telephone} <input class="form-control input" name="f_telephone_print" value="{f_telephone}" type="checkbox" checked="" disabled="">
+                    {:else} <input class="form-control input" name="f_telephone_print" value="{f_telephone}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_siege_enfant" class="fieldLineHeight col-xs-12" style="">
+                <div class="form-group">
+                    <label for="f_siege_enfant">
+                        {@__ key="entity.e_voiture.f_siege_enfant"/}&nbsp;
+                        {@inline_help field="f_siege_enfant"}
+                        <i data-field="f_siege_enfant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_siege_enfant} <input class="form-control input" name="f_siege_enfant_print" value="{f_siege_enfant}" type="checkbox" checked="" disabled="">
+                    {:else} <input class="form-control input" name="f_siege_enfant_print" value="{f_siege_enfant}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

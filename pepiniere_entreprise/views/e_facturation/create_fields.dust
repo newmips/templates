@@ -1,0 +1,116 @@
+<div id="fields" class="row">
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-12 col-sm-12 col-xs-12 column">
+        <div class="row">
+            <div data-field="f_annee" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_annee" class="required">
+                        {@__ key="entity.e_facturation.f_annee"/}&nbsp;
+                        {@inline_help field="f_annee"}
+                        <i data-field="f_annee" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="form-control select" name="f_annee" required="">
+                        <option value="" selected="">{@__ key="select.default" /}</option>
+                        {#enum_radio.e_facturation.f_annee}
+                        <option value="{.value}"> {.translation} </option>
+                        {/enum_radio.e_facturation.f_annee}
+                    </select>
+                </div>
+            </div>
+            <div data-field="f_periode" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_periode" class="required">
+                        {@__ key="entity.e_facturation.f_periode"/}&nbsp;
+                        {@inline_help field="f_periode"}
+                        <i data-field="f_periode" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <select class="form-control select" name="f_periode" required="">
+                        <option value="" selected="">{@__ key="select.default" /}</option>
+                        {#enum_radio.e_facturation.f_periode}
+                        <option value="{.value}"> {.translation} </option>
+                        {/enum_radio.e_facturation.f_periode}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+
+            <div data-field="f_date_de_debut" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_date_de_debut">
+                        {@__ key="entity.e_facturation.f_date_de_debut"/}&nbsp;
+                        {@inline_help field="f_date_de_debut"}
+                        <i data-field="f_date_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_facturation.f_date_de_debut" /}' name="f_date_de_debut" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-6 col-sm-6 col-xs-6 column">
+        <div class="row">
+
+            <div data-field="f_date_de_fin" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_date_de_fin">
+                        {@__ key="entity.e_facturation.f_date_de_fin"/}&nbsp;
+                        {@inline_help field="f_date_de_fin"}
+                        <i data-field="f_date_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_facturation.f_date_de_fin" /}' name="f_date_de_fin" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div data-field="f_mode" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_mode">
+                {@__ key="entity.e_facturation.f_mode"/}&nbsp;
+                {@inline_help field="f_mode"}
+                <i data-field="f_mode" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            {#enum_radio.e_facturation.f_mode}
+            &nbsp;
+            <br>
+            <label> <input class="form-control input" name="f_mode" value="{.value}" type="radio">&nbsp;{.translation}
+            </label>
+            {/enum_radio.e_facturation.f_mode}
+        </div>
+    </div>
+    <div data-field="f_facture" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_facture">
+                {@__ key="entity.e_facturation.r_facture" /}
+                {@inline_help field="r_facture"}
+                <i data-field="r_facture" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select multiple="" class="ajax form-control" name="r_facture" data-source="facture" data-using="f_titre" style="width:100%;">
+                <option value="">{@__ key="select.default" /}</option>
+                {#r_facture}
+                <option value="{id}">{f_titre|string}</option>
+                {/r_facture}
+            </select>
+        </div>
+    </div>
+</div>

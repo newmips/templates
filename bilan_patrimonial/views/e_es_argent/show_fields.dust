@@ -1,0 +1,805 @@
+<h4 class="page-header">
+    Entrées / Sorties d'Argent prévues à 2 ans
+</h4>
+<div id="fields" class="row">
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_e_1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_e_1">
+                        {@__ key="entity.e_es_argent.f_e_1"/}&nbsp;
+                        {@inline_help field="f_e_1"}
+                        <i data-field="f_e_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_e_1}
+                    <input class="form-control input" name="f_e_1" value="{f_e_1}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_e_1" value="{f_e_1}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_s_1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_s_1">
+                        {@__ key="entity.e_es_argent.f_s_1"/}&nbsp;
+                        {@inline_help field="f_s_1"}
+                        <i data-field="f_s_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_s_1}
+                    <input class="form-control input" name="f_s_1" value="{f_s_1}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_s_1" value="{f_s_1}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_titre_1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
+                <div class="form-group">
+                    <label for="f_titre_1">
+                        {@__ key="entity.e_es_argent.f_titre_1"/}&nbsp;
+                        {@inline_help field="f_titre_1"}
+                        <i data-field="f_titre_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_titre_1" /}' name="f_titre_1" value="{f_titre_1}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_montant_1" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_montant_1">
+                        {@__ key="entity.e_es_argent.f_montant_1"/}&nbsp;
+                        {@inline_help field="f_montant_1"}
+                        <i data-field="f_montant_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_montant_1" /}' name="f_montant_1" value="{f_montant_1}" type="text" data-type="currency" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_mois_1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_mois_1">
+                        {@__ key="entity.e_es_argent.f_mois_1"/}&nbsp;
+                        {@inline_help field="f_mois_1"}
+                        <i data-field="f_mois_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_mois_1}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_1" /}' name="f_mois_1" type="text" readonly="">
+                    {/f_mois_1}
+                    {#enum_radio.e_es_argent.f_mois_1}
+                    {@eq key=f_mois_1 value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_1" /}' name="f_mois_1" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_es_argent.f_mois_1}
+                </div>
+            </div>
+            <div data-field="f_annee_1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_annee_1">
+                        {@__ key="entity.e_es_argent.f_annee_1"/}&nbsp;
+                        {@inline_help field="f_annee_1"}
+                        <i data-field="f_annee_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_annee_1" /}' name="f_annee_1" value="{f_annee_1}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_usages_couvertures_1" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_usages_couvertures_1">
+                        {@__ key="entity.e_es_argent.f_usages_couvertures_1"/}&nbsp;
+                        {@inline_help field="f_usages_couvertures_1"}
+                        <i data-field="f_usages_couvertures_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_usages_couvertures_1" /}' name="f_usages_couvertures_1" value="{f_usages_couvertures_1}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_e_2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_e_2">
+                        {@__ key="entity.e_es_argent.f_e_2"/}&nbsp;
+                        {@inline_help field="f_e_2"}
+                        <i data-field="f_e_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_e_2}
+                    <input class="form-control input" name="f_e_2" value="{f_e_2}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_e_2" value="{f_e_2}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_s_2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_s_2">
+                        {@__ key="entity.e_es_argent.f_s_2"/}&nbsp;
+                        {@inline_help field="f_s_2"}
+                        <i data-field="f_s_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_s_2}
+                    <input class="form-control input" name="f_s_2" value="{f_s_2}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_s_2" value="{f_s_2}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_titre_2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
+                <div class="form-group">
+                    <label for="f_titre_2">
+                        {@__ key="entity.e_es_argent.f_titre_2"/}&nbsp;
+                        {@inline_help field="f_titre_2"}
+                        <i data-field="f_titre_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_titre_2" /}' name="f_titre_2" value="{f_titre_2}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_montant_2" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_montant_2">
+                        {@__ key="entity.e_es_argent.f_montant_2"/}&nbsp;
+                        {@inline_help field="f_montant_2"}
+                        <i data-field="f_montant_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_montant_2" /}' name="f_montant_2" value="{f_montant_2}" type="text" data-type="currency" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_mois_2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_mois_2">
+                        {@__ key="entity.e_es_argent.f_mois_2"/}&nbsp;
+                        {@inline_help field="f_mois_2"}
+                        <i data-field="f_mois_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_mois_2}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_2" /}' name="f_mois_2" type="text" readonly="">
+                    {/f_mois_2}
+                    {#enum_radio.e_es_argent.f_mois_2}
+                    {@eq key=f_mois_2 value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_2" /}' name="f_mois_2" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_es_argent.f_mois_2}
+                </div>
+            </div>
+            <div data-field="f_annee_2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_annee_2">
+                        {@__ key="entity.e_es_argent.f_annee_2"/}&nbsp;
+                        {@inline_help field="f_annee_2"}
+                        <i data-field="f_annee_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_annee_2" /}' name="f_annee_2" value="{f_annee_2}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_usages_couvertures_2" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_usages_couvertures_2">
+                        {@__ key="entity.e_es_argent.f_usages_couvertures_2"/}&nbsp;
+                        {@inline_help field="f_usages_couvertures_2"}
+                        <i data-field="f_usages_couvertures_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_usages_couvertures_2" /}' name="f_usages_couvertures_2" value="{f_usages_couvertures_2}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_e_3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_e_3">
+                        {@__ key="entity.e_es_argent.f_e_3"/}&nbsp;
+                        {@inline_help field="f_e_3"}
+                        <i data-field="f_e_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_e_3}
+                    <input class="form-control input" name="f_e_3" value="{f_e_3}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_e_3" value="{f_e_3}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_s_3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_s_3">
+                        {@__ key="entity.e_es_argent.f_s_3"/}&nbsp;
+                        {@inline_help field="f_s_3"}
+                        <i data-field="f_s_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_s_3}
+                    <input class="form-control input" name="f_s_3" value="{f_s_3}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_s_3" value="{f_s_3}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_titre_3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
+                <div class="form-group">
+                    <label for="f_titre_3">
+                        {@__ key="entity.e_es_argent.f_titre_3"/}&nbsp;
+                        {@inline_help field="f_titre_3"}
+                        <i data-field="f_titre_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_titre_3" /}' name="f_titre_3" value="{f_titre_3}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_montant_3" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_montant_3">
+                        {@__ key="entity.e_es_argent.f_montant_3"/}&nbsp;
+                        {@inline_help field="f_montant_3"}
+                        <i data-field="f_montant_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_montant_3" /}' name="f_montant_3" value="{f_montant_3}" type="text" data-type="currency" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_mois_3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_mois_3">
+                        {@__ key="entity.e_es_argent.f_mois_3"/}&nbsp;
+                        {@inline_help field="f_mois_3"}
+                        <i data-field="f_mois_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_mois_3}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_3" /}' name="f_mois_3" type="text" readonly="">
+                    {/f_mois_3}
+                    {#enum_radio.e_es_argent.f_mois_3}
+                    {@eq key=f_mois_3 value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_3" /}' name="f_mois_3" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_es_argent.f_mois_3}
+                </div>
+            </div>
+            <div data-field="f_annee_3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_annee_3">
+                        {@__ key="entity.e_es_argent.f_annee_3"/}&nbsp;
+                        {@inline_help field="f_annee_3"}
+                        <i data-field="f_annee_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_annee_3" /}' name="f_annee_3" value="{f_annee_3}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_usages_couvertures_3" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_usages_couvertures_3">
+                        {@__ key="entity.e_es_argent.f_usages_couvertures_3"/}&nbsp;
+                        {@inline_help field="f_usages_couvertures_3"}
+                        <i data-field="f_usages_couvertures_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_usages_couvertures_3" /}' name="f_usages_couvertures_3" value="{f_usages_couvertures_3}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_e_4" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_e_4">
+                        {@__ key="entity.e_es_argent.f_e_4"/}&nbsp;
+                        {@inline_help field="f_e_4"}
+                        <i data-field="f_e_4" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_e_4}
+                    <input class="form-control input" name="f_e_4" value="{f_e_4}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_e_4" value="{f_e_4}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_s_4" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_s_4">
+                        {@__ key="entity.e_es_argent.f_s_4"/}&nbsp;
+                        {@inline_help field="f_s_4"}
+                        <i data-field="f_s_4" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_s_4}
+                    <input class="form-control input" name="f_s_4" value="{f_s_4}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_s_4" value="{f_s_4}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_titre_4" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
+                <div class="form-group">
+                    <label for="f_titre_4">
+                        {@__ key="entity.e_es_argent.f_titre_4"/}&nbsp;
+                        {@inline_help field="f_titre_4"}
+                        <i data-field="f_titre_4" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_titre_4" /}' name="f_titre_4" value="{f_titre_4}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_montant_4" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_montant_4">
+                        {@__ key="entity.e_es_argent.f_montant_4"/}&nbsp;
+                        {@inline_help field="f_montant_4"}
+                        <i data-field="f_montant_4" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_montant_4" /}' name="f_montant_4" value="{f_montant_4}" type="text" data-type="currency" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_mois_4" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_mois_4">
+                        {@__ key="entity.e_es_argent.f_mois_4"/}&nbsp;
+                        {@inline_help field="f_mois_4"}
+                        <i data-field="f_mois_4" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_mois_4}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_4" /}' name="f_mois_4" type="text" readonly="">
+                    {/f_mois_4}
+                    {#enum_radio.e_es_argent.f_mois_4}
+                    {@eq key=f_mois_4 value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_4" /}' name="f_mois_4" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_es_argent.f_mois_4}
+                </div>
+            </div>
+            <div data-field="f_annee_4" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_annee_4">
+                        {@__ key="entity.e_es_argent.f_annee_4"/}&nbsp;
+                        {@inline_help field="f_annee_4"}
+                        <i data-field="f_annee_4" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_annee_4" /}' name="f_annee_4" value="{f_annee_4}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_usages_couvertures_4" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_usages_couvertures_4">
+                        {@__ key="entity.e_es_argent.f_usages_couvertures_4"/}&nbsp;
+                        {@inline_help field="f_usages_couvertures_4"}
+                        <i data-field="f_usages_couvertures_4" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_usages_couvertures_4" /}' name="f_usages_couvertures_4" value="{f_usages_couvertures_4}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_e_5" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_e_5">
+                        {@__ key="entity.e_es_argent.f_e_5"/}&nbsp;
+                        {@inline_help field="f_e_5"}
+                        <i data-field="f_e_5" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_e_5}
+                    <input class="form-control input" name="f_e_5" value="{f_e_5}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_e_5" value="{f_e_5}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_s_5" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_s_5">
+                        {@__ key="entity.e_es_argent.f_s_5"/}&nbsp;
+                        {@inline_help field="f_s_5"}
+                        <i data-field="f_s_5" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_s_5}
+                    <input class="form-control input" name="f_s_5" value="{f_s_5}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_s_5" value="{f_s_5}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_titre_5" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
+                <div class="form-group">
+                    <label for="f_titre_5">
+                        {@__ key="entity.e_es_argent.f_titre_5"/}&nbsp;
+                        {@inline_help field="f_titre_5"}
+                        <i data-field="f_titre_5" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_titre_5" /}' name="f_titre_5" value="{f_titre_5}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_montant_5" class="fieldLineHeight col-xs-12 col-sm-12 col-md-12" style="">
+                <div class="form-group">
+                    <label for="f_montant_5">
+                        {@__ key="entity.e_es_argent.f_montant_5"/}&nbsp;
+                        {@inline_help field="f_montant_5"}
+                        <i data-field="f_montant_5" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_montant_5" /}' name="f_montant_5" value="{f_montant_5}" type="text" data-type="currency" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_mois_5" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_mois_5">
+                        {@__ key="entity.e_es_argent.f_mois_5"/}&nbsp;
+                        {@inline_help field="f_mois_5"}
+                        <i data-field="f_mois_5" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_mois_5}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_5" /}' name="f_mois_5" type="text" readonly="">
+                    {/f_mois_5}
+                    {#enum_radio.e_es_argent.f_mois_5}
+                    {@eq key=f_mois_5 value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_5" /}' name="f_mois_5" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_es_argent.f_mois_5}
+                </div>
+            </div>
+            <div data-field="f_annee_5" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_annee_5">
+                        {@__ key="entity.e_es_argent.f_annee_5"/}&nbsp;
+                        {@inline_help field="f_annee_5"}
+                        <i data-field="f_annee_5" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_annee_5" /}' name="f_annee_5" value="{f_annee_5}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_usages_couvertures_5" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_usages_couvertures_5">
+                        {@__ key="entity.e_es_argent.f_usages_couvertures_5"/}&nbsp;
+                        {@inline_help field="f_usages_couvertures_5"}
+                        <i data-field="f_usages_couvertures_5" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_usages_couvertures_5" /}' name="f_usages_couvertures_5" value="{f_usages_couvertures_5}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_e_6" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_e_6">
+                        {@__ key="entity.e_es_argent.f_e_6"/}&nbsp;
+                        {@inline_help field="f_e_6"}
+                        <i data-field="f_e_6" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_e_6}
+                    <input class="form-control input" name="f_e_6" value="{f_e_6}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_e_6" value="{f_e_6}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_s_6" class="fieldLineHeight col-xs-12 col-sm-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="f_s_6">
+                        {@__ key="entity.e_es_argent.f_s_6"/}&nbsp;
+                        {@inline_help field="f_s_6"}
+                        <i data-field="f_s_6" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    &nbsp;
+                    <br>
+                    {@ifTrue key=f_s_6}
+                    <input class="form-control input" name="f_s_6" value="{f_s_6}" type="checkbox" checked="" disabled="">
+                    {:else}
+                    <input class="form-control input" name="f_s_6" value="{f_s_6}" type="checkbox" disabled="">
+                    {/ifTrue}
+                </div>
+            </div>
+            <div data-field="f_titre_6" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
+                <div class="form-group">
+                    <label for="f_titre_6">
+                        {@__ key="entity.e_es_argent.f_titre_6"/}&nbsp;
+                        {@inline_help field="f_titre_6"}
+                        <i data-field="f_titre_6" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_titre_6" /}' name="f_titre_6" value="{f_titre_6}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_montant_6" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_montant_6">
+                        {@__ key="entity.e_es_argent.f_montant_6"/}&nbsp;
+                        {@inline_help field="f_montant_6"}
+                        <i data-field="f_montant_6" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_montant_6" /}' name="f_montant_6" value="{f_montant_6}" type="text" data-type="currency" readonly="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-4">
+        <div class="row">
+            <div data-field="f_mois_6" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_mois_6">
+                        {@__ key="entity.e_es_argent.f_mois_6"/}&nbsp;
+                        {@inline_help field="f_mois_6"}
+                        <i data-field="f_mois_6" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    {^f_mois_6}
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_6" /}' name="f_mois_6" type="text" readonly="">
+                    {/f_mois_6}
+                    {#enum_radio.e_es_argent.f_mois_6}
+                    {@eq key=f_mois_6 value="{.value}" }
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_mois_6" /}' name="f_mois_6" value="{.translation}" type="text" readonly="">
+                    {/eq}
+                    {/enum_radio.e_es_argent.f_mois_6}
+                </div>
+            </div>
+            <div data-field="f_annee_6" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
+                <div class="form-group">
+                    <label for="f_annee_6">
+                        {@__ key="entity.e_es_argent.f_annee_6"/}&nbsp;
+                        {@inline_help field="f_annee_6"}
+                        <i data-field="f_annee_6" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_annee_6" /}' name="f_annee_6" value="{f_annee_6}" type="number" max="2147483648" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-sm-3 col-xs-3 column col-md-2">
+        <div class="row">
+            <div data-field="f_usages_couvertures_6" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_usages_couvertures_6">
+                        {@__ key="entity.e_es_argent.f_usages_couvertures_6"/}&nbsp;
+                        {@inline_help field="f_usages_couvertures_6"}
+                        <i data-field="f_usages_couvertures_6" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_usages_couvertures_6" /}' name="f_usages_couvertures_6" value="{f_usages_couvertures_6}" type="text" maxlength="255" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 75px;" class="emptySpaceColumn col-md-12 col-sm-12 col-xs-12 column">
+        <div class="row">
+            <div data-field="f_solde_es" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_solde_es">
+                        {@__ key="entity.e_es_argent.f_solde_es"/}&nbsp;
+                        {@inline_help field="f_solde_es"}
+                        <i data-field="f_solde_es" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <input class="form-control input" placeholder='{@__ key="entity.e_es_argent.f_solde_es" /}' name="f_solde_es" value="{f_solde_es}" type="text" data-type="currency" readonly="">
+                    </div>
+                </div>
+            </div>
+            <div data-field="f_solde_positif" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_solde_positif">
+                        {@__ key="entity.e_es_argent.f_solde_positif"/}&nbsp;
+                        {@inline_help field="f_solde_positif"}
+                        <i data-field="f_solde_positif" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="show-textarea">{f_solde_positif|s}</div>
+                </div>
+            </div>
+            <div data-field="f_solde_negatif" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_solde_negatif">
+                        {@__ key="entity.e_es_argent.f_solde_negatif"/}&nbsp;
+                        {@inline_help field="f_solde_negatif"}
+                        <i data-field="f_solde_negatif" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="show-textarea">{f_solde_negatif|s}</div>
+                </div>
+            </div>
+            <div data-field="f_nouvelles_depenses" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+                <div class="form-group">
+                    <label for="f_nouvelles_depenses">
+                        {@__ key="entity.e_es_argent.f_nouvelles_depenses"/}&nbsp;
+                        {@inline_help field="f_nouvelles_depenses"}
+                        <i data-field="f_nouvelles_depenses" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                        {/inline_help}
+                    </label>
+                    <div class="show-textarea">{f_nouvelles_depenses|s}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="actions">
+    <form action="/es_argent/delete" method="post">
+        <div class="quicklinks">
+            <span>
+                <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{@__ key="button.return"/}</a>
+            </span>
+            {@actionAccess entity="es_argent" action="delete"}
+            <span>
+                <button class="btn btn-danger">
+                    <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                    <span>{@__ key="button.delete"/}</span>
+            </button>
+            <input name="id" type="hidden" value="{e_es_argent.id}" class="form-control">
+            </span>
+            {/actionAccess}
+
+            {@actionAccess entity="es_argent" action="update"}
+            <span>
+                <a href="/es_argent/update_form?id={e_es_argent.id}" class="btn btn-warning">
+                    <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
+                    <span>{@__ key="button.update"/}</span>
+            </a>
+            </span>
+            {/actionAccess}
+            {^hideButton}
+            {@actionAccess entity="es_argent" action="create"}
+            <span>
+                    <a href="/es_argent/create_form" class="btn btn-success">
+                        <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
+                        <span>{@__ key="button.create"/}</span>
+            </a>
+            </span>
+            {/actionAccess}
+            {@actionAccess entity="es_argent" action="read"}
+            <span>
+                    <a href="/es_argent/list" type="submit" class="btn btn-primary">
+                        <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>
+                        <span>{@__ key="button.list"/}</span>
+            </a>
+            </span>
+            {/actionAccess}
+            {/hideButton}
+        </div>
+    </form>
+</div>
