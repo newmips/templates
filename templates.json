@@ -3,111 +3,111 @@
         "name": "Formation alternance",
         "script": "https://raw.githubusercontent.com/newmips/template_alternance/master/script_fr_alternance.nps",
         "repoFile": "https://codeload.github.com/newmips/template_alternance/zip/master",
-        "entry": "template_alternance"
+        "entry": "alternance"
     },{
         "name": "Formation apprentissage",
         "script": "https://raw.githubusercontent.com/newmips/template_apprentissage/master/script_fr_apprentissage.nps",
         "repoFile": "https://codeload.github.com/newmips/template_apprentissage/zip/master",
-        "entry": "template_apprentissage"
+        "entry": "apprentissage"
     },{
         "name": "Lecture fiche produit",
         "script": "https://raw.githubusercontent.com/newmips/template_fiche_produit/master/script_fr_fiche_produit.nps",
         "repoFile": "https://codeload.github.com/newmips/template_fiche_produit/zip/master",
-        "entry": "template_fiche_produit"
+        "entry": "fiche_produit"
     },{
         "name": "Planification de chantier",
         "script": "https://raw.githubusercontent.com/newmips/template_planification_chantier/master/script_fr_planification_chantier.nps",
         "repoFile": "https://codeload.github.com/newmips/template_planification_chantier/zip/master",
-        "entry": "template_planification_chantier"
+        "entry": "planification_chantier"
     },{
         "name": "Bilan patrimonial du foyer",
         "script": "https://raw.githubusercontent.com/newmips/template_bilan_patrimonial/master/script_fr_bilan_patrimonial.nps",
         "repoFile": "https://codeload.github.com/newmips/template_bilan_patrimonial/zip/master",
-        "entry": "template_bilan_patrimonial"
+        "entry": "bilan_patrimonial"
     },{
         "name": "Bureau des entrées",
         "script": "https://raw.githubusercontent.com/newmips/template_bureau_des_entrees/master/script_fr_bureau_des_entrees.nps",
         "repoFile": "https://codeload.github.com/newmips/template_bureau_des_entrees/zip/master",
-        "entry": "template_bureau_des_entrees"
+        "entry": "bureau_des_entrees"
     },{
         "name": "Gestion de flotte mobile",
         "script": "https://raw.githubusercontent.com/newmips/template_flotte_mobile/master/script_fr_flotte_mobile.nps",
         "repoFile": "https://codeload.github.com/newmips/template_flotte_mobile/zip/master",
-        "entry": "template_flotte_mobile"
+        "entry": "flotte_mobile"
     },{
         "name": "Fiche de formation et QCM",
         "script": "https://raw.githubusercontent.com/newmips/template_formation/master/script_fr_formation.nps",
         "repoFile": "https://codeload.github.com/newmips/template_formation/zip/master",
-        "entry": "template_formation"
+        "entry": "formation"
     },{
         "name": "Bulletinage",
         "script": "https://raw.githubusercontent.com/newmips/template_distribution_revues/master/script_fr_distribution_revues.nps",
         "repoFile": "https://codeload.github.com/newmips/template_distribution_revues/zip/master",
-        "entry": "template_distribution_revues"
+        "entry": "distribution_revues"
     },{
         "name": "Table alphabétique de thèmes",
         "script": "https://raw.githubusercontent.com/newmips/template_index_thematique/master/script_fr_index_thematique.nps",
         "repoFile": "https://codeload.github.com/newmips/template_index_thematique/zip/master",
-        "entry": "template_index_thematique"
+        "entry": "index_thematique"
     },{
         "name": "Organisation de manifestations",
         "script": "https://raw.githubusercontent.com/newmips/template_manifestations_mairie/master/script_fr_manifestations_mairie.nps",
         "repoFile": "https://codeload.github.com/newmips/template_manifestations_mairie/zip/master",
-        "entry": "template_manifestations_mairie"
+        "entry": "manifestations_mairie"
     },{
         "name": "Inventaire de magasins",
         "script": "https://raw.githubusercontent.com/newmips/template_inventaire_magasin/master/script_fr_inventaire_magasin.nps",
         "repoFile": "https://codeload.github.com/newmips/template_inventaire_magasin/zip/master",
-        "entry": "template_inventaire_magasin"
+        "entry": "inventaire_magasin"
     },{
         "name": "Pépinière entreprises",
         "script": "https://raw.githubusercontent.com/newmips/template_pepiniere_entreprise/master/script_fr_pepiniere_entreprise.nps",
         "repoFile": "https://codeload.github.com/newmips/template_pepiniere_entreprise/zip/master",
-        "entry": "template_pepiniere_entreprise"
+        "entry": "pepiniere_entreprise"
     },{
         "name": "Pestation nettoyage",
         "script": "https://raw.githubusercontent.com/newmips/template_prestations_nettoyage/master/script_fr_prestations_nettoyage.nps",
         "repoFile": "https://codeload.github.com/newmips/template_prestations_nettoyage/zip/master",
-        "entry": "template_prestations_nettoyage"
+        "entry": "prestations_nettoyage"
     },{
         "name": "Note de frais",
         "script": "https://raw.githubusercontent.com/newmips/template_notes_frais/master/script_fr_notes_frais.nps",
         "repoFile": "https://codeload.github.com/newmips/template_notes_frais/zip/master",
-        "entry": "template_notes_frais"
+        "entry": "notes_frais"
     },{
         "name": "Intérims médicales",
         "script": "https://raw.githubusercontent.com/newmips/template_interim_medical/master/script_fr_interim_medical.nps",
         "repoFile": "https://codeload.github.com/newmips/template_interim_medical/zip/master",
-        "entry": "template_interim_medical"
+        "entry": "interim_medical"
     },{
         "name": "Planning de remplacement",
         "script": "https://raw.githubusercontent.com/newmips/template_planning_remplacement/master/script_fr_planning_remplacement.nps",
         "repoFile": "https://codeload.github.com/newmips/template_planning_remplacement/zip/master",
-        "entry": "template_planning_remplacement"
+        "entry": "planning_remplacement"
     },{
         "name": "Les petites annonces",
         "script": "https://raw.githubusercontent.com/newmips/template_petites_annonces/master/script_fr_petites_annonces.nps",
         "repoFile": "https://codeload.github.com/newmips/template_petites_annonces/zip/master",
-        "entry": "template_petites_annonces"
+        "entry": "petites_annonces"
     },{
         "name": "Réservation de voitures",
         "script": "https://raw.githubusercontent.com/newmips/template_reservation_voiture/master/script_fr_reservation_voiture.nps",
         "repoFile": "https://codeload.github.com/newmips/template_reservation_voiture/zip/master",
-        "entry": "template_reservation_voiture"
+        "entry": "reservation_voiture"
     },{
         "name": "Salon du livre",
         "script": "https://raw.githubusercontent.com/newmips/template_salon_livre/master/script_fr_salon_livre.nps",
         "repoFile": "https://codeload.github.com/newmips/template_salon_livre/zip/master",
-        "entry": "template_salon_livre"
+        "entry": "salon_livre"
     },{
         "name": "Budget des associations",
         "script": "https://raw.githubusercontent.com/newmips/template_budget_associations/master/script_fr_budget_associations.nps",
         "repoFile": "https://codeload.github.com/newmips/template_budget_associations/zip/master",
-        "entry": "template_budget_associations"
+        "entry": "budget_associations"
     },{
         "name": "Application ticketing",
         "script": "https://raw.githubusercontent.com/newmips/template_bugtracker/master/script_en_bugtracker.nps",
         "repoFile": "https://codeload.github.com/newmips/template_bugtracker/zip/master",
-        "entry": "template_bugtracker"
+        "entry": "bugtracker"
     }]
 }
