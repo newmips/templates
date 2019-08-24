@@ -102,5 +102,4 @@ add widget info on entity Société
 add widget info on entity Bail
 
 select entity agenda event
-delete field place
 add field Espace related to Espace using Référence
