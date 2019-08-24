@@ -4,78 +4,78 @@
             <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nom" class="required">
-                        {@__ key="entity.e_centre_de_formation.f_nom"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_nom"/}&nbsp;
                         {@inline_help field="f_nom"}
                         <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_nom" /}' name="f_nom" value="" type="text" maxlength="255" required="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_nom" /}' name="f_nom" value="" type="text" maxlength="255" required="">
                 </div>
             </div>
             <div data-field="f_rue" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_rue">
-                        {@__ key="entity.e_centre_de_formation.f_rue"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_rue"/}&nbsp;
                         {@inline_help field="f_rue"}
                         <i data-field="f_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_rue" /}' name="f_rue" value="" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_rue" /}' name="f_rue" value="" type="text" maxlength="255">
                 </div>
             </div>
             <div data-field="f_complement_rue" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_complement_rue">
-                        {@__ key="entity.e_centre_de_formation.f_complement_rue"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_complement_rue"/}&nbsp;
                         {@inline_help field="f_complement_rue"}
                         <i data-field="f_complement_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_complement_rue" /}' name="f_complement_rue" value="" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_complement_rue" /}' name="f_complement_rue" value="" type="text" maxlength="255">
                 </div>
             </div>
             <div data-field="f_lieu_dit" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_lieu_dit">
-                        {@__ key="entity.e_centre_de_formation.f_lieu_dit"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_lieu_dit"/}&nbsp;
                         {@inline_help field="f_lieu_dit"}
                         <i data-field="f_lieu_dit" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_lieu_dit" /}' name="f_lieu_dit" value="" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_lieu_dit" /}' name="f_lieu_dit" value="" type="text" maxlength="255">
                 </div>
             </div>
             <div data-field="f_code_postal" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="f_code_postal">
-                        {@__ key="entity.e_centre_de_formation.f_code_postal"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_code_postal"/}&nbsp;
                         {@inline_help field="f_code_postal"}
                         <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_code_postal" /}' name="f_code_postal" value="" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_code_postal" /}' name="f_code_postal" value="" type="text" maxlength="255">
                 </div>
             </div>
             <div data-field="f_ville" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="f_ville">
-                        {@__ key="entity.e_centre_de_formation.f_ville"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_ville"/}&nbsp;
                         {@inline_help field="f_ville"}
                         <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_ville" /}' name="f_ville" value="" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_ville" /}' name="f_ville" value="" type="text" maxlength="255">
                 </div>
             </div>
             <div data-field="f_pays" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_pays">
-                        {@__ key="entity.e_centre_de_formation.f_pays"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_pays"/}&nbsp;
                         {@inline_help field="f_pays"}
                         <i data-field="f_pays" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_pays" /}' name="f_pays" value="FRANCE" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_pays" /}' name="f_pays" value="FRANCE" type="text" maxlength="255">
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
             <div data-field="f_email" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_email">
-                        {@__ key="entity.e_centre_de_formation.f_email"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_email"/}&nbsp;
                         {@inline_help field="f_email"}
                         <i data-field="f_email" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -94,14 +94,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-envelope"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_email" /}' name="f_email" value="" type="text" data-type="email">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_email" /}' name="f_email" value="" type="text" data-type="email">
                     </div>
                 </div>
             </div>
             <div data-field="f_telephone" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_telephone">
-                        {@__ key="entity.e_centre_de_formation.f_telephone"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_telephone"/}&nbsp;
                         {@inline_help field="f_telephone"}
                         <i data-field="f_telephone" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -110,14 +110,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-phone"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_telephone" /}' name="f_telephone" value="" type="tel">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_telephone" /}' name="f_telephone" value="" type="tel">
                     </div>
                 </div>
             </div>
             <div data-field="f_site_internet" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_site_internet">
-                        {@__ key="entity.e_centre_de_formation.f_site_internet"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_site_internet"/}&nbsp;
                         {@inline_help field="f_site_internet"}
                         <i data-field="f_site_internet" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -126,14 +126,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-link"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_site_internet" /}' name="f_site_internet" value="" type="url" data-type="url">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_site_internet" /}' name="f_site_internet" value="" type="url" data-type="url">
                     </div>
                 </div>
             </div>
             <div data-field="f_facebook" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_facebook">
-                        {@__ key="entity.e_centre_de_formation.f_facebook"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_facebook"/}&nbsp;
                         {@inline_help field="f_facebook"}
                         <i data-field="f_facebook" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -142,14 +142,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-facebook"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_facebook" /}' name="f_facebook" value="" type="text" maxlength="255">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_facebook" /}' name="f_facebook" value="" type="text" maxlength="255">
                     </div>
                 </div>
             </div>
             <div data-field="f_twitter" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_twitter">
-                        {@__ key="entity.e_centre_de_formation.f_twitter"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_twitter"/}&nbsp;
                         {@inline_help field="f_twitter"}
                         <i data-field="f_twitter" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -158,14 +158,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-twitter"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_twitter" /}' name="f_twitter" value="" type="text" maxlength="255">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_twitter" /}' name="f_twitter" value="" type="text" maxlength="255">
                     </div>
                 </div>
             </div>
             <div data-field="f_google" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_google">
-                        {@__ key="entity.e_centre_de_formation.f_google"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_google"/}&nbsp;
                         {@inline_help field="f_google"}
                         <i data-field="f_google" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -174,7 +174,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-google-plus"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_centre_de_formation.f_google" /}' name="f_google" value="" type="text" maxlength="255">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_centre_de_formation.f_google" /}' name="f_google" value="" type="text" maxlength="255">
                     </div>
                 </div>
             </div>
@@ -185,12 +185,12 @@
             <div data-field="f_description" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_description">
-                        {@__ key="entity.e_centre_de_formation.f_description"/}&nbsp;
+                        {#__ key="entity.e_centre_de_formation.f_description"/}&nbsp;
                         {@inline_help field="f_description"}
                         <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea" placeholder='{@__ key="entity.e_centre_de_formation.f_description" /}' name="f_description" id="f_description_textareaid" type="text">{f_description|s}</textarea>
+                    <textarea class="form-control textarea" placeholder='{#__ key="entity.e_centre_de_formation.f_description" /}' name="f_description" id="f_description_textareaid" type="text">{f_description|s}</textarea>
                 </div>
             </div>
         </div>

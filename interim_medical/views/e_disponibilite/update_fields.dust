@@ -4,7 +4,7 @@
             <div data-field="f_lundi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_lundi">
-                        {@__ key="entity.e_disponibilite.f_lundi"/}&nbsp;
+                        {#__ key="entity.e_disponibilite.f_lundi"/}&nbsp;
                         {@inline_help field="f_lundi"}
                         <i data-field="f_lundi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -23,7 +23,7 @@
             <div data-field="f_mardi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_mardi">
-                        {@__ key="entity.e_disponibilite.f_mardi"/}&nbsp;
+                        {#__ key="entity.e_disponibilite.f_mardi"/}&nbsp;
                         {@inline_help field="f_mardi"}
                         <i data-field="f_mardi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -42,7 +42,7 @@
             <div data-field="f_mercredi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_mercredi">
-                        {@__ key="entity.e_disponibilite.f_mercredi"/}&nbsp;
+                        {#__ key="entity.e_disponibilite.f_mercredi"/}&nbsp;
                         {@inline_help field="f_mercredi"}
                         <i data-field="f_mercredi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -61,7 +61,7 @@
             <div data-field="f_jeudi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_jeudi">
-                        {@__ key="entity.e_disponibilite.f_jeudi"/}&nbsp;
+                        {#__ key="entity.e_disponibilite.f_jeudi"/}&nbsp;
                         {@inline_help field="f_jeudi"}
                         <i data-field="f_jeudi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -80,7 +80,7 @@
             <div data-field="f_vendredi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_vendredi">
-                        {@__ key="entity.e_disponibilite.f_vendredi"/}&nbsp;
+                        {#__ key="entity.e_disponibilite.f_vendredi"/}&nbsp;
                         {@inline_help field="f_vendredi"}
                         <i data-field="f_vendredi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -104,7 +104,7 @@
             <div data-field="f_samedi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_samedi">
-                        {@__ key="entity.e_disponibilite.f_samedi"/}&nbsp;
+                        {#__ key="entity.e_disponibilite.f_samedi"/}&nbsp;
                         {@inline_help field="f_samedi"}
                         <i data-field="f_samedi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -124,7 +124,7 @@
             <div data-field="f_dimanche" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_dimanche">
-                        {@__ key="entity.e_disponibilite.f_dimanche"/}&nbsp;
+                        {#__ key="entity.e_disponibilite.f_dimanche"/}&nbsp;
                         {@inline_help field="f_dimanche"}
                         <i data-field="f_dimanche" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}

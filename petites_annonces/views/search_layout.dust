@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        {@__ key="app.name"/} |
-        {@__ key="module.home"/}
+        {#__ key="app.name"/} |
+        {#__ key="module.home"/}
     </title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Piwik -->
@@ -50,8 +50,8 @@
     	<script>
     		var lang_user = "{lang_user}";
     		var id_user = "{session.passport.user.id}";
-    		var SELECT_DEFAULT_TEXT = '{@__ key="select.default" /}';
-    		var WAIT_UPLOAD_TEXT = '{@__ key="global_component.local_file_storage.wait_upload" /}';
+    		var SELECT_DEFAULT_TEXT = '{#__ key="select.default" /}';
+    		var WAIT_UPLOAD_TEXT = '{#__ key="global_component.local_file_storage.wait_upload" /}';
     	</script>
 
         <div class="container">
@@ -60,7 +60,7 @@
                     <a href="/default/home" class="white" style="position:absolute;top:13px;">
                         <span style="font-size: 18px; color: #fff; padding-left: 10px;">
                             <i class="fa fa-archive" width="30px"></i>&nbsp;&nbsp;&nbsp;
-                            <b>{@__ key="app.name"/}</b>
+                            <b>{#__ key="app.name"/}</b>
                         </span>
                     </a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -77,16 +77,16 @@
     						<!-- User is connected -->
     						{#session.passport.user}
     						<li>
-    							<a class="white hover"><span onclick="javascript:location.href='/default/search';"><i class="fa fa-tags" /></i>&nbsp;&nbsp;{@__ key="entity.e_annonce.last" /}</a>
+    							<a class="white hover"><span onclick="javascript:location.href='/default/search';"><i class="fa fa-tags" /></i>&nbsp;&nbsp;{#__ key="entity.e_annonce.last" /}</a>
     						</li>
     						<li>
-    							<a class="white hover"><span onclick="javascript:location.href='/default/search?owner={session.passport.user.id}';"><i class="fa fa-tag" /></i>&nbsp;&nbsp;{@__ key="entity.e_annonce.me" /}</a>
+    							<a class="white hover"><span onclick="javascript:location.href='/default/search?owner={session.passport.user.id}';"><i class="fa fa-tag" /></i>&nbsp;&nbsp;{#__ key="entity.e_annonce.me" /}</a>
     						</li>
     						<li>
-    							<a class="white hover"><span onclick="javascript:location.href='/user/settings';"><i class="fa fa-user" /></i>&nbsp;&nbsp;{@__ key="settings.my_account" /}</a>
+    							<a class="white hover"><span onclick="javascript:location.href='/user/settings';"><i class="fa fa-user" /></i>&nbsp;&nbsp;{#__ key="settings.my_account" /}</a>
     						</li>
     						<li class="dropdown">
-    							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-flag" /></i>&nbsp;&nbsp;{@__ key="settings.lang" /} <span class="caret"></span></a>
+    							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-flag" /></i>&nbsp;&nbsp;{#__ key="settings.lang" /} <span class="caret"></span></a>
     							<ul class="dropdown-menu" role="menu">
     								<li><a data-lang="fr-FR" class="chooseLanguage"><img src="/img/france.png" width="16" />&nbsp;&nbsp;Francais</a></li>
     								<li><a data-lang="en-EN" class="chooseLanguage"><img src="/img/united-kingdom.png" width="16" />&nbsp;&nbsp;English</a></li>
@@ -94,14 +94,14 @@
     							</ul>
     						</li>
     						<li>
-    							<a href="/logout" class="white">{@__ key="button.disconnect" /}</a>
+    							<a href="/logout" class="white">{#__ key="button.disconnect" /}</a>
     						</li>
     						{:else}
     						<li>
-    							<a href="#" class="white background-red"><span onclick="javascript:location.href='/default/subscribe';"><i class="fa fa-cog" /></i>&nbsp;&nbsp;{@__ key="settings.subscribe" /}</span></a>
+    							<a href="#" class="white background-red"><span onclick="javascript:location.href='/default/subscribe';"><i class="fa fa-cog" /></i>&nbsp;&nbsp;{#__ key="settings.subscribe" /}</span></a>
     						</li>
     						<li class="dropdown">
-    							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-flag" /></i>&nbsp;&nbsp;{@__ key="settings.lang" /} <span class="caret"></span></a>
+    							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-flag" /></i>&nbsp;&nbsp;{#__ key="settings.lang" /} <span class="caret"></span></a>
     							<ul class="dropdown-menu" role="menu">
     								<li><a data-lang="fr-FR" class="chooseLanguage"><img src="/img/france.png" width="16" />&nbsp;&nbsp;Francais</a></li>
     								<li><a data-lang="en-EN" class="chooseLanguage"><img src="/img/united-kingdom.png" width="16" />&nbsp;&nbsp;English</a></li>
@@ -109,7 +109,7 @@
     							</ul>
     						</li>
     						<li>
-    							<a href="/login" class="white"><i class="fa fa-link" /></i>&nbsp;&nbsp;{@__ key="settings.connect" /}</a>
+    							<a href="/login" class="white"><i class="fa fa-link" /></i>&nbsp;&nbsp;{#__ key="settings.connect" /}</a>
     						</li>
     						{/session.passport.user}
     					</ul>
@@ -130,13 +130,13 @@
                         <div class="modal-body"></div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">
-                                {@__ key="button.close" /}
+                                {#__ key="button.close" /}
                             </button>
                             <button id="prevHelp" type="button" class="btn btn-primary">
-                                {@__ key="button.previous" /}
+                                {#__ key="button.previous" /}
                             </button>
                             <button id="nextHelp" type="button" class="btn btn-primary">
-                                {@__ key="button.next" /}
+                                {#__ key="button.next" /}
                             </button>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
             <footer style="">
         		<div class="col-md-12" style="background: #3c8dbc; background-size:cover; margin:0; min-height: 50px; text-align: center;">
         			<br/>
-        			<span style="color: #fff;"><a style="color: #fff;" href="https://www.newmips.com" target="_blank">{@__ key="navbar.editor" /} - www.newmips.com</a></span>
+        			<span style="color: #fff;"><a style="color: #fff;" href="https://www.newmips.com" target="_blank">{#__ key="navbar.editor" /} - www.newmips.com</a></span>
         		</div>
         		<div class="col-md-12" style="background: #3c8dbc; background-size:cover; margin:0; min-height: 50px; text-align: right;">
                     <a href="/default/administration" style="color: #fff;">Administration</a>&nbsp;<i class="fa fa-arrow-right" style="color: #fff;">&nbsp;</i>
@@ -191,7 +191,7 @@
     {#toastr}
     <script>
         toastrArray.push({
-            message: '{@__ key=message/}',
+            message: '{#__ key=message/}',
             level: "{level}"
         });
     </script>

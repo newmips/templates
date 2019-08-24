@@ -90,12 +90,12 @@
             <div data-field="f_dep_solde_vous" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_dep_solde_vous">
-                        {@__ key="entity.e_revenus_charges.f_dep_solde_vous"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_dep_solde_vous"/}&nbsp;
                         {@inline_help field="f_dep_solde_vous"}
                         <i data-field="f_dep_solde_vous" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_revenus_charges.f_dep_solde_vous" /}' name="f_dep_solde_vous" value="{f_dep_solde_vous}" type="text">
+                    <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_revenus_charges.f_dep_solde_vous" /}' name="f_dep_solde_vous" value="{f_dep_solde_vous}" type="text">
                 </div>
             </div>
         </div>
@@ -105,12 +105,12 @@
             <div data-field="f_dep_solde_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_dep_solde_conj">
-                        {@__ key="entity.e_revenus_charges.f_dep_solde_conj"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_dep_solde_conj"/}&nbsp;
                         {@inline_help field="f_dep_solde_conj"}
                         <i data-field="f_dep_solde_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_revenus_charges.f_dep_solde_conj" /}' name="f_dep_solde_conj" value="{f_dep_solde_conj}" type="text">
+                    <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_revenus_charges.f_dep_solde_conj" /}' name="f_dep_solde_conj" value="{f_dep_solde_conj}" type="text">
                 </div>
             </div>
         </div>
@@ -120,12 +120,12 @@
             <div data-field="f_dep_solde_foyer" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_dep_solde_foyer">
-                        {@__ key="entity.e_revenus_charges.f_dep_solde_foyer"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_dep_solde_foyer"/}&nbsp;
                         {@inline_help field="f_dep_solde_foyer"}
                         <i data-field="f_dep_solde_foyer" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_revenus_charges.f_dep_solde_foyer" /}' name="f_dep_solde_foyer" value="{f_dep_solde_foyer}" type="text">
+                    <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_revenus_charges.f_dep_solde_foyer" /}' name="f_dep_solde_foyer" value="{f_dep_solde_foyer}" type="text">
                 </div>
             </div>
         </div>
@@ -135,14 +135,14 @@
             <div data-field="f_correspondance" class="fieldLineHeight col-xs-12 col-sm-12 col-md-7" style="">
                 <div class="form-group">
                     <label for="f_correspondance">
-                        {@__ key="entity.e_revenus_charges.f_correspondance"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_correspondance"/}&nbsp;
                         {@inline_help field="f_correspondance"}
                         <i data-field="f_correspondance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
 					<select style="width:100%;" class="form-control select" name="f_correspondance">
                         <option value="">
-                            {@__ key="select.default" /}
+                            {#__ key="select.default" /}
                         </option>
                         {#enum_radio.e_revenus_charges.f_correspondance}
                         {@eq key=f_correspondance value="{.value}" }
@@ -157,25 +157,25 @@
             <div data-field="f_montant_epargne_annuelle" class="fieldLineHeight col-xs-12 col-sm-12 col-md-5" style="">
                 <div class="form-group">
                     <label for="f_montant_epargne_annuelle">
-                        {@__ key="entity.e_revenus_charges.f_montant_epargne_annuelle"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_montant_epargne_annuelle"/}&nbsp;
                         {@inline_help field="f_montant_epargne_annuelle"}
                         <i data-field="f_montant_epargne_annuelle" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_revenus_charges.f_montant_epargne_annuelle" /}' name="f_montant_epargne_annuelle" value="" type="text">
+                    <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_revenus_charges.f_montant_epargne_annuelle" /}' name="f_montant_epargne_annuelle" value="" type="text">
                 </div>
             </div>
             <div data-field="f_epargner_plus" class="fieldLineHeight col-xs-12 col-sm-12 col-md-7" style="">
                 <div class="form-group">
                     <label for="f_epargner_plus">
-                        {@__ key="entity.e_revenus_charges.f_epargner_plus"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_epargner_plus"/}&nbsp;
                         {@inline_help field="f_epargner_plus"}
                         <i data-field="f_epargner_plus" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
 					<select style="width:100%;" class="form-control select" name="f_epargner_plus">
                         <option value="">
-                            {@__ key="select.default" /}
+                            {#__ key="select.default" /}
                         </option>
                         {#enum_radio.e_revenus_charges.f_epargner_plus}
                         {@eq key=f_epargner_plus value="{.value}" }
@@ -190,36 +190,36 @@
             <div data-field="f_combien_epargne" class="fieldLineHeight col-xs-12 col-sm-12 col-md-5" style="">
                 <div class="form-group">
                     <label for="f_combien_epargne">
-                        {@__ key="entity.e_revenus_charges.f_combien_epargne"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_combien_epargne"/}&nbsp;
                         {@inline_help field="f_combien_epargne"}
                         <i data-field="f_combien_epargne" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_revenus_charges.f_combien_epargne" /}' name="f_combien_epargne" value="" type="text">
+                    <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_revenus_charges.f_combien_epargne" /}' name="f_combien_epargne" value="" type="text">
                 </div>
             </div>
             <div data-field="f_raisons" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_raisons">
-                        {@__ key="entity.e_revenus_charges.f_raisons"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_raisons"/}&nbsp;
                         {@inline_help field="f_raisons"}
                         <i data-field="f_raisons" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_revenus_charges.f_raisons" /}' name="f_raisons" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_revenus_charges.f_raisons" /}' name="f_raisons" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_matelas" class="fieldLineHeight col-xs-12 col-sm-12 col-md-7" style="">
                 <div class="form-group">
                     <label for="f_matelas">
-                        {@__ key="entity.e_revenus_charges.f_matelas"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_matelas"/}&nbsp;
                         {@inline_help field="f_matelas"}
                         <i data-field="f_matelas" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
 					<select style="width:100%;" class="form-control select" name="f_matelas">
                         <option value="">
-                            {@__ key="select.default" /}
+                            {#__ key="select.default" /}
                         </option>
                         {#enum_radio.e_revenus_charges.f_matelas}
                         {@eq key=f_matelas value="{.value}" }
@@ -234,12 +234,12 @@
             <div data-field="f_combien_matelas" class="fieldLineHeight col-xs-12 col-sm-12 col-md-5" style="">
                 <div class="form-group">
                     <label for="f_combien_matelas">
-                        {@__ key="entity.e_revenus_charges.f_combien_matelas"/}&nbsp;
+                        {#__ key="entity.e_revenus_charges.f_combien_matelas"/}&nbsp;
                         {@inline_help field="f_combien_matelas"}
                         <i data-field="f_combien_matelas" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_revenus_charges.f_combien_matelas" /}' name="f_combien_matelas" value="" type="text">
+                    <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_revenus_charges.f_combien_matelas" /}' name="f_combien_matelas" value="" type="text">
                 </div>
             </div>
         </div>

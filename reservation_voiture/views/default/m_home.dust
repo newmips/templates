@@ -1,18 +1,18 @@
 {>"layout_m_home"/}
 {<header}
 <h1>
-    {@__ key="module.m_home"/}
-    <small>{@__ key="module.module"/}</small>
+    {#__ key="module.m_home"/}
+    <small>{#__ key="module.module"/}</small>
 </h1>
 <ol class="breadcrumb">
     <li>
         <a href="#">
                 <i class="fa fa-home"></i>
-                {@__ key="module.home"/}
+                {#__ key="module.home"/}
             </a>
     </li>
     <li class="active">
-        {@__ key="module.m_home"/}
+        {#__ key="module.m_home"/}
     </li>
 </ol>
 {/header}
@@ -29,14 +29,14 @@
                 <h3>{e_chauffeur_stats}</h3>
 
                 <p>
-                    {@__ key="entity.e_chauffeur.label_entity" /}
+                    {#__ key="entity.e_chauffeur.label_entity" /}
                 </p>
             </div>
             <div class="icon">
                 <i class="fa fa-user chauffeur-icon"></i>
             </div>
             <a href="/chauffeur/list" class="small-box-footer">
-                {@__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
+                {#__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
             </a>
         </div>
         {/entityAccess}
@@ -48,14 +48,14 @@
                 <h3>{e_voiture_stats}</h3>
 
                 <p>
-                    {@__ key="entity.e_voiture.label_entity" /}
+                    {#__ key="entity.e_voiture.label_entity" /}
                 </p>
             </div>
             <div class="icon">
                 <i class="fa fa-cab voiture-icon"></i>
             </div>
             <a href="/voiture/list" class="small-box-footer">
-                {@__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
+                {#__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
             </a>
         </div>
         {/entityAccess}
@@ -67,14 +67,14 @@
                 <h3>{e_demande_stats}</h3>
 
                 <p>
-                    {@__ key="entity.e_demande.label_entity" /}
+                    {#__ key="entity.e_demande.label_entity" /}
                 </p>
             </div>
             <div class="icon">
                 <i class="fa fa-comment-o demande-icon"></i>
             </div>
             <a href="/demande/list" class="small-box-footer">
-                {@__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
+                {#__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
             </a>
         </div>
         {/entityAccess}

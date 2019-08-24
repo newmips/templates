@@ -2,17 +2,17 @@
     <div data-field="f_civilite" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_civilite">
-                {@__ key="entity.e_apprenti.f_civilite"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_civilite"/}&nbsp;
                 {@inline_help field="f_civilite"}
                 <i data-field="f_civilite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_civilite}
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_civilite" /}' name="f_civilite_print" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_civilite" /}' name="f_civilite_print" type="text" readonly="">
             {/f_civilite}
             {#enum_radio.e_apprenti.f_civilite}
             {@eq key=f_civilite value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_civilite" /}' name="f_civilite_print" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_civilite" /}' name="f_civilite_print" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_apprenti.f_civilite}
         </div>
@@ -20,29 +20,29 @@
     <div data-field="f_nom" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_nom">
-                {@__ key="entity.e_apprenti.f_nom"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_nom"/}&nbsp;
                 {@inline_help field="f_nom"}
                 <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_nom" /}' name="f_nom_print" value="{f_nom}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_nom" /}' name="f_nom_print" value="{f_nom}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_prenom" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_prenom">
-                {@__ key="entity.e_apprenti.f_prenom"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_prenom"/}&nbsp;
                 {@inline_help field="f_prenom"}
                 <i data-field="f_prenom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_prenom" /}' name="f_prenom_print" value="{f_prenom}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_prenom" /}' name="f_prenom_print" value="{f_prenom}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_date_de_naissance" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_date_de_naissance">
-                {@__ key="entity.e_apprenti.f_date_de_naissance"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_date_de_naissance"/}&nbsp;
                 {@inline_help field="f_date_de_naissance"}
                 <i data-field="f_date_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -51,102 +51,102 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_apprenti.f_date_de_naissance" /}' value="{f_date_de_naissance}" type="text" readonly="">
+                <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_apprenti.f_date_de_naissance" /}' value="{f_date_de_naissance}" type="text" readonly="">
             </div>
         </div>
     </div>
     <div data-field="f_departement_de_naissance" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_departement_de_naissance">
-                {@__ key="entity.e_apprenti.f_departement_de_naissance"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_departement_de_naissance"/}&nbsp;
                 {@inline_help field="f_departement_de_naissance"}
                 <i data-field="f_departement_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_departement_de_naissance" /}' name="f_departement_de_naissance_print" value="{f_departement_de_naissance}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_departement_de_naissance" /}' name="f_departement_de_naissance_print" value="{f_departement_de_naissance}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_commune_de_naissance" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_commune_de_naissance">
-                {@__ key="entity.e_apprenti.f_commune_de_naissance"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_commune_de_naissance"/}&nbsp;
                 {@inline_help field="f_commune_de_naissance"}
                 <i data-field="f_commune_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_commune_de_naissance" /}' name="f_commune_de_naissance_print" value="{f_commune_de_naissance}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_commune_de_naissance" /}' name="f_commune_de_naissance_print" value="{f_commune_de_naissance}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_nationalite" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_nationalite">
-                {@__ key="entity.e_apprenti.f_nationalite"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_nationalite"/}&nbsp;
                 {@inline_help field="f_nationalite"}
                 <i data-field="f_nationalite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_nationalite" /}' name="f_nationalite_print" value="{f_nationalite}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_nationalite" /}' name="f_nationalite_print" value="{f_nationalite}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_rue" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_rue">
-                {@__ key="entity.e_apprenti.f_rue"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_rue"/}&nbsp;
                 {@inline_help field="f_rue"}
                 <i data-field="f_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_rue" /}' name="f_rue_print" value="{f_rue}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_rue" /}' name="f_rue_print" value="{f_rue}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_complement_rue" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_complement_rue">
-                {@__ key="entity.e_apprenti.f_complement_rue"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_complement_rue"/}&nbsp;
                 {@inline_help field="f_complement_rue"}
                 <i data-field="f_complement_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_complement_rue" /}' name="f_complement_rue_print" value="{f_complement_rue}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_complement_rue" /}' name="f_complement_rue_print" value="{f_complement_rue}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_lieu_dit" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_lieu_dit">
-                {@__ key="entity.e_apprenti.f_lieu_dit"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_lieu_dit"/}&nbsp;
                 {@inline_help field="f_lieu_dit"}
                 <i data-field="f_lieu_dit" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_lieu_dit" /}' name="f_lieu_dit_print" value="{f_lieu_dit}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_lieu_dit" /}' name="f_lieu_dit_print" value="{f_lieu_dit}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_code_postal" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_code_postal">
-                {@__ key="entity.e_apprenti.f_code_postal"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_code_postal"/}&nbsp;
                 {@inline_help field="f_code_postal"}
                 <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_code_postal" /}' name="f_code_postal_print" value="{f_code_postal}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_code_postal" /}' name="f_code_postal_print" value="{f_code_postal}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_ville" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_ville">
-                {@__ key="entity.e_apprenti.f_ville"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_ville"/}&nbsp;
                 {@inline_help field="f_ville"}
                 <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_ville" /}' name="f_ville_print" value="{f_ville}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_ville" /}' name="f_ville_print" value="{f_ville}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_telephone" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_telephone">
-                {@__ key="entity.e_apprenti.f_telephone"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_telephone"/}&nbsp;
                 {@inline_help field="f_telephone"}
                 <i data-field="f_telephone" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -155,14 +155,14 @@
                 <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                 </div>
-                <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_telephone" /}' name="f_telephone_print" value="{f_telephone}" type="tel" readonly="">
+                <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_telephone" /}' name="f_telephone_print" value="{f_telephone}" type="tel" readonly="">
             </div>
         </div>
     </div>
     <div data-field="f_email" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_email">
-                {@__ key="entity.e_apprenti.f_email"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_email"/}&nbsp;
                 {@inline_help field="f_email"}
                 <i data-field="f_email" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -171,25 +171,25 @@
                 <div class="input-group-addon">
                     <i class="fa fa-envelope"></i>
                 </div>
-                <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_email" /}' name="f_email_print" value="{f_email}" type="text" data-type="email" readonly="">
+                <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_email" /}' name="f_email_print" value="{f_email}" type="text" data-type="email" readonly="">
             </div>
         </div>
     </div>
     <div data-field="f_regime_social" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_regime_social">
-                {@__ key="entity.e_apprenti.f_regime_social"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_regime_social"/}&nbsp;
                 {@inline_help field="f_regime_social"}
                 <i data-field="f_regime_social" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_regime_social" /}' name="f_regime_social_print" value="{f_regime_social}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_regime_social" /}' name="f_regime_social_print" value="{f_regime_social}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_travailleur_handicape" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_travailleur_handicape">
-                {@__ key="entity.e_apprenti.f_travailleur_handicape"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_travailleur_handicape"/}&nbsp;
                 {@inline_help field="f_travailleur_handicape"}
                 <i data-field="f_travailleur_handicape" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -204,50 +204,50 @@
     <div data-field="f_situation_avant_contrat" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_situation_avant_contrat">
-                {@__ key="entity.e_apprenti.f_situation_avant_contrat"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_situation_avant_contrat"/}&nbsp;
                 {@inline_help field="f_situation_avant_contrat"}
                 <i data-field="f_situation_avant_contrat" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_situation_avant_contrat" /}' name="f_situation_avant_contrat_print" value="{f_situation_avant_contrat}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_situation_avant_contrat" /}' name="f_situation_avant_contrat_print" value="{f_situation_avant_contrat}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_dernier_diplome_prepare" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_dernier_diplome_prepare">
-                {@__ key="entity.e_apprenti.f_dernier_diplome_prepare"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_dernier_diplome_prepare"/}&nbsp;
                 {@inline_help field="f_dernier_diplome_prepare"}
                 <i data-field="f_dernier_diplome_prepare" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_dernier_diplome_prepare" /}' name="f_dernier_diplome_prepare_print" value="{f_dernier_diplome_prepare}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_dernier_diplome_prepare" /}' name="f_dernier_diplome_prepare_print" value="{f_dernier_diplome_prepare}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_diplome_le_plus_eleve" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_diplome_le_plus_eleve">
-                {@__ key="entity.e_apprenti.f_diplome_le_plus_eleve"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_diplome_le_plus_eleve"/}&nbsp;
                 {@inline_help field="f_diplome_le_plus_eleve"}
                 <i data-field="f_diplome_le_plus_eleve" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_diplome_le_plus_eleve" /}' name="f_diplome_le_plus_eleve_print" value="{f_diplome_le_plus_eleve}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_diplome_le_plus_eleve" /}' name="f_diplome_le_plus_eleve_print" value="{f_diplome_le_plus_eleve}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_civilite_representant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_civilite_representant">
-                {@__ key="entity.e_apprenti.f_civilite_representant"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_civilite_representant"/}&nbsp;
                 {@inline_help field="f_civilite_representant"}
                 <i data-field="f_civilite_representant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_civilite_representant}
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_civilite_representant" /}' name="f_civilite_representant_print" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_civilite_representant" /}' name="f_civilite_representant_print" type="text" readonly="">
             {/f_civilite_representant}
             {#enum_radio.e_apprenti.f_civilite_representant}
             {@eq key=f_civilite_representant value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_civilite_representant" /}' name="f_civilite_representant_print" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_civilite_representant" /}' name="f_civilite_representant_print" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_apprenti.f_civilite_representant}
         </div>
@@ -255,78 +255,78 @@
     <div data-field="f_nom_representant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_nom_representant">
-                {@__ key="entity.e_apprenti.f_nom_representant"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_nom_representant"/}&nbsp;
                 {@inline_help field="f_nom_representant"}
                 <i data-field="f_nom_representant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_nom_representant" /}' name="f_nom_representant_print" value="{f_nom_representant}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_nom_representant" /}' name="f_nom_representant_print" value="{f_nom_representant}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_prenom_representant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_prenom_representant">
-                {@__ key="entity.e_apprenti.f_prenom_representant"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_prenom_representant"/}&nbsp;
                 {@inline_help field="f_prenom_representant"}
                 <i data-field="f_prenom_representant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_prenom_representant" /}' name="f_prenom_representant_print" value="{f_prenom_representant}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_prenom_representant" /}' name="f_prenom_representant_print" value="{f_prenom_representant}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_rue_representant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_rue_representant">
-                {@__ key="entity.e_apprenti.f_rue_representant"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_rue_representant"/}&nbsp;
                 {@inline_help field="f_rue_representant"}
                 <i data-field="f_rue_representant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_rue_representant" /}' name="f_rue_representant_print" value="{f_rue_representant}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_rue_representant" /}' name="f_rue_representant_print" value="{f_rue_representant}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_complement_rue_representant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_complement_rue_representant">
-                {@__ key="entity.e_apprenti.f_complement_rue_representant"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_complement_rue_representant"/}&nbsp;
                 {@inline_help field="f_complement_rue_representant"}
                 <i data-field="f_complement_rue_representant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_complement_rue_representant" /}' name="f_complement_rue_representant_print" value="{f_complement_rue_representant}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_complement_rue_representant" /}' name="f_complement_rue_representant_print" value="{f_complement_rue_representant}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_lieu_dit_representant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_lieu_dit_representant">
-                {@__ key="entity.e_apprenti.f_lieu_dit_representant"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_lieu_dit_representant"/}&nbsp;
                 {@inline_help field="f_lieu_dit_representant"}
                 <i data-field="f_lieu_dit_representant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_lieu_dit_representant" /}' name="f_lieu_dit_representant_print" value="{f_lieu_dit_representant}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_lieu_dit_representant" /}' name="f_lieu_dit_representant_print" value="{f_lieu_dit_representant}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_code_postal_representant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_code_postal_representant">
-                {@__ key="entity.e_apprenti.f_code_postal_representant"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_code_postal_representant"/}&nbsp;
                 {@inline_help field="f_code_postal_representant"}
                 <i data-field="f_code_postal_representant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_code_postal_representant" /}' name="f_code_postal_representant_print" value="{f_code_postal_representant}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_code_postal_representant" /}' name="f_code_postal_representant_print" value="{f_code_postal_representant}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_ville_representant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_ville_representant">
-                {@__ key="entity.e_apprenti.f_ville_representant"/}&nbsp;
+                {#__ key="entity.e_apprenti.f_ville_representant"/}&nbsp;
                 {@inline_help field="f_ville_representant"}
                 <i data-field="f_ville_representant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_apprenti.f_ville_representant" /}' name="f_ville_representant_print" value="{f_ville_representant}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_apprenti.f_ville_representant" /}' name="f_ville_representant_print" value="{f_ville_representant}" type="text" maxlength="255" readonly="">
         </div>
     </div>
 </div>
@@ -334,7 +334,7 @@
     {@entityAccess entity="rib" }
     <div id="r_rib_print" class="row">
         <div class="col-xs-12">
-            <h3>{@__ key="entity.e_rib.name_entity" /}</h3>
+            <h3>{#__ key="entity.e_rib.name_entity" /}</h3>
             <hr>
         </div>
         <div class="col-xs-12">

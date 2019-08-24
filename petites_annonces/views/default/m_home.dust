@@ -5,16 +5,16 @@
 {/custom_css_2}
 {<header}
 <h1>
-    {@__ key="module.m_home"/}
+    {#__ key="module.m_home"/}
     <small>
-        {@__ key="module.module"/}
+        {#__ key="module.module"/}
     </small>
 </h1>
 <ol class="breadcrumb">
     <li>
         <a href="/">
             <i class="fa fa-home"></i>
-            {@__ key="module.home"/}
+            {#__ key="module.home"/}
         </a>
     </li>
     <!-- NEW MODULE -->
@@ -26,7 +26,7 @@
     <div id="imgcontainer" media="screen and (min-width: 640px)" class="content-center">
         <div class="row">
             <div class="col-xs-12 col-md-12 center" style="padding-top: 15px; padding-bottom: 300px;"><br>
-                <span style=" font-size: medium; font-weight: 600; color: #000000">{@__ key="entity.e_annonce.find" /} <span style="color: #F79502;">{e_annonce_stats} {@__ key="entity.e_annonce.plural_entity" /}</span>{@__ key="entity.e_annonce.find_last" /}</span>
+                <span style=" font-size: medium; font-weight: 600; color: #000000">{#__ key="entity.e_annonce.find" /} <span style="color: #F79502;">{e_annonce_stats} {#__ key="entity.e_annonce.plural_entity" /}</span>{#__ key="entity.e_annonce.find_last" /}</span>
                 <br>
             </div>
         </div><br>
@@ -35,13 +35,13 @@
             <div class="col-xs-12 col-md-3 center">
                 <a class="btn btn-info btn-lg" href="/default/search">
                     <i class="fa fa-search"></i>&nbsp;&nbsp;
-                    {@__ key="entity.e_annonce.search" /}
+                    {#__ key="entity.e_annonce.search" /}
                 </a>
             </div>
             <div class="col-xs-12 col-md-3 col-sm-4 center">
                 <a class="btn btn-success btn-lg" href="/annonce/create_form">
                     <i class="fa fa-plus"></i>&nbsp;&nbsp;
-                    {@__ key="entity.e_annonce.new" /}
+                    {#__ key="entity.e_annonce.new" /}
                 </a>
             </div>
         </div>

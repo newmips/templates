@@ -2,34 +2,34 @@
     <div data-field="f_titre" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_titre">
-                {@__ key="entity.e_demande.f_titre"/}&nbsp;
+                {#__ key="entity.e_demande.f_titre"/}&nbsp;
                 {@inline_help field="f_titre"}
                 <i data-field="f_titre" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_titre" /}' name="f_titre_print" value="{f_titre}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_demande.f_titre" /}' name="f_titre_print" value="{f_titre}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_motif" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="r_motif">
-                {@__ key="entity.e_demande.r_motif"/} </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_demande.r_motif" /}' name="r_motif" value="{r_motif.f_nom|string}" type="text" readonly="">
+                {#__ key="entity.e_demande.r_motif"/} </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_demande.r_motif" /}' name="r_motif" value="{r_motif.f_nom|string}" type="text" readonly="">
         </div>
     </div>
 
     <div data-field="f_service_concerne" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="r_service_concerne">
-                {@__ key="entity.e_demande.r_service_concerne"/} </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_demande.r_service_concerne" /}' name="r_service_concerne" value="{r_service_concerne.f_service|string}" type="text" readonly="">
+                {#__ key="entity.e_demande.r_service_concerne"/} </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_demande.r_service_concerne" /}' name="r_service_concerne" value="{r_service_concerne.f_service|string}" type="text" readonly="">
         </div>
     </div>
     <div data-field="f_poste" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="r_poste">
-                {@__ key="entity.e_demande.r_poste"/} </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_demande.r_poste" /}' name="r_poste" value="{r_poste.f_nom|string}" type="text" readonly="">
+                {#__ key="entity.e_demande.r_poste"/} </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_demande.r_poste" /}' name="r_poste" value="{r_poste.f_nom|string}" type="text" readonly="">
         </div>
     </div>
 
@@ -44,7 +44,7 @@
             <div data-field="f_date_debut" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_date_debut">
-                        {@__ key="entity.e_demande.f_date_debut"/}&nbsp;
+                        {#__ key="entity.e_demande.f_date_debut"/}&nbsp;
                         {@inline_help field="f_date_debut"}
                         <i data-field="f_date_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -53,7 +53,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_demande.f_date_debut" /}' value="{f_date_debut}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_demande.f_date_debut" /}' value="{f_date_debut}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <div data-field="f_date_fin" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_date_fin">
-                        {@__ key="entity.e_demande.f_date_fin"/}&nbsp;
+                        {#__ key="entity.e_demande.f_date_fin"/}&nbsp;
                         {@inline_help field="f_date_fin"}
                         <i data-field="f_date_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -73,7 +73,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_demande.f_date_fin" /}' value="{f_date_fin}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_demande.f_date_fin" /}' value="{f_date_fin}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
             <div data-field="f_horaire_debut" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_horaire_debut">
-                        {@__ key="entity.e_demande.f_horaire_debut"/}&nbsp;
+                        {#__ key="entity.e_demande.f_horaire_debut"/}&nbsp;
                         {@inline_help field="f_horaire_debut"}
                         <i data-field="f_horaire_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -94,7 +94,7 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-clock-o"></i>
                             </div>
-                            <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_horaire_debut" /}' value="{f_horaire_debut|time}" type="text" readonly="">
+                            <input class="form-control input" placeholder='{#__ key="entity.e_demande.f_horaire_debut" /}' value="{f_horaire_debut|time}" type="text" readonly="">
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
             <div data-field="f_horaire_fin" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_horaire_fin">
-                        {@__ key="entity.e_demande.f_horaire_fin"/}&nbsp;
+                        {#__ key="entity.e_demande.f_horaire_fin"/}&nbsp;
                         {@inline_help field="f_horaire_fin"}
                         <i data-field="f_horaire_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -116,7 +116,7 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-clock-o"></i>
                             </div>
-                            <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_horaire_fin" /}' value="{f_horaire_fin|time}" type="text" readonly="">
+                            <input class="form-control input" placeholder='{#__ key="entity.e_demande.f_horaire_fin" /}' value="{f_horaire_fin|time}" type="text" readonly="">
                         </div>
                     </div>
                 </div>
@@ -128,12 +128,12 @@
             <div data-field="f_nombre_d_heures" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_nombre_d_heures">
-                        {@__ key="entity.e_demande.f_nombre_d_heures"/}&nbsp;
+                        {#__ key="entity.e_demande.f_nombre_d_heures"/}&nbsp;
                         {@inline_help field="f_nombre_d_heures"}
                         <i data-field="f_nombre_d_heures" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_demande.f_nombre_d_heures" /}' name="f_nombre_d_heures_print" value="{f_nombre_d_heures}" type="text" readonly="">
+                    <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_demande.f_nombre_d_heures" /}' name="f_nombre_d_heures_print" value="{f_nombre_d_heures}" type="text" readonly="">
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
             <div data-field="f_description" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_description">
-                        {@__ key="entity.e_demande.f_description"/}&nbsp;
+                        {#__ key="entity.e_demande.f_description"/}&nbsp;
                         {@inline_help field="f_description"}
                         <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -154,17 +154,17 @@
             <div data-field="f_mode_diffusion" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_mode_diffusion">
-                        {@__ key="entity.e_demande.f_mode_diffusion"/}&nbsp;
+                        {#__ key="entity.e_demande.f_mode_diffusion"/}&nbsp;
                         {@inline_help field="f_mode_diffusion"}
                         <i data-field="f_mode_diffusion" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     {^f_mode_diffusion}
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_mode_diffusion" /}' name="f_mode_diffusion_print" type="text" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande.f_mode_diffusion" /}' name="f_mode_diffusion_print" type="text" readonly="">
                     {/f_mode_diffusion}
                     {#enum_radio.e_demande.f_mode_diffusion}
                     {@eq key=f_mode_diffusion value="{.value}" }
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_mode_diffusion" /}' name="f_mode_diffusion_print" value="{.translation}" type="text" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande.f_mode_diffusion" /}' name="f_mode_diffusion_print" value="{.translation}" type="text" readonly="">
                     {/eq}
                     {/enum_radio.e_demande.f_mode_diffusion}
                 </div>
@@ -172,8 +172,8 @@
             <div data-field="f_status" class="fieldLineHeight col-xs-12">
                 <div class="form-group">
                     <label for="r_status">
-                        {@__ key="entity.e_demande.r_status"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande.r_status" /}' name="r_status" value="{r_status.f_name|string}" type="text" readonly="">
+                        {#__ key="entity.e_demande.r_status"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande.r_status" /}' name="r_status" value="{r_status.f_name|string}" type="text" readonly="">
                 </div>
             </div>
         </div>
@@ -184,7 +184,7 @@
     <div id="r_history_status_print" class="row">
         <div class="col-xs-12">
             <h3>
-                {@__ key="entity.e_history_1224_5384.name_entity" /}
+                {#__ key="entity.e_history_1224_5384.name_entity" /}
             </h3>
             <hr>
         </div>
@@ -211,7 +211,7 @@
     <div id="r_candidat_print" class="row">
         <div class="col-xs-12">
             <h3>
-                {@__ key="entity.e_candidat.name_entity" /}
+                {#__ key="entity.e_candidat.name_entity" /}
             </h3>
             <hr>
         </div>

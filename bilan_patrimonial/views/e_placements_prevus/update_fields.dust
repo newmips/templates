@@ -8,7 +8,7 @@
     <div data-field="f_placement_1" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_placement_1">
-                {@__ key="entity.e_placements_prevus.f_placement_1"/}&nbsp;
+                {#__ key="entity.e_placements_prevus.f_placement_1"/}&nbsp;
                 {@inline_help field="f_placement_1"}
                 <i data-field="f_placement_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -19,7 +19,7 @@
     <div data-field="f_placement_2" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_placement_2">
-                {@__ key="entity.e_placements_prevus.f_placement_2"/}&nbsp;
+                {#__ key="entity.e_placements_prevus.f_placement_2"/}&nbsp;
                 {@inline_help field="f_placement_2"}
                 <i data-field="f_placement_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -30,7 +30,7 @@
     <div data-field="f_placement_3" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_placement_3">
-                {@__ key="entity.e_placements_prevus.f_placement_3"/}&nbsp;
+                {#__ key="entity.e_placements_prevus.f_placement_3"/}&nbsp;
                 {@inline_help field="f_placement_3"}
                 <i data-field="f_placement_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}

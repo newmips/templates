@@ -2,8 +2,8 @@
     <div data-field="f_etablissement" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="r_etablissement">
-                {@__ key="entity.e_demande_de_remplacement.r_etablissement"/} </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.r_etablissement" /}' name="r_etablissement" value="{r_etablissement.f_nom|string}" type="text" readonly="">
+                {#__ key="entity.e_demande_de_remplacement.r_etablissement"/} </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.r_etablissement" /}' name="r_etablissement" value="{r_etablissement.f_nom|string}" type="text" readonly="">
         </div>
     </div>
 
@@ -27,8 +27,8 @@
             <div data-field="f_pole" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_pole">
-                        {@__ key="entity.e_demande_de_remplacement.r_pole"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.r_pole" /}' name="r_pole" value="{r_pole.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_demande_de_remplacement.r_pole"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.r_pole" /}' name="r_pole" value="{r_pole.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
         </div>
@@ -38,8 +38,8 @@
             <div data-field="f_service" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_service">
-                        {@__ key="entity.e_demande_de_remplacement.r_service"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.r_service" /}' name="r_service" value="{r_service.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_demande_de_remplacement.r_service"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.r_service" /}' name="r_service" value="{r_service.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
         </div>
@@ -49,15 +49,15 @@
             <div data-field="f_metier" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_metier">
-                        {@__ key="entity.e_demande_de_remplacement.r_metier"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.r_metier" /}' name="r_metier" value="{r_metier.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_demande_de_remplacement.r_metier"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.r_metier" /}' name="r_metier" value="{r_metier.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_competence_specifique" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_competence_specifique">
-                        {@__ key="entity.e_demande_de_remplacement.r_competence_specifique"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.r_competence_specifique" /}' name="r_competence_specifique" value="{r_competence_specifique.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_demande_de_remplacement.r_competence_specifique"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.r_competence_specifique" /}' name="r_competence_specifique" value="{r_competence_specifique.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
             <div data-field="f_date_du_remplacement" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_date_du_remplacement">
-                        {@__ key="entity.e_demande_de_remplacement.f_date_du_remplacement"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_date_du_remplacement"/}&nbsp;
                         {@inline_help field="f_date_du_remplacement"}
                         <i data-field="f_date_du_remplacement" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -76,7 +76,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_demande_de_remplacement.f_date_du_remplacement" /}' value="{f_date_du_remplacement}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_demande_de_remplacement.f_date_du_remplacement" /}' value="{f_date_du_remplacement}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -87,12 +87,12 @@
             <div data-field="f_nombre_de_positions" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_nombre_de_positions">
-                        {@__ key="entity.e_demande_de_remplacement.f_nombre_de_positions"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_nombre_de_positions"/}&nbsp;
                         {@inline_help field="f_nombre_de_positions"}
                         <i data-field="f_nombre_de_positions" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.f_nombre_de_positions" /}' name="f_nombre_de_positions_print" value="{f_nombre_de_positions}" type="number" max="2147483648" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.f_nombre_de_positions" /}' name="f_nombre_de_positions_print" value="{f_nombre_de_positions}" type="number" max="2147483648" readonly="">
                 </div>
             </div>
         </div>
@@ -102,8 +102,8 @@
             <div data-field="f_type_d_horaire" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_type_d_horaire">
-                        {@__ key="entity.e_demande_de_remplacement.r_type_d_horaire"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.r_type_d_horaire" /}' name="r_type_d_horaire" value="{r_type_d_horaire.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_demande_de_remplacement.r_type_d_horaire"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.r_type_d_horaire" /}' name="r_type_d_horaire" value="{r_type_d_horaire.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@
             <div data-field="f_debut_de_poste" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_debut_de_poste">
-                        {@__ key="entity.e_demande_de_remplacement.f_debut_de_poste"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_debut_de_poste"/}&nbsp;
                         {@inline_help field="f_debut_de_poste"}
                         <i data-field="f_debut_de_poste" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -122,7 +122,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
                         </div>
-                        <input class="form-control input datetimepicker-toconvert" placeholder='{@__ key="entity.e_demande_de_remplacement.f_debut_de_poste" /}' value="{f_debut_de_poste}" type="text" readonly="">
+                        <input class="form-control input datetimepicker-toconvert" placeholder='{#__ key="entity.e_demande_de_remplacement.f_debut_de_poste" /}' value="{f_debut_de_poste}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
             <div data-field="f_fin_de_poste" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_fin_de_poste">
-                        {@__ key="entity.e_demande_de_remplacement.f_fin_de_poste"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_fin_de_poste"/}&nbsp;
                         {@inline_help field="f_fin_de_poste"}
                         <i data-field="f_fin_de_poste" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -142,7 +142,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
                         </div>
-                        <input class="form-control input datetimepicker-toconvert" placeholder='{@__ key="entity.e_demande_de_remplacement.f_fin_de_poste" /}' value="{f_fin_de_poste}" type="text" readonly="">
+                        <input class="form-control input datetimepicker-toconvert" placeholder='{#__ key="entity.e_demande_de_remplacement.f_fin_de_poste" /}' value="{f_fin_de_poste}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@
             <div data-field="f_nombre_d_heures_travaillees" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_nombre_d_heures_travaillees">
-                        {@__ key="entity.e_demande_de_remplacement.f_nombre_d_heures_travaillees"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_nombre_d_heures_travaillees"/}&nbsp;
                         {@inline_help field="f_nombre_d_heures_travaillees"}
                         <i data-field="f_nombre_d_heures_travaillees" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -163,7 +163,7 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-clock-o"></i>
                             </div>
-                            <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.f_nombre_d_heures_travaillees" /}' value="{f_nombre_d_heures_travaillees|time}" type="text" readonly="">
+                            <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.f_nombre_d_heures_travaillees" /}' value="{f_nombre_d_heures_travaillees|time}" type="text" readonly="">
                         </div>
                     </div>
                 </div>
@@ -175,24 +175,24 @@
             <div data-field="f_motif_de_remplacement" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_motif_de_remplacement">
-                        {@__ key="entity.e_demande_de_remplacement.r_motif_de_remplacement"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.r_motif_de_remplacement" /}' name="r_motif_de_remplacement" value="{r_motif_de_remplacement.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_demande_de_remplacement.r_motif_de_remplacement"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.r_motif_de_remplacement" /}' name="r_motif_de_remplacement" value="{r_motif_de_remplacement.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_caracteristique_demande" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_caracteristique_demande">
-                        {@__ key="entity.e_demande_de_remplacement.f_caracteristique_demande"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_caracteristique_demande"/}&nbsp;
                         {@inline_help field="f_caracteristique_demande"}
                         <i data-field="f_caracteristique_demande" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     {^f_caracteristique_demande}
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.f_caracteristique_demande" /}' name="f_caracteristique_demande_print" type="text" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.f_caracteristique_demande" /}' name="f_caracteristique_demande_print" type="text" readonly="">
                     {/f_caracteristique_demande}
                     {#enum_radio.e_demande_de_remplacement.f_caracteristique_demande}
                     {@eq key=f_caracteristique_demande value="{.value}" }
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.f_caracteristique_demande" /}' name="f_caracteristique_demande_print" value="{.translation}" type="text" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.f_caracteristique_demande" /}' name="f_caracteristique_demande_print" value="{.translation}" type="text" readonly="">
                     {/eq}
                     {/enum_radio.e_demande_de_remplacement.f_caracteristique_demande}
                 </div>
@@ -200,24 +200,24 @@
             <div data-field="f_emetteur" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_emetteur">
-                        {@__ key="entity.e_demande_de_remplacement.r_emetteur"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.r_emetteur" /}' name="r_emetteur" value="{r_emetteur.f_login|string}" type="text" readonly="">
+                        {#__ key="entity.e_demande_de_remplacement.r_emetteur"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.r_emetteur" /}' name="r_emetteur" value="{r_emetteur.f_login|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_visibilite" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_visibilite">
-                        {@__ key="entity.e_demande_de_remplacement.f_visibilite"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_visibilite"/}&nbsp;
                         {@inline_help field="f_visibilite"}
                         <i data-field="f_visibilite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     {^f_visibilite}
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.f_visibilite" /}' name="f_visibilite_print" type="text" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.f_visibilite" /}' name="f_visibilite_print" type="text" readonly="">
                     {/f_visibilite}
                     {#enum_radio.e_demande_de_remplacement.f_visibilite}
                     {@eq key=f_visibilite value="{.value}" }
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande_de_remplacement.f_visibilite" /}' name="f_visibilite_print" value="{.translation}" type="text" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande_de_remplacement.f_visibilite" /}' name="f_visibilite_print" value="{.translation}" type="text" readonly="">
                     {/eq}
                     {/enum_radio.e_demande_de_remplacement.f_visibilite}
                 </div>
@@ -229,7 +229,7 @@
             <div data-field="f_debut_de_publication" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_debut_de_publication">
-                        {@__ key="entity.e_demande_de_remplacement.f_debut_de_publication"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_debut_de_publication"/}&nbsp;
                         {@inline_help field="f_debut_de_publication"}
                         <i data-field="f_debut_de_publication" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -238,7 +238,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_demande_de_remplacement.f_debut_de_publication" /}' value="{f_debut_de_publication}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_demande_de_remplacement.f_debut_de_publication" /}' value="{f_debut_de_publication}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -249,7 +249,7 @@
             <div data-field="f_fin_de_publication" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_fin_de_publication">
-                        {@__ key="entity.e_demande_de_remplacement.f_fin_de_publication"/}&nbsp;
+                        {#__ key="entity.e_demande_de_remplacement.f_fin_de_publication"/}&nbsp;
                         {@inline_help field="f_fin_de_publication"}
                         <i data-field="f_fin_de_publication" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -258,7 +258,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_demande_de_remplacement.f_fin_de_publication" /}' value="{f_fin_de_publication}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_demande_de_remplacement.f_fin_de_publication" /}' value="{f_fin_de_publication}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -270,7 +270,7 @@
     <div id="r_affectation_print" class="row">
         <div class="col-xs-12">
             <h3>
-                {@__ key="entity.e_affectation.name_entity" /}
+                {#__ key="entity.e_affectation.name_entity" /}
             </h3>
             <hr>
         </div>

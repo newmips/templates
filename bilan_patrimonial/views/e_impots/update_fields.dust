@@ -5,18 +5,18 @@
     <div data-field="f_tranche" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_tranche">
-                {@__ key="entity.e_impots.f_tranche"/}&nbsp;
+                {#__ key="entity.e_impots.f_tranche"/}&nbsp;
                 {@inline_help field="f_tranche"}
                 <i data-field="f_tranche" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_impots.f_tranche" /}' name="f_tranche" value="{f_tranche}" type="text">
+            <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_impots.f_tranche" /}' name="f_tranche" value="{f_tranche}" type="text">
         </div>
     </div>
     <div data-field="f_montant" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_montant">
-                {@__ key="entity.e_impots.f_montant"/}&nbsp;
+                {#__ key="entity.e_impots.f_montant"/}&nbsp;
                 {@inline_help field="f_montant"}
                 <i data-field="f_montant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -25,14 +25,14 @@
                 <div class="input-group-addon">
                     <i class="fa fa-money"></i>
                 </div>
-                <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_montant" /}' name="f_montant" value="{f_montant}" type="text" data-type="currency">
+                <input class="form-control input" placeholder='{#__ key="entity.e_impots.f_montant" /}' name="f_montant" value="{f_montant}" type="text" data-type="currency">
             </div>
         </div>
     </div>
     <div data-field="f_france" class="fieldLineHeight col-xs-12 col-sm-12 col-md-3" style="">
         <div class="form-group">
             <label for="f_france">
-                {@__ key="entity.e_impots.f_france"/}&nbsp;
+                {#__ key="entity.e_impots.f_france"/}&nbsp;
                 {@inline_help field="f_france"}
                 <i data-field="f_france" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -49,18 +49,18 @@
     <div data-field="f_autre_pays" class="fieldLineHeight col-xs-12 col-sm-12 col-md-3" style="">
         <div class="form-group">
             <label for="f_autre_pays">
-                {@__ key="entity.e_impots.f_autre_pays"/}&nbsp;
+                {#__ key="entity.e_impots.f_autre_pays"/}&nbsp;
                 {@inline_help field="f_autre_pays"}
                 <i data-field="f_autre_pays" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_autre_pays" /}' name="f_autre_pays" value="{f_autre_pays}" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_impots.f_autre_pays" /}' name="f_autre_pays" value="{f_autre_pays}" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_regime_fiscal" class="fieldLineHeight col-xs-12 col-sm-12 col-md-3" style="">
         <div class="form-group">
             <label for="f_regime_fiscal">
-                {@__ key="entity.e_impots.f_regime_fiscal"/}&nbsp;
+                {#__ key="entity.e_impots.f_regime_fiscal"/}&nbsp;
                 {@inline_help field="f_regime_fiscal"}
                 <i data-field="f_regime_fiscal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -78,25 +78,25 @@
     <div data-field="f_autres_regimes" class="fieldLineHeight col-xs-12 col-sm-12 col-md-3" style="">
         <div class="form-group">
             <label for="f_autres_regimes">
-                {@__ key="entity.e_impots.f_autres_regimes"/}&nbsp;
+                {#__ key="entity.e_impots.f_autres_regimes"/}&nbsp;
                 {@inline_help field="f_autres_regimes"}
                 <i data-field="f_autres_regimes" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_autres_regimes" /}' name="f_autres_regimes" value="{f_autres_regimes}" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_impots.f_autres_regimes" /}' name="f_autres_regimes" value="{f_autres_regimes}" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_ifi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_ifi">
-                {@__ key="entity.e_impots.f_ifi"/}&nbsp;
+                {#__ key="entity.e_impots.f_ifi"/}&nbsp;
                 {@inline_help field="f_ifi"}
                 <i data-field="f_ifi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_ifi">
                 <option value="">
-                    {@__ key="select.default" /}
+                    {#__ key="select.default" /}
                 </option>
                 {#enum_radio.e_impots.f_ifi}
                 {@eq key=f_ifi value="{.value}" }
@@ -111,7 +111,7 @@
     <div data-field="f_montant_paye" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_montant_paye">
-                {@__ key="entity.e_impots.f_montant_paye"/}&nbsp;
+                {#__ key="entity.e_impots.f_montant_paye"/}&nbsp;
                 {@inline_help field="f_montant_paye"}
                 <i data-field="f_montant_paye" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -120,19 +120,19 @@
                 <div class="input-group-addon">
                     <i class="fa fa-money"></i>
                 </div>
-                <input class="form-control input" placeholder='{@__ key="entity.e_impots.f_montant_paye" /}' name="f_montant_paye" value="{f_montant_paye}" type="text" data-type="currency">
+                <input class="form-control input" placeholder='{#__ key="entity.e_impots.f_montant_paye" /}' name="f_montant_paye" value="{f_montant_paye}" type="text" data-type="currency">
             </div>
         </div>
     </div>
     <div data-field="f_solutions_reduc_ir_ifi" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_solutions_reduc_ir_ifi">
-                {@__ key="entity.e_impots.f_solutions_reduc_ir_ifi"/}&nbsp;
+                {#__ key="entity.e_impots.f_solutions_reduc_ir_ifi"/}&nbsp;
                 {@inline_help field="f_solutions_reduc_ir_ifi"}
                 <i data-field="f_solutions_reduc_ir_ifi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_impots.f_solutions_reduc_ir_ifi" /}' name="f_solutions_reduc_ir_ifi" id="f_solutions_reduc_ir_ifi_textareaid" type="text">{f_solutions_reduc_ir_ifi|s}</textarea>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_impots.f_solutions_reduc_ir_ifi" /}' name="f_solutions_reduc_ir_ifi" id="f_solutions_reduc_ir_ifi_textareaid" type="text">{f_solutions_reduc_ir_ifi|s}</textarea>
         </div>
     </div>
 </div>

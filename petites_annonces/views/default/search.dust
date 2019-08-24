@@ -5,16 +5,16 @@
 {/custom_css_2}
 {<header}
 <h1>
-    {@__ key="module.m_home"/}
+    {#__ key="module.m_home"/}
     <small>
-        {@__ key="module.module"/}
+        {#__ key="module.module"/}
     </small>
 </h1>
 <ol class="breadcrumb">
     <li>
         <a href="/">
             <i class="fa fa-home"></i>
-            {@__ key="module.home"/}
+            {#__ key="module.home"/}
         </a>
     </li>
     <!-- NEW MODULE -->
@@ -31,7 +31,7 @@
 	<form method="POST" action="/default/search">
 	<div class="box box-default">
 		<div class="box-header with-border">
-			<h3 class="box-title">{@__ key="button.search"/}</h3>
+			<h3 class="box-title">{#__ key="button.search"/}</h3>
 			<div class="box-tools pull-right">
 				<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				</button>
@@ -41,18 +41,18 @@
 			<div class="col-xs-12 col-md-7">
 				<div class="form-group">
 					<label for="f_nom">
-						{@__ key="button.looking_for"/}&nbsp;
+						{#__ key="button.looking_for"/}&nbsp;
                         {@inline_help field="f_nom"}
                         <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
 					</label>
-					<input class="form-control input" placeholder="{@__ key="button.looking_for" /}" name="f_nom" value="{session.c_nom}" maxlength="255" type="text" autofocus>
+					<input class="form-control input" placeholder="{#__ key="button.looking_for" /}" name="f_nom" value="{session.c_nom}" maxlength="255" type="text" autofocus>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-2">
 				<div class="form-group">
 					<label for="f_type_d_annonce">
-						{@__ key="entity.e_annonce.f_type_d_annonce"/}&nbsp;
+						{#__ key="entity.e_annonce.f_type_d_annonce"/}&nbsp;
 						{@inline_help field="f_type_d_annonce"}
 						<i data-field="f_type_d_annonce" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
 						{/inline_help}
@@ -69,19 +69,19 @@
 			</div>
       <div class="col-xs-12 col-md-3 center">
       <br>
-        <button type="submit" class="btn btn-info">{@__ key="button.search"/}</button>&nbsp;&nbsp;
-		<a class="btn btn-default" href="/default/search_reset">{@__ key="button.search_reset"/}</a>
+        <button type="submit" class="btn btn-info">{#__ key="button.search"/}</button>&nbsp;&nbsp;
+		<a class="btn btn-default" href="/default/search_reset">{#__ key="button.search_reset"/}</a>
       </div>
 			<!-- <div class="col-xs-12 col-md-2">
 				<div class="form-group">
 					<label for="r_region">
-						{@__ key="entity.e_annonce.r_region" /}&nbsp;
+						{#__ key="entity.e_annonce.r_region" /}&nbsp;
 						{@inline_help field="r_region"}
 						<i data-field="r_region" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
 						{/inline_help}
 					</label>
 					<select style="width:100%;" class="ajax form-control" name="r_region" data-source="region" data-using="f_nom">
-						<option value="">{@__ key="select.default" /}</option>
+						<option value="">{#__ key="select.default" /}</option>
 						{#session.c_region}
 						<option value="{id}" selected="">{f_nom|string}</option>
 						{/session.c_region}
@@ -91,13 +91,13 @@
 			<div class="col-xs-12 col-md-2">
 				<div class="form-group">
 					<label for="r_site">
-						{@__ key="entity.e_annonce.r_site" /}&nbsp;
+						{#__ key="entity.e_annonce.r_site" /}&nbsp;
 						{@inline_help field="r_site"}
 						<i data-field="r_site" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
 						{/inline_help}
 					</label>
 					<select style="width:100%;" class="ajax form-control" name="r_site" data-source="site" data-using="f_nom">
-						<option value="">{@__ key="select.default" /}</option>
+						<option value="">{#__ key="select.default" /}</option>
 						{#session.c_site}
 						<option value="{id}" selected="">{f_nom|string}</option>
 						{/session.c_site}
@@ -106,8 +106,8 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-md-12" style="text-align: right;">
-					<a class="btn btn-default" href="/default/search_reset">{@__ key="button.search_reset"/}</a>&nbsp;&nbsp;
-					<button type="submit" class="btn btn-info">{@__ key="button.search"/}</button>
+					<a class="btn btn-default" href="/default/search_reset">{#__ key="button.search_reset"/}</a>&nbsp;&nbsp;
+					<button type="submit" class="btn btn-info">{#__ key="button.search"/}</button>
 				</div>
 			</div> -->
 		</div>
@@ -116,7 +116,7 @@
 
 	<div class="box">
         <div class="box-header">
-            <h3 class="box-title">{@__ key="entity.e_annonce.records_found"/}</h3>
+            <h3 class="box-title">{#__ key="entity.e_annonce.records_found"/}</h3>
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
                 <i class="fa fa-minus"></i></button>
@@ -126,11 +126,11 @@
 
 					{! <div class="form-group" style="position: absolute;right: 25px;top:45px;min-width: 200px;">
 						<select style="width:100%;" class="form-control" name="tri" id="tri">
-							<option value="">{@__ key="button.sort_by" /}</option>
-							<option value="date_creation_asc" selected>{@__ key="button.date_creation_desc" /}</option>
-              				<option value="date_creation_desc">{@__ key="button.date_creation_asc" /}</option>
-							<option value="prix_desc">{@__ key="button.prix_desc" /}</option>
-              				<option value="prix_asc">{@__ key="button.prix_asc" /}</option>
+							<option value="">{#__ key="button.sort_by" /}</option>
+							<option value="date_creation_asc" selected>{#__ key="button.date_creation_desc" /}</option>
+              				<option value="date_creation_desc">{#__ key="button.date_creation_asc" /}</option>
+							<option value="prix_desc">{#__ key="button.prix_desc" /}</option>
+              				<option value="prix_asc">{#__ key="button.prix_asc" /}</option>
 						</select>
 					</div> !}
 
@@ -139,51 +139,51 @@
 					<thead class="main">
 						<tr class="fields">
 							<th data-field="id" data-col="id">
-								{@__ key="entity.e_annonce.id_entity"/}
+								{#__ key="entity.e_annonce.id_entity"/}
 							</th>
 							<th data-field="createdAt" data-col="createdAt" data-type="date">
-								{@__ key="defaults.createdAt"/}
+								{#__ key="defaults.createdAt"/}
 							</th>
 							{?session.owner}
 							<th data-field="r_statut" data-col="r_statut.f_name" data-type="status">
-								{@__ key="entity.e_annonce.r_statut"/}
+								{#__ key="entity.e_annonce.r_statut"/}
 							</th>
 							{/session.owner}
 							<th data-field="f_type_d_annonce" data-col="f_type_d_annonce" data-type="enum">
-								{@__ key="entity.e_annonce.f_type_d_annonce"/}
+								{#__ key="entity.e_annonce.f_type_d_annonce"/}
 							</th>
 							<!-- <th data-field="r_statut" data-col="r_statut.f_name" data-type="status">
-								{@__ key="entity.e_annonce.r_statut"/}
+								{#__ key="entity.e_annonce.r_statut"/}
 							</th> -->
 							<th data-field="r_categorie" data-col="r_categorie.f_nom" data-type="string">
-								{@__ key="entity.e_annonce.r_categorie"/}
+								{#__ key="entity.e_annonce.r_categorie"/}
 							</th>
 							<th data-field="r_sous_categorie" data-col="r_sous_categorie.f_nom" data-type="string">
-								{@__ key="entity.e_annonce.r_sous_categorie"/}
+								{#__ key="entity.e_annonce.r_sous_categorie"/}
 							</th>
 							<th data-field="f_nom" data-col="f_nom" data-type="string">
-								{@__ key="entity.e_annonce.f_nom"/}
+								{#__ key="entity.e_annonce.f_nom"/}
 							</th>
 							<!-- <th data-field="f_description" data-col="f_description" data-type="text">
-								{@__ key="entity.e_annonce.f_description"/}
+								{#__ key="entity.e_annonce.f_description"/}
 							</th> -->
 							<th data-field="f_prix" data-col="f_prix" data-type="currency">
-								{@__ key="entity.e_annonce.f_prix"/}
+								{#__ key="entity.e_annonce.f_prix"/}
 							</th>
 							<th data-field="f_photo_1" data-col="f_photo_1" data-type="picture">
-								{@__ key="entity.e_annonce.f_photo_1"/}
+								{#__ key="entity.e_annonce.f_photo_1"/}
 							</th>
 							<th data-field="r_pays" data-col="r_pays.f_nom" data-type="string">
-								{@__ key="entity.e_annonce.r_pays"/}
+								{#__ key="entity.e_annonce.r_pays"/}
 							</th>
 							<th data-field="r_region" data-col="r_region.f_nom" data-type="string">
-								{@__ key="entity.e_annonce.r_region"/}
+								{#__ key="entity.e_annonce.r_region"/}
 							</th>
 							<th data-field="r_societe" data-col="r_societe.f_nom" data-type="string">
-								{@__ key="entity.e_annonce.r_societe"/}
+								{#__ key="entity.e_annonce.r_societe"/}
 							</th>
 							<th data-field="r_site" data-col="r_site.f_nom" data-type="string">
-								{@__ key="entity.e_annonce.r_site"/}
+								{#__ key="entity.e_annonce.r_site"/}
 							</th>
 							<th></th>
 						</tr>
@@ -216,10 +216,10 @@
 					</tbody>
 				</table>
 				<br>
-				<a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{@__ key="button.return"/}</a>&nbsp;&nbsp;
+				<a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>&nbsp;&nbsp;
 				{@actionAccess entity="annonce" action="create"}
 				<a href="/annonce/create_form">
-					<button class="btn btn-success"><i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.create"/}</span>
+					<button class="btn btn-success"><i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
 					</button>
 				</a>
 				{/actionAccess}
@@ -245,7 +245,7 @@
                     <a class="btn-show" href="/annonce/show?id='+row['id']+'">\
                         <button class="btn btn-primary">\
                             <i class="fa fa-desktop fa-md">&nbsp;&nbsp;</i>\
-                            <span>{@__ key="button.show" /}</span>\
+                            <span>{#__ key="button.show" /}</span>\
                         </button>\
                     </a>';
                 return aTag;

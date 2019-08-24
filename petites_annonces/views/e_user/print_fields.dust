@@ -2,23 +2,23 @@
     <div data-field="f_nom" class="fieldLineHeight col-xs-12" style="">
         <div class="form-group">
             <label for="f_nom">
-                {@__ key="entity.e_user.f_nom"/}&nbsp;
+                {#__ key="entity.e_user.f_nom"/}&nbsp;
                 {@inline_help field="f_nom"}
                 <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_user.f_nom" /}' name="f_nom_print" value="{f_nom}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_user.f_nom" /}' name="f_nom_print" value="{f_nom}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_login" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_login">
-                {@__ key="entity.e_user.f_login"/}&nbsp;
+                {#__ key="entity.e_user.f_login"/}&nbsp;
                 {@inline_help field="f_login"}
                 <i data-field="f_login" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_user.f_login" /}' name="f_login_print" value="{f_login}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_user.f_login" /}' name="f_login_print" value="{f_login}" type="text" maxlength="255" readonly="">
         </div>
     </div>
 
@@ -40,7 +40,7 @@
             <div data-field="f_role" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_role">
-                        {@__ key="entity.e_user.r_role" /}</label>
+                        {#__ key="entity.e_user.r_role" /}</label>
                     <select multiple="" disabled="" readonly="" class="regular-select form-control" name="r_role" data-source="role" data-using="f_label" style="width:100%;">
                         {#r_role}
                         <option value="{f_label|string}" selected="">{f_label|string}</option>
@@ -55,7 +55,7 @@
             <div data-field="f_group" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_group">
-                        {@__ key="entity.e_user.r_group" /}</label>
+                        {#__ key="entity.e_user.r_group" /}</label>
                     <select multiple="" disabled="" readonly="" class="regular-select form-control" name="r_group" data-source="group" data-using="f_label" style="width:100%;">
                         {#r_group}
                         <option value="{f_label|string}" selected="">{f_label|string}</option>
@@ -70,7 +70,7 @@
             <div data-field="f_email" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_email">
-                        {@__ key="entity.e_user.f_email"/}&nbsp;
+                        {#__ key="entity.e_user.f_email"/}&nbsp;
                         {@inline_help field="f_email"}
                         <i data-field="f_email" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -79,14 +79,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-envelope"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_user.f_email" /}' name="f_email_print" value="{f_email}" type="text" data-type="email" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_user.f_email" /}' name="f_email_print" value="{f_email}" type="text" data-type="email" readonly="">
                     </div>
                 </div>
             </div>
             <div data-field="f_telephone" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_telephone">
-                        {@__ key="entity.e_user.f_telephone"/}&nbsp;
+                        {#__ key="entity.e_user.f_telephone"/}&nbsp;
                         {@inline_help field="f_telephone"}
                         <i data-field="f_telephone" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -95,69 +95,69 @@
                         <div class="input-group-addon">
                             <i class="fa fa-phone"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_user.f_telephone" /}' name="f_telephone_print" value="{f_telephone}" type="tel" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_user.f_telephone" /}' name="f_telephone_print" value="{f_telephone}" type="tel" readonly="">
                     </div>
                 </div>
             </div>
             <div data-field="f_societe" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_societe">
-                        {@__ key="entity.e_user.r_societe"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_user.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_user.r_societe"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_user.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_site" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_site">
-                        {@__ key="entity.e_user.r_site"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_user.r_site" /}' name="r_site" value="{r_site.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_user.r_site"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_user.r_site" /}' name="r_site" value="{r_site.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_region" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_region">
-                        {@__ key="entity.e_user.r_region"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_user.r_region" /}' name="r_region" value="{r_region.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_user.r_region"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_user.r_region" /}' name="r_region" value="{r_region.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_pays" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_pays">
-                        {@__ key="entity.e_user.r_pays"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_user.r_pays" /}' name="r_pays" value="{r_pays.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_user.r_pays"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_user.r_pays" /}' name="r_pays" value="{r_pays.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_password" class="fieldLineHeight col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <label for="f_password">
-                        {@__ key="entity.e_user.f_password"/}&nbsp;
+                        {#__ key="entity.e_user.f_password"/}&nbsp;
                         {@inline_help field="f_password"}
                         <i data-field="f_password" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_user.f_password" /}' name="f_password_print" value="{f_password}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_user.f_password" /}' name="f_password_print" value="{f_password}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
             <div data-field="f_token_password_reset" class="fieldLineHeight col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <label for="f_token_password_reset">
-                        {@__ key="entity.e_user.f_token_password_reset"/}&nbsp;
+                        {#__ key="entity.e_user.f_token_password_reset"/}&nbsp;
                         {@inline_help field="f_token_password_reset"}
                         <i data-field="f_token_password_reset" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_user.f_token_password_reset" /}' name="f_token_password_reset_print" value="{f_token_password_reset}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_user.f_token_password_reset" /}' name="f_token_password_reset_print" value="{f_token_password_reset}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
             <div data-field="f_enabled" class="fieldLineHeight col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <label for="f_enabled">
-                        {@__ key="entity.e_user.f_enabled"/}&nbsp;
+                        {#__ key="entity.e_user.f_enabled"/}&nbsp;
                         {@inline_help field="f_enabled"}
                         <i data-field="f_enabled" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_user.f_enabled" /}' name="f_enabled_print" value="{f_enabled}" type="number" max="2147483648" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_user.f_enabled" /}' name="f_enabled_print" value="{f_enabled}" type="number" max="2147483648" readonly="">
                 </div>
             </div>
         </div>
@@ -173,7 +173,7 @@
     <div id="r_notification_print" class="row">
         <div class="col-xs-12">
             <h3>
-                {@__ key="entity.e_notification.name_entity" /}
+                {#__ key="entity.e_notification.name_entity" /}
             </h3>
             <hr>
         </div>

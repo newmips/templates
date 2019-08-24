@@ -6,7 +6,7 @@
     <div data-field="f_montant_uc" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
         <div class="form-group">
             <label for="f_montant_uc">
-                {@__ key="entity.e_suivi_personnalise.f_montant_uc"/}&nbsp;
+                {#__ key="entity.e_suivi_personnalise.f_montant_uc"/}&nbsp;
                 {@inline_help field="f_montant_uc"}
                 <i data-field="f_montant_uc" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -15,52 +15,52 @@
                 <div class="input-group-addon">
                     <i class="fa fa-money"></i>
                 </div>
-                <input class="form-control input" placeholder='{@__ key="entity.e_suivi_personnalise.f_montant_uc" /}' name="f_montant_uc" value="" type="text" data-type="currency">
+                <input class="form-control input" placeholder='{#__ key="entity.e_suivi_personnalise.f_montant_uc" /}' name="f_montant_uc" value="" type="text" data-type="currency">
             </div>
         </div>
     </div>
     <div data-field="f_seuil_declenchement" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_seuil_declenchement">
-                {@__ key="entity.e_suivi_personnalise.f_seuil_declenchement"/}&nbsp;
+                {#__ key="entity.e_suivi_personnalise.f_seuil_declenchement"/}&nbsp;
                 {@inline_help field="f_seuil_declenchement"}
                 <i data-field="f_seuil_declenchement" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" data-custom-type="decimal" placeholder='{@__ key="entity.e_suivi_personnalise.f_seuil_declenchement" /}' name="f_seuil_declenchement" value="" type="text">
+            <input class="form-control input" data-custom-type="decimal" placeholder='{#__ key="entity.e_suivi_personnalise.f_seuil_declenchement" /}' name="f_seuil_declenchement" value="" type="text">
         </div>
     </div>
     <div data-field="f_service_souhaite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_service_souhaite">
-                {@__ key="entity.e_suivi_personnalise.f_service_souhaite"/}&nbsp;
+                {#__ key="entity.e_suivi_personnalise.f_service_souhaite"/}&nbsp;
                 {@inline_help field="f_service_souhaite"}
                 <i data-field="f_service_souhaite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_personnalise.f_service_souhaite" /}' name="f_service_souhaite" value="" type="text">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_personnalise.f_service_souhaite" /}' name="f_service_souhaite" value="" type="text">
         </div>
     </div>
     <div data-field="f_mode_de_contact" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_mode_de_contact">
-                {@__ key="entity.e_suivi_personnalise.f_mode_de_contact"/}&nbsp;
+                {#__ key="entity.e_suivi_personnalise.f_mode_de_contact"/}&nbsp;
                 {@inline_help field="f_mode_de_contact"}
                 <i data-field="f_mode_de_contact" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_suivi_personnalise.f_mode_de_contact" /}' name="f_mode_de_contact" id="f_mode_de_contact_textareaid" type="text">{f_mode_de_contact|s}</textarea>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_suivi_personnalise.f_mode_de_contact" /}' name="f_mode_de_contact" id="f_mode_de_contact_textareaid" type="text">{f_mode_de_contact|s}</textarea>
         </div>
     </div>
     <div data-field="f_frequence_convenue" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_frequence_convenue">
-                {@__ key="entity.e_suivi_personnalise.f_frequence_convenue"/}&nbsp;
+                {#__ key="entity.e_suivi_personnalise.f_frequence_convenue"/}&nbsp;
                 {@inline_help field="f_frequence_convenue"}
                 <i data-field="f_frequence_convenue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_suivi_personnalise.f_frequence_convenue" /}' name="f_frequence_convenue" id="f_frequence_convenue_textareaid" type="text">{f_frequence_convenue|s}</textarea>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_suivi_personnalise.f_frequence_convenue" /}' name="f_frequence_convenue" id="f_frequence_convenue_textareaid" type="text">{f_frequence_convenue|s}</textarea>
         </div>
     </div>
 

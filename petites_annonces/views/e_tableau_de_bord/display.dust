@@ -1,18 +1,18 @@
 {>"layout_m_reporting"/}
 {<header}
     <h1>
-        {@__ key="module.m_home"/}
-        <small>{@__ key="module.module"/}</small>
+        {#__ key="module.m_home"/}
+        <small>{#__ key="module.module"/}</small>
     </h1>
     <ol class="breadcrumb">
         <li>
             <a href="#">
                 <i class="fa fa-home"></i>
-                {@__ key="module.home"/}
+                {#__ key="module.home"/}
             </a>
         </li>
         <li class="active">
-            {@__ key="module.m_reporting"/}
+            {#__ key="module.m_reporting"/}
         </li>
     </ol>
 {/header}
@@ -23,7 +23,7 @@
 		<div id="chart_e_annonce_site_widget" class="col-sm-6 col-xs-6" style="min-height: 450px;">
             <div class="box box-primary expended-box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">{@__ key="entity.e_annonce.chart1"/}</h3>
+                    <h3 class="box-title">{#__ key="entity.e_annonce.chart1"/}</h3>
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                         </button>
@@ -41,7 +41,7 @@
 		<div id="chart_e_annonce_mois_widget" class="col-sm-6 col-xs-6" style="min-height: 450px;">
             <div class="box box-primary expended-box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">{@__ key="entity.e_annonce.chart2"/}</h3>
+                    <h3 class="box-title">{#__ key="entity.e_annonce.chart2"/}</h3>
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                         </button>

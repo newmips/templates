@@ -10,22 +10,22 @@
 <select id="dynamic_select" data-width="100%" class="form-control select" onchange="navigate()">
     {@moduleAccess module="home"}
     <option data-module="m_home" value="/default/home" selected="">
-        {@__ key="module.m_home" /}
+        {#__ key="module.m_home" /}
     </option>
     {/moduleAccess}
     {@moduleAccess module="administration"}
     <option data-module="m_administration" value="/default/administration">
-        {@__ key="module.m_administration" /}
+        {#__ key="module.m_administration" /}
     </option>
     {/moduleAccess}
     {@moduleAccess module="parametrage"}
     <option data-module="m_parametrage" value="/default/parametrage">
-        {@__ key="module.m_parametrage" /}
+        {#__ key="module.m_parametrage" /}
     </option>
     {/moduleAccess}
     {@moduleAccess module="extranet"}
     <option data-module="m_extranet" value="/default/extranet">
-        {@__ key="module.m_extranet" /}
+        {#__ key="module.m_extranet" /}
     </option>
     {/moduleAccess}
 </select>
@@ -37,38 +37,38 @@
 
     <li id="agenda_menu_item" style="display:block;" class="treeview">
         <a href="#">
-            <i class="fa fa-calendar-o"></i> <span>{@__ key="component.c_agenda.label_component" /}</span>
+            <i class="fa fa-calendar-o"></i> <span>{#__ key="component.c_agenda.label_component" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
             <li><a href="/agenda"><i class="fa fa-calendar"></i>
-                    {@__ key="global_component.agenda.menu" /}</a></li>
+                    {#__ key="global_component.agenda.menu" /}</a></li>
             <li id="agenda_event_menu_item" style="display:block;" class="treeview">
                 <a href="#"><i class="fa fa-calendar-plus-o"></i>
-                    {@__ key="entity.e_agenda_event.label_entity" /}
+                    {#__ key="entity.e_agenda_event.label_entity" /}
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/agenda_event/create_form"><i class="fa fa-plus"></i>
-                            {@__ key="operation.create" /}&nbsp;
-                            {@__ key="entity.e_agenda_event.label_entity" /}</a></li>
+                            {#__ key="operation.create" /}&nbsp;
+                            {#__ key="entity.e_agenda_event.label_entity" /}</a></li>
                     <li><a href="/agenda_event/list"><i class="fa fa-list"></i>
-                            {@__ key="operation.list" /}&nbsp;
-                            {@__ key="entity.e_agenda_event.plural_entity" /}</a></li>
+                            {#__ key="operation.list" /}&nbsp;
+                            {#__ key="entity.e_agenda_event.plural_entity" /}</a></li>
                 </ul>
             </li>
             <li id="agenda_category_menu_item" style="display:block;" class="treeview">
                 <a href="#"><i class="fa fa-bookmark"></i>
-                    {@__ key="entity.e_agenda_category.label_entity" /}
+                    {#__ key="entity.e_agenda_category.label_entity" /}
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/agenda_category/create_form"><i class="fa fa-plus"></i>
-                            {@__ key="operation.create" /}&nbsp;
-                            {@__ key="entity.e_agenda_category.label_entity" /}</a></li>
+                            {#__ key="operation.create" /}&nbsp;
+                            {#__ key="entity.e_agenda_category.label_entity" /}</a></li>
                     <li><a href="/agenda_category/list"><i class="fa fa-list"></i>
-                            {@__ key="operation.list" /}&nbsp;
-                            {@__ key="entity.e_agenda_category.plural_entity" /}</a></li>
+                            {#__ key="operation.list" /}&nbsp;
+                            {#__ key="entity.e_agenda_category.plural_entity" /}</a></li>
                 </ul>
             </li>
         </ul>
@@ -77,7 +77,7 @@
     <li id="voiture_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-cab"></i>
-            <span>{@__ key="entity.e_voiture.label_entity" /}</span>
+            <span>{#__ key="entity.e_voiture.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -85,7 +85,7 @@
             <li>
                 <a href="/voiture/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -93,7 +93,7 @@
             <li>
                 <a href="/voiture/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -104,7 +104,7 @@
     <li id="chauffeur_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-user"></i>
-            <span>{@__ key="entity.e_chauffeur.label_entity" /}</span>
+            <span>{#__ key="entity.e_chauffeur.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -112,7 +112,7 @@
             <li>
                 <a href="/chauffeur/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -120,7 +120,7 @@
             <li>
                 <a href="/chauffeur/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -131,7 +131,7 @@
     <li id="demande_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-comment-o"></i>
-            <span>{@__ key="entity.e_demande.label_entity" /}</span>
+            <span>{#__ key="entity.e_demande.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -139,7 +139,7 @@
             <li>
                 <a href="/demande/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -147,7 +147,7 @@
             <li>
                 <a href="/demande/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}

@@ -3,130 +3,130 @@
     <ul class="nav nav-tabs">
         <li class="active">
             <a data-toggle="tab" href="#home">
-                {@__ key="entity.e_bilan_patrimonial.label_entity" /}
+                {#__ key="entity.e_bilan_patrimonial.label_entity" /}
             </a>
         </li>
         {@entityAccess entity="enfant"}
         <li>
             <a id="r_enfants-click" data-toggle="tab" data-tabtype="hasMany" href="#r_enfants">
-                {@__ key="entity.e_enfant.as_r_enfants" /}
+                {#__ key="entity.e_enfant.as_r_enfants" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="petit_enfant"}
         <li>
             <a id="r_petits_enfants-click" data-toggle="tab" data-tabtype="hasMany" href="#r_petits_enfants">
-                {@__ key="entity.e_petit_enfant.as_r_petits_enfants" /}
+                {#__ key="entity.e_petit_enfant.as_r_petits_enfants" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="projet"}
         <li>
             <a id="r_projets-click" data-toggle="tab" data-tabtype="hasMany" href="#r_projets">
-                {@__ key="entity.e_projet.as_r_projets" /}
+                {#__ key="entity.e_projet.as_r_projets" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="patrimoine_rm"}
         <li>
             <a id="r_patrimoine-click" data-toggle="tab" data-tabtype="hasMany" href="#r_patrimoine_rm">
-                {@__ key="entity.e_patrimoine_rm.as_r_patrimoine" /}
+                {#__ key="entity.e_patrimoine_rm.as_r_patrimoine" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="emprunt"}
         <li>
             <a id="r_emprunts-click" data-toggle="tab" data-tabtype="hasMany" href="#r_emprunts">
-                {@__ key="entity.e_emprunt.as_r_emprunts" /}
+                {#__ key="entity.e_emprunt.as_r_emprunts" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="interlocuteurs"}
         <li>
             <a id="r_interlocuteurs-click" data-toggle="tab" href="#r_interlocuteurs">
-                {@__ key="entity.e_interlocuteurs.as_r_interlocuteurs" /}
+                {#__ key="entity.e_interlocuteurs.as_r_interlocuteurs" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="revenus_charges"}
         <li>
             <a id="r_revenus_charges-click" data-toggle="tab" href="#r_revenus_charges">
-                {@__ key="entity.e_revenus_charges.as_r_revenus_charges" /}
+                {#__ key="entity.e_revenus_charges.as_r_revenus_charges" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="es_argent"}
         <li>
             <a id="r_entrees_sorties_argent-click" data-toggle="tab" href="#r_entrees_sorties_argent">
-                {@__ key="entity.e_es_argent.as_r_entrees_sorties_argent" /}
+                {#__ key="entity.e_es_argent.as_r_entrees_sorties_argent" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="placements_prevus"}
         <li>
             <a id="r_placements_prevus-click" data-toggle="tab" href="#r_placements_prevus">
-                {@__ key="entity.e_placements_prevus.as_r_placements_prevus" /}
+                {#__ key="entity.e_placements_prevus.as_r_placements_prevus" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="impots"}
         <li>
             <a id="r_impots-click" data-toggle="tab" href="#r_impots">
-                {@__ key="entity.e_impots.as_r_impots" /}
+                {#__ key="entity.e_impots.as_r_impots" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="complement_revenus"}
         <li>
             <a id="r_complement_revenus-click" data-toggle="tab" href="#r_complement_revenus">
-                {@__ key="entity.e_complement_revenus.as_r_complement_revenus" /}
+                {#__ key="entity.e_complement_revenus.as_r_complement_revenus" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="transmission"}
         <li>
             <a id="r_transmission-click" data-toggle="tab" data-tabtype="hasMany" href="#r_transmission">
-                {@__ key="entity.e_transmission.as_r_transmission" /}
+                {#__ key="entity.e_transmission.as_r_transmission" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="profil_investisseur"}
         <li>
             <a id="r_profil_investisseur-click" data-toggle="tab" href="#r_profil_investisseur">
-                {@__ key="entity.e_profil_investisseur.as_r_profil_investisseur" /}
+                {#__ key="entity.e_profil_investisseur.as_r_profil_investisseur" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="resume"}
         <li>
             <a id="r_resume-click" data-toggle="tab" href="#r_resume">
-                {@__ key="entity.e_resume.as_r_resume" /}
+                {#__ key="entity.e_resume.as_r_resume" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="suivi_personnalise"}
         <li>
             <a id="r_suivi_personnalise-click" data-toggle="tab" href="#r_suivi_personnalise">
-                {@__ key="entity.e_suivi_personnalise.as_r_suivi_personnalise" /}
+                {#__ key="entity.e_suivi_personnalise.as_r_suivi_personnalise" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="references"}
         <li>
             <a id="r_references-click" data-toggle="tab" data-tabtype="hasMany" href="#r_references">
-                {@__ key="entity.e_references.as_r_references" /}
+                {#__ key="entity.e_references.as_r_references" /}
             </a>
         </li>
         {/entityAccess}
         {@entityAccess entity="controle"}
         <li>
             <a id="r_controle-click" data-toggle="tab" href="#r_controle">
-                {@__ key="entity.e_controle.as_r_controle" /}
+                {#__ key="entity.e_controle.as_r_controle" /}
             </a>
         </li>
         {/entityAccess}
         <li>
-            <a id="r_document_template-click" data-toggle="tab" href="#r_document_template">{@__ key="entity.e_document_template.tab_name_e_311" /}</a>
+            <a id="r_document_template-click" data-toggle="tab" href="#r_document_template">{#__ key="entity.e_document_template.tab_name_e_311" /}</a>
         </li>
     </ul>
     {/hideTab}
@@ -136,7 +136,7 @@
                 <div data-field="f_date" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
                     <div class="form-group">
                         <label for="f_date">
-                            {@__ key="entity.e_bilan_patrimonial.f_date"/}&nbsp;
+                            {#__ key="entity.e_bilan_patrimonial.f_date"/}&nbsp;
                             {@inline_help field="f_date"}
                             <i data-field="f_date" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                             {/inline_help}
@@ -145,16 +145,16 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
                             </div>
-                            <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_date" /}' value="{f_date}" type="text" readonly="">
+                            <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_date" /}' value="{f_date}" type="text" readonly="">
                         </div>
                     </div>
                 </div>
                 <div data-field="f_conseiller_patrimonial" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
                     <div class="form-group">
                         <label for="r_conseiller_patrimonial">
-                            {@__ key="entity.e_bilan_patrimonial.r_conseiller_patrimonial"/}
+                            {#__ key="entity.e_bilan_patrimonial.r_conseiller_patrimonial"/}
                         </label>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.r_conseiller_patrimonial" /}' name="r_conseiller_patrimonial" value="{r_conseiller_patrimonial.f_nom|string}" type="text" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.r_conseiller_patrimonial" /}' name="r_conseiller_patrimonial" value="{r_conseiller_patrimonial.f_nom|string}" type="text" readonly="">
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@
                         <div data-field="f_civilite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_civilite">
-                                    {@__ key="entity.e_bilan_patrimonial.f_civilite"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_civilite"/}&nbsp;
                                     {@inline_help field="f_civilite"}
                                     <i data-field="f_civilite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -187,40 +187,40 @@
                         <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_nom">
-                                    {@__ key="entity.e_bilan_patrimonial.f_nom"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_nom"/}&nbsp;
                                     {@inline_help field="f_nom"}
                                     <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_prenom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_prenom">
-                                    {@__ key="entity.e_bilan_patrimonial.f_prenom"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_prenom"/}&nbsp;
                                     {@inline_help field="f_prenom"}
                                     <i data-field="f_prenom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_prenom" /}' name="f_prenom" value="{f_prenom}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_prenom" /}' name="f_prenom" value="{f_prenom}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_nom_de_naissance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_nom_de_naissance">
-                                    {@__ key="entity.e_bilan_patrimonial.f_nom_de_naissance"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_nom_de_naissance"/}&nbsp;
                                     {@inline_help field="f_nom_de_naissance"}
                                     <i data-field="f_nom_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_nom_de_naissance" /}' name="f_nom_de_naissance" value="{f_nom_de_naissance}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_nom_de_naissance" /}' name="f_nom_de_naissance" value="{f_nom_de_naissance}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_date_de_naissance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_date_de_naissance">
-                                    {@__ key="entity.e_bilan_patrimonial.f_date_de_naissance"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_date_de_naissance"/}&nbsp;
                                     {@inline_help field="f_date_de_naissance"}
                                     <i data-field="f_date_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -229,41 +229,41 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_date_de_naissance" /}' value="{f_date_de_naissance}" type="text" readonly="">
+                                    <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_date_de_naissance" /}' value="{f_date_de_naissance}" type="text" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_commune_de_naissance" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                             <div class="form-group">
                                 <label for="r_commune_de_naissance">
-                                    {@__ key="entity.e_bilan_patrimonial.r_commune_de_naissance"/}
+                                    {#__ key="entity.e_bilan_patrimonial.r_commune_de_naissance"/}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.r_commune_de_naissance" /}' name="r_commune_de_naissance" value="{r_commune_de_naissance.f_nom|string}" type="text" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.r_commune_de_naissance" /}' name="r_commune_de_naissance" value="{r_commune_de_naissance.f_nom|string}" type="text" readonly="">
                             </div>
                         </div>
                         <div data-field="f_departement_de_naissance" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                             <div class="form-group">
                                 <label for="f_departement_de_naissance">
-                                    {@__ key="entity.e_bilan_patrimonial.f_departement_de_naissance"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_departement_de_naissance"/}&nbsp;
                                     {@inline_help field="f_departement_de_naissance"}
                                     <i data-field="f_departement_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_departement_de_naissance" /}' name="f_departement_de_naissance" value="{f_departement_de_naissance}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_departement_de_naissance" /}' name="f_departement_de_naissance" value="{f_departement_de_naissance}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_pays_de_naissance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="r_pays_de_naissance">
-                                    {@__ key="entity.e_bilan_patrimonial.r_pays_de_naissance"/}
+                                    {#__ key="entity.e_bilan_patrimonial.r_pays_de_naissance"/}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.r_pays_de_naissance" /}' name="r_pays_de_naissance" value="{r_pays_de_naissance.f_nom|string}" type="text" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.r_pays_de_naissance" /}' name="r_pays_de_naissance" value="{r_pays_de_naissance.f_nom|string}" type="text" readonly="">
                             </div>
                         </div>
                         <div data-field="f_telephone_fixe" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_telephone_fixe">
-                                    {@__ key="entity.e_bilan_patrimonial.f_telephone_fixe"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_telephone_fixe"/}&nbsp;
                                     {@inline_help field="f_telephone_fixe"}
                                     <i data-field="f_telephone_fixe" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -272,14 +272,14 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_telephone_fixe" /}' name="f_telephone_fixe" value="{f_telephone_fixe}" type="tel" readonly="">
+                                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_telephone_fixe" /}' name="f_telephone_fixe" value="{f_telephone_fixe}" type="tel" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_telephone_portable" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_telephone_portable">
-                                    {@__ key="entity.e_bilan_patrimonial.f_telephone_portable"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_telephone_portable"/}&nbsp;
                                     {@inline_help field="f_telephone_portable"}
                                     <i data-field="f_telephone_portable" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -288,14 +288,14 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_telephone_portable" /}' name="f_telephone_portable" value="{f_telephone_portable}" type="tel" readonly="">
+                                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_telephone_portable" /}' name="f_telephone_portable" value="{f_telephone_portable}" type="tel" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_courriel" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_courriel">
-                                    {@__ key="entity.e_bilan_patrimonial.f_courriel"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_courriel"/}&nbsp;
                                     {@inline_help field="f_courriel"}
                                     <i data-field="f_courriel" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -304,7 +304,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-envelope"></i>
                                     </div>
-                                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_courriel" /}' name="f_courriel" value="{f_courriel}" type="text" data-type="email" readonly="">
+                                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_courriel" /}' name="f_courriel" value="{f_courriel}" type="text" data-type="email" readonly="">
                                 </div>
                             </div>
                         </div>
@@ -315,7 +315,7 @@
                         <div data-field="f_civilite_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_civilite_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_civilite_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_civilite_conj"/}&nbsp;
                                     {@inline_help field="f_civilite_conj"}
                                     <i data-field="f_civilite_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -333,40 +333,40 @@
                         <div data-field="f_nom_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_nom_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_nom_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_nom_conj"/}&nbsp;
                                     {@inline_help field="f_nom_conj"}
                                     <i data-field="f_nom_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_nom_conj" /}' name="f_nom_conj" value="{f_nom_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_nom_conj" /}' name="f_nom_conj" value="{f_nom_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_prenom_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_prenom_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_prenom_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_prenom_conj"/}&nbsp;
                                     {@inline_help field="f_prenom_conj"}
                                     <i data-field="f_prenom_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_prenom_conj" /}' name="f_prenom_conj" value="{f_prenom_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_prenom_conj" /}' name="f_prenom_conj" value="{f_prenom_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_nom_de_naiss_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_nom_de_naiss_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_nom_de_naiss_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_nom_de_naiss_conj"/}&nbsp;
                                     {@inline_help field="f_nom_de_naiss_conj"}
                                     <i data-field="f_nom_de_naiss_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_nom_de_naiss_conj" /}' name="f_nom_de_naiss_conj" value="{f_nom_de_naiss_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_nom_de_naiss_conj" /}' name="f_nom_de_naiss_conj" value="{f_nom_de_naiss_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_date_de_naiss_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_date_de_naiss_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_date_de_naiss_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_date_de_naiss_conj"/}&nbsp;
                                     {@inline_help field="f_date_de_naiss_conj"}
                                     <i data-field="f_date_de_naiss_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -375,41 +375,41 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_date_de_naiss_conj" /}' value="{f_date_de_naiss_conj}" type="text" readonly="">
+                                    <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_date_de_naiss_conj" /}' value="{f_date_de_naiss_conj}" type="text" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_commune_de_naiss_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                             <div class="form-group">
                                 <label for="r_commune_de_naiss_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.r_commune_de_naiss_conj"/}
+                                    {#__ key="entity.e_bilan_patrimonial.r_commune_de_naiss_conj"/}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.r_commune_de_naiss_conj" /}' name="r_commune_de_naiss_conj" value="{r_commune_de_naiss_conj.f_nom|string}" type="text" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.r_commune_de_naiss_conj" /}' name="r_commune_de_naiss_conj" value="{r_commune_de_naiss_conj.f_nom|string}" type="text" readonly="">
                             </div>
                         </div>
                         <div data-field="f_departement_de_naiss_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                             <div class="form-group">
                                 <label for="f_departement_de_naiss_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_departement_de_naiss_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_departement_de_naiss_conj"/}&nbsp;
                                     {@inline_help field="f_departement_de_naiss_conj"}
                                     <i data-field="f_departement_de_naiss_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_departement_de_naiss_conj" /}' name="f_departement_de_naiss_conj" value="{f_departement_de_naiss_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_departement_de_naiss_conj" /}' name="f_departement_de_naiss_conj" value="{f_departement_de_naiss_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_pays_naissance_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="r_pays_naissance_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.r_pays_naissance_conj"/}
+                                    {#__ key="entity.e_bilan_patrimonial.r_pays_naissance_conj"/}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.r_pays_naissance_conj" /}' name="r_pays_naissance_conj" value="{r_pays_naissance_conj.f_nom|string}" type="text" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.r_pays_naissance_conj" /}' name="r_pays_naissance_conj" value="{r_pays_naissance_conj.f_nom|string}" type="text" readonly="">
                             </div>
                         </div>
                         <div data-field="f_telephone_fixe_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_telephone_fixe_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_telephone_fixe_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_telephone_fixe_conj"/}&nbsp;
                                     {@inline_help field="f_telephone_fixe_conj"}
                                     <i data-field="f_telephone_fixe_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -418,14 +418,14 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_telephone_fixe_conj" /}' name="f_telephone_fixe_conj" value="{f_telephone_fixe_conj}" type="tel" readonly="">
+                                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_telephone_fixe_conj" /}' name="f_telephone_fixe_conj" value="{f_telephone_fixe_conj}" type="tel" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_telephone_portable_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_telephone_portable_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_telephone_portable_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_telephone_portable_conj"/}&nbsp;
                                     {@inline_help field="f_telephone_portable_conj"}
                                     <i data-field="f_telephone_portable_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -434,14 +434,14 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_telephone_portable_conj" /}' name="f_telephone_portable_conj" value="{f_telephone_portable_conj}" type="tel" readonly="">
+                                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_telephone_portable_conj" /}' name="f_telephone_portable_conj" value="{f_telephone_portable_conj}" type="tel" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_courriel_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_courriel_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_courriel_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_courriel_conj"/}&nbsp;
                                     {@inline_help field="f_courriel_conj"}
                                     <i data-field="f_courriel_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -450,7 +450,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-envelope"></i>
                                     </div>
-                                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_courriel_conj" /}' name="f_courriel_conj" value="{f_courriel_conj}" type="text" data-type="email" readonly="">
+                                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_courriel_conj" /}' name="f_courriel_conj" value="{f_courriel_conj}" type="text" data-type="email" readonly="">
                                 </div>
                             </div>
                         </div>
@@ -461,20 +461,20 @@
                         <div data-field="f_adresse" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_adresse">
-                                    {@__ key="entity.e_bilan_patrimonial.f_adresse"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_adresse"/}&nbsp;
                                     {@inline_help field="f_adresse"}
                                     <i data-field="f_adresse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_adresse" /}' name="f_adresse" value="{f_adresse}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_adresse" /}' name="f_adresse" value="{f_adresse}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_pays" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="r_pays">
-                                    {@__ key="entity.e_bilan_patrimonial.r_pays"/}
+                                    {#__ key="entity.e_bilan_patrimonial.r_pays"/}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.r_pays" /}' name="r_pays" value="{r_pays.f_nom|string}" type="text" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.r_pays" /}' name="r_pays" value="{r_pays.f_nom|string}" type="text" readonly="">
                             </div>
                         </div>
                     </div>
@@ -491,7 +491,7 @@
                         <div data-field="f_situation_de_famille" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_situation_de_famille">
-                                    {@__ key="entity.e_bilan_patrimonial.r_situation_de_famille" /}
+                                    {#__ key="entity.e_bilan_patrimonial.r_situation_de_famille" /}
                                     {@inline_help field="r_situation_de_famille"}
                                     <i data-field="r_situation_de_famille" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -506,7 +506,7 @@
                         <div data-field="f_regime_matrimonial" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_regime_matrimonial">
-                                    {@__ key="entity.e_bilan_patrimonial.r_regime_matrimonial" /}
+                                    {#__ key="entity.e_bilan_patrimonial.r_regime_matrimonial" /}
                                     {@inline_help field="r_regime_matrimonial"}
                                     <i data-field="r_regime_matrimonial" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -521,7 +521,7 @@
                         <div data-field="f_dispositions_particulieres" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_dispositions_particulieres">
-                                    {@__ key="entity.e_bilan_patrimonial.r_dispositions_particulieres" /}
+                                    {#__ key="entity.e_bilan_patrimonial.r_dispositions_particulieres" /}
                                     {@inline_help field="r_dispositions_particulieres"}
                                     <i data-field="r_dispositions_particulieres" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -536,23 +536,23 @@
                         <div data-field="f_autres_dispositions" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_autres_dispositions">
-                                    {@__ key="entity.e_bilan_patrimonial.f_autres_dispositions"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_autres_dispositions"/}&nbsp;
                                     {@inline_help field="f_autres_dispositions"}
                                     <i data-field="f_autres_dispositions" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_autres_dispositions" /}' name="f_autres_dispositions" value="{f_autres_dispositions}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_autres_dispositions" /}' name="f_autres_dispositions" value="{f_autres_dispositions}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_regime_protection_juridique" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_regime_protection_juridique">
-                                    {@__ key="entity.e_bilan_patrimonial.f_regime_protection_juridique"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_regime_protection_juridique"/}&nbsp;
                                     {@inline_help field="f_regime_protection_juridique"}
                                     <i data-field="f_regime_protection_juridique" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_regime_protection_juridique" /}' name="f_regime_protection_juridique" value="{f_regime_protection_juridique}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_regime_protection_juridique" /}' name="f_regime_protection_juridique" value="{f_regime_protection_juridique}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                     </div>
@@ -569,37 +569,37 @@
                         <div data-field="f_profession" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                             <div class="form-group">
                                 <label for="f_profession">
-                                    {@__ key="entity.e_bilan_patrimonial.f_profession"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_profession"/}&nbsp;
                                     {@inline_help field="f_profession"}
                                     <i data-field="f_profession" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_profession" /}' name="f_profession" value="{f_profession}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_profession" /}' name="f_profession" value="{f_profession}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_csp" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                             <div class="form-group">
                                 <label for="r_csp">
-                                    {@__ key="entity.e_bilan_patrimonial.r_csp"/}
+                                    {#__ key="entity.e_bilan_patrimonial.r_csp"/}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.r_csp" /}' name="r_csp" value="{r_csp.f_nom|string}" type="text" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.r_csp" /}' name="r_csp" value="{r_csp.f_nom|string}" type="text" readonly="">
                             </div>
                         </div>
                         <div data-field="f_secteur_d_activite" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                             <div class="form-group">
                                 <label for="f_secteur_d_activite">
-                                    {@__ key="entity.e_bilan_patrimonial.f_secteur_d_activite"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_secteur_d_activite"/}&nbsp;
                                     {@inline_help field="f_secteur_d_activite"}
                                     <i data-field="f_secteur_d_activite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_secteur_d_activite" /}' name="f_secteur_d_activite" value="{f_secteur_d_activite}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_secteur_d_activite" /}' name="f_secteur_d_activite" value="{f_secteur_d_activite}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_sa_date" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                             <div class="form-group">
                                 <label for="f_sa_date">
-                                    {@__ key="entity.e_bilan_patrimonial.f_sa_date"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_sa_date"/}&nbsp;
                                     {@inline_help field="f_sa_date"}
                                     <i data-field="f_sa_date" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -608,25 +608,25 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_sa_date" /}' value="{f_sa_date}" type="text" readonly="">
+                                    <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_sa_date" /}' value="{f_sa_date}" type="text" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_employeur" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                             <div class="form-group">
                                 <label for="f_employeur">
-                                    {@__ key="entity.e_bilan_patrimonial.f_employeur"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_employeur"/}&nbsp;
                                     {@inline_help field="f_employeur"}
                                     <i data-field="f_employeur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_employeur" /}' name="f_employeur" value="{f_employeur}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_employeur" /}' name="f_employeur" value="{f_employeur}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_employeur_date" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                             <div class="form-group">
                                 <label for="f_employeur_date">
-                                    {@__ key="entity.e_bilan_patrimonial.f_employeur_date"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_employeur_date"/}&nbsp;
                                     {@inline_help field="f_employeur_date"}
                                     <i data-field="f_employeur_date" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -635,14 +635,14 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_employeur_date" /}' value="{f_employeur_date}" type="text" readonly="">
+                                    <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_employeur_date" /}' value="{f_employeur_date}" type="text" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_rt" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_rt">
-                                    {@__ key="entity.e_bilan_patrimonial.f_rt"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_rt"/}&nbsp;
                                     {@inline_help field="f_rt"}
                                     <i data-field="f_rt" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -659,23 +659,23 @@
                         <div data-field="f_coordonnees_pro" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_coordonnees_pro">
-                                    {@__ key="entity.e_bilan_patrimonial.f_coordonnees_pro"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_coordonnees_pro"/}&nbsp;
                                     {@inline_help field="f_coordonnees_pro"}
                                     <i data-field="f_coordonnees_pro" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_coordonnees_pro" /}' name="f_coordonnees_pro" value="{f_coordonnees_pro}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_coordonnees_pro" /}' name="f_coordonnees_pro" value="{f_coordonnees_pro}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_asc" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_asc">
-                                    {@__ key="entity.e_bilan_patrimonial.f_asc"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_asc"/}&nbsp;
                                     {@inline_help field="f_asc"}
                                     <i data-field="f_asc" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_asc" /}' name="f_asc" value="{f_asc}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_asc" /}' name="f_asc" value="{f_asc}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                     </div>
@@ -685,37 +685,37 @@
                         <div data-field="f_profession_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                             <div class="form-group">
                                 <label for="f_profession_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_profession_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_profession_conj"/}&nbsp;
                                     {@inline_help field="f_profession_conj"}
                                     <i data-field="f_profession_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_profession_conj" /}' name="f_profession_conj" value="{f_profession_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_profession_conj" /}' name="f_profession_conj" value="{f_profession_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_csp_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                             <div class="form-group">
                                 <label for="r_csp_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.r_csp_conj"/}
+                                    {#__ key="entity.e_bilan_patrimonial.r_csp_conj"/}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.r_csp_conj" /}' name="r_csp_conj" value="{r_csp_conj.f_nom|string}" type="text" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.r_csp_conj" /}' name="r_csp_conj" value="{r_csp_conj.f_nom|string}" type="text" readonly="">
                             </div>
                         </div>
                         <div data-field="f_secteur_d_activite_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                             <div class="form-group">
                                 <label for="f_secteur_d_activite_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_secteur_d_activite_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_secteur_d_activite_conj"/}&nbsp;
                                     {@inline_help field="f_secteur_d_activite_conj"}
                                     <i data-field="f_secteur_d_activite_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_secteur_d_activite_conj" /}' name="f_secteur_d_activite_conj" value="{f_secteur_d_activite_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_secteur_d_activite_conj" /}' name="f_secteur_d_activite_conj" value="{f_secteur_d_activite_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_sa_date_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                             <div class="form-group">
                                 <label for="f_sa_date_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_sa_date_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_sa_date_conj"/}&nbsp;
                                     {@inline_help field="f_sa_date_conj"}
                                     <i data-field="f_sa_date_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -724,25 +724,25 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_sa_date_conj" /}' value="{f_sa_date_conj}" type="text" readonly="">
+                                    <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_sa_date_conj" /}' value="{f_sa_date_conj}" type="text" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_employeur_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                             <div class="form-group">
                                 <label for="f_employeur_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_employeur_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_employeur_conj"/}&nbsp;
                                     {@inline_help field="f_employeur_conj"}
                                     <i data-field="f_employeur_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_employeur_conj" /}' name="f_employeur_conj" value="{f_employeur_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_employeur_conj" /}' name="f_employeur_conj" value="{f_employeur_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_employeur_date_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                             <div class="form-group">
                                 <label for="f_employeur_date_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_employeur_date_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_employeur_date_conj"/}&nbsp;
                                     {@inline_help field="f_employeur_date_conj"}
                                     <i data-field="f_employeur_date_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -751,14 +751,14 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_employeur_date_conj" /}' value="{f_employeur_date_conj}" type="text" readonly="">
+                                    <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_employeur_date_conj" /}' value="{f_employeur_date_conj}" type="text" readonly="">
                                 </div>
                             </div>
                         </div>
                         <div data-field="f_rt_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_rt_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_rt_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_rt_conj"/}&nbsp;
                                     {@inline_help field="f_rt_conj"}
                                     <i data-field="f_rt_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -775,23 +775,23 @@
                         <div data-field="f_coordonnees_pro_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_coordonnees_pro_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_coordonnees_pro_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_coordonnees_pro_conj"/}&nbsp;
                                     {@inline_help field="f_coordonnees_pro_conj"}
                                     <i data-field="f_coordonnees_pro_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_coordonnees_pro_conj" /}' name="f_coordonnees_pro_conj" value="{f_coordonnees_pro_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_coordonnees_pro_conj" /}' name="f_coordonnees_pro_conj" value="{f_coordonnees_pro_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                         <div data-field="f_asc_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_asc_conj">
-                                    {@__ key="entity.e_bilan_patrimonial.f_asc_conj"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_asc_conj"/}&nbsp;
                                     {@inline_help field="f_asc_conj"}
                                     <i data-field="f_asc_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
                                 </label>
-                                <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_asc_conj" /}' name="f_asc_conj" value="{f_asc_conj}" type="text" maxlength="255" readonly="">
+                                <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_asc_conj" /}' name="f_asc_conj" value="{f_asc_conj}" type="text" maxlength="255" readonly="">
                             </div>
                         </div>
                     </div>
@@ -808,7 +808,7 @@
                         <div data-field="f_preconisation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_preconisation">
-                                    {@__ key="entity.e_bilan_patrimonial.f_preconisation"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_preconisation"/}&nbsp;
                                     {@inline_help field="f_preconisation"}
                                     <i data-field="f_preconisation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -819,7 +819,7 @@
                         <div data-field="f_notes" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_notes">
-                                    {@__ key="entity.e_bilan_patrimonial.f_notes"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_notes"/}&nbsp;
                                     {@inline_help field="f_notes"}
                                     <i data-field="f_notes" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -830,7 +830,7 @@
                         <div data-field="f_commentaires" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                             <div class="form-group">
                                 <label for="f_commentaires">
-                                    {@__ key="entity.e_bilan_patrimonial.f_commentaires"/}&nbsp;
+                                    {#__ key="entity.e_bilan_patrimonial.f_commentaires"/}&nbsp;
                                     {@inline_help field="f_commentaires"}
                                     <i data-field="f_commentaires" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                                     {/inline_help}
@@ -845,13 +845,13 @@
                 <form action="/bilan_patrimonial/delete" method="post">
                     <div class="quicklinks">
                         <span>
-                <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{@__ key="button.return"/}</a>
+                <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
                         {@actionAccess entity="bilan_patrimonial" action="delete"}
                         <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
-                    <span>{@__ key="button.delete"/}</span>
+                    <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_bilan_patrimonial.id}" class="form-control">
                         </span>
@@ -861,7 +861,7 @@
                         <span>
                 <a href="/bilan_patrimonial/update_form?id={e_bilan_patrimonial.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
-                    <span>{@__ key="button.update"/}</span>
+                    <span>{#__ key="button.update"/}</span>
                         </a>
                         </span>
                         {/actionAccess}
@@ -870,7 +870,7 @@
                         <span>
                     <a href="/bilan_patrimonial/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
-                        <span>{@__ key="button.create"/}</span>
+                        <span>{#__ key="button.create"/}</span>
                         </a>
                         </span>
                         {/actionAccess}
@@ -878,7 +878,7 @@
                         <span>
                     <a href="/bilan_patrimonial/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>
-                        <span>{@__ key="button.list"/}</span>
+                        <span>{#__ key="button.list"/}</span>
                         </a>
                         </span>
                         {/actionAccess}
@@ -1014,13 +1014,13 @@
                 <input type="hidden" value="e_bilan_patrimonial" name="entity">
                 <input type="hidden" value="{e_bilan_patrimonial.id}" name="id_entity">
                 <div class="form-group">
-                    <label for="f_model_document"> {@__ key="entity.e_document_template.label_entity"/} </label>
+                    <label for="f_model_document"> {#__ key="entity.e_document_template.label_entity"/} </label>
                     <select name="f_model_document" style="width: 100%" class="form-control" id="component_document_template" entity="e_bilan_patrimonial" required="">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">
-                    <span>{@__ key="button.generate" /}</span>
+                    <span>{#__ key="button.generate" /}</span>
                 </button>
             </form>
         </div>

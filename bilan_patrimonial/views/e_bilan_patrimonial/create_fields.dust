@@ -2,7 +2,7 @@
     <div data-field="f_date" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_date">
-                {@__ key="entity.e_bilan_patrimonial.f_date"/}&nbsp;
+                {#__ key="entity.e_bilan_patrimonial.f_date"/}&nbsp;
                 {@inline_help field="f_date"}
                 <i data-field="f_date" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -11,20 +11,20 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_date" /}' name="f_date" data-today="1" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_date" /}' name="f_date" data-today="1" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_conseiller_patrimonial" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="r_conseiller_patrimonial">
-                {@__ key="entity.e_bilan_patrimonial.r_conseiller_patrimonial" /}&nbsp;
+                {#__ key="entity.e_bilan_patrimonial.r_conseiller_patrimonial" /}&nbsp;
                 {@inline_help field="r_conseiller_patrimonial"}
                 <i data-field="r_conseiller_patrimonial" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="ajax form-control" name="r_conseiller_patrimonial" data-source="user" data-using="f_nom">
-                <option value="">{@__ key="select.default" /}</option>
+                <option value="">{#__ key="select.default" /}</option>
                 {#r_conseiller_patrimonial}
                 <option value="{id}" selected="">{f_nom|string}</option>
                 {/r_conseiller_patrimonial}
@@ -43,7 +43,7 @@
             <div data-field="f_civilite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_civilite" class="required">
-                        {@__ key="entity.e_bilan_patrimonial.f_civilite"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_civilite"/}&nbsp;
                         {@inline_help field="f_civilite"}
                         <i data-field="f_civilite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -57,40 +57,40 @@
             <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nom" class="required">
-                        {@__ key="entity.e_bilan_patrimonial.f_nom"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_nom"/}&nbsp;
                         {@inline_help field="f_nom"}
                         <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_nom" /}' name="f_nom" value="" maxlength="255" required="" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_nom" /}' name="f_nom" value="" maxlength="255" required="" type="text">
                 </div>
             </div>
             <div data-field="f_prenom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_prenom" class="required">
-                        {@__ key="entity.e_bilan_patrimonial.f_prenom"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_prenom"/}&nbsp;
                         {@inline_help field="f_prenom"}
                         <i data-field="f_prenom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_prenom" /}' name="f_prenom" value="" maxlength="255" required="" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_prenom" /}' name="f_prenom" value="" maxlength="255" required="" type="text">
                 </div>
             </div>
             <div data-field="f_nom_de_naissance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nom_de_naissance">
-                        {@__ key="entity.e_bilan_patrimonial.f_nom_de_naissance"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_nom_de_naissance"/}&nbsp;
                         {@inline_help field="f_nom_de_naissance"}
                         <i data-field="f_nom_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_nom_de_naissance" /}' name="f_nom_de_naissance" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_nom_de_naissance" /}' name="f_nom_de_naissance" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_date_de_naissance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_naissance">
-                        {@__ key="entity.e_bilan_patrimonial.f_date_de_naissance"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_date_de_naissance"/}&nbsp;
                         {@inline_help field="f_date_de_naissance"}
                         <i data-field="f_date_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -99,20 +99,20 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_date_de_naissance" /}' name="f_date_de_naissance" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_date_de_naissance" /}' name="f_date_de_naissance" type="text">
                     </div>
                 </div>
             </div>
             <div data-field="f_commune_de_naissance" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="r_commune_de_naissance">
-                        {@__ key="entity.e_bilan_patrimonial.r_commune_de_naissance" /}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.r_commune_de_naissance" /}&nbsp;
                         {@inline_help field="r_commune_de_naissance"}
                         <i data-field="r_commune_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select style="width:100%;" class="ajax form-control" name="r_commune_de_naissance" data-source="commune" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_commune_de_naissance}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_commune_de_naissance}
@@ -122,24 +122,24 @@
             <div data-field="f_departement_de_naissance" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="f_departement_de_naissance">
-                        {@__ key="entity.e_bilan_patrimonial.f_departement_de_naissance"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_departement_de_naissance"/}&nbsp;
                         {@inline_help field="f_departement_de_naissance"}
                         <i data-field="f_departement_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_departement_de_naissance" /}' name="f_departement_de_naissance" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_departement_de_naissance" /}' name="f_departement_de_naissance" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_pays_de_naissance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="r_pays_de_naissance">
-                        {@__ key="entity.e_bilan_patrimonial.r_pays_de_naissance" /}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.r_pays_de_naissance" /}&nbsp;
                         {@inline_help field="r_pays_de_naissance"}
                         <i data-field="r_pays_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select style="width:100%;" class="ajax form-control" name="r_pays_de_naissance" data-source="pays" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_pays_de_naissance}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_pays_de_naissance}
@@ -149,7 +149,7 @@
             <div data-field="f_telephone_fixe" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_telephone_fixe">
-                        {@__ key="entity.e_bilan_patrimonial.f_telephone_fixe"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_telephone_fixe"/}&nbsp;
                         {@inline_help field="f_telephone_fixe"}
                         <i data-field="f_telephone_fixe" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -158,14 +158,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-phone"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_telephone_fixe" /}' name="f_telephone_fixe" value="" type="tel">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_telephone_fixe" /}' name="f_telephone_fixe" value="" type="tel">
                     </div>
                 </div>
             </div>
             <div data-field="f_telephone_portable" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_telephone_portable">
-                        {@__ key="entity.e_bilan_patrimonial.f_telephone_portable"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_telephone_portable"/}&nbsp;
                         {@inline_help field="f_telephone_portable"}
                         <i data-field="f_telephone_portable" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -174,14 +174,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-phone"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_telephone_portable" /}' name="f_telephone_portable" value="" type="tel">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_telephone_portable" /}' name="f_telephone_portable" value="" type="tel">
                     </div>
                 </div>
             </div>
             <div data-field="f_courriel" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_courriel">
-                        {@__ key="entity.e_bilan_patrimonial.f_courriel"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_courriel"/}&nbsp;
                         {@inline_help field="f_courriel"}
                         <i data-field="f_courriel" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -190,7 +190,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-envelope"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_courriel" /}' name="f_courriel" value="" data-type="email" type="text">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_courriel" /}' name="f_courriel" value="" data-type="email" type="text">
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@
             <div data-field="f_civilite_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_civilite_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_civilite_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_civilite_conj"/}&nbsp;
                         {@inline_help field="f_civilite_conj"}
                         <i data-field="f_civilite_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -215,40 +215,40 @@
             <div data-field="f_nom_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nom_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_nom_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_nom_conj"/}&nbsp;
                         {@inline_help field="f_nom_conj"}
                         <i data-field="f_nom_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_nom_conj" /}' name="f_nom_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_nom_conj" /}' name="f_nom_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_prenom_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_prenom_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_prenom_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_prenom_conj"/}&nbsp;
                         {@inline_help field="f_prenom_conj"}
                         <i data-field="f_prenom_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_prenom_conj" /}' name="f_prenom_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_prenom_conj" /}' name="f_prenom_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_nom_de_naiss_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nom_de_naiss_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_nom_de_naiss_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_nom_de_naiss_conj"/}&nbsp;
                         {@inline_help field="f_nom_de_naiss_conj"}
                         <i data-field="f_nom_de_naiss_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_nom_de_naiss_conj" /}' name="f_nom_de_naiss_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_nom_de_naiss_conj" /}' name="f_nom_de_naiss_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_date_de_naiss_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_naiss_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_date_de_naiss_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_date_de_naiss_conj"/}&nbsp;
                         {@inline_help field="f_date_de_naiss_conj"}
                         <i data-field="f_date_de_naiss_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -257,20 +257,20 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_date_de_naiss_conj" /}' name="f_date_de_naiss_conj" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_date_de_naiss_conj" /}' name="f_date_de_naiss_conj" type="text">
                     </div>
                 </div>
             </div>
             <div data-field="f_commune_de_naiss_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="r_commune_de_naiss_conj">
-                        {@__ key="entity.e_bilan_patrimonial.r_commune_de_naiss_conj" /}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.r_commune_de_naiss_conj" /}&nbsp;
                         {@inline_help field="r_commune_de_naiss_conj"}
                         <i data-field="r_commune_de_naiss_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select style="width:100%;" class="ajax form-control" name="r_commune_de_naiss_conj" data-source="commune" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_commune_de_naiss_conj}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_commune_de_naiss_conj}
@@ -280,24 +280,24 @@
             <div data-field="f_departement_de_naiss_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="f_departement_de_naiss_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_departement_de_naiss_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_departement_de_naiss_conj"/}&nbsp;
                         {@inline_help field="f_departement_de_naiss_conj"}
                         <i data-field="f_departement_de_naiss_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_departement_de_naiss_conj" /}' name="f_departement_de_naiss_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_departement_de_naiss_conj" /}' name="f_departement_de_naiss_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_pays_naissance_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="r_pays_naissance_conj">
-                        {@__ key="entity.e_bilan_patrimonial.r_pays_naissance_conj" /}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.r_pays_naissance_conj" /}&nbsp;
                         {@inline_help field="r_pays_naissance_conj"}
                         <i data-field="r_pays_naissance_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select style="width:100%;" class="ajax form-control" name="r_pays_naissance_conj" data-source="pays" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_pays_naissance_conj}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_pays_naissance_conj}
@@ -307,7 +307,7 @@
             <div data-field="f_telephone_fixe_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_telephone_fixe_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_telephone_fixe_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_telephone_fixe_conj"/}&nbsp;
                         {@inline_help field="f_telephone_fixe_conj"}
                         <i data-field="f_telephone_fixe_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -316,14 +316,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-phone"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_telephone_fixe_conj" /}' name="f_telephone_fixe_conj" value="" type="tel">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_telephone_fixe_conj" /}' name="f_telephone_fixe_conj" value="" type="tel">
                     </div>
                 </div>
             </div>
             <div data-field="f_telephone_portable_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_telephone_portable_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_telephone_portable_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_telephone_portable_conj"/}&nbsp;
                         {@inline_help field="f_telephone_portable_conj"}
                         <i data-field="f_telephone_portable_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -332,14 +332,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-phone"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_telephone_portable_conj" /}' name="f_telephone_portable_conj" value="" type="tel">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_telephone_portable_conj" /}' name="f_telephone_portable_conj" value="" type="tel">
                     </div>
                 </div>
             </div>
             <div data-field="f_courriel_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_courriel_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_courriel_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_courriel_conj"/}&nbsp;
                         {@inline_help field="f_courriel_conj"}
                         <i data-field="f_courriel_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -348,7 +348,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-envelope"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_courriel_conj" /}' name="f_courriel_conj" value="" data-type="email" type="text">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_courriel_conj" /}' name="f_courriel_conj" value="" data-type="email" type="text">
                     </div>
                 </div>
             </div>
@@ -359,24 +359,24 @@
             <div data-field="f_adresse" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_adresse">
-                        {@__ key="entity.e_bilan_patrimonial.f_adresse"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_adresse"/}&nbsp;
                         {@inline_help field="f_adresse"}
                         <i data-field="f_adresse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_adresse" /}' name="f_adresse" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_adresse" /}' name="f_adresse" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_pays" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="r_pays">
-                        {@__ key="entity.e_bilan_patrimonial.r_pays" /}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.r_pays" /}&nbsp;
                         {@inline_help field="r_pays"}
                         <i data-field="r_pays" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select style="width:100%;" class="ajax form-control" name="r_pays" data-source="pays" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_pays}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_pays}
@@ -397,13 +397,13 @@
             <div data-field="f_situation_de_famille" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_situation_de_famille">
-                        {@__ key="entity.e_bilan_patrimonial.r_situation_de_famille" /}
+                        {#__ key="entity.e_bilan_patrimonial.r_situation_de_famille" /}
                         {@inline_help field="r_situation_de_famille"}
                         <i data-field="r_situation_de_famille" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select multiple="" style="width:100%;" class="ajax form-control" name="r_situation_de_famille" data-source="situation_de_famille" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_situation_de_famille}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_situation_de_famille}
@@ -413,13 +413,13 @@
             <div data-field="f_regime_matrimonial" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_regime_matrimonial">
-                        {@__ key="entity.e_bilan_patrimonial.r_regime_matrimonial" /}
+                        {#__ key="entity.e_bilan_patrimonial.r_regime_matrimonial" /}
                         {@inline_help field="r_regime_matrimonial"}
                         <i data-field="r_regime_matrimonial" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select multiple="" style="width:100%;" class="ajax form-control" name="r_regime_matrimonial" data-source="regime_matrimonial" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_regime_matrimonial}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_regime_matrimonial}
@@ -429,13 +429,13 @@
             <div data-field="f_dispositions_particulieres" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_dispositions_particulieres">
-                        {@__ key="entity.e_bilan_patrimonial.r_dispositions_particulieres" /}
+                        {#__ key="entity.e_bilan_patrimonial.r_dispositions_particulieres" /}
                         {@inline_help field="r_dispositions_particulieres"}
                         <i data-field="r_dispositions_particulieres" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select multiple="" style="width:100%;" class="ajax form-control" name="r_dispositions_particulieres" data-source="dispositions_particulieres" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_dispositions_particulieres}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_dispositions_particulieres}
@@ -445,23 +445,23 @@
             <div data-field="f_autres_dispositions" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_autres_dispositions">
-                        {@__ key="entity.e_bilan_patrimonial.f_autres_dispositions"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_autres_dispositions"/}&nbsp;
                         {@inline_help field="f_autres_dispositions"}
                         <i data-field="f_autres_dispositions" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_autres_dispositions" /}' name="f_autres_dispositions" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_autres_dispositions" /}' name="f_autres_dispositions" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_regime_protection_juridique" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_regime_protection_juridique">
-                        {@__ key="entity.e_bilan_patrimonial.f_regime_protection_juridique"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_regime_protection_juridique"/}&nbsp;
                         {@inline_help field="f_regime_protection_juridique"}
                         <i data-field="f_regime_protection_juridique" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_regime_protection_juridique" /}' name="f_regime_protection_juridique" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_regime_protection_juridique" /}' name="f_regime_protection_juridique" value="" maxlength="255" type="text">
                 </div>
             </div>
         </div>
@@ -478,24 +478,24 @@
             <div data-field="f_profession" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="f_profession">
-                        {@__ key="entity.e_bilan_patrimonial.f_profession"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_profession"/}&nbsp;
                         {@inline_help field="f_profession"}
                         <i data-field="f_profession" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_profession" /}' name="f_profession" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_profession" /}' name="f_profession" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_csp" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="r_csp">
-                        {@__ key="entity.e_bilan_patrimonial.r_csp" /}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.r_csp" /}&nbsp;
                         {@inline_help field="r_csp"}
                         <i data-field="r_csp" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select style="width:100%;" class="ajax form-control" name="r_csp" data-source="csp" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_csp}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_csp}
@@ -505,18 +505,18 @@
             <div data-field="f_secteur_d_activite" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="f_secteur_d_activite">
-                        {@__ key="entity.e_bilan_patrimonial.f_secteur_d_activite"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_secteur_d_activite"/}&nbsp;
                         {@inline_help field="f_secteur_d_activite"}
                         <i data-field="f_secteur_d_activite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_secteur_d_activite" /}' name="f_secteur_d_activite" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_secteur_d_activite" /}' name="f_secteur_d_activite" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_sa_date" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="f_sa_date">
-                        {@__ key="entity.e_bilan_patrimonial.f_sa_date"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_sa_date"/}&nbsp;
                         {@inline_help field="f_sa_date"}
                         <i data-field="f_sa_date" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -525,25 +525,25 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_sa_date" /}' name="f_sa_date" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_sa_date" /}' name="f_sa_date" type="text">
                     </div>
                 </div>
             </div>
             <div data-field="f_employeur" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="f_employeur">
-                        {@__ key="entity.e_bilan_patrimonial.f_employeur"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_employeur"/}&nbsp;
                         {@inline_help field="f_employeur"}
                         <i data-field="f_employeur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_employeur" /}' name="f_employeur" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_employeur" /}' name="f_employeur" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_employeur_date" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="f_employeur_date">
-                        {@__ key="entity.e_bilan_patrimonial.f_employeur_date"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_employeur_date"/}&nbsp;
                         {@inline_help field="f_employeur_date"}
                         <i data-field="f_employeur_date" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -552,14 +552,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_employeur_date" /}' name="f_employeur_date" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_employeur_date" /}' name="f_employeur_date" type="text">
                     </div>
                 </div>
             </div>
             <div data-field="f_rt" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_rt">
-                        {@__ key="entity.e_bilan_patrimonial.f_rt"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_rt"/}&nbsp;
                         {@inline_help field="f_rt"}
                         <i data-field="f_rt" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -572,23 +572,23 @@
             <div data-field="f_coordonnees_pro" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_coordonnees_pro">
-                        {@__ key="entity.e_bilan_patrimonial.f_coordonnees_pro"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_coordonnees_pro"/}&nbsp;
                         {@inline_help field="f_coordonnees_pro"}
                         <i data-field="f_coordonnees_pro" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_coordonnees_pro" /}' name="f_coordonnees_pro" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_coordonnees_pro" /}' name="f_coordonnees_pro" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_asc" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_asc">
-                        {@__ key="entity.e_bilan_patrimonial.f_asc"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_asc"/}&nbsp;
                         {@inline_help field="f_asc"}
                         <i data-field="f_asc" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_asc" /}' name="f_asc" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_asc" /}' name="f_asc" value="" maxlength="255" type="text">
                 </div>
             </div>
         </div>
@@ -598,24 +598,24 @@
             <div data-field="f_profession_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="f_profession_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_profession_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_profession_conj"/}&nbsp;
                         {@inline_help field="f_profession_conj"}
                         <i data-field="f_profession_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_profession_conj" /}' name="f_profession_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_profession_conj" /}' name="f_profession_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_csp_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="r_csp_conj">
-                        {@__ key="entity.e_bilan_patrimonial.r_csp_conj" /}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.r_csp_conj" /}&nbsp;
                         {@inline_help field="r_csp_conj"}
                         <i data-field="r_csp_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select style="width:100%;" class="ajax form-control" name="r_csp_conj" data-source="csp" data-using="f_nom">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_csp_conj}
                         <option value="{id}" selected="">{f_nom|string}</option>
                         {/r_csp_conj}
@@ -625,18 +625,18 @@
             <div data-field="f_secteur_d_activite_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="f_secteur_d_activite_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_secteur_d_activite_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_secteur_d_activite_conj"/}&nbsp;
                         {@inline_help field="f_secteur_d_activite_conj"}
                         <i data-field="f_secteur_d_activite_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_secteur_d_activite_conj" /}' name="f_secteur_d_activite_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_secteur_d_activite_conj" /}' name="f_secteur_d_activite_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_sa_date_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="f_sa_date_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_sa_date_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_sa_date_conj"/}&nbsp;
                         {@inline_help field="f_sa_date_conj"}
                         <i data-field="f_sa_date_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -645,25 +645,25 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_sa_date_conj" /}' name="f_sa_date_conj" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_sa_date_conj" /}' name="f_sa_date_conj" type="text">
                     </div>
                 </div>
             </div>
             <div data-field="f_employeur_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-8" style="">
                 <div class="form-group">
                     <label for="f_employeur_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_employeur_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_employeur_conj"/}&nbsp;
                         {@inline_help field="f_employeur_conj"}
                         <i data-field="f_employeur_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_employeur_conj" /}' name="f_employeur_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_employeur_conj" /}' name="f_employeur_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_employeur_date_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-4" style="">
                 <div class="form-group">
                     <label for="f_employeur_date_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_employeur_date_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_employeur_date_conj"/}&nbsp;
                         {@inline_help field="f_employeur_date_conj"}
                         <i data-field="f_employeur_date_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -672,14 +672,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bilan_patrimonial.f_employeur_date_conj" /}' name="f_employeur_date_conj" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bilan_patrimonial.f_employeur_date_conj" /}' name="f_employeur_date_conj" type="text">
                     </div>
                 </div>
             </div>
             <div data-field="f_rt_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_rt_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_rt_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_rt_conj"/}&nbsp;
                         {@inline_help field="f_rt_conj"}
                         <i data-field="f_rt_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -692,23 +692,23 @@
             <div data-field="f_coordonnees_pro_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_coordonnees_pro_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_coordonnees_pro_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_coordonnees_pro_conj"/}&nbsp;
                         {@inline_help field="f_coordonnees_pro_conj"}
                         <i data-field="f_coordonnees_pro_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_coordonnees_pro_conj" /}' name="f_coordonnees_pro_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_coordonnees_pro_conj" /}' name="f_coordonnees_pro_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
             <div data-field="f_asc_conj" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_asc_conj">
-                        {@__ key="entity.e_bilan_patrimonial.f_asc_conj"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_asc_conj"/}&nbsp;
                         {@inline_help field="f_asc_conj"}
                         <i data-field="f_asc_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_bilan_patrimonial.f_asc_conj" /}' name="f_asc_conj" value="" maxlength="255" type="text">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_bilan_patrimonial.f_asc_conj" /}' name="f_asc_conj" value="" maxlength="255" type="text">
                 </div>
             </div>
         </div>
@@ -726,34 +726,34 @@
             <div data-field="f_preconisation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_preconisation">
-                        {@__ key="entity.e_bilan_patrimonial.f_preconisation"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_preconisation"/}&nbsp;
                         {@inline_help field="f_preconisation"}
                         <i data-field="f_preconisation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_bilan_patrimonial.f_preconisation" /}' name="f_preconisation" id="f_preconisation_textareaid" type="text">{f_preconisation|s}</textarea>
+                    <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_bilan_patrimonial.f_preconisation" /}' name="f_preconisation" id="f_preconisation_textareaid" type="text">{f_preconisation|s}</textarea>
                 </div>
             </div>
             <div data-field="f_notes" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_notes">
-                        {@__ key="entity.e_bilan_patrimonial.f_notes"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_notes"/}&nbsp;
                         {@inline_help field="f_notes"}
                         <i data-field="f_notes" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_bilan_patrimonial.f_notes" /}' name="f_notes" id="f_notes_textareaid" type="text">{f_notes|s}</textarea>
+                    <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_bilan_patrimonial.f_notes" /}' name="f_notes" id="f_notes_textareaid" type="text">{f_notes|s}</textarea>
                 </div>
             </div>
             <div data-field="f_commentaires" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_commentaires">
-                        {@__ key="entity.e_bilan_patrimonial.f_commentaires"/}&nbsp;
+                        {#__ key="entity.e_bilan_patrimonial.f_commentaires"/}&nbsp;
                         {@inline_help field="f_commentaires"}
                         <i data-field="f_commentaires" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_bilan_patrimonial.f_commentaires" /}' name="f_commentaires" id="f_commentaires_textareaid" type="text">{f_commentaires|s}</textarea>
+                    <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_bilan_patrimonial.f_commentaires" /}' name="f_commentaires" id="f_commentaires_textareaid" type="text">{f_commentaires|s}</textarea>
                 </div>
             </div>
         </div>

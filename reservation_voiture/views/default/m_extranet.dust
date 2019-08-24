@@ -1,18 +1,18 @@
 {>"layout_m_extranet"/}
 {<header}
     <h1>
-        {@__ key="module.m_extranet"/}
-        <small>{@__ key="module.module"/}</small>
+        {#__ key="module.m_extranet"/}
+        <small>{#__ key="module.module"/}</small>
     </h1>
     <ol class='breadcrumb'>
         <li>
             <a href='#'>
                 <i class='fa fa-home'></i>
-                {@__ key="module.home"/}
+                {#__ key="module.home"/}
             </a>
         </li>
         <li class='active'>
-            {@__ key="module.m_extranet"/}
+            {#__ key="module.m_extranet"/}
         </li>
     </ol>
 {/header}
@@ -21,12 +21,12 @@
     <div style="text-align:left;">
         <div id="imgcontainer" class="row">
             <div class="col-xs-12" style="padding: 50px;">
-                <a href="#"><h2 style="color: #0A0909;"> {@__ key="entity.e_demande.service_type" /}</h2></a>
+                <a href="#"><h2 style="color: #0A0909;"> {#__ key="entity.e_demande.service_type" /}</h2></a>
                 <br/>
                 <form action="/default/extranet" method="post">
                     <div class="box box-solid">
                         <div class="box-header">
-                            <h3 class="box-title">{@__ key="entity.e_demande.rules_descr" /}</h3>
+                            <h3 class="box-title">{#__ key="entity.e_demande.rules_descr" /}</h3>
                         </div>
                         <div class="box-body">
                             {>"e_demande/create_fields"/}
@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="box-footer">
-                            <button type="submit" class="btn" style="background-color:#3c8dbc !important; color: #fff !important;">{@__ key="button.record"/}</button>
+                            <button type="submit" class="btn" style="background-color:#3c8dbc !important; color: #fff !important;">{#__ key="button.record"/}</button>
                         </div>
 
                         {#associationFlag}

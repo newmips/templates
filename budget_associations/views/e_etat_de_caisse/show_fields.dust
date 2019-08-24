@@ -3,39 +3,39 @@
     <ul class="nav nav-tabs">
         <li class="active">
             <a data-toggle="tab" href="#home">
-                {@__ key="entity.e_etat_de_caisse.label_entity" /}
+                {#__ key="entity.e_etat_de_caisse.label_entity" /}
             </a>
         </li>
         {@entityAccess entity="especes"}
         <li>
             <a id="r_especes-click" data-toggle="tab" href="#r_especes">
-                {@__ key="entity.e_etat_de_caisse.r_especes" /}
+                {#__ key="entity.e_etat_de_caisse.r_especes" /}
             </a>
         </li>
         <li>
             <a id="r_recap_especes-click" data-toggle="tab" href="#r_recap_especes">
-                {@__ key="entity.e_etat_de_caisse.r_recap_especes" /}
+                {#__ key="entity.e_etat_de_caisse.r_recap_especes" /}
             </a>
         </li>
         <li>
             <a id="r_recap_cheques-click" data-toggle="tab" href="#r_recap_cheques">
-                {@__ key="entity.e_etat_de_caisse.r_recap_cheques" /}
+                {#__ key="entity.e_etat_de_caisse.r_recap_cheques" /}
             </a>
         </li>
         <li>
             <a id="r_recap_ancv-click" data-toggle="tab" href="#r_recap_ancv">
-                {@__ key="entity.e_etat_de_caisse.r_recap_ancv" /}
+                {#__ key="entity.e_etat_de_caisse.r_recap_ancv" /}
             </a>
         </li>
         <li>
             <a id="r_recap_cesu-click" data-toggle="tab" href="#r_recap_cesu">
-                {@__ key="entity.e_etat_de_caisse.r_recap_cesu" /}
+                {#__ key="entity.e_etat_de_caisse.r_recap_cesu" /}
             </a>
         </li>
         {/entityAccess}
         <li>
             <a id="c_etat_recette_1570-click" data-toggle="tab" href="#c_etat_recette_1570">
-                {@__ key="component.c_etat_recette_1570.label_component" /}
+                {#__ key="component.c_etat_recette_1570.label_component" /}
             </a>
         </li>
     </ul>
@@ -46,32 +46,32 @@
                 <div data-field="f_regie" class="fieldLineHeight col-xs-12">
                     <div class="form-group">
                         <label for="r_regie">
-                            {@__ key="entity.e_etat_de_caisse.r_regie"/} </label>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_etat_de_caisse.r_regie" /}' name="r_regie" value="{r_regie.f_nom|string}" type="text" readonly="">
+                            {#__ key="entity.e_etat_de_caisse.r_regie"/} </label>
+                        <input class="form-control input" placeholder='{#__ key="entity.e_etat_de_caisse.r_regie" /}' name="r_regie" value="{r_regie.f_nom|string}" type="text" readonly="">
                     </div>
                 </div>
                 <div data-field="f_mois" class="fieldLineHeight col-xs-12">
                     <div class="form-group">
                         <label for="r_mois">
-                            {@__ key="entity.e_etat_de_caisse.r_mois"/} </label>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_etat_de_caisse.r_mois" /}' name="r_mois" value="{r_mois.f_nom|string}" type="text" readonly="">
+                            {#__ key="entity.e_etat_de_caisse.r_mois"/} </label>
+                        <input class="form-control input" placeholder='{#__ key="entity.e_etat_de_caisse.r_mois" /}' name="r_mois" value="{r_mois.f_nom|string}" type="text" readonly="">
                     </div>
                 </div>
                 <div data-field="f_annee" class="fieldLineHeight col-xs-12">
                     <div class="form-group">
                         <label for="f_annee">
-                            {@__ key="entity.e_etat_de_caisse.f_annee"/}&nbsp;
+                            {#__ key="entity.e_etat_de_caisse.f_annee"/}&nbsp;
                             {@inline_help field="f_annee"}
                             <i data-field="f_annee" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                             {/inline_help}
                         </label>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_etat_de_caisse.f_annee" /}' name="f_annee" value="{f_annee}" type="number" max="2147483648" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_etat_de_caisse.f_annee" /}' name="f_annee" value="{f_annee}" type="number" max="2147483648" readonly="">
                     </div>
                 </div>
                 <div data-field="f_debut_de_periode" class="fieldLineHeight col-xs-12">
                     <div class="form-group">
                         <label for="f_debut_de_periode">
-                            {@__ key="entity.e_etat_de_caisse.f_debut_de_periode"/}&nbsp;
+                            {#__ key="entity.e_etat_de_caisse.f_debut_de_periode"/}&nbsp;
                             {@inline_help field="f_debut_de_periode"}
                             <i data-field="f_debut_de_periode" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                             {/inline_help}
@@ -80,14 +80,14 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
                             </div>
-                            <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_etat_de_caisse.f_debut_de_periode" /}' value="{f_debut_de_periode}" type="text" readonly="">
+                            <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_etat_de_caisse.f_debut_de_periode" /}' value="{f_debut_de_periode}" type="text" readonly="">
                         </div>
                     </div>
                 </div>
                 <div data-field="f_fin_de_periode" class="fieldLineHeight col-xs-12">
                     <div class="form-group">
                         <label for="f_fin_de_periode">
-                            {@__ key="entity.e_etat_de_caisse.f_fin_de_periode"/}&nbsp;
+                            {#__ key="entity.e_etat_de_caisse.f_fin_de_periode"/}&nbsp;
                             {@inline_help field="f_fin_de_periode"}
                             <i data-field="f_fin_de_periode" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                             {/inline_help}
@@ -96,7 +96,7 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
                             </div>
-                            <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_etat_de_caisse.f_fin_de_periode" /}' value="{f_fin_de_periode}" type="text" readonly="">
+                            <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_etat_de_caisse.f_fin_de_periode" /}' value="{f_fin_de_periode}" type="text" readonly="">
                         </div>
                     </div>
                 </div>
@@ -105,28 +105,28 @@
                 <form action="/etat_de_caisse/delete" method="post">
                     <div class="quicklinks">
                         <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
-                            {@__ key="button.return"/}</a>
+                            {#__ key="button.return"/}</a>
                         {@actionAccess entity="etat_de_caisse" action="delete"}
                         <button class="btn btn-danger btn-confirm">
                             <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
-                            <span>{@__ key="button.delete"/}</span>
+                            <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_etat_de_caisse.id}" class="form-control">
                         {/actionAccess}
                         {@actionAccess entity="etat_de_caisse" action="update"}
                         <a href="/etat_de_caisse/update_form?id={e_etat_de_caisse.id}" class="btn btn-warning">
-                            <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.update"/}</span>
+                            <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.update"/}</span>
                         </a>
                         {/actionAccess}
                         {^hideButton}
                         {@actionAccess entity="etat_de_caisse" action="create"}
                         <a href="/etat_de_caisse/create_form" class="btn btn-success">
-                            <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.create"/}</span>
+                            <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
                         </a>
                         {/actionAccess}
                         {@actionAccess entity="etat_de_caisse" action="read"}
                         <a href="/etat_de_caisse/list" type="submit" class="btn btn-primary">
-                            <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{@__ key="button.list"/}</span>
+                            <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.list"/}</span>
                         </a>
                         {/actionAccess}
                         {/hideButton}
@@ -137,26 +137,26 @@
           {^hideTab}
         <div id="r_recap_especes" class="tab-pane fade">
             <div class="form-group">
-                <label for="total_especes"> {@__ key="entity.e_etat_de_caisse.total_especes"/} </label>
+                <label for="total_especes"> {#__ key="entity.e_etat_de_caisse.total_especes"/} </label>
                 <input class="form-control input" value="{total_especes}" type="text" readonly="">
             </div>
             <table class="dataTable table table-bordered table-striped">
                 <thead class="main">
                     <tr class="fields">
                         <th data-field="f_date" data-col="f_date" data-type="date">
-                            {@__ key="entity.e_recette.f_date"/}
+                            {#__ key="entity.e_recette.f_date"/}
                         </th>
                         <th data-field="f_nom_usager" data-col="f_nom_usager" data-type="string">
-                            {@__ key="entity.e_recette.f_nom_usager"/}
+                            {#__ key="entity.e_recette.f_nom_usager"/}
                         </th>
                         <th data-field="f_prenom" data-col="f_prenom" data-type="string">
-                            {@__ key="entity.e_recette.f_prenom_usager"/}
+                            {#__ key="entity.e_recette.f_prenom_usager"/}
                         </th>
                         <th data-field="f_numero_de_recu" data-col="f_numero_de_recu" data-type="integer">
-                            {@__ key="entity.e_recette.f_numero_de_recu"/}
+                            {#__ key="entity.e_recette.f_numero_de_recu"/}
                         </th>
                         <th data-field="f_montant" data-col="f_montant" data-type="currency">
-                            {@__ key="entity.e_recette.f_montant"/}
+                            {#__ key="entity.e_recette.f_montant"/}
                         </th>
                     </tr>
                 </thead>
@@ -179,32 +179,32 @@
         {^hideTab}
         <div id="r_recap_cheques" class="tab-pane fade">
             <div class="form-group">
-                <label for="total_cheques"> {@__ key="entity.e_etat_de_caisse.total_cheques"/} </label>
+                <label for="total_cheques"> {#__ key="entity.e_etat_de_caisse.total_cheques"/} </label>
                 <input class="form-control input" value="{total_cheques}" type="text" readonly="">
             </div>
             <table class="dataTable table table-bordered table-striped">
                 <thead class="main">
                     <tr class="fields">
                         <th data-field="f_date" data-col="f_date" data-type="date">
-                            {@__ key="entity.e_recette.f_date"/}
+                            {#__ key="entity.e_recette.f_date"/}
                         </th>
                         <th data-field="f_nom_usager" data-col="f_nom_usager" data-type="string">
-                            {@__ key="entity.e_recette.f_nom_usager"/}
+                            {#__ key="entity.e_recette.f_nom_usager"/}
                         </th>
                         <th data-field="f_prenom" data-col="f_prenom" data-type="string">
-                            {@__ key="entity.e_recette.f_prenom_usager"/}
+                            {#__ key="entity.e_recette.f_prenom_usager"/}
                         </th>
                         <th data-field="f_numero_de_recu" data-col="f_numero_de_recu" data-type="integer">
-                            {@__ key="entity.e_recette.f_numero_de_recu"/}
+                            {#__ key="entity.e_recette.f_numero_de_recu"/}
                         </th>
                         <th data-field="f_montant" data-col="f_montant" data-type="currency">
-                            {@__ key="entity.e_recette.f_montant"/}
+                            {#__ key="entity.e_recette.f_montant"/}
                         </th>
                         <th data-field="r_banque_organisme.f_nom" data-col="r_banque_organisme.f_nom" data-type="string">
-                            {@__ key="entity.e_recette.r_banque_organisme"/}- Nom
+                            {#__ key="entity.e_recette.r_banque_organisme"/}- Nom
                         </th>
                         <th data-field="f_numero" data-col="f_numero" data-type="string">
-                            {@__ key="entity.e_recette.f_numero"/}
+                            {#__ key="entity.e_recette.f_numero"/}
                         </th>
                     </tr>
                 </thead>
@@ -229,32 +229,32 @@
         {^hideTab}
         <div id="r_recap_ancv" class="tab-pane fade">
             <div class="form-group">
-                <label for="total_ancv"> {@__ key="entity.e_etat_de_caisse.total_ancv"/} </label>
+                <label for="total_ancv"> {#__ key="entity.e_etat_de_caisse.total_ancv"/} </label>
                 <input class="form-control input" value="{total_ancv}" type="text" readonly="">
             </div>
             <table class="dataTable table table-bordered table-striped">
                 <thead class="main">
                     <tr class="fields">
                         <th data-field="f_date" data-col="f_date" data-type="date">
-                            {@__ key="entity.e_recette.f_date"/}
+                            {#__ key="entity.e_recette.f_date"/}
                         </th>
                         <th data-field="f_nom_usager" data-col="f_nom_usager" data-type="string">
-                            {@__ key="entity.e_recette.f_nom_usager"/}
+                            {#__ key="entity.e_recette.f_nom_usager"/}
                         </th>
                         <th data-field="f_prenom" data-col="f_prenom" data-type="string">
-                            {@__ key="entity.e_recette.f_prenom_usager"/}
+                            {#__ key="entity.e_recette.f_prenom_usager"/}
                         </th>
                         <th data-field="f_numero_de_recu" data-col="f_numero_de_recu" data-type="integer">
-                            {@__ key="entity.e_recette.f_numero_de_recu"/}
+                            {#__ key="entity.e_recette.f_numero_de_recu"/}
                         </th>
                         <th data-field="f_montant" data-col="f_montant" data-type="currency">
-                            {@__ key="entity.e_recette.f_montant"/}
+                            {#__ key="entity.e_recette.f_montant"/}
                         </th>
                         <th data-field="r_banque_organisme.f_nom" data-col="r_banque_organisme.f_nom" data-type="string">
-                            {@__ key="entity.e_recette.r_banque_organisme"/}- Nom
+                            {#__ key="entity.e_recette.r_banque_organisme"/}- Nom
                         </th>
                         <th data-field="f_numero" data-col="f_numero" data-type="string">
-                            {@__ key="entity.e_recette.f_numero"/}
+                            {#__ key="entity.e_recette.f_numero"/}
                         </th>
                     </tr>
                 </thead>
@@ -291,32 +291,32 @@
         {^hideTab}
         <div id="r_recap_cesu" class="tab-pane fade">
             <div class="form-group">
-                <label for="total_cesu"> {@__ key="entity.e_etat_de_caisse.total_cesu"/} </label>
+                <label for="total_cesu"> {#__ key="entity.e_etat_de_caisse.total_cesu"/} </label>
                 <input class="form-control input" value="{total_cesu}" type="text" readonly="">
             </div>
             <table class="dataTable table table-bordered table-striped">
                 <thead class="main">
                     <tr class="fields">
                         <th data-field="f_date" data-col="f_date" data-type="date">
-                            {@__ key="entity.e_recette.f_date"/}
+                            {#__ key="entity.e_recette.f_date"/}
                         </th>
                         <th data-field="f_nom_usager" data-col="f_nom_usager" data-type="string">
-                            {@__ key="entity.e_recette.f_nom_usager"/}
+                            {#__ key="entity.e_recette.f_nom_usager"/}
                         </th>
                         <th data-field="f_prenom" data-col="f_prenom" data-type="string">
-                            {@__ key="entity.e_recette.f_prenom_usager"/}
+                            {#__ key="entity.e_recette.f_prenom_usager"/}
                         </th>
                         <th data-field="f_numero_de_recu" data-col="f_numero_de_recu" data-type="integer">
-                            {@__ key="entity.e_recette.f_numero_de_recu"/}
+                            {#__ key="entity.e_recette.f_numero_de_recu"/}
                         </th>
                         <th data-field="f_montant" data-col="f_montant" data-type="currency">
-                            {@__ key="entity.e_recette.f_montant"/}
+                            {#__ key="entity.e_recette.f_montant"/}
                         </th>
                         <th data-field="r_banque_organisme.f_nom" data-col="r_banque_organisme.f_nom" data-type="string">
-                            {@__ key="entity.e_recette.r_banque_organisme"/}- Nom
+                            {#__ key="entity.e_recette.r_banque_organisme"/}- Nom
                         </th>
                         <th data-field="f_numero" data-col="f_numero" data-type="string">
-                            {@__ key="entity.e_recette.f_numero"/}
+                            {#__ key="entity.e_recette.f_numero"/}
                         </th>
                     </tr>
                 </thead>
@@ -411,7 +411,7 @@
                 }
             </style>
             <button data-component="c_etat_recette_1570" class="component-print-button btn btn-info"><i class="fa fa-print" aria-hidden="true" style="margin-right:5px;"></i>
-                {@__ key="global_component.print.action"/}</button>
+                {#__ key="global_component.print.action"/}</button>
             <div id="c_etat_recette_1570-content" class="ajax-content print-tab">
             </div>
         </div>
