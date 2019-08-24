@@ -2,7 +2,7 @@
     <div data-field="f_type_d_annonce" class="fieldLineHeight col-xs-12" style="">
         <div class="form-group">
             <label for="f_type_d_annonce">
-                {@__ key="entity.e_annonce.f_type_d_annonce"/}&nbsp;
+                {#__ key="entity.e_annonce.f_type_d_annonce"/}&nbsp;
                 {@inline_help field="f_type_d_annonce"}
                 <i data-field="f_type_d_annonce" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -45,43 +45,43 @@
             <div data-field="f_categorie" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_categorie">
-                        {@__ key="entity.e_annonce.r_categorie"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_categorie" /}' name="r_categorie" value="{r_categorie.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_annonce.r_categorie"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.r_categorie" /}' name="r_categorie" value="{r_categorie.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_sous_categorie" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_sous_categorie">
-                        {@__ key="entity.e_annonce.r_sous_categorie"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_sous_categorie" /}' name="r_sous_categorie" value="{r_sous_categorie.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_annonce.r_sous_categorie"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.r_sous_categorie" /}' name="r_sous_categorie" value="{r_sous_categorie.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_nom" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_nom">
-                        {@__ key="entity.e_annonce.f_nom"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_nom"/}&nbsp;
                         {@inline_help field="f_nom"}
                         <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.f_nom" /}' name="f_nom_print" value="{f_nom}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.f_nom" /}' name="f_nom_print" value="{f_nom}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
             <div data-field="f_fournisseur" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_fournisseur">
-                        {@__ key="entity.e_annonce.f_fournisseur"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_fournisseur"/}&nbsp;
                         {@inline_help field="f_fournisseur"}
                         <i data-field="f_fournisseur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.f_fournisseur" /}' name="f_fournisseur_print" value="{f_fournisseur}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.f_fournisseur" /}' name="f_fournisseur_print" value="{f_fournisseur}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
             <div data-field="f_prix" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_prix">
-                        {@__ key="entity.e_annonce.f_prix"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_prix"/}&nbsp;
                         {@inline_help field="f_prix"}
                         <i data-field="f_prix" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -90,14 +90,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_annonce.f_prix" /}' name="f_prix_print" value="{f_prix}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_annonce.f_prix" /}' name="f_prix_print" value="{f_prix}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
             <div data-field="f_description" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_description">
-                        {@__ key="entity.e_annonce.f_description"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_description"/}&nbsp;
                         {@inline_help field="f_description"}
                         <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -112,47 +112,47 @@
             <div data-field="f_contact" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_contact">
-                        {@__ key="entity.e_annonce.r_contact"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_contact" /}' name="r_contact" value="{r_contact.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_annonce.r_contact"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.r_contact" /}' name="r_contact" value="{r_contact.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_adresse" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_adresse">
-                        {@__ key="entity.e_annonce.f_adresse"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_adresse"/}&nbsp;
                         {@inline_help field="f_adresse"}
                         <i data-field="f_adresse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.f_adresse" /}' name="f_adresse_print" value="{f_adresse}" type="text" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.f_adresse" /}' name="f_adresse_print" value="{f_adresse}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_site" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_site">
-                        {@__ key="entity.e_annonce.r_site"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_site" /}' name="r_site" value="{r_site.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_annonce.r_site"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.r_site" /}' name="r_site" value="{r_site.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_societe" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_societe">
-                        {@__ key="entity.e_annonce.r_societe"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_annonce.r_societe"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_region" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_region">
-                        {@__ key="entity.e_annonce.r_region"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_region" /}' name="r_region" value="{r_region.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_annonce.r_region"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.r_region" /}' name="r_region" value="{r_region.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
             <div data-field="f_pays" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="r_pays">
-                        {@__ key="entity.e_annonce.r_pays"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_pays" /}' name="r_pays" value="{r_pays.f_nom|string}" type="text" readonly="">
+                        {#__ key="entity.e_annonce.r_pays"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.r_pays" /}' name="r_pays" value="{r_pays.f_nom|string}" type="text" readonly="">
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
             <div data-field="f_date_expiration_prevue" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_date_expiration_prevue">
-                        {@__ key="entity.e_annonce.f_date_expiration_prevue"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_date_expiration_prevue"/}&nbsp;
                         {@inline_help field="f_date_expiration_prevue"}
                         <i data-field="f_date_expiration_prevue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -171,7 +171,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_annonce.f_date_expiration_prevue" /}' value="{f_date_expiration_prevue}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_annonce.f_date_expiration_prevue" /}' value="{f_date_expiration_prevue}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@
             <div data-field="f_photo_1" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_photo_1">
-                        {@__ key="entity.e_annonce.f_photo_1"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_photo_1"/}&nbsp;
                         {@inline_help field="f_photo_1"}
                         <i data-field="f_photo_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -199,7 +199,7 @@
             <div data-field="f_photo_2" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_photo_2">
-                        {@__ key="entity.e_annonce.f_photo_2"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_photo_2"/}&nbsp;
                         {@inline_help field="f_photo_2"}
                         <i data-field="f_photo_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -216,7 +216,7 @@
             <div data-field="f_photo_3" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_photo_3">
-                        {@__ key="entity.e_annonce.f_photo_3"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_photo_3"/}&nbsp;
                         {@inline_help field="f_photo_3"}
                         <i data-field="f_photo_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -233,7 +233,7 @@
             <div data-field="f_document_1" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_document_1">
-                        {@__ key="entity.e_annonce.f_document_1"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_document_1"/}&nbsp;
                         {@inline_help field="f_document_1"}
                         <i data-field="f_document_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -253,7 +253,7 @@
             <div data-field="f_document_2" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_document_2">
-                        {@__ key="entity.e_annonce.f_document_2"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_document_2"/}&nbsp;
                         {@inline_help field="f_document_2"}
                         <i data-field="f_document_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -273,7 +273,7 @@
             <div data-field="f_document_3" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_document_3">
-                        {@__ key="entity.e_annonce.f_document_3"/}&nbsp;
+                        {#__ key="entity.e_annonce.f_document_3"/}&nbsp;
                         {@inline_help field="f_document_3"}
                         <i data-field="f_document_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -289,8 +289,8 @@
             <div data-field="f_statut" class="fieldLineHeight col-xs-12">
                 <div class="form-group">
                     <label for="r_statut">
-                        {@__ key="entity.e_annonce.r_statut"/} </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_annonce.r_statut" /}' name="r_statut" value="{r_statut.f_name|string}" type="text" readonly="">
+                        {#__ key="entity.e_annonce.r_statut"/} </label>
+                    <input class="form-control input" placeholder='{#__ key="entity.e_annonce.r_statut" /}' name="r_statut" value="{r_statut.f_name|string}" type="text" readonly="">
                 </div>
             </div>
         </div>
@@ -301,7 +301,7 @@
     <div id="r_history_statut_print" class="row">
         <div class="col-xs-12">
             <h3>
-                {@__ key="entity.e_history_1310_5726.name_entity" /}
+                {#__ key="entity.e_history_1310_5726.name_entity" /}
             </h3>
             <hr>
         </div>

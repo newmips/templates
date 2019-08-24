@@ -11,7 +11,7 @@
             <div data-field="f_retraite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_retraite">
-                        {@__ key="entity.e_complement_revenus.f_retraite"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_retraite"/}&nbsp;
                         {@inline_help field="f_retraite"}
                         <i data-field="f_retraite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -42,7 +42,7 @@
             <div data-field="f_date_depart_vous" class="fieldLineHeight col-xs-12 col-sm-3 col-md-3" style="">
                 <div class="form-group">
                     <label for="f_date_depart_vous">
-                        {@__ key="entity.e_complement_revenus.f_date_depart_vous"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_date_depart_vous"/}&nbsp;
                         {@inline_help field="f_date_depart_vous"}
                         <i data-field="f_date_depart_vous" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -51,14 +51,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_complement_revenus.f_date_depart_vous" /}' value="{f_date_depart_vous}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_complement_revenus.f_date_depart_vous" /}' value="{f_date_depart_vous}" type="text" readonly="">
                     </div>
                 </div>
             </div>
             <div data-field="f_date_depart_conj" class="fieldLineHeight col-xs-12 col-sm-3 col-md-3" style="">
                 <div class="form-group">
                     <label for="f_date_depart_conj">
-                        {@__ key="entity.e_complement_revenus.f_date_depart_conj"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_date_depart_conj"/}&nbsp;
                         {@inline_help field="f_date_depart_conj"}
                         <i data-field="f_date_depart_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -67,7 +67,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_complement_revenus.f_date_depart_conj" /}' value="{f_date_depart_conj}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_complement_revenus.f_date_depart_conj" /}' value="{f_date_depart_conj}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
             <div data-field="f_montant_retraite_vous" class="fieldLineHeight col-xs-12 col-sm-3 col-md-3" style="">
                 <div class="form-group">
                     <label for="f_montant_retraite_vous">
-                        {@__ key="entity.e_complement_revenus.f_montant_retraite_vous"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_montant_retraite_vous"/}&nbsp;
                         {@inline_help field="f_montant_retraite_vous"}
                         <i data-field="f_montant_retraite_vous" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -93,14 +93,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_montant_retraite_vous" /}' name="f_montant_retraite_vous" value="{f_montant_retraite_vous}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_montant_retraite_vous" /}' name="f_montant_retraite_vous" value="{f_montant_retraite_vous}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
             <div data-field="f_montant_retraite_conj" class="fieldLineHeight col-xs-12 col-sm-3 col-md-3" style="">
                 <div class="form-group">
                     <label for="f_montant_retraite_conj">
-                        {@__ key="entity.e_complement_revenus.f_montant_retraite_conj"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_montant_retraite_conj"/}&nbsp;
                         {@inline_help field="f_montant_retraite_conj"}
                         <i data-field="f_montant_retraite_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -109,7 +109,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_montant_retraite_conj" /}' name="f_montant_retraite_conj" value="{f_montant_retraite_conj}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_montant_retraite_conj" /}' name="f_montant_retraite_conj" value="{f_montant_retraite_conj}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
             <div data-field="f_deces_conjoint" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_deces_conjoint">
-                        {@__ key="entity.e_complement_revenus.f_deces_conjoint"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_deces_conjoint"/}&nbsp;
                         {@inline_help field="f_deces_conjoint"}
                         <i data-field="f_deces_conjoint" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -151,7 +151,7 @@
             <div data-field="f_montant_pension_monsieur" class="fieldLineHeight col-xs-12 col-sm-3 col-md-3" style="">
                 <div class="form-group">
                     <label for="f_montant_pension_monsieur">
-                        {@__ key="entity.e_complement_revenus.f_montant_pension_monsieur"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_montant_pension_monsieur"/}&nbsp;
                         {@inline_help field="f_montant_pension_monsieur"}
                         <i data-field="f_montant_pension_monsieur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -160,14 +160,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_montant_pension_monsieur" /}' name="f_montant_pension_monsieur" value="{f_montant_pension_monsieur}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_montant_pension_monsieur" /}' name="f_montant_pension_monsieur" value="{f_montant_pension_monsieur}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
             <div data-field="f_montant_pension_madame" class="fieldLineHeight col-xs-12 col-sm-3 col-md-3" style="">
                 <div class="form-group">
                     <label for="f_montant_pension_madame">
-                        {@__ key="entity.e_complement_revenus.f_montant_pension_madame"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_montant_pension_madame"/}&nbsp;
                         {@inline_help field="f_montant_pension_madame"}
                         <i data-field="f_montant_pension_madame" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -176,7 +176,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_montant_pension_madame" /}' name="f_montant_pension_madame" value="{f_montant_pension_madame}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_montant_pension_madame" /}' name="f_montant_pension_madame" value="{f_montant_pension_madame}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
             <div data-field="f_dependance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_dependance">
-                        {@__ key="entity.e_complement_revenus.f_dependance"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_dependance"/}&nbsp;
                         {@inline_help field="f_dependance"}
                         <i data-field="f_dependance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -209,7 +209,7 @@
             <div data-field="f_cessation_d_activite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_cessation_d_activite">
-                        {@__ key="entity.e_complement_revenus.f_cessation_d_activite"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_cessation_d_activite"/}&nbsp;
                         {@inline_help field="f_cessation_d_activite"}
                         <i data-field="f_cessation_d_activite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -240,7 +240,7 @@
             <div data-field="f_cessation_immediat" class="fieldLineHeight col-xs-12 col-md-3 col-sm-3" style="">
                 <div class="form-group">
                     <label for="f_cessation_immediat">
-                        {@__ key="entity.e_complement_revenus.f_cessation_immediat"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_cessation_immediat"/}&nbsp;
                         {@inline_help field="f_cessation_immediat"}
                         <i data-field="f_cessation_immediat" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -257,12 +257,12 @@
             <div data-field="f_cessation_autre_echechance" class="fieldLineHeight col-xs-12 col-md-3 col-sm-3" style="">
                 <div class="form-group">
                     <label for="f_cessation_autre_echechance">
-                        {@__ key="entity.e_complement_revenus.f_cessation_autre_echechance"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_cessation_autre_echechance"/}&nbsp;
                         {@inline_help field="f_cessation_autre_echechance"}
                         <i data-field="f_cessation_autre_echechance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_cessation_autre_echechance" /}' name="f_cessation_autre_echechance" value="{f_cessation_autre_echechance}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_cessation_autre_echechance" /}' name="f_cessation_autre_echechance" value="{f_cessation_autre_echechance}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
         </div>
@@ -272,7 +272,7 @@
             <div data-field="f_autre_raison" class="fieldLineHeight col-xs-12 col-md-3 col-sm-3" style="">
                 <div class="form-group">
                     <label for="f_autre_raison">
-                        {@__ key="entity.e_complement_revenus.f_autre_raison"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_autre_raison"/}&nbsp;
                         {@inline_help field="f_autre_raison"}
                         <i data-field="f_autre_raison" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -289,12 +289,12 @@
             <div data-field="f_autre_raison_description" class="fieldLineHeight col-xs-12 col-md-9 col-sm-9" style="">
                 <div class="form-group">
                     <label for="f_autre_raison_description">
-                        {@__ key="entity.e_complement_revenus.f_autre_raison_description"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_autre_raison_description"/}&nbsp;
                         {@inline_help field="f_autre_raison_description"}
                         <i data-field="f_autre_raison_description" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_autre_raison_description" /}' name="f_autre_raison_description" value="{f_autre_raison_description}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_autre_raison_description" /}' name="f_autre_raison_description" value="{f_autre_raison_description}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
         </div>
@@ -314,7 +314,7 @@
             <div data-field="f_autre_raison_immediat" class="fieldLineHeight col-xs-12 col-md-3 col-sm-3" style="">
                 <div class="form-group">
                     <label for="f_autre_raison_immediat">
-                        {@__ key="entity.e_complement_revenus.f_autre_raison_immediat"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_autre_raison_immediat"/}&nbsp;
                         {@inline_help field="f_autre_raison_immediat"}
                         <i data-field="f_autre_raison_immediat" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -331,12 +331,12 @@
             <div data-field="f_autre_raison_echeance" class="fieldLineHeight col-xs-12 col-md-3 col-sm-3" style="">
                 <div class="form-group">
                     <label for="f_autre_raison_echeance">
-                        {@__ key="entity.e_complement_revenus.f_autre_raison_echeance"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_autre_raison_echeance"/}&nbsp;
                         {@inline_help field="f_autre_raison_echeance"}
                         <i data-field="f_autre_raison_echeance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_autre_raison_echeance" /}' name="f_autre_raison_echeance" value="{f_autre_raison_echeance}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_autre_raison_echeance" /}' name="f_autre_raison_echeance" value="{f_autre_raison_echeance}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
         </div>
@@ -352,7 +352,7 @@
             <div data-field="f_montant_annuel_estime" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_montant_annuel_estime">
-                        {@__ key="entity.e_complement_revenus.f_montant_annuel_estime"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_montant_annuel_estime"/}&nbsp;
                         {@inline_help field="f_montant_annuel_estime"}
                         <i data-field="f_montant_annuel_estime" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -361,7 +361,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_montant_annuel_estime" /}' name="f_montant_annuel_estime" value="{f_montant_annuel_estime}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_montant_annuel_estime" /}' name="f_montant_annuel_estime" value="{f_montant_annuel_estime}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
@@ -378,18 +378,18 @@
             <div data-field="f_placement_1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
                 <div class="form-group">
                     <label for="f_placement_1">
-                        {@__ key="entity.e_complement_revenus.f_placement_1"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_placement_1"/}&nbsp;
                         {@inline_help field="f_placement_1"}
                         <i data-field="f_placement_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_placement_1" /}' name="f_placement_1" value="{f_placement_1}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_placement_1" /}' name="f_placement_1" value="{f_placement_1}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
             <div data-field="f_montant_placement_1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
                 <div class="form-group">
                     <label for="f_montant_placement_1">
-                        {@__ key="entity.e_complement_revenus.f_montant_placement_1"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_montant_placement_1"/}&nbsp;
                         {@inline_help field="f_montant_placement_1"}
                         <i data-field="f_montant_placement_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -398,25 +398,25 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_montant_placement_1" /}' name="f_montant_placement_1" value="{f_montant_placement_1}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_montant_placement_1" /}' name="f_montant_placement_1" value="{f_montant_placement_1}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
             <div data-field="f_placement_2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
                 <div class="form-group">
                     <label for="f_placement_2">
-                        {@__ key="entity.e_complement_revenus.f_placement_2"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_placement_2"/}&nbsp;
                         {@inline_help field="f_placement_2"}
                         <i data-field="f_placement_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_placement_2" /}' name="f_placement_2" value="{f_placement_2}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_placement_2" /}' name="f_placement_2" value="{f_placement_2}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
             <div data-field="f_montant_placement_2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
                 <div class="form-group">
                     <label for="f_montant_placement_2">
-                        {@__ key="entity.e_complement_revenus.f_montant_placement_2"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_montant_placement_2"/}&nbsp;
                         {@inline_help field="f_montant_placement_2"}
                         <i data-field="f_montant_placement_2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -425,25 +425,25 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_montant_placement_2" /}' name="f_montant_placement_2" value="{f_montant_placement_2}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_montant_placement_2" /}' name="f_montant_placement_2" value="{f_montant_placement_2}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
             <div data-field="f_placement_3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
                 <div class="form-group">
                     <label for="f_placement_3">
-                        {@__ key="entity.e_complement_revenus.f_placement_3"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_placement_3"/}&nbsp;
                         {@inline_help field="f_placement_3"}
                         <i data-field="f_placement_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_placement_3" /}' name="f_placement_3" value="{f_placement_3}" type="text" maxlength="255" readonly="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_placement_3" /}' name="f_placement_3" value="{f_placement_3}" type="text" maxlength="255" readonly="">
                 </div>
             </div>
             <div data-field="f_montant_placement_3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
                 <div class="form-group">
                     <label for="f_montant_placement_3">
-                        {@__ key="entity.e_complement_revenus.f_montant_placement_3"/}&nbsp;
+                        {#__ key="entity.e_complement_revenus.f_montant_placement_3"/}&nbsp;
                         {@inline_help field="f_montant_placement_3"}
                         <i data-field="f_montant_placement_3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -452,7 +452,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <input class="form-control input" placeholder='{@__ key="entity.e_complement_revenus.f_montant_placement_3" /}' name="f_montant_placement_3" value="{f_montant_placement_3}" type="text" data-type="currency" readonly="">
+                        <input class="form-control input" placeholder='{#__ key="entity.e_complement_revenus.f_montant_placement_3" /}' name="f_montant_placement_3" value="{f_montant_placement_3}" type="text" data-type="currency" readonly="">
                     </div>
                 </div>
             </div>
@@ -464,13 +464,13 @@
     <form action="/complement_revenus/delete" method="post">
         <div class="quicklinks">
             <span>
-                <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{@__ key="button.return"/}</a>
+                <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
             {@actionAccess entity="complement_revenus" action="delete"}
             <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
-                    <span>{@__ key="button.delete"/}</span>
+                    <span>{#__ key="button.delete"/}</span>
             </button>
             <input name="id" type="hidden" value="{e_complement_revenus.id}" class="form-control">
             </span>
@@ -480,7 +480,7 @@
             <span>
                 <a href="/complement_revenus/update_form?id={e_complement_revenus.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
-                    <span>{@__ key="button.update"/}</span>
+                    <span>{#__ key="button.update"/}</span>
             </a>
             </span>
             {/actionAccess}
@@ -489,7 +489,7 @@
             <span>
                     <a href="/complement_revenus/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
-                        <span>{@__ key="button.create"/}</span>
+                        <span>{#__ key="button.create"/}</span>
             </a>
             </span>
             {/actionAccess}
@@ -497,7 +497,7 @@
             <span>
                     <a href="/complement_revenus/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>
-                        <span>{@__ key="button.list"/}</span>
+                        <span>{#__ key="button.list"/}</span>
             </a>
             </span>
             {/actionAccess}

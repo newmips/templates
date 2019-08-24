@@ -2,24 +2,24 @@
     <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_nom" class="required">
-                {@__ key="entity.e_association.f_nom"/}&nbsp;
+                {#__ key="entity.e_association.f_nom"/}&nbsp;
                 {@inline_help field="f_nom"}
                 <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_association.f_nom" /}' name="f_nom" value="" type="text" maxlength="255" required="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_association.f_nom" /}' name="f_nom" value="" type="text" maxlength="255" required="">
         </div>
     </div>
 
     <div data-field="f_sigle" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_sigle">
-                {@__ key="entity.e_association.f_sigle"/}&nbsp;
+                {#__ key="entity.e_association.f_sigle"/}&nbsp;
                 {@inline_help field="f_sigle"}
                 <i data-field="f_sigle" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_association.f_sigle" /}' name="f_sigle" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_association.f_sigle" /}' name="f_sigle" value="" type="text" maxlength="255">
         </div>
     </div>
 
@@ -36,12 +36,12 @@
             <div data-field="f_numero_rna" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_numero_rna">
-                        {@__ key="entity.e_association.f_numero_rna"/}&nbsp;
+                        {#__ key="entity.e_association.f_numero_rna"/}&nbsp;
                         {@inline_help field="f_numero_rna"}
                         <i data-field="f_numero_rna" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_association.f_numero_rna" /}' name="f_numero_rna" value="" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_association.f_numero_rna" /}' name="f_numero_rna" value="" type="text" maxlength="255">
                 </div>
             </div>
         </div>
@@ -51,12 +51,12 @@
             <div data-field="f_siret" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_siret">
-                        {@__ key="entity.e_association.f_siret"/}&nbsp;
+                        {#__ key="entity.e_association.f_siret"/}&nbsp;
                         {@inline_help field="f_siret"}
                         <i data-field="f_siret" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_association.f_siret" /}' name="f_siret" value="" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_association.f_siret" /}' name="f_siret" value="" type="text" maxlength="255">
                 </div>
             </div>
         </div>
@@ -66,12 +66,12 @@
             <div data-field="f_type_d_association" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_type_d_association">
-                        {@__ key="entity.e_association.f_type_d_association"/}&nbsp;
+                        {#__ key="entity.e_association.f_type_d_association"/}&nbsp;
                         {@inline_help field="f_type_d_association"}
                         <i data-field="f_type_d_association" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_association.f_type_d_association" /}' name="f_type_d_association" value="" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_association.f_type_d_association" /}' name="f_type_d_association" value="" type="text" maxlength="255">
                 </div>
             </div>
         </div>
@@ -81,12 +81,12 @@
             <div data-field="f_nombre_de_benevoles" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nombre_de_benevoles">
-                        {@__ key="entity.e_association.f_nombre_de_benevoles"/}&nbsp;
+                        {#__ key="entity.e_association.f_nombre_de_benevoles"/}&nbsp;
                         {@inline_help field="f_nombre_de_benevoles"}
                         <i data-field="f_nombre_de_benevoles" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_association.f_nombre_de_benevoles" /}' name="f_nombre_de_benevoles" value="" type="number" max="2147483648">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_association.f_nombre_de_benevoles" /}' name="f_nombre_de_benevoles" value="" type="number" max="2147483648">
                 </div>
             </div>
         </div>
@@ -96,12 +96,12 @@
             <div data-field="f_nombre_de_volontaires" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nombre_de_volontaires">
-                        {@__ key="entity.e_association.f_nombre_de_volontaires"/}&nbsp;
+                        {#__ key="entity.e_association.f_nombre_de_volontaires"/}&nbsp;
                         {@inline_help field="f_nombre_de_volontaires"}
                         <i data-field="f_nombre_de_volontaires" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_association.f_nombre_de_volontaires" /}' name="f_nombre_de_volontaires" value="" type="number" max="2147483648">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_association.f_nombre_de_volontaires" /}' name="f_nombre_de_volontaires" value="" type="number" max="2147483648">
                 </div>
             </div>
         </div>
@@ -111,12 +111,12 @@
             <div data-field="f_nombre_de_salaries" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nombre_de_salaries">
-                        {@__ key="entity.e_association.f_nombre_de_salaries"/}&nbsp;
+                        {#__ key="entity.e_association.f_nombre_de_salaries"/}&nbsp;
                         {@inline_help field="f_nombre_de_salaries"}
                         <i data-field="f_nombre_de_salaries" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_association.f_nombre_de_salaries" /}' name="f_nombre_de_salaries" value="" type="number" max="2147483648">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_association.f_nombre_de_salaries" /}' name="f_nombre_de_salaries" value="" type="number" max="2147483648">
                 </div>
             </div>
         </div>
@@ -126,34 +126,34 @@
             <div data-field="f_domaine_d_intervention" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_domaine_d_intervention">
-                        {@__ key="entity.e_association.f_domaine_d_intervention"/}&nbsp;
+                        {#__ key="entity.e_association.f_domaine_d_intervention"/}&nbsp;
                         {@inline_help field="f_domaine_d_intervention"}
                         <i data-field="f_domaine_d_intervention" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea" placeholder='{@__ key="entity.e_association.f_domaine_d_intervention" /}' name="f_domaine_d_intervention" id="f_domaine_d_intervention_textareaid" type="text">{f_domaine_d_intervention|s}</textarea>
+                    <textarea class="form-control textarea" placeholder='{#__ key="entity.e_association.f_domaine_d_intervention" /}' name="f_domaine_d_intervention" id="f_domaine_d_intervention_textareaid" type="text">{f_domaine_d_intervention|s}</textarea>
                 </div>
             </div>
             <div data-field="f_principales_activites" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_principales_activites">
-                        {@__ key="entity.e_association.f_principales_activites"/}&nbsp;
+                        {#__ key="entity.e_association.f_principales_activites"/}&nbsp;
                         {@inline_help field="f_principales_activites"}
                         <i data-field="f_principales_activites" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea" placeholder='{@__ key="entity.e_association.f_principales_activites" /}' name="f_principales_activites" id="f_principales_activites_textareaid" type="text">{f_principales_activites|s}</textarea>
+                    <textarea class="form-control textarea" placeholder='{#__ key="entity.e_association.f_principales_activites" /}' name="f_principales_activites" id="f_principales_activites_textareaid" type="text">{f_principales_activites|s}</textarea>
                 </div>
             </div>
             <div data-field="f_autres_informations" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_autres_informations">
-                        {@__ key="entity.e_association.f_autres_informations"/}&nbsp;
+                        {#__ key="entity.e_association.f_autres_informations"/}&nbsp;
                         {@inline_help field="f_autres_informations"}
                         <i data-field="f_autres_informations" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea" placeholder='{@__ key="entity.e_association.f_autres_informations" /}' name="f_autres_informations" id="f_autres_informations_textareaid" type="text">{f_autres_informations|s}</textarea>
+                    <textarea class="form-control textarea" placeholder='{#__ key="entity.e_association.f_autres_informations" /}' name="f_autres_informations" id="f_autres_informations_textareaid" type="text">{f_autres_informations|s}</textarea>
                 </div>
             </div>
         </div>

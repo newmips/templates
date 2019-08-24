@@ -2,14 +2,14 @@
     <div data-field="f_contrat_apprentissage" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="r_contrat_apprentissage">
-                {@__ key="entity.e_suivi_de_contrat.r_contrat_apprentissage" /}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.r_contrat_apprentissage" /}&nbsp;
                 {@inline_help field="r_contrat_apprentissage"}
                 <i data-field="r_contrat_apprentissage" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="ajax form-control" name="r_contrat_apprentissage" data-source="contrat_apprentissage" data-using="id">
                 <option value="">
-                    {@__ key="select.default" /}
+                    {#__ key="select.default" /}
                 </option>
                 {#r_contrat_apprentissage}
                 <option value="{id}" selected="">{id|string}</option>
@@ -20,7 +20,7 @@
     <div data-field="f_date_reception" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_date_reception">
-                {@__ key="entity.e_suivi_de_contrat.f_date_reception"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_date_reception"/}&nbsp;
                 {@inline_help field="f_date_reception"}
                 <i data-field="f_date_reception" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -29,14 +29,14 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_suivi_de_contrat.f_date_reception" /}' name="f_date_reception" data-today="1" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_suivi_de_contrat.f_date_reception" /}' name="f_date_reception" data-today="1" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_date_enregistrement" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_date_enregistrement">
-                {@__ key="entity.e_suivi_de_contrat.f_date_enregistrement"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_date_enregistrement"/}&nbsp;
                 {@inline_help field="f_date_enregistrement"}
                 <i data-field="f_date_enregistrement" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -45,36 +45,36 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_suivi_de_contrat.f_date_enregistrement" /}' name="f_date_enregistrement" data-today="1" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_suivi_de_contrat.f_date_enregistrement" /}' name="f_date_enregistrement" data-today="1" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_expediteur" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_expediteur">
-                {@__ key="entity.e_suivi_de_contrat.f_expediteur"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_expediteur"/}&nbsp;
                 {@inline_help field="f_expediteur"}
                 <i data-field="f_expediteur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_expediteur" /}' name="f_expediteur" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_expediteur" /}' name="f_expediteur" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_destinataire" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_destinataire">
-                {@__ key="entity.e_suivi_de_contrat.f_destinataire"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_destinataire"/}&nbsp;
                 {@inline_help field="f_destinataire"}
                 <i data-field="f_destinataire" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_destinataire" /}' name="f_destinataire" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_destinataire" /}' name="f_destinataire" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_date_vise" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_date_vise">
-                {@__ key="entity.e_suivi_de_contrat.f_date_vise"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_date_vise"/}&nbsp;
                 {@inline_help field="f_date_vise"}
                 <i data-field="f_date_vise" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -83,14 +83,14 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_suivi_de_contrat.f_date_vise" /}' name="f_date_vise" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_suivi_de_contrat.f_date_vise" /}' name="f_date_vise" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_date_envoi" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_date_envoi">
-                {@__ key="entity.e_suivi_de_contrat.f_date_envoi"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_date_envoi"/}&nbsp;
                 {@inline_help field="f_date_envoi"}
                 <i data-field="f_date_envoi" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -99,21 +99,21 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_suivi_de_contrat.f_date_envoi" /}' name="f_date_envoi" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_suivi_de_contrat.f_date_envoi" /}' name="f_date_envoi" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_origine_contrat" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_origine_contrat">
-                {@__ key="entity.e_suivi_de_contrat.f_origine_contrat"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_origine_contrat"/}&nbsp;
                 {@inline_help field="f_origine_contrat"}
                 <i data-field="f_origine_contrat" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="form-control select" name="f_origine_contrat">
                 <option value="" selected="">
-                    {@__ key="select.default" /}
+                    {#__ key="select.default" /}
                 </option>
                 {#enum_radio.e_suivi_de_contrat.f_origine_contrat}
                 <option value="{.value}"> {.translation} </option>
@@ -124,7 +124,7 @@
     <div data-field="f_date_rupture_contrat" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_date_rupture_contrat">
-                {@__ key="entity.e_suivi_de_contrat.f_date_rupture_contrat"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_date_rupture_contrat"/}&nbsp;
                 {@inline_help field="f_date_rupture_contrat"}
                 <i data-field="f_date_rupture_contrat" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -133,25 +133,25 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_suivi_de_contrat.f_date_rupture_contrat" /}' name="f_date_rupture_contrat" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_suivi_de_contrat.f_date_rupture_contrat" /}' name="f_date_rupture_contrat" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_acteur_rupture" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_acteur_rupture">
-                {@__ key="entity.e_suivi_de_contrat.f_acteur_rupture"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_acteur_rupture"/}&nbsp;
                 {@inline_help field="f_acteur_rupture"}
                 <i data-field="f_acteur_rupture" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_acteur_rupture" /}' name="f_acteur_rupture" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_acteur_rupture" /}' name="f_acteur_rupture" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_date_debut" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_date_debut">
-                {@__ key="entity.e_suivi_de_contrat.f_date_debut"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_date_debut"/}&nbsp;
                 {@inline_help field="f_date_debut"}
                 <i data-field="f_date_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -160,14 +160,14 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_suivi_de_contrat.f_date_debut" /}' name="f_date_debut" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_suivi_de_contrat.f_date_debut" /}' name="f_date_debut" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_date_fin" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_date_fin">
-                {@__ key="entity.e_suivi_de_contrat.f_date_fin"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_date_fin"/}&nbsp;
                 {@inline_help field="f_date_fin"}
                 <i data-field="f_date_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -176,173 +176,173 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_suivi_de_contrat.f_date_fin" /}' name="f_date_fin" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_suivi_de_contrat.f_date_fin" /}' name="f_date_fin" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_nombre_mois" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_nombre_mois">
-                {@__ key="entity.e_suivi_de_contrat.f_nombre_mois"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_nombre_mois"/}&nbsp;
                 {@inline_help field="f_nombre_mois"}
                 <i data-field="f_nombre_mois" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_nombre_mois" /}' name="f_nombre_mois" value="" type="number" max="2147483648">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_nombre_mois" /}' name="f_nombre_mois" value="" type="number" max="2147483648">
         </div>
     </div>
     <div data-field="f_nombre_jours" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_nombre_jours">
-                {@__ key="entity.e_suivi_de_contrat.f_nombre_jours"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_nombre_jours"/}&nbsp;
                 {@inline_help field="f_nombre_jours"}
                 <i data-field="f_nombre_jours" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_nombre_jours" /}' name="f_nombre_jours" value="" type="number" max="2147483648">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_nombre_jours" /}' name="f_nombre_jours" value="" type="number" max="2147483648">
         </div>
     </div>
     <div data-field="f_age" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_age">
-                {@__ key="entity.e_suivi_de_contrat.f_age"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_age"/}&nbsp;
                 {@inline_help field="f_age"}
                 <i data-field="f_age" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_age" /}' name="f_age" value="" type="number" max="2147483648">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_age" /}' name="f_age" value="" type="number" max="2147483648">
         </div>
     </div>
     <div data-field="f_numero_etudiant" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_numero_etudiant">
-                {@__ key="entity.e_suivi_de_contrat.f_numero_etudiant"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_numero_etudiant"/}&nbsp;
                 {@inline_help field="f_numero_etudiant"}
                 <i data-field="f_numero_etudiant" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_numero_etudiant" /}' name="f_numero_etudiant" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_numero_etudiant" /}' name="f_numero_etudiant" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_pays_de_naissance" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_pays_de_naissance">
-                {@__ key="entity.e_suivi_de_contrat.f_pays_de_naissance"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_pays_de_naissance"/}&nbsp;
                 {@inline_help field="f_pays_de_naissance"}
                 <i data-field="f_pays_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_pays_de_naissance" /}' name="f_pays_de_naissance" value="France" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_pays_de_naissance" /}' name="f_pays_de_naissance" value="France" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_rue" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_rue">
-                {@__ key="entity.e_suivi_de_contrat.f_rue"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_rue"/}&nbsp;
                 {@inline_help field="f_rue"}
                 <i data-field="f_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_rue" /}' name="f_rue" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_rue" /}' name="f_rue" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_complement_rue" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_complement_rue">
-                {@__ key="entity.e_suivi_de_contrat.f_complement_rue"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_complement_rue"/}&nbsp;
                 {@inline_help field="f_complement_rue"}
                 <i data-field="f_complement_rue" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_complement_rue" /}' name="f_complement_rue" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_complement_rue" /}' name="f_complement_rue" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_lieu_dit" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_lieu_dit">
-                {@__ key="entity.e_suivi_de_contrat.f_lieu_dit"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_lieu_dit"/}&nbsp;
                 {@inline_help field="f_lieu_dit"}
                 <i data-field="f_lieu_dit" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_lieu_dit" /}' name="f_lieu_dit" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_lieu_dit" /}' name="f_lieu_dit" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_code_postal" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_code_postal">
-                {@__ key="entity.e_suivi_de_contrat.f_code_postal"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_code_postal"/}&nbsp;
                 {@inline_help field="f_code_postal"}
                 <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_code_postal" /}' name="f_code_postal" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_code_postal" /}' name="f_code_postal" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_ville" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_ville">
-                {@__ key="entity.e_suivi_de_contrat.f_ville"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_ville"/}&nbsp;
                 {@inline_help field="f_ville"}
                 <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_ville" /}' name="f_ville" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_ville" /}' name="f_ville" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_bassin" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_bassin">
-                {@__ key="entity.e_suivi_de_contrat.f_bassin"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_bassin"/}&nbsp;
                 {@inline_help field="f_bassin"}
                 <i data-field="f_bassin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_bassin" /}' name="f_bassin" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_bassin" /}' name="f_bassin" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_zone_kilometrique" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_zone_kilometrique">
-                {@__ key="entity.e_suivi_de_contrat.f_zone_kilometrique"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_zone_kilometrique"/}&nbsp;
                 {@inline_help field="f_zone_kilometrique"}
                 <i data-field="f_zone_kilometrique" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_zone_kilometrique" /}' name="f_zone_kilometrique" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_zone_kilometrique" /}' name="f_zone_kilometrique" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_qualite" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_qualite">
-                {@__ key="entity.e_suivi_de_contrat.f_qualite"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_qualite"/}&nbsp;
                 {@inline_help field="f_qualite"}
                 <i data-field="f_qualite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_qualite" /}' name="f_qualite" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_qualite" /}' name="f_qualite" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_origine_avant_cfa" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_origine_avant_cfa">
-                {@__ key="entity.e_suivi_de_contrat.f_origine_avant_cfa"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_origine_avant_cfa"/}&nbsp;
                 {@inline_help field="f_origine_avant_cfa"}
                 <i data-field="f_origine_avant_cfa" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_origine_avant_cfa" /}' name="f_origine_avant_cfa" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_origine_avant_cfa" /}' name="f_origine_avant_cfa" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_annee_n_1" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="f_annee_n_1">
-                {@__ key="entity.e_suivi_de_contrat.f_annee_n_1"/}&nbsp;
+                {#__ key="entity.e_suivi_de_contrat.f_annee_n_1"/}&nbsp;
                 {@inline_help field="f_annee_n_1"}
                 <i data-field="f_annee_n_1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_suivi_de_contrat.f_annee_n_1" /}' name="f_annee_n_1" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_suivi_de_contrat.f_annee_n_1" /}' name="f_annee_n_1" value="" type="text" maxlength="255">
         </div>
     </div>
 </div>

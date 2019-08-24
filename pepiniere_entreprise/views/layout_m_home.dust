@@ -10,12 +10,12 @@
 <select id="dynamic_select" data-width="100%" class="form-control select" onchange="navigate()">
     {@moduleAccess module="home"}
     <option data-module="m_home" value="/default/home" selected="">
-        {@__ key="module.m_home" /}
+        {#__ key="module.m_home" /}
     </option>
     {/moduleAccess}
     {@moduleAccess module="administration"}
     <option data-module="m_administration" value="/default/administration">
-        {@__ key="module.m_administration" /}
+        {#__ key="module.m_administration" /}
     </option>
     {/moduleAccess}
 </select>
@@ -27,38 +27,38 @@
 
     <li id="agenda_menu_item" style="display:block;" class="treeview">
         <a href="#">
-            <i class="fa fa-calendar-o"></i> <span>{@__ key="component.c_agenda.label_component" /}</span>
+            <i class="fa fa-calendar-o"></i> <span>{#__ key="component.c_agenda.label_component" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
             <li><a href="/agenda"><i class="fa fa-calendar"></i>
-                    {@__ key="global_component.agenda.menu" /}</a></li>
+                    {#__ key="global_component.agenda.menu" /}</a></li>
             <li id="agenda_event_menu_item" style="display:block;" class="treeview">
                 <a href="#"><i class="fa fa-calendar-plus-o"></i>
-                    {@__ key="entity.e_agenda_event.label_entity" /}
+                    {#__ key="entity.e_agenda_event.label_entity" /}
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/agenda_event/create_form"><i class="fa fa-plus"></i>
-                            {@__ key="operation.create" /}&nbsp;
-                            {@__ key="entity.e_agenda_event.label_entity" /}</a></li>
+                            {#__ key="operation.create" /}&nbsp;
+                            {#__ key="entity.e_agenda_event.label_entity" /}</a></li>
                     <li><a href="/agenda_event/list"><i class="fa fa-list"></i>
-                            {@__ key="operation.list" /}&nbsp;
-                            {@__ key="entity.e_agenda_event.plural_entity" /}</a></li>
+                            {#__ key="operation.list" /}&nbsp;
+                            {#__ key="entity.e_agenda_event.plural_entity" /}</a></li>
                 </ul>
             </li>
             <li id="agenda_category_menu_item" style="display:block;" class="treeview">
                 <a href="#"><i class="fa fa-bookmark"></i>
-                    {@__ key="entity.e_agenda_category.label_entity" /}
+                    {#__ key="entity.e_agenda_category.label_entity" /}
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/agenda_category/create_form"><i class="fa fa-plus"></i>
-                            {@__ key="operation.create" /}&nbsp;
-                            {@__ key="entity.e_agenda_category.label_entity" /}</a></li>
+                            {#__ key="operation.create" /}&nbsp;
+                            {#__ key="entity.e_agenda_category.label_entity" /}</a></li>
                     <li><a href="/agenda_category/list"><i class="fa fa-list"></i>
-                            {@__ key="operation.list" /}&nbsp;
-                            {@__ key="entity.e_agenda_category.plural_entity" /}</a></li>
+                            {#__ key="operation.list" /}&nbsp;
+                            {#__ key="entity.e_agenda_category.plural_entity" /}</a></li>
                 </ul>
             </li>
         </ul>
@@ -67,7 +67,7 @@
     <li id="espace_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-square-o"></i>
-            <span>{@__ key="entity.e_espace.label_entity" /}</span>
+            <span>{#__ key="entity.e_espace.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -75,7 +75,7 @@
             <li>
                 <a href="/espace/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -83,7 +83,7 @@
             <li>
                 <a href="/espace/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -94,7 +94,7 @@
     <li id="societe_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-building-o"></i>
-            <span>{@__ key="entity.e_societe.label_entity" /}</span>
+            <span>{#__ key="entity.e_societe.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -102,7 +102,7 @@
             <li>
                 <a href="/societe/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -110,7 +110,7 @@
             <li>
                 <a href="/societe/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -121,7 +121,7 @@
     <li id="responsable_menu_item" style="display:none;" class="treeview">
         <a href="#">
             <i class="fa fa-folder"></i>
-            <span>{@__ key="entity.e_responsable.label_entity" /}</span>
+            <span>{#__ key="entity.e_responsable.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -129,7 +129,7 @@
             <li>
                 <a href="/responsable/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -137,7 +137,7 @@
             <li>
                 <a href="/responsable/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -148,7 +148,7 @@
     <li id="reservation_de_salle_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-pencil"></i>
-            <span>{@__ key="entity.e_reservation_de_salle.label_entity" /}</span>
+            <span>{#__ key="entity.e_reservation_de_salle.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -156,7 +156,7 @@
             <li>
                 <a href="/reservation_de_salle/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -164,7 +164,7 @@
             <li>
                 <a href="/reservation_de_salle/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -175,7 +175,7 @@
     <li id="facture_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-file-text-o"></i>
-            <span>{@__ key="entity.e_facture.label_entity" /}</span>
+            <span>{#__ key="entity.e_facture.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -183,7 +183,7 @@
             <li>
                 <a href="/facture/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -191,7 +191,7 @@
             <li>
                 <a href="/facture/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -202,7 +202,7 @@
     <li id="ligne_de_facture_menu_item" style="display:none;" class="treeview">
         <a href="#">
             <i class="fa fa-folder"></i>
-            <span>{@__ key="entity.e_ligne_de_facture.label_entity" /}</span>
+            <span>{#__ key="entity.e_ligne_de_facture.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -210,7 +210,7 @@
             <li>
                 <a href="/ligne_de_facture/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -218,7 +218,7 @@
             <li>
                 <a href="/ligne_de_facture/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -229,7 +229,7 @@
     <li id="item_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-tag"></i>
-            <span>{@__ key="entity.e_item.label_entity" /}</span>
+            <span>{#__ key="entity.e_item.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -237,7 +237,7 @@
             <li>
                 <a href="/item/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -245,7 +245,7 @@
             <li>
                 <a href="/item/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -256,7 +256,7 @@
     <li id="bail_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-folder"></i>
-            <span>{@__ key="entity.e_bail.label_entity" /}</span>
+            <span>{#__ key="entity.e_bail.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -264,7 +264,7 @@
             <li>
                 <a href="/bail/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -272,7 +272,7 @@
             <li>
                 <a href="/bail/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}
@@ -283,7 +283,7 @@
     <li id="facturation_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-bullseye"></i>
-            <span>{@__ key="entity.e_facturation.label_entity" /}</span>
+            <span>{#__ key="entity.e_facturation.label_entity" /}</span>
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
@@ -291,7 +291,7 @@
             <li>
                 <a href="/facturation/create_form">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.create" /}
+                    {#__ key="operation.create" /}
                 </a>
             </li>
             {/actionAccess}
@@ -299,7 +299,7 @@
             <li>
                 <a href="/facturation/list">
                     <i class="fa fa-angle-double-right"></i>
-                    {@__ key="operation.list" /}
+                    {#__ key="operation.list" /}
                 </a>
             </li>
             {/actionAccess}

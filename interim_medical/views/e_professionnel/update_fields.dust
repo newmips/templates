@@ -2,14 +2,14 @@
     <div data-field="f_civilite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_civilite">
-                {@__ key="entity.e_professionnel.f_civilite"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_civilite"/}&nbsp;
                 {@inline_help field="f_civilite"}
                 <i data-field="f_civilite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="form-control select" name="f_civilite">
                 <option value="">
-                    {@__ key="select.default" /}
+                    {#__ key="select.default" /}
                 </option>
                 {#enum_radio.e_professionnel.f_civilite}
                 {@eq key=f_civilite value="{.value}" }
@@ -24,29 +24,29 @@
     <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_nom">
-                {@__ key="entity.e_professionnel.f_nom"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_nom"/}&nbsp;
                 {@inline_help field="f_nom"}
                 <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_professionnel.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_professionnel.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_prenom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_prenom">
-                {@__ key="entity.e_professionnel.f_prenom"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_prenom"/}&nbsp;
                 {@inline_help field="f_prenom"}
                 <i data-field="f_prenom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_professionnel.f_prenom" /}' name="f_prenom" value="{f_prenom}" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_professionnel.f_prenom" /}' name="f_prenom" value="{f_prenom}" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_date_de_naissance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
         <div class="form-group">
             <label for="f_date_de_naissance">
-                {@__ key="entity.e_professionnel.f_date_de_naissance"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_date_de_naissance"/}&nbsp;
                 {@inline_help field="f_date_de_naissance"}
                 <i data-field="f_date_de_naissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -55,21 +55,21 @@
                 <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                 </div>
-                <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_professionnel.f_date_de_naissance" /}' name="f_date_de_naissance" value="{f_date_de_naissance}" type="text">
+                <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_professionnel.f_date_de_naissance" /}' name="f_date_de_naissance" value="{f_date_de_naissance}" type="text">
             </div>
         </div>
     </div>
     <div data-field="f_etat_civil" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="r_etat_civil">
-                {@__ key="entity.e_professionnel.r_etat_civil" /}&nbsp;
+                {#__ key="entity.e_professionnel.r_etat_civil" /}&nbsp;
                 {@inline_help field="r_etat_civil"}
                 <i data-field="r_etat_civil" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="ajax form-control" name="r_etat_civil" data-source="etat_civil" data-using="f_nom">
                 <option value="">
-                    {@__ key="select.default" /}
+                    {#__ key="select.default" /}
                 </option>
                 {#r_etat_civil}
                 <option value="{id}" selected="">{f_nom|string}</option>
@@ -80,41 +80,41 @@
     <div data-field="f_adresse" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_adresse">
-                {@__ key="entity.e_professionnel.f_adresse"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_adresse"/}&nbsp;
                 {@inline_help field="f_adresse"}
                 <i data-field="f_adresse" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_professionnel.f_adresse" /}' name="f_adresse" value="{f_adresse}" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_professionnel.f_adresse" /}' name="f_adresse" value="{f_adresse}" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_code_postal" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_code_postal">
-                {@__ key="entity.e_professionnel.f_code_postal"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_code_postal"/}&nbsp;
                 {@inline_help field="f_code_postal"}
                 <i data-field="f_code_postal" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_professionnel.f_code_postal" /}' name="f_code_postal" value="{f_code_postal}" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_professionnel.f_code_postal" /}' name="f_code_postal" value="{f_code_postal}" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_ville" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_ville">
-                {@__ key="entity.e_professionnel.f_ville"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_ville"/}&nbsp;
                 {@inline_help field="f_ville"}
                 <i data-field="f_ville" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_professionnel.f_ville" /}' name="f_ville" value="{f_ville}" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_professionnel.f_ville" /}' name="f_ville" value="{f_ville}" type="text" maxlength="255">
         </div>
     </div>
 
     <div data-field="f_telephone" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_telephone">
-                {@__ key="entity.e_professionnel.f_telephone"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_telephone"/}&nbsp;
                 {@inline_help field="f_telephone"}
                 <i data-field="f_telephone" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -123,14 +123,14 @@
                 <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                 </div>
-                <input class="form-control input" placeholder='{@__ key="entity.e_professionnel.f_telephone" /}' name="f_telephone" value="{f_telephone}" type="tel">
+                <input class="form-control input" placeholder='{#__ key="entity.e_professionnel.f_telephone" /}' name="f_telephone" value="{f_telephone}" type="tel">
             </div>
         </div>
     </div>
     <div data-field="f_email" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_email">
-                {@__ key="entity.e_professionnel.f_email"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_email"/}&nbsp;
                 {@inline_help field="f_email"}
                 <i data-field="f_email" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -139,14 +139,14 @@
                 <div class="input-group-addon">
                     <i class="fa fa-envelope"></i>
                 </div>
-                <input class="form-control input" placeholder='{@__ key="entity.e_professionnel.f_email" /}' name="f_email" value="{f_email}" type="text" data-type="email">
+                <input class="form-control input" placeholder='{#__ key="entity.e_professionnel.f_email" /}' name="f_email" value="{f_email}" type="text" data-type="email">
             </div>
         </div>
     </div>
     <div data-field="f_acceptation_regles" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_acceptation_regles">
-                {@__ key="entity.e_professionnel.f_acceptation_regles"/}&nbsp;
+                {#__ key="entity.e_professionnel.f_acceptation_regles"/}&nbsp;
                 {@inline_help field="f_acceptation_regles"}
                 <i data-field="f_acceptation_regles" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}

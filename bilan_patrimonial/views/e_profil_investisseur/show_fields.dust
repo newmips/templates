@@ -10,45 +10,45 @@
     <div data-field="f_lesquels" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_lesquels">
-                {@__ key="entity.e_profil_investisseur.f_lesquels"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_lesquels"/}&nbsp;
                 {@inline_help field="f_lesquels"}
                 <i data-field="f_lesquels" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_lesquels" /}' name="f_lesquels" value="{f_lesquels}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_lesquels" /}' name="f_lesquels" value="{f_lesquels}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_raisons" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_raisons">
-                {@__ key="entity.e_profil_investisseur.f_raisons"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_raisons"/}&nbsp;
                 {@inline_help field="f_raisons"}
                 <i data-field="f_raisons" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_raisons" /}' name="f_raisons" value="{f_raisons}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_raisons" /}' name="f_raisons" value="{f_raisons}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_sens" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_sens">
-                {@__ key="entity.e_profil_investisseur.f_sens"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_sens"/}&nbsp;
                 {@inline_help field="f_sens"}
                 <i data-field="f_sens" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_sens" /}' name="f_sens" value="{f_sens}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_sens" /}' name="f_sens" value="{f_sens}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div data-field="f_quand" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_quand">
-                {@__ key="entity.e_profil_investisseur.f_quand"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_quand"/}&nbsp;
                 {@inline_help field="f_quand"}
                 <i data-field="f_quand" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_quand" /}' name="f_quand" value="{f_quand}" type="text" maxlength="255" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_quand" /}' name="f_quand" value="{f_quand}" type="text" maxlength="255" readonly="">
         </div>
     </div>
     <div class="col-xs-12 col-md-12 col-sm-12">
@@ -59,17 +59,17 @@
     <div data-field="f_connaissance" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_connaissance">
-                {@__ key="entity.e_profil_investisseur.f_connaissance"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_connaissance"/}&nbsp;
                 {@inline_help field="f_connaissance"}
                 <i data-field="f_connaissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_connaissance}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_connaissance" /}' name="f_connaissance" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_connaissance" /}' name="f_connaissance" type="text" readonly="">
             {/f_connaissance}
             {#enum_radio.e_profil_investisseur.f_connaissance}
             {@eq key=f_connaissance value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_connaissance" /}' name="f_connaissance" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_connaissance" /}' name="f_connaissance" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_connaissance}
         </div>
@@ -77,17 +77,17 @@
     <div data-field="f_connaissance_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_connaissance_conj">
-                {@__ key="entity.e_profil_investisseur.f_connaissance_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_connaissance_conj"/}&nbsp;
                 {@inline_help field="f_connaissance_conj"}
                 <i data-field="f_connaissance_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_connaissance_conj}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_connaissance_conj" /}' name="f_connaissance_conj" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_connaissance_conj" /}' name="f_connaissance_conj" type="text" readonly="">
             {/f_connaissance_conj}
             {#enum_radio.e_profil_investisseur.f_connaissance_conj}
             {@eq key=f_connaissance_conj value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_connaissance_conj" /}' name="f_connaissance_conj" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_connaissance_conj" /}' name="f_connaissance_conj" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_connaissance_conj}
         </div>
@@ -100,17 +100,17 @@
     <div data-field="f_experience_b1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b1">
-                {@__ key="entity.e_profil_investisseur.f_experience_b1"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b1"/}&nbsp;
                 {@inline_help field="f_experience_b1"}
                 <i data-field="f_experience_b1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_experience_b1}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b1" /}' name="f_experience_b1" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b1" /}' name="f_experience_b1" type="text" readonly="">
             {/f_experience_b1}
             {#enum_radio.e_profil_investisseur.f_experience_b1}
             {@eq key=f_experience_b1 value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b1" /}' name="f_experience_b1" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b1" /}' name="f_experience_b1" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_experience_b1}
         </div>
@@ -118,17 +118,17 @@
     <div data-field="f_experience_b1_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b1_conj">
-                {@__ key="entity.e_profil_investisseur.f_experience_b1_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b1_conj"/}&nbsp;
                 {@inline_help field="f_experience_b1_conj"}
                 <i data-field="f_experience_b1_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_experience_b1_conj}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b1_conj" /}' name="f_experience_b1_conj" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b1_conj" /}' name="f_experience_b1_conj" type="text" readonly="">
             {/f_experience_b1_conj}
             {#enum_radio.e_profil_investisseur.f_experience_b1_conj}
             {@eq key=f_experience_b1_conj value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b1_conj" /}' name="f_experience_b1_conj" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b1_conj" /}' name="f_experience_b1_conj" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_experience_b1_conj}
         </div>
@@ -136,17 +136,17 @@
     <div data-field="f_experience_b2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b2">
-                {@__ key="entity.e_profil_investisseur.f_experience_b2"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b2"/}&nbsp;
                 {@inline_help field="f_experience_b2"}
                 <i data-field="f_experience_b2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_experience_b2}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b2" /}' name="f_experience_b2" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b2" /}' name="f_experience_b2" type="text" readonly="">
             {/f_experience_b2}
             {#enum_radio.e_profil_investisseur.f_experience_b2}
             {@eq key=f_experience_b2 value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b2" /}' name="f_experience_b2" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b2" /}' name="f_experience_b2" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_experience_b2}
         </div>
@@ -154,17 +154,17 @@
     <div data-field="f_experience_b2_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b2_conj">
-                {@__ key="entity.e_profil_investisseur.f_experience_b2_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b2_conj"/}&nbsp;
                 {@inline_help field="f_experience_b2_conj"}
                 <i data-field="f_experience_b2_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_experience_b2_conj}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b2_conj" /}' name="f_experience_b2_conj" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b2_conj" /}' name="f_experience_b2_conj" type="text" readonly="">
             {/f_experience_b2_conj}
             {#enum_radio.e_profil_investisseur.f_experience_b2_conj}
             {@eq key=f_experience_b2_conj value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b2_conj" /}' name="f_experience_b2_conj" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b2_conj" /}' name="f_experience_b2_conj" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_experience_b2_conj}
         </div>
@@ -172,17 +172,17 @@
     <div data-field="f_experience_b3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b3">
-                {@__ key="entity.e_profil_investisseur.f_experience_b3"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b3"/}&nbsp;
                 {@inline_help field="f_experience_b3"}
                 <i data-field="f_experience_b3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_experience_b3}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b3" /}' name="f_experience_b3" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b3" /}' name="f_experience_b3" type="text" readonly="">
             {/f_experience_b3}
             {#enum_radio.e_profil_investisseur.f_experience_b3}
             {@eq key=f_experience_b3 value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b3" /}' name="f_experience_b3" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b3" /}' name="f_experience_b3" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_experience_b3}
         </div>
@@ -190,17 +190,17 @@
     <div data-field="f_experience_b3_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b3_conj">
-                {@__ key="entity.e_profil_investisseur.f_experience_b3_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b3_conj"/}&nbsp;
                 {@inline_help field="f_experience_b3_conj"}
                 <i data-field="f_experience_b3_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_experience_b3_conj}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b3_conj" /}' name="f_experience_b3_conj" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b3_conj" /}' name="f_experience_b3_conj" type="text" readonly="">
             {/f_experience_b3_conj}
             {#enum_radio.e_profil_investisseur.f_experience_b3_conj}
             {@eq key=f_experience_b3_conj value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_experience_b3_conj" /}' name="f_experience_b3_conj" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_experience_b3_conj" /}' name="f_experience_b3_conj" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_experience_b3_conj}
         </div>
@@ -213,17 +213,17 @@
     <div data-field="f_evolution" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_evolution">
-                {@__ key="entity.e_profil_investisseur.f_evolution"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_evolution"/}&nbsp;
                 {@inline_help field="f_evolution"}
                 <i data-field="f_evolution" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_evolution}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_evolution" /}' name="f_evolution" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_evolution" /}' name="f_evolution" type="text" readonly="">
             {/f_evolution}
             {#enum_radio.e_profil_investisseur.f_evolution}
             {@eq key=f_evolution value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_evolution" /}' name="f_evolution" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_evolution" /}' name="f_evolution" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_evolution}
         </div>
@@ -231,17 +231,17 @@
     <div data-field="f_evolution_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_evolution_conj">
-                {@__ key="entity.e_profil_investisseur.f_evolution_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_evolution_conj"/}&nbsp;
                 {@inline_help field="f_evolution_conj"}
                 <i data-field="f_evolution_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_evolution_conj}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_evolution_conj" /}' name="f_evolution_conj" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_evolution_conj" /}' name="f_evolution_conj" type="text" readonly="">
             {/f_evolution_conj}
             {#enum_radio.e_profil_investisseur.f_evolution_conj}
             {@eq key=f_evolution_conj value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_evolution_conj" /}' name="f_evolution_conj" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_evolution_conj" /}' name="f_evolution_conj" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_evolution_conj}
         </div>
@@ -254,17 +254,17 @@
     <div data-field="f_comportement" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_comportement">
-                {@__ key="entity.e_profil_investisseur.f_comportement"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_comportement"/}&nbsp;
                 {@inline_help field="f_comportement"}
                 <i data-field="f_comportement" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_comportement}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_comportement" /}' name="f_comportement" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_comportement" /}' name="f_comportement" type="text" readonly="">
             {/f_comportement}
             {#enum_radio.e_profil_investisseur.f_comportement}
             {@eq key=f_comportement value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_comportement" /}' name="f_comportement" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_comportement" /}' name="f_comportement" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_comportement}
         </div>
@@ -272,17 +272,17 @@
     <div data-field="f_comportement_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_comportement_conj">
-                {@__ key="entity.e_profil_investisseur.f_comportement_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_comportement_conj"/}&nbsp;
                 {@inline_help field="f_comportement_conj"}
                 <i data-field="f_comportement_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_comportement_conj}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_comportement_conj" /}' name="f_comportement_conj" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_comportement_conj" /}' name="f_comportement_conj" type="text" readonly="">
             {/f_comportement_conj}
             {#enum_radio.e_profil_investisseur.f_comportement_conj}
             {@eq key=f_comportement_conj value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_comportement_conj" /}' name="f_comportement_conj" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_comportement_conj" /}' name="f_comportement_conj" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_comportement_conj}
         </div>
@@ -295,17 +295,17 @@
     <div data-field="f_variation" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_variation">
-                {@__ key="entity.e_profil_investisseur.f_variation"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_variation"/}&nbsp;
                 {@inline_help field="f_variation"}
                 <i data-field="f_variation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_variation}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_variation" /}' name="f_variation" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_variation" /}' name="f_variation" type="text" readonly="">
             {/f_variation}
             {#enum_radio.e_profil_investisseur.f_variation}
             {@eq key=f_variation value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_variation" /}' name="f_variation" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_variation" /}' name="f_variation" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_variation}
         </div>
@@ -313,17 +313,17 @@
     <div data-field="f_variation_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_variation_conj">
-                {@__ key="entity.e_profil_investisseur.f_variation_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_variation_conj"/}&nbsp;
                 {@inline_help field="f_variation_conj"}
                 <i data-field="f_variation_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             {^f_variation_conj}
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_variation_conj" /}' name="f_variation_conj" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_variation_conj" /}' name="f_variation_conj" type="text" readonly="">
             {/f_variation_conj}
             {#enum_radio.e_profil_investisseur.f_variation_conj}
             {@eq key=f_variation_conj value="{.value}" }
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_variation_conj" /}' name="f_variation_conj" value="{.translation}" type="text" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_variation_conj" /}' name="f_variation_conj" value="{.translation}" type="text" readonly="">
             {/eq}
             {/enum_radio.e_profil_investisseur.f_variation_conj}
         </div>
@@ -336,23 +336,23 @@
     <div data-field="f_patrimoine_global" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_patrimoine_global">
-                {@__ key="entity.e_profil_investisseur.f_patrimoine_global"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_patrimoine_global"/}&nbsp;
                 {@inline_help field="f_patrimoine_global"}
                 <i data-field="f_patrimoine_global" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_patrimoine_global" /}' name="f_patrimoine_global" value="{f_patrimoine_global}" type="number" max="2147483648" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_patrimoine_global" /}' name="f_patrimoine_global" value="{f_patrimoine_global}" type="number" max="2147483648" readonly="">
         </div>
     </div>
     <div data-field="f_placements_arbitrages" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_placements_arbitrages">
-                {@__ key="entity.e_profil_investisseur.f_placements_arbitrages"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_placements_arbitrages"/}&nbsp;
                 {@inline_help field="f_placements_arbitrages"}
                 <i data-field="f_placements_arbitrages" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_placements_arbitrages" /}' name="f_placements_arbitrages" value="{f_placements_arbitrages}" type="number" max="2147483648" readonly="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_placements_arbitrages" /}' name="f_placements_arbitrages" value="{f_placements_arbitrages}" type="number" max="2147483648" readonly="">
         </div>
     </div>
     <div class="col-xs-12 col-md-12 col-sm-12">
@@ -364,7 +364,7 @@
     <div data-field="f_informations" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_informations">
-                {@__ key="entity.e_profil_investisseur.f_informations"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_informations"/}&nbsp;
                 {@inline_help field="f_informations"}
                 <i data-field="f_informations" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -380,7 +380,7 @@
     <div data-field="f_oublis" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_oublis">
-                {@__ key="entity.e_profil_investisseur.f_oublis"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_oublis"/}&nbsp;
                 {@inline_help field="f_oublis"}
                 <i data-field="f_oublis" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -396,7 +396,7 @@
     <div data-field="f_interrogation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_interrogation">
-                {@__ key="entity.e_profil_investisseur.f_interrogation"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_interrogation"/}&nbsp;
                 {@inline_help field="f_interrogation"}
                 <i data-field="f_interrogation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
@@ -409,13 +409,13 @@
     <form action="/profil_investisseur/delete" method="post">
         <div class="quicklinks">
             <span>
-                <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{@__ key="button.return"/}</a>
+                <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
             {@actionAccess entity="profil_investisseur" action="delete"}
             <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
-                    <span>{@__ key="button.delete"/}</span>
+                    <span>{#__ key="button.delete"/}</span>
             </button>
             <input name="id" type="hidden" value="{e_profil_investisseur.id}" class="form-control">
             </span>
@@ -425,7 +425,7 @@
             <span>
                 <a href="/profil_investisseur/update_form?id={e_profil_investisseur.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
-                    <span>{@__ key="button.update"/}</span>
+                    <span>{#__ key="button.update"/}</span>
             </a>
             </span>
             {/actionAccess}
@@ -434,7 +434,7 @@
             <span>
                     <a href="/profil_investisseur/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
-                        <span>{@__ key="button.create"/}</span>
+                        <span>{#__ key="button.create"/}</span>
             </a>
             </span>
             {/actionAccess}
@@ -442,7 +442,7 @@
             <span>
                     <a href="/profil_investisseur/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>
-                        <span>{@__ key="button.list"/}</span>
+                        <span>{#__ key="button.list"/}</span>
             </a>
             </span>
             {/actionAccess}

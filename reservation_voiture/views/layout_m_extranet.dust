@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        {@__ key="app.name"/} |
-        {@__ key="module.home"/}
+        {#__ key="app.name"/} |
+        {#__ key="module.home"/}
     </title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 </head>
@@ -33,8 +33,8 @@
     	<script>
     		var lang_user = "{lang_user}";
     		var id_user = "{session.passport.user.id}";
-    		var SELECT_DEFAULT_TEXT = '{@__ key="select.default" /}';
-    		var WAIT_UPLOAD_TEXT = '{@__ key="global_component.local_file_storage.wait_upload" /}';
+    		var SELECT_DEFAULT_TEXT = '{#__ key="select.default" /}';
+    		var WAIT_UPLOAD_TEXT = '{#__ key="global_component.local_file_storage.wait_upload" /}';
     	</script>
 	    <div class="container" style="padding: 0px !important;">
 	        <header class="main-header">
@@ -55,7 +55,7 @@
 	        			<div class="collapse navbar-collapse pull-right" id="navbar-collapse">
 	        				<ul class="nav navbar-nav">
 	        					<li class="dropdown">
-	        						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-flag" /></i>&nbsp;&nbsp;{@__ key="settings.lang" /} <span class="caret"></span></a>
+	        						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-flag" /></i>&nbsp;&nbsp;{#__ key="settings.lang" /} <span class="caret"></span></a>
 	        						<ul class="dropdown-menu" role="menu">
 	        							<li><a data-lang="fr-FR" class="chooseLanguage"><img src="/img/france.png" width="16" />&nbsp;&nbsp;Francais</a></li>
 	        							<li><a data-lang="en-EN" class="chooseLanguage"><img src="/img/united-kingdom.png" width="16" />&nbsp;&nbsp;English</a></li>
@@ -75,7 +75,7 @@
 	        <footer style="">
         		<div class="col-md-12" style="background: #3c8dbc; background-size:cover; margin:0; min-height: 50px; text-align: center;">
         			<br/>
-        			<span style="color: #fff;"><a style="color: #fff;" href="https://www.newmips.com" target="_blank">{@__ key="navbar.editor" /} - www.newmips.com</a></span>
+        			<span style="color: #fff;"><a style="color: #fff;" href="https://www.newmips.com" target="_blank">{#__ key="navbar.editor" /} - www.newmips.com</a></span>
         		</div>
         		<div class="col-md-12" style="background: #3c8dbc; background-size:cover; margin:0; min-height: 50px; text-align: right;">
                     <a href="/default/administration" style="color: #fff;">Administration</a>&nbsp;<i class="fa fa-arrow-right" style="color: #fff;">&nbsp;</i>
@@ -120,7 +120,7 @@
     {#toastr}
     <script>
         toastrArray.push({
-            message: '{@__ key=message/}',
+            message: '{#__ key=message/}',
             level: "{level}"
         });
     </script>

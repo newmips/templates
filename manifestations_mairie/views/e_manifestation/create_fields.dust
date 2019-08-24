@@ -2,13 +2,13 @@
     <div data-field="f_organisateur" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_organisateur">
-                {@__ key="entity.e_manifestation.f_organisateur"/}&nbsp;
+                {#__ key="entity.e_manifestation.f_organisateur"/}&nbsp;
                 {@inline_help field="f_organisateur"}
                 <i data-field="f_organisateur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="form-control select" name="f_organisateur">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_manifestation.f_organisateur}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_manifestation.f_organisateur}
@@ -18,13 +18,13 @@
     <div data-field="f_association" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="r_association">
-                {@__ key="entity.e_manifestation.r_association" /}&nbsp;
+                {#__ key="entity.e_manifestation.r_association" /}&nbsp;
                 {@inline_help field="r_association"}
                 <i data-field="r_association" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="ajax form-control" name="r_association" data-source="association" data-using="f_nom">
-                <option value="">{@__ key="select.default" /}</option>
+                <option value="">{#__ key="select.default" /}</option>
                 {#r_association}
                 <option value="{id}" selected="">{f_nom|string}</option>
                 {/r_association}
@@ -34,13 +34,13 @@
     <div data-field="f_service" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="r_service">
-                {@__ key="entity.e_manifestation.r_service" /}&nbsp;
+                {#__ key="entity.e_manifestation.r_service" /}&nbsp;
                 {@inline_help field="r_service"}
                 <i data-field="r_service" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="ajax form-control" name="r_service" data-source="service" data-using="f_nom">
-                <option value="">{@__ key="select.default" /}</option>
+                <option value="">{#__ key="select.default" /}</option>
                 {#r_service}
                 <option value="{id}" selected="">{f_nom|string}</option>
                 {/r_service}
@@ -50,13 +50,13 @@
     <div data-field="f_type_manifestation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_type_manifestation">
-                {@__ key="entity.e_manifestation.f_type_manifestation"/}&nbsp;
+                {#__ key="entity.e_manifestation.f_type_manifestation"/}&nbsp;
                 {@inline_help field="f_type_manifestation"}
                 <i data-field="f_type_manifestation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="form-control select" name="f_type_manifestation">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_manifestation.f_type_manifestation}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_manifestation.f_type_manifestation}
@@ -66,23 +66,23 @@
     <div data-field="f_nom" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_nom">
-                {@__ key="entity.e_manifestation.f_nom"/}&nbsp;
+                {#__ key="entity.e_manifestation.f_nom"/}&nbsp;
                 {@inline_help field="f_nom"}
                 <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_nom" /}' name="f_nom" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_manifestation.f_nom" /}' name="f_nom" value="" type="text" maxlength="255">
         </div>
     </div>
     <div data-field="f_lieu" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_lieu">
-                {@__ key="entity.e_manifestation.f_lieu"/}&nbsp;
+                {#__ key="entity.e_manifestation.f_lieu"/}&nbsp;
                 {@inline_help field="f_lieu"}
                 <i data-field="f_lieu" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_manifestation.f_lieu" /}' name="f_lieu" value="" type="text" maxlength="255">
+            <input class="form-control input" placeholder='{#__ key="entity.e_manifestation.f_lieu" /}' name="f_lieu" value="" type="text" maxlength="255">
         </div>
     </div>
 
@@ -98,7 +98,7 @@
             <div data-field="f_date_de_debut" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_debut">
-                        {@__ key="entity.e_manifestation.f_date_de_debut"/}&nbsp;
+                        {#__ key="entity.e_manifestation.f_date_de_debut"/}&nbsp;
                         {@inline_help field="f_date_de_debut"}
                         <i data-field="f_date_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -107,14 +107,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_manifestation.f_date_de_debut" /}' name="f_date_de_debut" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_manifestation.f_date_de_debut" /}' name="f_date_de_debut" type="text">
                     </div>
                 </div>
             </div>
             <div data-field="f_heure_de_debut" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_heure_de_debut">
-                        {@__ key="entity.e_manifestation.f_heure_de_debut"/}&nbsp;
+                        {#__ key="entity.e_manifestation.f_heure_de_debut"/}&nbsp;
                         {@inline_help field="f_heure_de_debut"}
                         <i data-field="f_heure_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -124,7 +124,7 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-clock-o"></i>
                             </div>
-                            <input class="form-control input timepicker" placeholder='{@__ key="entity.e_manifestation.f_heure_de_debut" /}' name="f_heure_de_debut" value="" type="text">
+                            <input class="form-control input timepicker" placeholder='{#__ key="entity.e_manifestation.f_heure_de_debut" /}' name="f_heure_de_debut" value="" type="text">
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
             <div data-field="f_date_de_fin" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_fin">
-                        {@__ key="entity.e_manifestation.f_date_de_fin"/}&nbsp;
+                        {#__ key="entity.e_manifestation.f_date_de_fin"/}&nbsp;
                         {@inline_help field="f_date_de_fin"}
                         <i data-field="f_date_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -145,14 +145,14 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_manifestation.f_date_de_fin" /}' name="f_date_de_fin" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_manifestation.f_date_de_fin" /}' name="f_date_de_fin" type="text">
                     </div>
                 </div>
             </div>
             <div data-field="f_heure_de_fin" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_heure_de_fin">
-                        {@__ key="entity.e_manifestation.f_heure_de_fin"/}&nbsp;
+                        {#__ key="entity.e_manifestation.f_heure_de_fin"/}&nbsp;
                         {@inline_help field="f_heure_de_fin"}
                         <i data-field="f_heure_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -162,7 +162,7 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-clock-o"></i>
                             </div>
-                            <input class="form-control input timepicker" placeholder='{@__ key="entity.e_manifestation.f_heure_de_fin" /}' name="f_heure_de_fin" value="" type="text">
+                            <input class="form-control input timepicker" placeholder='{#__ key="entity.e_manifestation.f_heure_de_fin" /}' name="f_heure_de_fin" value="" type="text">
                         </div>
                     </div>
                 </div>
@@ -174,13 +174,13 @@
             <div data-field="f_nature_manifestation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nature_manifestation">
-                        {@__ key="entity.e_manifestation.r_nature_manifestation" /}
+                        {#__ key="entity.e_manifestation.r_nature_manifestation" /}
                         {@inline_help field="r_nature_manifestation"}
                         <i data-field="r_nature_manifestation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select multiple="" class="ajax form-control" name="r_nature_manifestation" data-source="nature_manifestation" data-using="f_nom" style="width:100%;">
-                        <option value="">{@__ key="select.default" /}</option>
+                        <option value="">{#__ key="select.default" /}</option>
                         {#r_nature_manifestation}
                         <option value="{id}">{f_nom|string}</option>
                         {/r_nature_manifestation}
@@ -190,12 +190,12 @@
             <div data-field="f_description" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_description">
-                        {@__ key="entity.e_manifestation.f_description"/}&nbsp;
+                        {#__ key="entity.e_manifestation.f_description"/}&nbsp;
                         {@inline_help field="f_description"}
                         <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea" placeholder='{@__ key="entity.e_manifestation.f_description" /}' name="f_description" id="f_description_textareaid" type="text">{f_description|s}</textarea>
+                    <textarea class="form-control textarea" placeholder='{#__ key="entity.e_manifestation.f_description" /}' name="f_description" id="f_description_textareaid" type="text">{f_description|s}</textarea>
                 </div>
             </div>
         </div>
@@ -205,7 +205,7 @@
             <div data-field="f_validation_securite" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_validation_securite">
-                        {@__ key="entity.e_manifestation.f_validation_securite"/}&nbsp;
+                        {#__ key="entity.e_manifestation.f_validation_securite"/}&nbsp;
                         {@inline_help field="f_validation_securite"}
                         <i data-field="f_validation_securite" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -222,7 +222,7 @@
             <div data-field="f_validation_gua" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_validation_gua">
-                        {@__ key="entity.e_manifestation.f_validation_gua"/}&nbsp;
+                        {#__ key="entity.e_manifestation.f_validation_gua"/}&nbsp;
                         {@inline_help field="f_validation_gua"}
                         <i data-field="f_validation_gua" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}

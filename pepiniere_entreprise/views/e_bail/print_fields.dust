@@ -2,8 +2,8 @@
     <div data-field="f_societe" class="fieldLineHeight col-xs-12">
         <div class="form-group">
             <label for="r_societe">
-                {@__ key="entity.e_bail.r_societe"/} </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_bail.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
+                {#__ key="entity.e_bail.r_societe"/} </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_bail.r_societe" /}' name="r_societe" value="{r_societe.f_nom|string}" type="text" readonly="">
         </div>
     </div>
 
@@ -15,7 +15,7 @@
             <div data-field="f_date_de_debut" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_debut">
-                        {@__ key="entity.e_bail.f_date_de_debut"/}&nbsp;
+                        {#__ key="entity.e_bail.f_date_de_debut"/}&nbsp;
                         {@inline_help field="f_date_de_debut"}
                         <i data-field="f_date_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -24,7 +24,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bail.f_date_de_debut" /}' value="{f_date_de_debut}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bail.f_date_de_debut" /}' value="{f_date_de_debut}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <div data-field="f_date_de_fin" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_fin">
-                        {@__ key="entity.e_bail.f_date_de_fin"/}&nbsp;
+                        {#__ key="entity.e_bail.f_date_de_fin"/}&nbsp;
                         {@inline_help field="f_date_de_fin"}
                         <i data-field="f_date_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -44,7 +44,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker-toconvert" placeholder='{@__ key="entity.e_bail.f_date_de_fin" /}' value="{f_date_de_fin}" type="text" readonly="">
+                        <input class="form-control input datepicker-toconvert" placeholder='{#__ key="entity.e_bail.f_date_de_fin" /}' value="{f_date_de_fin}" type="text" readonly="">
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
             <div data-field="f_factures" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_factures">
-                        {@__ key="entity.e_bail.r_factures" /}</label>
+                        {#__ key="entity.e_bail.r_factures" /}</label>
                     <select multiple="" disabled="" readonly="" class="regular-select form-control" name="r_factures" data-source="facture" data-using="f_titre" style="width:100%;">
                         {#r_factures}
                         <option value="{f_titre|string}" selected="">{f_titre|string}</option>
@@ -66,7 +66,7 @@
             <div data-field="f_espaces" class="fieldLineHeight col-xs-12" style="">
                 <div class="form-group">
                     <label for="f_espaces">
-                        {@__ key="entity.e_bail.r_espaces" /}</label>
+                        {#__ key="entity.e_bail.r_espaces" /}</label>
                     <select multiple="" disabled="" readonly="" class="regular-select form-control" name="r_espaces" data-source="espace" data-using="f_reference" style="width:100%;">
                         {#r_espaces}
                         <option value="{f_reference|string}" selected="">{f_reference|string}</option>

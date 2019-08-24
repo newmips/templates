@@ -2,14 +2,14 @@
     <div data-field="f_societe" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="r_societe">
-                {@__ key="entity.e_bail.r_societe" /}&nbsp;
+                {#__ key="entity.e_bail.r_societe" /}&nbsp;
                 {@inline_help field="r_societe"}
                 <i data-field="r_societe" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="ajax form-control" name="r_societe" data-source="societe" data-using="f_nom">
                 <option value="">
-                    {@__ key="select.default" /}
+                    {#__ key="select.default" /}
                 </option>
                 {#r_societe}
                 <option value="{id}" selected="">{f_nom|string}</option>
@@ -26,7 +26,7 @@
             <div data-field="f_date_de_debut" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_debut">
-                        {@__ key="entity.e_bail.f_date_de_debut"/}&nbsp;
+                        {#__ key="entity.e_bail.f_date_de_debut"/}&nbsp;
                         {@inline_help field="f_date_de_debut"}
                         <i data-field="f_date_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -35,7 +35,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bail.f_date_de_debut" /}' name="f_date_de_debut" value="{f_date_de_debut}" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bail.f_date_de_debut" /}' name="f_date_de_debut" value="{f_date_de_debut}" type="text">
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <div data-field="f_date_de_fin" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_fin">
-                        {@__ key="entity.e_bail.f_date_de_fin"/}&nbsp;
+                        {#__ key="entity.e_bail.f_date_de_fin"/}&nbsp;
                         {@inline_help field="f_date_de_fin"}
                         <i data-field="f_date_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -55,7 +55,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_bail.f_date_de_fin" /}' name="f_date_de_fin" value="{f_date_de_fin}" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_bail.f_date_de_fin" /}' name="f_date_de_fin" value="{f_date_de_fin}" type="text">
                     </div>
                 </div>
             </div>
@@ -66,14 +66,14 @@
             <div data-field="f_factures" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_factures">
-                        {@__ key="entity.e_bail.r_factures" /}
+                        {#__ key="entity.e_bail.r_factures" /}
                         {@inline_help field="r_factures"}
                         <i data-field="r_factures" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select multiple="" class="ajax form-control" name="r_factures" data-source="facture" data-using="f_titre" style="width:100%;">
                         <option value="">
-                            {@__ key="select.default" /}
+                            {#__ key="select.default" /}
                         </option>
                         {#r_factures}
                         <option value="{id}" selected="">{f_titre|string}</option>
@@ -84,14 +84,14 @@
             <div data-field="f_espaces" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_espaces">
-                        {@__ key="entity.e_bail.r_espaces" /}
+                        {#__ key="entity.e_bail.r_espaces" /}
                         {@inline_help field="r_espaces"}
                         <i data-field="r_espaces" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select multiple="" class="ajax form-control" name="r_espaces" data-source="espace" data-using="f_reference" style="width:100%;">
                         <option value="">
-                            {@__ key="select.default" /}
+                            {#__ key="select.default" /}
                         </option>
                         {#r_espaces}
                         <option value="{id}" selected="">{f_reference|string}</option>

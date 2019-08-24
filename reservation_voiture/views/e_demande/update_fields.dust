@@ -2,14 +2,14 @@
     <div data-field="f_entreprise" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="r_entreprise">
-                {@__ key="entity.e_demande.r_entreprise" /}&nbsp;
+                {#__ key="entity.e_demande.r_entreprise" /}&nbsp;
                 {@inline_help field="r_entreprise"}
                 <i data-field="r_entreprise" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="ajax form-control" name="r_entreprise" data-source="entreprise" data-using="f_nom">
                 <option value="">
-                    {@__ key="select.default" /}
+                    {#__ key="select.default" /}
                 </option>
                 {#r_entreprise}
                 <option value="{id}" selected="">{f_nom|string}</option>
@@ -28,7 +28,7 @@
             <div data-field="f_jour" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_jour">
-                        {@__ key="entity.e_demande.f_jour"/}&nbsp;
+                        {#__ key="entity.e_demande.f_jour"/}&nbsp;
                         {@inline_help field="f_jour"}
                         <i data-field="f_jour" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -37,7 +37,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_demande.f_jour" /}' name="f_jour" value="{f_jour}" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_demande.f_jour" /}' name="f_jour" value="{f_jour}" type="text">
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
             <div data-field="f_heure" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_heure">
-                        {@__ key="entity.e_demande.f_heure"/}&nbsp;
+                        {#__ key="entity.e_demande.f_heure"/}&nbsp;
                         {@inline_help field="f_heure"}
                         <i data-field="f_heure" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -58,7 +58,7 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-clock-o"></i>
                             </div>
-                            <input class="form-control input timepicker" placeholder='{@__ key="entity.e_demande.f_heure" /}' name="f_heure" value="{f_heure}" type="text">
+                            <input class="form-control input timepicker" placeholder='{#__ key="entity.e_demande.f_heure" /}' name="f_heure" value="{f_heure}" type="text">
                         </div>
                     </div>
                 </div>
@@ -70,47 +70,47 @@
             <div data-field="f_nom_du_client" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_nom_du_client" class="required">
-                        {@__ key="entity.e_demande.f_nom_du_client"/}&nbsp;
+                        {#__ key="entity.e_demande.f_nom_du_client"/}&nbsp;
                         {@inline_help field="f_nom_du_client"}
                         <i data-field="f_nom_du_client" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_nom_du_client" /}' name="f_nom_du_client" value="{f_nom_du_client}" type="text" maxlength="255" required="">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande.f_nom_du_client" /}' name="f_nom_du_client" value="{f_nom_du_client}" type="text" maxlength="255" required="">
                 </div>
             </div>
             <div data-field="f_lieu" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_lieu">
-                        {@__ key="entity.e_demande.f_lieu"/}&nbsp;
+                        {#__ key="entity.e_demande.f_lieu"/}&nbsp;
                         {@inline_help field="f_lieu"}
                         <i data-field="f_lieu" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <input class="form-control input" placeholder='{@__ key="entity.e_demande.f_lieu" /}' name="f_lieu" value="{f_lieu}" type="text" maxlength="255">
+                    <input class="form-control input" placeholder='{#__ key="entity.e_demande.f_lieu" /}' name="f_lieu" value="{f_lieu}" type="text" maxlength="255">
                 </div>
             </div>
             <div data-field="f_exigence_particuliere" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_exigence_particuliere">
-                        {@__ key="entity.e_demande.f_exigence_particuliere"/}&nbsp;
+                        {#__ key="entity.e_demande.f_exigence_particuliere"/}&nbsp;
                         {@inline_help field="f_exigence_particuliere"}
                         <i data-field="f_exigence_particuliere" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
-                    <textarea class="form-control textarea" placeholder='{@__ key="entity.e_demande.f_exigence_particuliere" /}' name="f_exigence_particuliere" id="f_exigence_particuliere_textareaid" type="text">{f_exigence_particuliere|s}</textarea>
+                    <textarea class="form-control textarea" placeholder='{#__ key="entity.e_demande.f_exigence_particuliere" /}' name="f_exigence_particuliere" id="f_exigence_particuliere_textareaid" type="text">{f_exigence_particuliere|s}</textarea>
                 </div>
             </div>
             <div data-field="f_demandeur" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="r_demandeur">
-                        {@__ key="entity.e_demande.r_demandeur" /}&nbsp;
+                        {#__ key="entity.e_demande.r_demandeur" /}&nbsp;
                         {@inline_help field="r_demandeur"}
                         <i data-field="r_demandeur" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select class="ajax form-control" name="r_demandeur" data-source="user" data-using="f_login">
                         <option value="">
-                            {@__ key="select.default" /}
+                            {#__ key="select.default" /}
                         </option>
                         {#r_demandeur}
                         <option value="{id}" selected="">{f_login|string}</option>

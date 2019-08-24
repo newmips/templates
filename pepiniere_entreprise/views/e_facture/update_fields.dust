@@ -4,14 +4,14 @@
             <div data-field="f_annee" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_annee" class="required">
-                        {@__ key="entity.e_facture.f_annee"/}&nbsp;
+                        {#__ key="entity.e_facture.f_annee"/}&nbsp;
                         {@inline_help field="f_annee"}
                         <i data-field="f_annee" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select class="form-control select" name="f_annee" required="">
                         <option value="">
-                            {@__ key="select.default" /}
+                            {#__ key="select.default" /}
                         </option>
                         {#enum_radio.e_facture.f_annee}
                         {@eq key=f_annee value="{.value}" }
@@ -26,14 +26,14 @@
             <div data-field="f_periode" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_periode" class="required">
-                        {@__ key="entity.e_facture.f_periode"/}&nbsp;
+                        {#__ key="entity.e_facture.f_periode"/}&nbsp;
                         {@inline_help field="f_periode"}
                         <i data-field="f_periode" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
                     </label>
                     <select class="form-control select" name="f_periode" required="">
                         <option value="">
-                            {@__ key="select.default" /}
+                            {#__ key="select.default" /}
                         </option>
                         {#enum_radio.e_facture.f_periode}
                         {@eq key=f_periode value="{.value}" }
@@ -53,7 +53,7 @@
             <div data-field="f_date_de_debut" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_debut">
-                        {@__ key="entity.e_facture.f_date_de_debut"/}&nbsp;
+                        {#__ key="entity.e_facture.f_date_de_debut"/}&nbsp;
                         {@inline_help field="f_date_de_debut"}
                         <i data-field="f_date_de_debut" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -62,7 +62,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_facture.f_date_de_debut" /}' name="f_date_de_debut" value="{f_date_de_debut}" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_facture.f_date_de_debut" /}' name="f_date_de_debut" value="{f_date_de_debut}" type="text">
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
             <div data-field="f_date_de_fin" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_fin">
-                        {@__ key="entity.e_facture.f_date_de_fin"/}&nbsp;
+                        {#__ key="entity.e_facture.f_date_de_fin"/}&nbsp;
                         {@inline_help field="f_date_de_fin"}
                         <i data-field="f_date_de_fin" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -83,7 +83,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i>
                         </div>
-                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{@__ key="entity.e_facture.f_date_de_fin" /}' name="f_date_de_fin" value="{f_date_de_fin}" type="text">
+                        <input class="form-control input datepicker datepicker-toconvert" placeholder='{#__ key="entity.e_facture.f_date_de_fin" /}' name="f_date_de_fin" value="{f_date_de_fin}" type="text">
                     </div>
                 </div>
             </div>
@@ -96,25 +96,25 @@
     <div data-field="f_titre" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_titre" class="required">
-                {@__ key="entity.e_facture.f_titre"/}&nbsp;
+                {#__ key="entity.e_facture.f_titre"/}&nbsp;
                 {@inline_help field="f_titre"}
                 <i data-field="f_titre" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_facture.f_titre" /}' name="f_titre" value="{f_titre}" type="text" maxlength="255" required="">
+            <input class="form-control input" placeholder='{#__ key="entity.e_facture.f_titre" /}' name="f_titre" value="{f_titre}" type="text" maxlength="255" required="">
         </div>
     </div>
     <div data-field="f_societe" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="r_societe">
-                {@__ key="entity.e_facture.r_societe" /}&nbsp;
+                {#__ key="entity.e_facture.r_societe" /}&nbsp;
                 {@inline_help field="r_societe"}
                 <i data-field="r_societe" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select class="ajax form-control" name="r_societe" data-source="societe" data-using="f_nom">
                 <option value="">
-                    {@__ key="select.default" /}
+                    {#__ key="select.default" /}
                 </option>
                 {#r_societe}
                 <option value="{id}" selected="">{f_nom|string}</option>
@@ -129,7 +129,7 @@
             <div data-field="f_date_de_creation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_de_creation">
-                        {@__ key="entity.e_facture.f_date_de_creation"/}&nbsp;
+                        {#__ key="entity.e_facture.f_date_de_creation"/}&nbsp;
                         {@inline_help field="f_date_de_creation"}
                         <i data-field="f_date_de_creation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -138,7 +138,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
                         </div>
-                        <input class="form-control input datetimepicker datetimepicker-toconvert" placeholder='{@__ key="entity.e_facture.f_date_de_creation" /}' name="f_date_de_creation" value="{f_date_de_creation}" type="text">
+                        <input class="form-control input datetimepicker datetimepicker-toconvert" placeholder='{#__ key="entity.e_facture.f_date_de_creation" /}' name="f_date_de_creation" value="{f_date_de_creation}" type="text">
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
             <div data-field="f_date_echeance" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
                 <div class="form-group">
                     <label for="f_date_echeance">
-                        {@__ key="entity.e_facture.f_date_echeance"/}&nbsp;
+                        {#__ key="entity.e_facture.f_date_echeance"/}&nbsp;
                         {@inline_help field="f_date_echeance"}
                         <i data-field="f_date_echeance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                         {/inline_help}
@@ -158,7 +158,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
                         </div>
-                        <input class="form-control input datetimepicker datetimepicker-toconvert" placeholder='{@__ key="entity.e_facture.f_date_echeance" /}' name="f_date_echeance" value="{f_date_echeance}" type="text">
+                        <input class="form-control input datetimepicker datetimepicker-toconvert" placeholder='{#__ key="entity.e_facture.f_date_echeance" /}' name="f_date_echeance" value="{f_date_echeance}" type="text">
                     </div>
                 </div>
             </div>

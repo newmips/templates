@@ -10,45 +10,45 @@
     <div data-field="f_lesquels" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_lesquels">
-                {@__ key="entity.e_profil_investisseur.f_lesquels"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_lesquels"/}&nbsp;
                 {@inline_help field="f_lesquels"}
                 <i data-field="f_lesquels" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_lesquels" /}' name="f_lesquels" value="" maxlength="255" type="text">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_lesquels" /}' name="f_lesquels" value="" maxlength="255" type="text">
         </div>
     </div>
     <div data-field="f_raisons" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_raisons">
-                {@__ key="entity.e_profil_investisseur.f_raisons"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_raisons"/}&nbsp;
                 {@inline_help field="f_raisons"}
                 <i data-field="f_raisons" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_raisons" /}' name="f_raisons" value="" maxlength="255" type="text">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_raisons" /}' name="f_raisons" value="" maxlength="255" type="text">
         </div>
     </div>
     <div data-field="f_sens" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_sens">
-                {@__ key="entity.e_profil_investisseur.f_sens"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_sens"/}&nbsp;
                 {@inline_help field="f_sens"}
                 <i data-field="f_sens" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_sens" /}' name="f_sens" value="" maxlength="255" type="text">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_sens" /}' name="f_sens" value="" maxlength="255" type="text">
         </div>
     </div>
     <div data-field="f_quand" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_quand">
-                {@__ key="entity.e_profil_investisseur.f_quand"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_quand"/}&nbsp;
                 {@inline_help field="f_quand"}
                 <i data-field="f_quand" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_quand" /}' name="f_quand" value="" maxlength="255" type="text">
+            <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_quand" /}' name="f_quand" value="" maxlength="255" type="text">
         </div>
     </div>
     <div class="col-xs-12 col-md-12 col-sm-12">
@@ -59,13 +59,13 @@
     <div data-field="f_connaissance" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_connaissance">
-                {@__ key="entity.e_profil_investisseur.f_connaissance"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_connaissance"/}&nbsp;
                 {@inline_help field="f_connaissance"}
                 <i data-field="f_connaissance" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_connaissance">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_connaissance}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_connaissance}
@@ -75,13 +75,13 @@
     <div data-field="f_connaissance_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_connaissance_conj">
-                {@__ key="entity.e_profil_investisseur.f_connaissance_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_connaissance_conj"/}&nbsp;
                 {@inline_help field="f_connaissance_conj"}
                 <i data-field="f_connaissance_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_connaissance_conj">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_connaissance_conj}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_connaissance_conj}
@@ -96,13 +96,13 @@
     <div data-field="f_experience_b1" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b1">
-                {@__ key="entity.e_profil_investisseur.f_experience_b1"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b1"/}&nbsp;
                 {@inline_help field="f_experience_b1"}
                 <i data-field="f_experience_b1" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_experience_b1">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_experience_b1}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_experience_b1}
@@ -112,13 +112,13 @@
     <div data-field="f_experience_b1_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b1_conj">
-                {@__ key="entity.e_profil_investisseur.f_experience_b1_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b1_conj"/}&nbsp;
                 {@inline_help field="f_experience_b1_conj"}
                 <i data-field="f_experience_b1_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_experience_b1_conj">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_experience_b1_conj}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_experience_b1_conj}
@@ -128,13 +128,13 @@
     <div data-field="f_experience_b2" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b2">
-                {@__ key="entity.e_profil_investisseur.f_experience_b2"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b2"/}&nbsp;
                 {@inline_help field="f_experience_b2"}
                 <i data-field="f_experience_b2" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_experience_b2">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_experience_b2}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_experience_b2}
@@ -144,13 +144,13 @@
     <div data-field="f_experience_b2_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b2_conj">
-                {@__ key="entity.e_profil_investisseur.f_experience_b2_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b2_conj"/}&nbsp;
                 {@inline_help field="f_experience_b2_conj"}
                 <i data-field="f_experience_b2_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_experience_b2_conj">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_experience_b2_conj}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_experience_b2_conj}
@@ -160,13 +160,13 @@
     <div data-field="f_experience_b3" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b3">
-                {@__ key="entity.e_profil_investisseur.f_experience_b3"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b3"/}&nbsp;
                 {@inline_help field="f_experience_b3"}
                 <i data-field="f_experience_b3" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_experience_b3">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_experience_b3}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_experience_b3}
@@ -176,13 +176,13 @@
     <div data-field="f_experience_b3_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_experience_b3_conj">
-                {@__ key="entity.e_profil_investisseur.f_experience_b3_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_experience_b3_conj"/}&nbsp;
                 {@inline_help field="f_experience_b3_conj"}
                 <i data-field="f_experience_b3_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_experience_b3_conj">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_experience_b3_conj}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_experience_b3_conj}
@@ -197,13 +197,13 @@
     <div data-field="f_evolution" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_evolution">
-                {@__ key="entity.e_profil_investisseur.f_evolution"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_evolution"/}&nbsp;
                 {@inline_help field="f_evolution"}
                 <i data-field="f_evolution" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_evolution">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_evolution}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_evolution}
@@ -213,13 +213,13 @@
     <div data-field="f_evolution_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_evolution_conj">
-                {@__ key="entity.e_profil_investisseur.f_evolution_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_evolution_conj"/}&nbsp;
                 {@inline_help field="f_evolution_conj"}
                 <i data-field="f_evolution_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_evolution_conj">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_evolution_conj}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_evolution_conj}
@@ -234,13 +234,13 @@
     <div data-field="f_comportement" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_comportement">
-                {@__ key="entity.e_profil_investisseur.f_comportement"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_comportement"/}&nbsp;
                 {@inline_help field="f_comportement"}
                 <i data-field="f_comportement" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_comportement">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_comportement}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_comportement}
@@ -250,13 +250,13 @@
     <div data-field="f_comportement_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_comportement_conj">
-                {@__ key="entity.e_profil_investisseur.f_comportement_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_comportement_conj"/}&nbsp;
                 {@inline_help field="f_comportement_conj"}
                 <i data-field="f_comportement_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_comportement_conj">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_comportement_conj}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_comportement_conj}
@@ -271,13 +271,13 @@
     <div data-field="f_variation" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_variation">
-                {@__ key="entity.e_profil_investisseur.f_variation"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_variation"/}&nbsp;
                 {@inline_help field="f_variation"}
                 <i data-field="f_variation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_variation">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_variation}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_variation}
@@ -287,13 +287,13 @@
     <div data-field="f_variation_conj" class="fieldLineHeight col-xs-12 col-sm-12 col-md-6" style="">
         <div class="form-group">
             <label for="f_variation_conj">
-                {@__ key="entity.e_profil_investisseur.f_variation_conj"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_variation_conj"/}&nbsp;
                 {@inline_help field="f_variation_conj"}
                 <i data-field="f_variation_conj" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
             <select style="width:100%;" class="form-control select" name="f_variation_conj">
-                <option value="" selected="">{@__ key="select.default" /}</option>
+                <option value="" selected="">{#__ key="select.default" /}</option>
                 {#enum_radio.e_profil_investisseur.f_variation_conj}
                 <option value="{.value}"> {.translation} </option>
                 {/enum_radio.e_profil_investisseur.f_variation_conj}
@@ -308,11 +308,11 @@
     <div data-field="f_patrimoine_global" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_patrimoine_global">
-                {@__ key="entity.e_profil_investisseur.f_patrimoine_global"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_patrimoine_global"/}&nbsp;
                 {@inline_help field="f_patrimoine_global"}
                 <i data-field="f_patrimoine_global" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}&nbsp;
-                <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_patrimoine_global" /}' name="f_patrimoine_global" value="1" max="2147483648" type="number">
+                <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_patrimoine_global" /}' name="f_patrimoine_global" value="1" max="2147483648" type="number">
             </label>
             <input class="form-control input" min="1" max="5" value="1" step="1" onchange="f_patrimoine_global.value=value" type="range">
 
@@ -321,11 +321,11 @@
     <div data-field="f_placements_arbitrages" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_placements_arbitrages">
-                {@__ key="entity.e_profil_investisseur.f_placements_arbitrages"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_placements_arbitrages"/}&nbsp;
                 {@inline_help field="f_placements_arbitrages"}
                 <i data-field="f_placements_arbitrages" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}&nbsp;
-                <input class="form-control input" placeholder='{@__ key="entity.e_profil_investisseur.f_placements_arbitrages" /}' name="f_placements_arbitrages" value="1" max="2147483648" type="number">
+                <input class="form-control input" placeholder='{#__ key="entity.e_profil_investisseur.f_placements_arbitrages" /}' name="f_placements_arbitrages" value="1" max="2147483648" type="number">
             </label>
             <input class="form-control input" min="1" max="5" value="1" step="1" onchange="f_placements_arbitrages.value=value" type="range">
 
@@ -340,12 +340,12 @@
     <div data-field="f_informations" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_informations">
-                {@__ key="entity.e_profil_investisseur.f_informations"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_informations"/}&nbsp;
                 {@inline_help field="f_informations"}
                 <i data-field="f_informations" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_profil_investisseur.f_informations" /}' name="f_informations" id="f_informations_textareaid" type="text">{f_informations|s}</textarea>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_profil_investisseur.f_informations" /}' name="f_informations" id="f_informations_textareaid" type="text">{f_informations|s}</textarea>
         </div>
     </div>
     <div class="col-xs-12 col-md-12 col-sm-12">
@@ -356,12 +356,12 @@
     <div data-field="f_oublis" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_oublis">
-                {@__ key="entity.e_profil_investisseur.f_oublis"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_oublis"/}&nbsp;
                 {@inline_help field="f_oublis"}
                 <i data-field="f_oublis" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_profil_investisseur.f_oublis" /}' name="f_oublis" id="f_oublis_textareaid" type="text">{f_oublis|s}</textarea>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_profil_investisseur.f_oublis" /}' name="f_oublis" id="f_oublis_textareaid" type="text">{f_oublis|s}</textarea>
         </div>
     </div>
     <div class="col-xs-12 col-md-12 col-sm-12">
@@ -372,12 +372,12 @@
     <div data-field="f_interrogation" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
         <div class="form-group">
             <label for="f_interrogation">
-                {@__ key="entity.e_profil_investisseur.f_interrogation"/}&nbsp;
+                {#__ key="entity.e_profil_investisseur.f_interrogation"/}&nbsp;
                 {@inline_help field="f_interrogation"}
                 <i data-field="f_interrogation" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
                 {/inline_help}
             </label>
-            <textarea class="form-control textarea regular-textarea" placeholder='{@__ key="entity.e_profil_investisseur.f_interrogation" /}' name="f_interrogation" id="f_interrogation_textareaid" type="text">{f_interrogation|s}</textarea>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_profil_investisseur.f_interrogation" /}' name="f_interrogation" id="f_interrogation_textareaid" type="text">{f_interrogation|s}</textarea>
         </div>
     </div>
 </div>
