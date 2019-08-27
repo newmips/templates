@@ -136,4 +136,5 @@ add field Espace related to Espace using Nom
 
 select entity user
 add field Code Barre with type code128
+add component document template
 
