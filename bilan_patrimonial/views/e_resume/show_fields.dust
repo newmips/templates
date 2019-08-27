@@ -53,7 +53,7 @@
             <span>
                 <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
-            {@actionAccess entity="resume" action="delete"}
+            {#actionAccess entity="resume" action="delete"}
             <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
@@ -63,7 +63,7 @@
             </span>
             {/actionAccess}
 
-            {@actionAccess entity="resume" action="update"}
+            {#actionAccess entity="resume" action="update"}
             <span>
                 <a href="/resume/update_form?id={e_resume.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
@@ -72,7 +72,7 @@
             </span>
             {/actionAccess}
             {^hideButton}
-            {@actionAccess entity="resume" action="create"}
+            {#actionAccess entity="resume" action="create"}
             <span>
                     <a href="/resume/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
@@ -80,7 +80,7 @@
             </a>
             </span>
             {/actionAccess}
-            {@actionAccess entity="resume" action="read"}
+            {#actionAccess entity="resume" action="read"}
             <span>
                     <a href="/resume/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>

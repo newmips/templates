@@ -411,7 +411,7 @@
             <span>
                 <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
-            {@actionAccess entity="profil_investisseur" action="delete"}
+            {#actionAccess entity="profil_investisseur" action="delete"}
             <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
@@ -421,7 +421,7 @@
             </span>
             {/actionAccess}
 
-            {@actionAccess entity="profil_investisseur" action="update"}
+            {#actionAccess entity="profil_investisseur" action="update"}
             <span>
                 <a href="/profil_investisseur/update_form?id={e_profil_investisseur.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
@@ -430,7 +430,7 @@
             </span>
             {/actionAccess}
             {^hideButton}
-            {@actionAccess entity="profil_investisseur" action="create"}
+            {#actionAccess entity="profil_investisseur" action="create"}
             <span>
                     <a href="/profil_investisseur/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
@@ -438,7 +438,7 @@
             </a>
             </span>
             {/actionAccess}
-            {@actionAccess entity="profil_investisseur" action="read"}
+            {#actionAccess entity="profil_investisseur" action="read"}
             <span>
                     <a href="/profil_investisseur/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>

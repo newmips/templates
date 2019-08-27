@@ -13,7 +13,7 @@
 
 {<sidebar}
 <ul id="sortable" class="sidebar-menu" style="white-space: pre-wrap;">
-    {@entityAccess entity="annonce"}
+    {#entityAccess entity="annonce"}
     <li id="annonce_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-tag"></i>
@@ -21,7 +21,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="annonce" action="create"}
+            {#actionAccess entity="annonce" action="create"}
             <li>
                 <a href="/annonce/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -29,7 +29,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="annonce" action="read"}
+            {#actionAccess entity="annonce" action="read"}
             <li>
                 <a href="/annonce/list">
                     <i class="fa fa-angle-double-right"></i>
@@ -40,7 +40,7 @@
         </ul>
     </li>
     {/entityAccess}
-    {@entityAccess entity="history_1310_5726"}
+    {#entityAccess entity="history_1310_5726"}
     <li id="history_1310_5726_menu_item" style="display:none;" class="treeview">
         <a href="#">
             <i class="fa fa-folder"></i>
@@ -48,7 +48,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="history_1310_5726" action="create"}
+            {#actionAccess entity="history_1310_5726" action="create"}
             <li>
                 <a href="/history_1310_5726/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -56,7 +56,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="history_1310_5726" action="read"}
+            {#actionAccess entity="history_1310_5726" action="read"}
             <li>
                 <a href="/history_1310_5726/list">
                     <i class="fa fa-angle-double-right"></i>

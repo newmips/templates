@@ -74,7 +74,7 @@
             </li>
         </ul>
     </li>
-    {@entityAccess entity="candidat"}
+    {#entityAccess entity="candidat"}
     <li id="candidat_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-user"></i>
@@ -82,7 +82,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="candidat" action="create"}
+            {#actionAccess entity="candidat" action="create"}
             <li>
                 <a href="/candidat/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -90,7 +90,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="candidat" action="read"}
+            {#actionAccess entity="candidat" action="read"}
             <li>
                 <a href="/candidat/list">
                     <i class="fa fa-angle-double-right"></i>
@@ -101,7 +101,7 @@
         </ul>
     </li>
     {/entityAccess}
-    {@entityAccess entity="disponibilite"}
+    {#entityAccess entity="disponibilite"}
     <li id="disponibilite_menu_item" style="display:none;" class="treeview">
         <a href="#">
             <i class="fa fa-folder"></i>
@@ -109,7 +109,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="disponibilite" action="create"}
+            {#actionAccess entity="disponibilite" action="create"}
             <li>
                 <a href="/disponibilite/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -117,7 +117,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="disponibilite" action="read"}
+            {#actionAccess entity="disponibilite" action="read"}
             <li>
                 <a href="/disponibilite/list">
                     <i class="fa fa-angle-double-right"></i>
@@ -128,7 +128,7 @@
         </ul>
     </li>
     {/entityAccess}
-    {@entityAccess entity="demande"}
+    {#entityAccess entity="demande"}
     <li id="demande_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-wpforms"></i>
@@ -136,7 +136,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="demande" action="create"}
+            {#actionAccess entity="demande" action="create"}
             <li>
                 <a href="/demande/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -144,7 +144,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="demande" action="read"}
+            {#actionAccess entity="demande" action="read"}
             <li>
                 <a href="/demande/list">
                     <i class="fa fa-angle-double-right"></i>
@@ -155,7 +155,7 @@
         </ul>
     </li>
     {/entityAccess}
-    {@entityAccess entity="history_1224_5384"}
+    {#entityAccess entity="history_1224_5384"}
     <li id="history_1224_5384_menu_item" style="display:none;" class="treeview">
         <a href="#">
             <i class="fa fa-folder"></i>
@@ -163,7 +163,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="history_1224_5384" action="create"}
+            {#actionAccess entity="history_1224_5384" action="create"}
             <li>
                 <a href="/history_1224_5384/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -171,7 +171,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="history_1224_5384" action="read"}
+            {#actionAccess entity="history_1224_5384" action="read"}
             <li>
                 <a href="/history_1224_5384/list">
                     <i class="fa fa-angle-double-right"></i>

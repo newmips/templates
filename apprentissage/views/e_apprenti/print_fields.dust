@@ -331,7 +331,7 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="rib" }
+    {#entityAccess entity="rib" }
     <div id="r_rib_print" class="row">
         <div class="col-xs-12">
             <h3>{#__ key="entity.e_rib.name_entity" /}</h3>

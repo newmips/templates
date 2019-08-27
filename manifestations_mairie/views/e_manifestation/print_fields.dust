@@ -221,7 +221,7 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="intervenant" }
+    {#entityAccess entity="intervenant" }
     <div id="r_intervenants_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -243,7 +243,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="budget" }
+    {#entityAccess entity="budget" }
     <div id="r_budget_print" class="row">
         <div class="col-xs-12">
             <h3>

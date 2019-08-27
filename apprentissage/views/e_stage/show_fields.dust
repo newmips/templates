@@ -3,23 +3,23 @@
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">
                 {#__ key="entity.e_stage.label_entity" /}</a></li>
-        {@entityAccess entity="intervenants"}
+        {#entityAccess entity="intervenants"}
         <li><a id="r_intervenants-click" data-toggle="tab" href="#r_intervenants">
                 {#__ key="entity.e_stage.r_intervenants" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="periode_de_stage"}
+        {#entityAccess entity="periode_de_stage"}
         <li><a id="r_periode_de_stage-click" data-toggle="tab" data-tabtype="hasMany" href="#r_periode_de_stage">
                 {#__ key="entity.e_stage.r_periode_de_stage" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="periodicite"}
+        {#entityAccess entity="periodicite"}
         <li><a id="r_periodicite-click" data-toggle="tab" href="#r_periodicite">
                 {#__ key="entity.e_stage.r_periodicite" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="annulation"}
+        {#entityAccess entity="annulation"}
         <li><a id="r_annulation-click" data-toggle="tab" href="#r_annulation">
                 {#__ key="entity.e_stage.r_annulation" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="convention"}
+        {#entityAccess entity="convention"}
         <li><a id="r_convention-click" data-toggle="tab" href="#r_convention">{#__ key="entity.e_stage.r_convention" /}</a></li>
         {/entityAccess}
     </ul>
@@ -534,25 +534,25 @@
                     <div class="quicklinks">
                         <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
                             {#__ key="button.return"/}</a>
-                        {@actionAccess entity="stage" action="delete"}
+                        {#actionAccess entity="stage" action="delete"}
                         <button class="btn btn-danger btn-confirm">
                             <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
                             <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_stage.id}" class="form-control">
                         {/actionAccess}
-                        {@actionAccess entity="stage" action="update"}
+                        {#actionAccess entity="stage" action="update"}
                         <a href="/stage/update_form?id={e_stage.id}" class="btn btn-warning">
                             <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.update"/}</span>
                         </a>
                         {/actionAccess}
                         {^hideButton}
-                        {@actionAccess entity="stage" action="create"}
+                        {#actionAccess entity="stage" action="create"}
                         <a href="/stage/create_form" class="btn btn-success">
                             <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
                         </a>
                         {/actionAccess}
-                        {@actionAccess entity="stage" action="read"}
+                        {#actionAccess entity="stage" action="read"}
                         <a href="/stage/list" type="submit" class="btn btn-primary">
                             <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.list"/}</span>
                         </a>
@@ -563,35 +563,35 @@
             </div>
         </div>
         {^hideTab}
-        {@entityAccess entity="intervenants"}
+        {#entityAccess entity="intervenants"}
         <div id="r_intervenants" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_intervenants" data-asso-foreignkey="fk_id_intervenants" data-asso-flag="{id}" data-asso-source="e_stage" data-asso-url="stage">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="periode_de_stage"}
+        {#entityAccess entity="periode_de_stage"}
         <div id="r_periode_de_stage" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_periode_de_stage" data-asso-foreignkey="fk_id_stage" data-asso-flag="{id}" data-asso-source="e_stage" data-asso-url="stage">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="periodicite"}
+        {#entityAccess entity="periodicite"}
         <div id="r_periodicite" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_periodicite" data-asso-foreignkey="fk_id_periodicite" data-asso-flag="{id}" data-asso-source="e_stage" data-asso-url="stage">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="annulation"}
+        {#entityAccess entity="annulation"}
         <div id="r_annulation" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_annulation" data-asso-foreignkey="fk_id_annulation" data-asso-flag="{id}" data-asso-source="e_stage" data-asso-url="stage">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="convention"}
+        {#entityAccess entity="convention"}
         <div id="r_convention" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_convention" data-asso-foreignkey="fk_id_convention" data-asso-flag="{id}" data-asso-source="e_stage" data-asso-url="stage">
             <div class="ajax-content"></div>
         </div>

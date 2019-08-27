@@ -217,7 +217,7 @@
 				</table>
 				<br>
 				<a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>&nbsp;&nbsp;
-				{@actionAccess entity="annonce" action="create"}
+				{#actionAccess entity="annonce" action="create"}
 				<a href="/annonce/create_form">
 					<button class="btn btn-success"><i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
 					</button>
@@ -237,7 +237,7 @@
         var DATALIST_BUTTONS = [];
     </script>
     {! SHOW !}
-    {@actionAccess entity="annonce" action="read"}
+    {#actionAccess entity="annonce" action="read"}
     <script type="text/javascript">
         DATALIST_BUTTONS.push({
             render: function (data, type, row) {

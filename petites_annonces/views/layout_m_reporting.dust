@@ -33,14 +33,14 @@
 
 {<sidebar}
 <ul id="sortable" class="sidebar-menu" style="white-space: pre-wrap;">
-    {@entityAccess entity="tableau_de_bord"}
+    {#entityAccess entity="tableau_de_bord"}
     <li id="tableau_de_bord_menu_item" style="display:block;">
         <a href="/tableau_de_bord/display">
             <i class="fa fa-tachometer"></i>
             <span>{#__ key="entity.e_tableau_de_bord.label_entity" /}</span>
         </a>
         {! <ul class="treeview-menu">
-            {@actionAccess entity="tableau_de_bord" action="create"}
+            {#actionAccess entity="tableau_de_bord" action="create"}
             <li>
                 <a href="/tableau_de_bord/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -48,7 +48,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="tableau_de_bord" action="read"}
+            {#actionAccess entity="tableau_de_bord" action="read"}
             <li>
                 <a href="/tableau_de_bord/list">
                     <i class="fa fa-angle-double-right"></i>

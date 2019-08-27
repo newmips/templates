@@ -266,7 +266,7 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="affectation" }
+    {#entityAccess entity="affectation" }
     <div id="r_affectation_print" class="row">
         <div class="col-xs-12">
             <h3>

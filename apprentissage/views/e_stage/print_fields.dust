@@ -502,7 +502,7 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="intervenants" }
+    {#entityAccess entity="intervenants" }
     <div id="r_intervenants_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -518,7 +518,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="periode_de_stage" }
+    {#entityAccess entity="periode_de_stage" }
     <div id="r_periode_de_stage_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -540,7 +540,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="periodicite" }
+    {#entityAccess entity="periodicite" }
     <div id="r_periodicite_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -556,7 +556,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="annulation" }
+    {#entityAccess entity="annulation" }
     <div id="r_annulation_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -572,7 +572,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="convention" }
+    {#entityAccess entity="convention" }
     <div id="r_convention_print" class="row">
         <div class="col-xs-12">
             <h3>{#__ key="entity.e_convention.name_entity" /}</h3>

@@ -23,7 +23,7 @@
 
     </table>
     <div id="stats_e_chauffeur_widget" class="col-sm-3 col-xs-12">
-        {@entityAccess entity="chauffeur" }
+        {#entityAccess entity="chauffeur" }
         <div class="small-box bg-aqua" style="background-color: #3c8dbc !important;">
             <div class="inner">
                 <h3>{e_chauffeur_stats}</h3>
@@ -42,7 +42,7 @@
         {/entityAccess}
     </div>
     <div id="stats_e_voiture_widget" class="col-sm-3 col-xs-12">
-        {@entityAccess entity="voiture" }
+        {#entityAccess entity="voiture" }
         <div class="small-box bg-aqua" style="background-color: #3c8dbc !important;">
             <div class="inner">
                 <h3>{e_voiture_stats}</h3>
@@ -61,7 +61,7 @@
         {/entityAccess}
     </div>
     <div id="stats_e_demande_widget" class="col-sm-3 col-xs-12">
-        {@entityAccess entity="demande" }
+        {#entityAccess entity="demande" }
         <div class="small-box bg-aqua" style="background-color: #3c8dbc !important;">
             <div class="inner">
                 <h3>{e_demande_stats}</h3>

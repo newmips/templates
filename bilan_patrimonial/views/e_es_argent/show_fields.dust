@@ -764,7 +764,7 @@
             <span>
                 <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
-            {@actionAccess entity="es_argent" action="delete"}
+            {#actionAccess entity="es_argent" action="delete"}
             <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
@@ -774,7 +774,7 @@
             </span>
             {/actionAccess}
 
-            {@actionAccess entity="es_argent" action="update"}
+            {#actionAccess entity="es_argent" action="update"}
             <span>
                 <a href="/es_argent/update_form?id={e_es_argent.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
@@ -783,7 +783,7 @@
             </span>
             {/actionAccess}
             {^hideButton}
-            {@actionAccess entity="es_argent" action="create"}
+            {#actionAccess entity="es_argent" action="create"}
             <span>
                     <a href="/es_argent/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
@@ -791,7 +791,7 @@
             </a>
             </span>
             {/actionAccess}
-            {@actionAccess entity="es_argent" action="read"}
+            {#actionAccess entity="es_argent" action="read"}
             <span>
                     <a href="/es_argent/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>

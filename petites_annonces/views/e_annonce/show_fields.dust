@@ -5,7 +5,7 @@
                 {#__ key="entity.e_annonce.label_entity" /}</a></li>
         <li><a id="c_documents_1310-click" data-toggle="tab" href="#c_documents_1310">
                 {#__ key="component.c_documents_1310.label_component" /}</a></li>
-        {@entityAccess entity="history_e_annonce_s_statut"}
+        {#entityAccess entity="history_e_annonce_s_statut"}
         <li><a id="r_history_statut-click" data-toggle="tab" data-tabtype="hasMany" href="#r_history_statut">
                 {#__ key="entity.e_annonce.r_history_statut" /}</a></li>
         {/entityAccess}
@@ -309,25 +309,25 @@
                     <div class="quicklinks">
                         <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
                             {#__ key="button.return"/}</a>
-                        {@actionAccess entity="annonce" action="delete"}
+                        {#actionAccess entity="annonce" action="delete"}
                         <button class="btn btn-danger btn-confirm">
                             <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
                             <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_annonce.id}" class="form-control">
                         {/actionAccess}
-                        {@actionAccess entity="annonce" action="update"}
+                        {#actionAccess entity="annonce" action="update"}
                         <a href="/annonce/update_form?id={e_annonce.id}" class="btn btn-warning">
                             <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.update"/}</span>
                         </a>
                         {/actionAccess}
                         {^hideButton}
-                        {@actionAccess entity="annonce" action="create"}
+                        {#actionAccess entity="annonce" action="create"}
                         <a href="/annonce/create_form" class="btn btn-success">
                             <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
                         </a>
                         {/actionAccess}
-                        {@actionAccess entity="annonce" action="read"}
+                        {#actionAccess entity="annonce" action="read"}
                         <a href="/annonce/list" type="submit" class="btn btn-primary">
                             <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.list"/}</span>
                         </a>
@@ -343,7 +343,7 @@
         </div>
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="history_e_annonce_s_statut"}
+        {#entityAccess entity="history_e_annonce_s_statut"}
         <div id="r_history_statut" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_history_statut" data-asso-foreignkey="fk_id_annonce_history_statut" data-asso-flag="{id}" data-asso-source="e_annonce" data-asso-url="annonce">
             <div class="ajax-content sub-tab-table"></div>
         </div>

@@ -167,7 +167,7 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="history_643_3001" }
+    {#entityAccess entity="history_643_3001" }
     <div id="r_history_statut_print" class="row">
         <div class="col-xs-12">
             <h3>

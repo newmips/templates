@@ -145,7 +145,7 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="metier_propose" }
+    {#entityAccess entity="metier_propose" }
     <div id="r_metiers_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -167,7 +167,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="etablissement_souhaite" }
+    {#entityAccess entity="etablissement_souhaite" }
     <div id="r_etablissements_souhaites_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -189,7 +189,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="competence_specifique" }
+    {#entityAccess entity="competence_specifique" }
     <div id="r_competences_specifiques_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -211,7 +211,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="type_d_horaire" }
+    {#entityAccess entity="type_d_horaire" }
     <div id="r_type_d_horaire_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -233,7 +233,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="disponibilite" }
+    {#entityAccess entity="disponibilite" }
     <div id="r_disponibilite_print" class="row">
         <div class="col-xs-12">
             <h3>

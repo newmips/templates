@@ -73,7 +73,7 @@
             </li>
         </ul>
     </li>
-    {@entityAccess entity="voiture"}
+    {#entityAccess entity="voiture"}
     <li id="voiture_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-cab"></i>
@@ -81,7 +81,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="voiture" action="create"}
+            {#actionAccess entity="voiture" action="create"}
             <li>
                 <a href="/voiture/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -89,7 +89,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="voiture" action="read"}
+            {#actionAccess entity="voiture" action="read"}
             <li>
                 <a href="/voiture/list">
                     <i class="fa fa-angle-double-right"></i>
@@ -100,7 +100,7 @@
         </ul>
     </li>
     {/entityAccess}
-    {@entityAccess entity="chauffeur"}
+    {#entityAccess entity="chauffeur"}
     <li id="chauffeur_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-user"></i>
@@ -108,7 +108,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="chauffeur" action="create"}
+            {#actionAccess entity="chauffeur" action="create"}
             <li>
                 <a href="/chauffeur/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -116,7 +116,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="chauffeur" action="read"}
+            {#actionAccess entity="chauffeur" action="read"}
             <li>
                 <a href="/chauffeur/list">
                     <i class="fa fa-angle-double-right"></i>
@@ -127,7 +127,7 @@
         </ul>
     </li>
     {/entityAccess}
-    {@entityAccess entity="demande"}
+    {#entityAccess entity="demande"}
     <li id="demande_menu_item" style="display:block;" class="treeview">
         <a href="#">
             <i class="fa fa-comment-o"></i>
@@ -135,7 +135,7 @@
             <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-            {@actionAccess entity="demande" action="create"}
+            {#actionAccess entity="demande" action="create"}
             <li>
                 <a href="/demande/create_form">
                     <i class="fa fa-angle-double-right"></i>
@@ -143,7 +143,7 @@
                 </a>
             </li>
             {/actionAccess}
-            {@actionAccess entity="demande" action="read"}
+            {#actionAccess entity="demande" action="read"}
             <li>
                 <a href="/demande/list">
                     <i class="fa fa-angle-double-right"></i>

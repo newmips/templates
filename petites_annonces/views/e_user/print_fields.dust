@@ -164,12 +164,12 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="notification" }
+    {#entityAccess entity="notification" }
 
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="notification" }
+    {#entityAccess entity="notification" }
     <div id="r_notification_print" class="row">
         <div class="col-xs-12">
             <h3>

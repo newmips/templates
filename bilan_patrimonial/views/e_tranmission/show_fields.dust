@@ -118,7 +118,7 @@
             <span>
                 <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
-            {@actionAccess entity="transmission" action="delete"}
+            {#actionAccess entity="transmission" action="delete"}
             <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
@@ -128,7 +128,7 @@
             </span>
             {/actionAccess}
 
-            {@actionAccess entity="transmission" action="update"}
+            {#actionAccess entity="transmission" action="update"}
             <span>
                 <a href="/transmission/update_form?id={e_transmission.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
@@ -137,7 +137,7 @@
             </span>
             {/actionAccess}
             {^hideButton}
-            {@actionAccess entity="transmission" action="create"}
+            {#actionAccess entity="transmission" action="create"}
             <span>
                     <a href="/transmission/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
@@ -145,7 +145,7 @@
             </a>
             </span>
             {/actionAccess}
-            {@actionAccess entity="transmission" action="read"}
+            {#actionAccess entity="transmission" action="read"}
             <span>
                     <a href="/transmission/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>

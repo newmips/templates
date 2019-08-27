@@ -368,7 +368,7 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="accompagnant" }
+    {#entityAccess entity="accompagnant" }
     <div id="r_accompagnant_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -390,7 +390,7 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="transfert" }
+    {#entityAccess entity="transfert" }
     <div id="r_transfert_print" class="row">
         <div class="col-xs-12">
             <h3>

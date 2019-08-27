@@ -3,7 +3,7 @@
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">
                 {#__ key="entity.e_demande_de_remplacement.label_entity" /}</a></li>
-        {@entityAccess entity="affectation"}
+        {#entityAccess entity="affectation"}
         <li><a id="r_affectation-click" data-toggle="tab" data-tabtype="hasMany" href="#r_affectation">
                 {#__ key="entity.e_demande_de_remplacement.r_affectation" /}</a></li>
         {/entityAccess}
@@ -283,25 +283,25 @@
                     <div class="quicklinks">
                         <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
                             {#__ key="button.return"/}</a>
-                        {@actionAccess entity="demande_de_remplacement" action="delete"}
+                        {#actionAccess entity="demande_de_remplacement" action="delete"}
                         <button class="btn btn-danger btn-confirm">
                             <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
                             <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_demande_de_remplacement.id}" class="form-control">
                         {/actionAccess}
-                        {@actionAccess entity="demande_de_remplacement" action="update"}
+                        {#actionAccess entity="demande_de_remplacement" action="update"}
                         <a href="/demande_de_remplacement/update_form?id={e_demande_de_remplacement.id}" class="btn btn-warning">
                             <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.update"/}</span>
                         </a>
                         {/actionAccess}
                         {^hideButton}
-                        {@actionAccess entity="demande_de_remplacement" action="create"}
+                        {#actionAccess entity="demande_de_remplacement" action="create"}
                         <a href="/demande_de_remplacement/create_form" class="btn btn-success">
                             <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
                         </a>
                         {/actionAccess}
-                        {@actionAccess entity="demande_de_remplacement" action="read"}
+                        {#actionAccess entity="demande_de_remplacement" action="read"}
                         <a href="/demande_de_remplacement/list" type="submit" class="btn btn-primary">
                             <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.list"/}</span>
                         </a>
@@ -312,7 +312,7 @@
             </div>
         </div>
         {^hideTab}
-        {@entityAccess entity="affectation"}
+        {#entityAccess entity="affectation"}
         <div id="r_affectation" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_affectation" data-asso-foreignkey="fk_id_demande_de_remplacement" data-asso-flag="{id}" data-asso-source="e_demande_de_remplacement" data-asso-url="demande_de_remplacement">
             <div class="ajax-content sub-tab-table"></div>
         </div>

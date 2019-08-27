@@ -3,23 +3,23 @@
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">
                 {#__ key="entity.e_professionnel.label_entity" /}</a></li>
-        {@entityAccess entity="metier_propose"}
+        {#entityAccess entity="metier_propose"}
         <li><a id="r_metiers-click" data-toggle="tab" data-tabtype="hasMany" href="#r_metiers">
                 {#__ key="entity.e_professionnel.r_metiers" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="etablissement_souhaite"}
+        {#entityAccess entity="etablissement_souhaite"}
         <li><a id="r_etablissements_souhaites-click" data-toggle="tab" data-tabtype="hasMany" href="#r_etablissements_souhaites">
                 {#__ key="entity.e_professionnel.r_etablissements_souhaites" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="competence_specifique"}
+        {#entityAccess entity="competence_specifique"}
         <li><a id="r_competences_specifiques-click" data-toggle="tab" data-tabtype="hasManyPreset" href="#r_competences_specifiques">
                 {#__ key="entity.e_professionnel.r_competences_specifiques" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="type_d_horaire"}
+        {#entityAccess entity="type_d_horaire"}
         <li><a id="r_type_d_horaire-click" data-toggle="tab" data-tabtype="hasManyPreset" href="#r_type_d_horaire">
                 {#__ key="entity.e_professionnel.r_type_d_horaire" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="disponibilite"}
+        {#entityAccess entity="disponibilite"}
         <li><a id="r_disponibilite-click" data-toggle="tab" href="#r_disponibilite">
                 {#__ key="entity.e_professionnel.r_disponibilite" /}</a></li>
         {/entityAccess}
@@ -180,25 +180,25 @@
                     <div class="quicklinks">
                         <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
                             {#__ key="button.return"/}</a>
-                        {@actionAccess entity="professionnel" action="delete"}
+                        {#actionAccess entity="professionnel" action="delete"}
                         <button class="btn btn-danger btn-confirm">
                             <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
                             <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_professionnel.id}" class="form-control">
                         {/actionAccess}
-                        {@actionAccess entity="professionnel" action="update"}
+                        {#actionAccess entity="professionnel" action="update"}
                         <a href="/professionnel/update_form?id={e_professionnel.id}" class="btn btn-warning">
                             <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.update"/}</span>
                         </a>
                         {/actionAccess}
                         {^hideButton}
-                        {@actionAccess entity="professionnel" action="create"}
+                        {#actionAccess entity="professionnel" action="create"}
                         <a href="/professionnel/create_form" class="btn btn-success">
                             <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
                         </a>
                         {/actionAccess}
-                        {@actionAccess entity="professionnel" action="read"}
+                        {#actionAccess entity="professionnel" action="read"}
                         <a href="/professionnel/list" type="submit" class="btn btn-primary">
                             <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.list"/}</span>
                         </a>
@@ -209,35 +209,35 @@
             </div>
         </div>
         {^hideTab}
-        {@entityAccess entity="metier_propose"}
+        {#entityAccess entity="metier_propose"}
         <div id="r_metiers" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_metiers" data-asso-foreignkey="fk_id_professionnel_metiers" data-asso-flag="{id}" data-asso-source="e_professionnel" data-asso-url="professionnel">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="etablissement_souhaite"}
+        {#entityAccess entity="etablissement_souhaite"}
         <div id="r_etablissements_souhaites" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_etablissements_souhaites" data-asso-foreignkey="fk_id_professionnel_etablissements_souhaites" data-asso-flag="{id}" data-asso-source="e_professionnel" data-asso-url="professionnel">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="competence_specifique"}
+        {#entityAccess entity="competence_specifique"}
         <div id="r_competences_specifiques" class="ajax-tab tab-pane fade" data-tabtype="hasManyPreset" data-asso-alias="r_competences_specifiques" data-asso-foreignkey="fk_id_professionnel_competences_specifiques" data-asso-flag="{id}" data-asso-source="e_professionnel" data-asso-url="professionnel">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="type_d_horaire"}
+        {#entityAccess entity="type_d_horaire"}
         <div id="r_type_d_horaire" class="ajax-tab tab-pane fade" data-tabtype="hasManyPreset" data-asso-alias="r_type_d_horaire" data-asso-foreignkey="fk_id_professionnel_type_d_horaire" data-asso-flag="{id}" data-asso-source="e_professionnel" data-asso-url="professionnel">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="disponibilite"}
+        {#entityAccess entity="disponibilite"}
         <div id="r_disponibilite" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_disponibilite" data-asso-foreignkey="fk_id_disponibilite" data-asso-flag="{id}" data-asso-source="e_professionnel" data-asso-url="professionnel">
             <div class="ajax-content"></div>
         </div>

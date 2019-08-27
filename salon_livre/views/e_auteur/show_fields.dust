@@ -3,11 +3,11 @@
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">
                 {#__ key="entity.e_auteur.label_entity" /}</a></li>
-        {@entityAccess entity="accompagnant"}
+        {#entityAccess entity="accompagnant"}
         <li><a id="r_accompagnant-click" data-toggle="tab" data-tabtype="hasMany" href="#r_accompagnant">
                 {#__ key="entity.e_auteur.r_accompagnant" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="transfert"}
+        {#entityAccess entity="transfert"}
         <li><a id="r_transfert-click" data-toggle="tab" data-tabtype="hasMany" href="#r_transfert">
                 {#__ key="entity.e_auteur.r_transfert" /}</a></li>
         {/entityAccess}
@@ -397,25 +397,25 @@
                     <div class="quicklinks">
                         <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
                             {#__ key="button.return"/}</a>
-                        {@actionAccess entity="auteur" action="delete"}
+                        {#actionAccess entity="auteur" action="delete"}
                         <button class="btn btn-danger btn-confirm">
                             <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
                             <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_auteur.id}" class="form-control">
                         {/actionAccess}
-                        {@actionAccess entity="auteur" action="update"}
+                        {#actionAccess entity="auteur" action="update"}
                         <a href="/auteur/update_form?id={e_auteur.id}" class="btn btn-warning">
                             <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.update"/}</span>
                         </a>
                         {/actionAccess}
                         {^hideButton}
-                        {@actionAccess entity="auteur" action="create"}
+                        {#actionAccess entity="auteur" action="create"}
                         <a href="/auteur/create_form" class="btn btn-success">
                             <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
                         </a>
                         {/actionAccess}
-                        {@actionAccess entity="auteur" action="read"}
+                        {#actionAccess entity="auteur" action="read"}
                         <a href="/auteur/list" type="submit" class="btn btn-primary">
                             <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.list"/}</span>
                         </a>
@@ -426,14 +426,14 @@
             </div>
         </div>
         {^hideTab}
-        {@entityAccess entity="accompagnant"}
+        {#entityAccess entity="accompagnant"}
         <div id="r_accompagnant" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_accompagnant" data-asso-foreignkey="fk_id_auteur" data-asso-flag="{id}" data-asso-source="e_auteur" data-asso-url="auteur">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="transfert"}
+        {#entityAccess entity="transfert"}
         <div id="r_transfert" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_transfert" data-asso-foreignkey="fk_id_auteur" data-asso-flag="{id}" data-asso-source="e_auteur" data-asso-url="auteur">
             <div class="ajax-content sub-tab-table"></div>
         </div>

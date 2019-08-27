@@ -3,14 +3,14 @@
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">
                 {#__ key="entity.e_demande.label_entity" /}</a></li>
-        {@entityAccess entity="history_e_demande_s_status"}
+        {#entityAccess entity="history_e_demande_s_status"}
         <li><a id="r_history_status-click" data-toggle="tab" data-tabtype="hasMany" href="#r_history_status">
                 {#__ key="entity.e_demande.r_history_status" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="candidat"}
+        {#entityAccess entity="candidat"}
 
         {/entityAccess}
-        {@entityAccess entity="candidat"}
+        {#entityAccess entity="candidat"}
         <li><a id="r_candidat-click" data-toggle="tab" data-tabtype="hasManyPreset" href="#r_candidat">
                 {#__ key="entity.e_demande.r_candidat" /}</a></li>
         {/entityAccess}
@@ -212,25 +212,25 @@
                     <div class="quicklinks">
                         <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
                             {#__ key="button.return"/}</a>
-                        {@actionAccess entity="demande" action="delete"}
+                        {#actionAccess entity="demande" action="delete"}
                         <button class="btn btn-danger btn-confirm">
                             <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
                             <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_demande.id}" class="form-control">
                         {/actionAccess}
-                        {@actionAccess entity="demande" action="update"}
+                        {#actionAccess entity="demande" action="update"}
                         <a href="/demande/update_form?id={e_demande.id}" class="btn btn-warning">
                             <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.update"/}</span>
                         </a>
                         {/actionAccess}
                         {^hideButton}
-                        {@actionAccess entity="demande" action="create"}
+                        {#actionAccess entity="demande" action="create"}
                         <a href="/demande/create_form" class="btn btn-success">
                             <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
                         </a>
                         {/actionAccess}
-                        {@actionAccess entity="demande" action="read"}
+                        {#actionAccess entity="demande" action="read"}
                         <a href="/demande/list" type="submit" class="btn btn-primary">
                             <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.list"/}</span>
                         </a>
@@ -241,19 +241,19 @@
             </div>
         </div>
         {^hideTab}
-        {@entityAccess entity="history_e_demande_s_status"}
+        {#entityAccess entity="history_e_demande_s_status"}
         <div id="r_history_status" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_history_status" data-asso-foreignkey="fk_id_demande_history_status" data-asso-flag="{id}" data-asso-source="e_demande" data-asso-url="demande">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="candidat"}
+        {#entityAccess entity="candidat"}
 
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="candidat"}
+        {#entityAccess entity="candidat"}
         <div id="r_candidat" class="ajax-tab tab-pane fade" data-tabtype="hasManyPreset" data-asso-alias="r_candidat" data-asso-foreignkey="fk_id_e_demande" data-asso-flag="{id}" data-asso-source="e_demande" data-asso-url="demande">
             <div class="ajax-content sub-tab-table"></div>
         </div>

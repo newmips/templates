@@ -138,7 +138,7 @@
             <span>
                 <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
-            {@actionAccess entity="impots" action="delete"}
+            {#actionAccess entity="impots" action="delete"}
             <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
@@ -148,7 +148,7 @@
             </span>
             {/actionAccess}
 
-            {@actionAccess entity="impots" action="update"}
+            {#actionAccess entity="impots" action="update"}
             <span>
                 <a href="/impots/update_form?id={e_impots.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
@@ -157,7 +157,7 @@
             </span>
             {/actionAccess}
             {^hideButton}
-            {@actionAccess entity="impots" action="create"}
+            {#actionAccess entity="impots" action="create"}
             <span>
                     <a href="/impots/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
@@ -165,7 +165,7 @@
             </a>
             </span>
             {/actionAccess}
-            {@actionAccess entity="impots" action="read"}
+            {#actionAccess entity="impots" action="read"}
             <span>
                     <a href="/impots/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>

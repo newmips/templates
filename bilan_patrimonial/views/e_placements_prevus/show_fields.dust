@@ -45,7 +45,7 @@
             <span>
                 <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
-            {@actionAccess entity="placements_prevus" action="delete"}
+            {#actionAccess entity="placements_prevus" action="delete"}
             <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
@@ -55,7 +55,7 @@
             </span>
             {/actionAccess}
 
-            {@actionAccess entity="placements_prevus" action="update"}
+            {#actionAccess entity="placements_prevus" action="update"}
             <span>
                 <a href="/placements_prevus/update_form?id={e_placements_prevus.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
@@ -64,7 +64,7 @@
             </span>
             {/actionAccess}
             {^hideButton}
-            {@actionAccess entity="placements_prevus" action="create"}
+            {#actionAccess entity="placements_prevus" action="create"}
             <span>
                     <a href="/placements_prevus/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
@@ -72,7 +72,7 @@
             </a>
             </span>
             {/actionAccess}
-            {@actionAccess entity="placements_prevus" action="read"}
+            {#actionAccess entity="placements_prevus" action="read"}
             <span>
                     <a href="/placements_prevus/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>

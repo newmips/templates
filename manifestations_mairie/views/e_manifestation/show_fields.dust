@@ -3,11 +3,11 @@
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">
                 {#__ key="entity.e_manifestation.label_entity" /}</a></li>
-        {@entityAccess entity="intervenant"}
+        {#entityAccess entity="intervenant"}
         <li><a id="r_intervenants-click" data-toggle="tab" data-tabtype="hasMany" href="#r_intervenants">
                 {#__ key="entity.e_manifestation.r_intervenants" /}</a></li>
         {/entityAccess}
-        {@entityAccess entity="budget"}
+        {#entityAccess entity="budget"}
         <li><a id="r_budget-click" data-toggle="tab" href="#r_budget">
                 {#__ key="entity.e_manifestation.r_budget" /}</a></li>
         {/entityAccess}
@@ -246,25 +246,25 @@
                     <div class="quicklinks">
                         <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
                             {#__ key="button.return"/}</a>
-                        {@actionAccess entity="manifestation" action="delete"}
+                        {#actionAccess entity="manifestation" action="delete"}
                         <button class="btn btn-danger btn-confirm">
                             <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
                             <span>{#__ key="button.delete"/}</span>
                         </button>
                         <input name="id" type="hidden" value="{e_manifestation.id}" class="form-control">
                         {/actionAccess}
-                        {@actionAccess entity="manifestation" action="update"}
+                        {#actionAccess entity="manifestation" action="update"}
                         <a href="/manifestation/update_form?id={e_manifestation.id}" class="btn btn-warning">
                             <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.update"/}</span>
                         </a>
                         {/actionAccess}
                         {^hideButton}
-                        {@actionAccess entity="manifestation" action="create"}
+                        {#actionAccess entity="manifestation" action="create"}
                         <a href="/manifestation/create_form" class="btn btn-success">
                             <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.create"/}</span>
                         </a>
                         {/actionAccess}
-                        {@actionAccess entity="manifestation" action="read"}
+                        {#actionAccess entity="manifestation" action="read"}
                         <a href="/manifestation/list" type="submit" class="btn btn-primary">
                             <i class="fa fa-list fa-md">&nbsp;&nbsp;</i><span>{#__ key="button.list"/}</span>
                         </a>
@@ -275,14 +275,14 @@
             </div>
         </div>
         {^hideTab}
-        {@entityAccess entity="intervenant"}
+        {#entityAccess entity="intervenant"}
         <div id="r_intervenants" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_intervenants" data-asso-foreignkey="fk_id_manifestation_intervenants" data-asso-flag="{id}" data-asso-source="e_manifestation" data-asso-url="manifestation">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="budget"}
+        {#entityAccess entity="budget"}
         <div id="r_budget" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_budget" data-asso-foreignkey="fk_id_budget" data-asso-flag="{id}" data-asso-source="e_manifestation" data-asso-url="manifestation">
             <div class="ajax-content"></div>
         </div>

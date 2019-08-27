@@ -180,7 +180,7 @@
     </div>
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="history_1224_5384" }
+    {#entityAccess entity="history_1224_5384" }
     <div id="r_history_status_print" class="row">
         <div class="col-xs-12">
             <h3>
@@ -202,12 +202,12 @@
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="candidat" }
+    {#entityAccess entity="candidat" }
 
     {/entityAccess}
 </div>
 <div class="dontbreakitplz">
-    {@entityAccess entity="candidat" }
+    {#entityAccess entity="candidat" }
     <div id="r_candidat_print" class="row">
         <div class="col-xs-12">
             <h3>

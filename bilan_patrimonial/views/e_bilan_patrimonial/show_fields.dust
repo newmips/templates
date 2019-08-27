@@ -6,119 +6,119 @@
                 {#__ key="entity.e_bilan_patrimonial.label_entity" /}
             </a>
         </li>
-        {@entityAccess entity="enfant"}
+        {#entityAccess entity="enfant"}
         <li>
             <a id="r_enfants-click" data-toggle="tab" data-tabtype="hasMany" href="#r_enfants">
                 {#__ key="entity.e_enfant.as_r_enfants" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="petit_enfant"}
+        {#entityAccess entity="petit_enfant"}
         <li>
             <a id="r_petits_enfants-click" data-toggle="tab" data-tabtype="hasMany" href="#r_petits_enfants">
                 {#__ key="entity.e_petit_enfant.as_r_petits_enfants" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="projet"}
+        {#entityAccess entity="projet"}
         <li>
             <a id="r_projets-click" data-toggle="tab" data-tabtype="hasMany" href="#r_projets">
                 {#__ key="entity.e_projet.as_r_projets" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="patrimoine_rm"}
+        {#entityAccess entity="patrimoine_rm"}
         <li>
             <a id="r_patrimoine-click" data-toggle="tab" data-tabtype="hasMany" href="#r_patrimoine_rm">
                 {#__ key="entity.e_patrimoine_rm.as_r_patrimoine" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="emprunt"}
+        {#entityAccess entity="emprunt"}
         <li>
             <a id="r_emprunts-click" data-toggle="tab" data-tabtype="hasMany" href="#r_emprunts">
                 {#__ key="entity.e_emprunt.as_r_emprunts" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="interlocuteurs"}
+        {#entityAccess entity="interlocuteurs"}
         <li>
             <a id="r_interlocuteurs-click" data-toggle="tab" href="#r_interlocuteurs">
                 {#__ key="entity.e_interlocuteurs.as_r_interlocuteurs" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="revenus_charges"}
+        {#entityAccess entity="revenus_charges"}
         <li>
             <a id="r_revenus_charges-click" data-toggle="tab" href="#r_revenus_charges">
                 {#__ key="entity.e_revenus_charges.as_r_revenus_charges" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="es_argent"}
+        {#entityAccess entity="es_argent"}
         <li>
             <a id="r_entrees_sorties_argent-click" data-toggle="tab" href="#r_entrees_sorties_argent">
                 {#__ key="entity.e_es_argent.as_r_entrees_sorties_argent" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="placements_prevus"}
+        {#entityAccess entity="placements_prevus"}
         <li>
             <a id="r_placements_prevus-click" data-toggle="tab" href="#r_placements_prevus">
                 {#__ key="entity.e_placements_prevus.as_r_placements_prevus" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="impots"}
+        {#entityAccess entity="impots"}
         <li>
             <a id="r_impots-click" data-toggle="tab" href="#r_impots">
                 {#__ key="entity.e_impots.as_r_impots" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="complement_revenus"}
+        {#entityAccess entity="complement_revenus"}
         <li>
             <a id="r_complement_revenus-click" data-toggle="tab" href="#r_complement_revenus">
                 {#__ key="entity.e_complement_revenus.as_r_complement_revenus" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="transmission"}
+        {#entityAccess entity="transmission"}
         <li>
             <a id="r_transmission-click" data-toggle="tab" data-tabtype="hasMany" href="#r_transmission">
                 {#__ key="entity.e_transmission.as_r_transmission" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="profil_investisseur"}
+        {#entityAccess entity="profil_investisseur"}
         <li>
             <a id="r_profil_investisseur-click" data-toggle="tab" href="#r_profil_investisseur">
                 {#__ key="entity.e_profil_investisseur.as_r_profil_investisseur" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="resume"}
+        {#entityAccess entity="resume"}
         <li>
             <a id="r_resume-click" data-toggle="tab" href="#r_resume">
                 {#__ key="entity.e_resume.as_r_resume" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="suivi_personnalise"}
+        {#entityAccess entity="suivi_personnalise"}
         <li>
             <a id="r_suivi_personnalise-click" data-toggle="tab" href="#r_suivi_personnalise">
                 {#__ key="entity.e_suivi_personnalise.as_r_suivi_personnalise" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="references"}
+        {#entityAccess entity="references"}
         <li>
             <a id="r_references-click" data-toggle="tab" data-tabtype="hasMany" href="#r_references">
                 {#__ key="entity.e_references.as_r_references" /}
             </a>
         </li>
         {/entityAccess}
-        {@entityAccess entity="controle"}
+        {#entityAccess entity="controle"}
         <li>
             <a id="r_controle-click" data-toggle="tab" href="#r_controle">
                 {#__ key="entity.e_controle.as_r_controle" /}
@@ -847,7 +847,7 @@
                         <span>
                 <a class="btn btn-default" href="javascript:history.back();"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{#__ key="button.return"/}</a>
             </span>
-                        {@actionAccess entity="bilan_patrimonial" action="delete"}
+                        {#actionAccess entity="bilan_patrimonial" action="delete"}
                         <span>
                 <button class="btn btn-danger">
                     <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
@@ -857,7 +857,7 @@
                         </span>
                         {/actionAccess}
 
-                        {@actionAccess entity="bilan_patrimonial" action="update"}
+                        {#actionAccess entity="bilan_patrimonial" action="update"}
                         <span>
                 <a href="/bilan_patrimonial/update_form?id={e_bilan_patrimonial.id}" class="btn btn-warning">
                     <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
@@ -866,7 +866,7 @@
                         </span>
                         {/actionAccess}
                         {^hideButton}
-                        {@actionAccess entity="bilan_patrimonial" action="create"}
+                        {#actionAccess entity="bilan_patrimonial" action="create"}
                         <span>
                     <a href="/bilan_patrimonial/create_form" class="btn btn-success">
                         <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
@@ -874,7 +874,7 @@
                         </a>
                         </span>
                         {/actionAccess}
-                        {@actionAccess entity="bilan_patrimonial" action="read"}
+                        {#actionAccess entity="bilan_patrimonial" action="read"}
                         <span>
                     <a href="/bilan_patrimonial/list" type="submit" class="btn btn-primary">
                         <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>
@@ -888,56 +888,56 @@
             </div>
         </div>
         {^hideTab}
-        {@entityAccess entity="enfant"}
+        {#entityAccess entity="enfant"}
         <div id="r_enfants" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_enfants" data-asso-foreignkey="fk_id_bilan_patrimonial_enfants" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="petit_enfant"}
+        {#entityAccess entity="petit_enfant"}
         <div id="r_petits_enfants" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_petits_enfants" data-asso-foreignkey="fk_id_bilan_patrimonial_petits_enfants" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="projet"}
+        {#entityAccess entity="projet"}
         <div id="r_projets" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_projets" data-asso-foreignkey="fk_id_bilan_patrimonial_projets" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="patrimoine_rm"}
+        {#entityAccess entity="patrimoine_rm"}
         <div id="r_patrimoine_rm" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_patrimoine_rm" data-asso-foreignkey="fk_id_bilan_patrimonial_patrimoine" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="emprunt"}
+        {#entityAccess entity="emprunt"}
         <div id="r_emprunts" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_emprunts" data-asso-foreignkey="fk_id_bilan_patrimonial_emprunts" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="interlocuteurs"}
+        {#entityAccess entity="interlocuteurs"}
         <div id="r_interlocuteurs" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_interlocuteurs" data-asso-foreignkey="fk_id_interlocuteurs" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="revenus_charges"}
+        {#entityAccess entity="revenus_charges"}
         <div id="r_revenus_charges" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_revenus_charges" data-asso-foreignkey="fk_id_revenus_charges" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="es_argent"}
+        {#entityAccess entity="es_argent"}
         <div id="r_entrees_sorties_argent" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_entrees_sorties_argent" data-asso-foreignkey="fk_id_es_argent_entrees_sorties_argent" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial"
             data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
@@ -945,63 +945,63 @@
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="placements_prevus"}
+        {#entityAccess entity="placements_prevus"}
         <div id="r_placements_prevus" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_placements_prevus" data-asso-foreignkey="fk_id_placements_prevus" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="impots"}
+        {#entityAccess entity="impots"}
         <div id="r_impots" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_impots" data-asso-foreignkey="fk_id_impots" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="complement_revenus"}
+        {#entityAccess entity="complement_revenus"}
         <div id="r_complement_revenus" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_complement_revenus" data-asso-foreignkey="fk_id_complement_revenus" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="transmission"}
+        {#entityAccess entity="transmission"}
         <div id="r_transmission" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_transmission" data-asso-foreignkey="fk_id_bilan_patrimonial" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="profil_investisseur"}
+        {#entityAccess entity="profil_investisseur"}
         <div id="r_profil_investisseur" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_profil_investisseur" data-asso-foreignkey="fk_id_profil_investisseur" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="resume"}
+        {#entityAccess entity="resume"}
         <div id="r_resume" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_resume" data-asso-foreignkey="fk_id_resume" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="suivi_personnalise"}
+        {#entityAccess entity="suivi_personnalise"}
         <div id="r_suivi_personnalise" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_suivi_personnalise" data-asso-foreignkey="fk_id_suivi_personnalise" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="references"}
+        {#entityAccess entity="references"}
         <div id="r_references" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_references" data-asso-foreignkey="fk_id_bilan_patrimonial" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content sub-tab-table"></div>
         </div>
         {/entityAccess}
         {/hideTab}
         {^hideTab}
-        {@entityAccess entity="controle"}
+        {#entityAccess entity="controle"}
         <div id="r_controle" class="ajax-tab tab-pane fade" data-tabtype="hasOne" data-asso-alias="r_controle" data-asso-foreignkey="fk_id_controle" data-asso-flag="{id}" data-asso-source="e_bilan_patrimonial" data-asso-url="bilan_patrimonial">
             <div class="ajax-content"></div>
         </div>
