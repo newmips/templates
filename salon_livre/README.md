@@ -5,4 +5,4 @@ Cette application permet d'organiser un salon :
 - Edition des badge d'entrée (format A4)
 - Etc.
 
-Il prend comme exemple la fête du livre organisée sur 3 jours.
+Elle prend comme exemple la fête du livre organisée sur 3 jours.
