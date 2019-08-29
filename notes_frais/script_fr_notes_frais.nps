@@ -23,7 +23,7 @@ entité Note de frais a plusieurs Frais
 sélectionner l'entité Frais
 ajouter un champ Intitulé
 ajouter un champ Type relié à Type de Frais en affichant Libellé
-ajouter un champ Montant de type float
+ajouter un champ Montant de type euro
 
 sélectionner l'entité Note de frais
 ajouter le composant localfilestorage appelé Justificatifs
