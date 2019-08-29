@@ -32,6 +32,7 @@ set column Description hidden
 create entity Appareil
 set icon phone
 add field Marque related to Marque using Nom
+add field Modèle
 add field Forfait related to Forfait using Nom
 add field Type d'appareil with type enum and values Smartphone, Tablette, PDA
 add field Numéro
