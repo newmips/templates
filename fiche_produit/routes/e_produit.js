@@ -1,28 +1,24 @@
-var express = require('express');
-var router = express.Router();
-var block_access = require('../utils/block_access');
-// Datalist
-var filterDataTable = require('../utils/filterDataTable');
-
-// Sequelize
-var models = require('../models/');
-var attributes = require('../models/attributes/e_produit');
-var options = require('../models/options/e_produit');
-var model_builder = require('../utils/model_builder');
-var entity_helper = require('../utils/entity_helper');
-var file_helper = require('../utils/file_helper');
-var status_helper = require('../utils/status_helper');
-var component_helper = require('../utils/component_helper');
-var globalConfig = require('../config/global');
-var fs = require('fs-extra');
-var dust = require('dustjs-linkedin');
-var SELECT_PAGE_SIZE = 10;
+const express = require('express');
+const router = express.Router();
+const block_access = require('../utils/block_access');
+const filterDataTable = require('../utils/filter_datatable');
+const models = require('../models/');
+const attributes = require('../models/attributes/e_produit');
+const options = require('../models/options/e_produit');
+const model_builder = require('../utils/model_builder');
+const entity_helper = require('../utils/entity_helper');
+const file_helper = require('../utils/file_helper');
+const status_helper = require('../utils/status_helper');
+const component_helper = require('../utils/component_helper');
+const globalConfig = require('../config/global');
+const fs = require('fs-extra');
+const dust = require('dustjs-linkedin');
 
 // Enum and radio managment
-var enums_radios = require('../utils/enum_radio.js');
+let enums_radios = require('../utils/enum_radio.js');
+let logger = require('../utils/logger');
 
-// Winston logger
-var logger = require('../utils/logger');
+let SELECT_PAGE_SIZE = 10;
 
 router.get('/list', block_access.actionAccessMiddleware("produit", "read"), function(req, res) {
     var data = {
@@ -37,19 +33,16 @@ router.get('/list', block_access.actionAccessMiddleware("produit", "read"), func
 });
 
 router.post('/datalist', block_access.actionAccessMiddleware("produit", "read"), function(req, res) {
-
-    /* Looking for include to get all associated related to data for the datalist ajax loading */
-    var include = model_builder.getDatalistInclude(models, options, req.body.columns);
-    filterDataTable("E_produit", req.body, include).then(function(rawData) {
+    filterDataTable("E_produit", req.body).then(function(rawData) {
         entity_helper.prepareDatalistResult('e_produit', rawData, req.session.lang_user).then(function(preparedData) {
             res.send(preparedData).end();
         }).catch(function(err) {
-            console.log(err);
+            console.error(err);
             logger.debug(err);
             res.end();
         });
     }).catch(function(err) {
-        console.log(err);
+        console.error(err);
         logger.debug(err);
         res.end();
     });
@@ -144,18 +137,18 @@ router.post('/display', block_access.actionAccessMiddleware("produit", "read"), 
         // Update some data before show, e.g get picture binary
         entity_helper.getPicturesBuffers(e_produit, "e_produit").then(function() {
             status_helper.translate(e_produit, attributes, req.session.lang_user);
-            data.componentAddressConfig = component_helper.getMapsConfigIfComponentAddressExist("e_produit");
+            data.componentAddressConfig = component_helper.address.getMapsConfigIfComponentAddressExists("e_produit");
             // Get association data that needed to be load directly here (loadOnStart param in options).
             entity_helper.getLoadOnStartData(data, options).then(function(data) {
                 res.render('e_produit/show', data);
             }).catch(function(err) {
-                entity_helper.error500(err, req, res, "/");
+                entity_helper.error(err, req, res, "/");
             })
         }).catch(function(err) {
-            entity_helper.error500(err, req, res, "/");
+            entity_helper.error(err, req, res, "/");
         });
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, "/");
+        entity_helper.error(err, req, res, "/");
     });
 });
 
@@ -185,18 +178,18 @@ router.get('/show', block_access.actionAccessMiddleware("produit", "read"), func
         // Update some data before show, e.g get picture binary
         entity_helper.getPicturesBuffers(e_produit, "e_produit").then(function() {
             status_helper.translate(e_produit, attributes, req.session.lang_user);
-            data.componentAddressConfig = component_helper.getMapsConfigIfComponentAddressExist("e_produit");
+            data.componentAddressConfig = component_helper.address.getMapsConfigIfComponentAddressExists("e_produit");
             // Get association data that needed to be load directly here (loadOnStart param in options).
             entity_helper.getLoadOnStartData(data, options).then(function(data) {
                 res.render('e_produit/show', data);
             }).catch(function(err) {
-                entity_helper.error500(err, req, res, "/");
+                entity_helper.error(err, req, res, "/");
             })
         }).catch(function(err) {
-            entity_helper.error500(err, req, res, "/");
+            entity_helper.error(err, req, res, "/");
         });
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, "/");
+        entity_helper.error(err, req, res, "/");
     });
 });
 
@@ -220,7 +213,7 @@ router.get('/create_form', block_access.actionAccessMiddleware("produit", "creat
         var view = req.query.ajax ? 'e_produit/create_fields' : 'e_produit/create';
         res.render(view, data);
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, '/bb/create_form');
+        entity_helper.error(err, req, res, '/bb/create_form');
     })
 });
 
@@ -283,15 +276,15 @@ router.post('/create', block_access.actionAccessMiddleware("produit", "create"),
         // because those values are not updated for now
         model_builder.setAssocationManyValues(e_produit, req.body, createObject, options).then(function() {
             Promise.all(promises).then(function() {
-                component_helper.setAddressIfComponentExist(e_produit, options, req.body).then(function() {
+                component_helper.address.setAddressIfComponentExists(e_produit, options, req.body).then(function() {
                     res.redirect(redirect);
                 });
             }).catch(function(err) {
-                entity_helper.error500(err, req, res, '/produit/create_form');
+                entity_helper.error(err, req, res, '/produit/create_form');
             });
         });
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, '/produit/create_form');
+        entity_helper.error(err, req, res, '/produit/create_form');
     });
 });
 
@@ -331,13 +324,13 @@ router.get('/update_form', block_access.actionAccessMiddleware("produit", "updat
                 } else
                     res.render('e_produit/update', data);
             }).catch(function(err) {
-                entity_helper.error500(err, req, res, "/");
+                entity_helper.error(err, req, res, "/");
             })
         }).catch(function(err) {
-            entity_helper.error500(err, req, res, "/");
+            entity_helper.error(err, req, res, "/");
         })
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, "/");
+        entity_helper.error(err, req, res, "/");
     })
 });
 
@@ -361,7 +354,7 @@ router.post('/update', block_access.actionAccessMiddleware("produit", "update"),
             logger.debug("Not found - Update");
             return res.render('common/error', data);
         }
-        component_helper.updateAddressIfComponentExist(e_produit, options, req.body);
+        component_helper.address.updateAddressIfComponentExists(e_produit, options, req.body);
         e_produit.update(updateObject).then(function() {
 
             // We have to find value in req.body that are linked to an hasMany or belongsToMany association
@@ -379,13 +372,13 @@ router.post('/update', block_access.actionAccessMiddleware("produit", "update"),
 
                 res.redirect(redirect);
             }).catch(function(err) {
-                entity_helper.error500(err, req, res, '/produit/update_form?id=' + id_e_produit);
+                entity_helper.error(err, req, res, '/produit/update_form?id=' + id_e_produit);
             });
         }).catch(function(err) {
-            entity_helper.error500(err, req, res, '/produit/update_form?id=' + id_e_produit);
+            entity_helper.error(err, req, res, '/produit/update_form?id=' + id_e_produit);
         });
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, '/produit/update_form?id=' + id_e_produit);
+        entity_helper.error(err, req, res, '/produit/update_form?id=' + id_e_produit);
     });
 });
 
@@ -445,7 +438,7 @@ router.get('/loadtab/:id/:alias', block_access.actionAccessMiddleware('produit',
                     // Apply getR_children() on each current status
                     var statusGetterPromise = [],
                         subentityOptions = require('../models/options/' + option.target);
-                    dustData.componentAddressConfig = component_helper.getMapsConfigIfComponentAddressExist(option.target);
+                    dustData.componentAddressConfig = component_helper.address.getMapsConfigIfComponentAddressExists(option.target);
                     for (var i = 0; i < subentityOptions.length; i++)
                         if (subentityOptions[i].target.indexOf('e_status') == 0)
                             (function(alias) {
@@ -653,7 +646,7 @@ router.get('/set_status/:id_produit/:status/:id_new_status', block_access.action
             });
         });
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, errorRedirect);
+        entity_helper.error(err, req, res, errorRedirect);
     });
 });
 
@@ -755,11 +748,11 @@ router.post('/fieldset/:alias/remove', block_access.actionAccessMiddleware("prod
                 });
                 res.sendStatus(200).end();
             }).catch(function(err) {
-                entity_helper.error500(err, req, res, "/");
+                entity_helper.error(err, req, res, "/");
             });
         });
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, "/");
+        entity_helper.error(err, req, res, "/");
     });
 });
 
@@ -803,10 +796,10 @@ router.post('/fieldset/:alias/add', block_access.actionAccessMiddleware("produit
             });
             res.redirect('/produit/show?id=' + idEntity + "#" + alias);
         }).catch(function(err) {
-            entity_helper.error500(err, req, res, "/");
+            entity_helper.error(err, req, res, "/");
         });
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, "/");
+        entity_helper.error(err, req, res, "/");
     });
 });
 
@@ -830,10 +823,10 @@ router.post('/delete', block_access.actionAccessMiddleware("produit", "delete"),
             res.redirect(redirect);
             entity_helper.remove_files("e_produit", deleteObject, attributes);
         }).catch(function(err) {
-            entity_helper.error500(err, req, res, '/produit/list');
+            entity_helper.error(err, req, res, '/produit/list');
         });
     }).catch(function(err) {
-        entity_helper.error500(err, req, res, '/produit/list');
+        entity_helper.error(err, req, res, '/produit/list');
     });
 });
 
