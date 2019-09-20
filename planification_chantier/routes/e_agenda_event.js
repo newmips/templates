@@ -30,18 +30,16 @@ router.get('/list', block_access.actionAccessMiddleware("agenda_event", "read"),
 });
 
 router.post('/datalist', block_access.actionAccessMiddleware("agenda_event", "read"), function(req, res) {
-    /* Looking for include to get all associated related to data for the datalist ajax loading */
-    var include = model_builder.getDatalistInclude(models, options, req.body.columns);
-    filterDataTable("E_agenda_event", req.body, include).then(function(rawData) {
+    filterDataTable("E_agenda_event", req.body).then(function(rawData) {
         entity_helper.prepareDatalistResult('e_agenda_event', rawData, req.session.lang_user).then(function(preparedData) {
             res.send(preparedData).end();
         }).catch(function(err) {
-            console.log(err);
+            console.error(err);
             logger.debug(err);
             res.end();
         });
     }).catch(function(err) {
-        console.log(err);
+        console.error(err);
         logger.debug(err);
         res.end();
     });
@@ -161,7 +159,7 @@ router.get('/show', block_access.actionAccessMiddleware("agenda_event", "read"),
         // Update some data before show, e.g get picture binary
         entity_helper.getPicturesBuffers(e_agenda_event, "e_agenda_event").then(function() {
             status_helper.translate(e_agenda_event, attributes, req.session.lang_user);
-            data.componentAddressConfig = component_helper.getMapsConfigIfComponentAddressExist("e_agenda_event");
+            data.componentAddressConfig = component_helper.address.getMapsConfigIfComponentAddressExists("e_agenda_event");
             // Get association data that needed to be load directly here (to do so set loadOnStart param to true in options).
             entity_helper.getLoadOnStartData(data, options).then(function(data) {
                 res.render('e_agenda_event/show', data);
@@ -257,7 +255,7 @@ router.post('/create', block_access.actionAccessMiddleware("agenda_event", "crea
         // because those values are not updated for now
         model_builder.setAssocationManyValues(e_agenda_event, req.body, createObject, options).then(function() {
             Promise.all(promises).then(function() {
-                component_helper.setAddressIfComponentExist(e_agenda_event, options, req.body).then(function() {
+                component_helper.address.setAddressIfComponentExists(e_agenda_event, options, req.body).then(function() {
                     res.redirect(redirect);
                 });
             }).catch(function(err) {
@@ -334,7 +332,7 @@ router.post('/update', block_access.actionAccessMiddleware("agenda_event", "upda
             logger.debug("Not found - Update");
             return res.render('common/error', data);
         }
-        component_helper.updateAddressIfComponentExist(e_agenda_event, options, req.body);
+        component_helper.address.updateAddressIfComponentExists(e_agenda_event, options, req.body);
         e_agenda_event.update(updateObject).then(function() {
 
             // We have to find value in req.body that are linked to an hasMany or belongsToMany association
@@ -423,7 +421,7 @@ router.get('/loadtab/:id/:alias', block_access.actionAccessMiddleware('agenda_ev
                     // Fetch status children to be able to switch status
                     // Apply getR_children() on each current status
                     var subentityOptions = require('../models/options/' + option.target);
-                    dustData.componentAddressConfig = component_helper.getMapsConfigIfComponentAddressExist(option.target);
+                    dustData.componentAddressConfig = component_helper.address.getMapsConfigIfComponentAddressExists(option.target);
                     for (var i = 0; i < subentityOptions.length; i++)
                         if (subentityOptions[i].target.indexOf('e_status') == 0)
                             (function(alias) {
