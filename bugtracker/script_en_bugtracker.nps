@@ -1,90 +1,88 @@
-//Initialisation du projet
+// - Initialisation du projet
 
 create project BugTracker
 create application Ticketing
 
 
-//Création du modules Configuration
+// - Création du modules Configuration
 
 create module Configuration
-create entity Projet
-add field Nom
-set field Nom required
-add field Réferent projet related to User
-set field Réferent projet required
-add field Type with type Radio and values Public, Privé
+create entity Project
+add field Name
+set field Name required
+add field Referent projet related to User using Login
+set field Referent projet required
+add field Type with type Radio and values Public, Private
 set field Type required
 add field Client référent
-entity Projet has many existing User called Participant using Login
+entity Project has many existing User using Login called Participant
 
 
-
-
-//Modification du module Acceuil
+// - Modification du module Accueil
 
 select module Home
 create entity Ticket
-add field Projet related to Projet using Nom
-set field Projet required
-add field Titre
-add field Nature with type Radio and values Incident, Demande
+add field Project related to Project using Name
+set field Project required
+add field Title
+add field Nature with type Radio and values Incident, Request
 set field Nature required
-add field Catégorie with type Radio and values Secondaire, Primordial, Immobilisant
-set field Catégorie required
-add field Qualification with type enum and values Garantie, Évolution
-add field Chiffrage with type Number
-add field Auteur related to User using Login
-set field Auteur required
-add field Affecté à related to User using Login
+add field Category with type Radio and values Secondaire, Primordial, Immobilizing
+set field Category required
+add field Qualification with type enum and values Warranty, Evolution
+add field Time estimated with type Number
+add field Author related to User using Login
+set field Author required
+add field Assigned à related to User using Login
 add field Description with type text
 set field Description required
-add field Copie écran with type img
+add field Screenshot with type img
 select entity Ticket
 entity Ticket has many Note called Notes
 select entity Note
-add field Auteur related to User using Login
-set field Auteur required
-add field Commentaire with type text
-set field Commentaire required
+add field Author related to User using Login
+set field Author required
+add field Comment with type text
+set field Comment required
 select module Configuration
-select entity Projet
-entity Projet has many Ticket called Ticket
+select entity Project
+entity Project has many Ticket called Ticket
 
 
-//Modification du module Administration
+// - Modification du module Administration
 
 select module Administration
 select entity User
-entity User has many existing Projet called Projet
+entity User has many existing Project called Project
 
 
-
-//Ajout des composants
+// - Ajout des composants
 
 select module Configuration
-select entity Projet
+select entity Project
 add component status called Workflow
 select module Home
 select entity Ticket
-add component status called État
+add component status called State
 add component localfilestorage with name Documents
 select entity status
-add field Affecté à with type boolean
+add field Assigned à with type boolean
 
-//Changement des logos
+
+// - Changement des logos
 
 select module Home
 set icon bookmark to entity Ticket
 select module Configuration
-set icon archive to entity Projet
+set icon archive to entity Project
 
 
-//Personnalisation des pages
+// - Personnalisation des pages
 
 select module Home
-add widget last records on entity Ticket limited to 10 records with columns Titre, Nature, État
+add widget last records on entity Ticket limited to 10 records with columns Title, Nature, State
 add widget stat on entity Ticket
 select module Configuration
-add widget last records on entity Projet limited to 10 records with columns Nom, Client référent, Version, Workflow
-add widget stat on entity Projet
+add widget last records on entity Project limited to 10 records with columns Name, Referent customer, Version, Workflow
+add widget stat on entity Project
 
