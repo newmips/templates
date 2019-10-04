@@ -1,29 +1,27 @@
-var express = require('express');
-var router = express.Router();
-var block_access = require('../utils/block_access');
-// Datalist
-var filterDataTable = require('../utils/filter_datatable');
+const express = require('express');
+const router = express.Router();
+const block_access = require('../utils/block_access');
+const filterDataTable = require('../utils/filter_datatable');
+const models = require('../models/');
+const attributes = require('../models/attributes/e_tableau_de_bord');
+const options = require('../models/options/e_tableau_de_bord');
+const model_builder = require('../utils/model_builder');
+const entity_helper = require('../utils/entity_helper');
+const file_helper = require('../utils/file_helper');
+const status_helper = require('../utils/status_helper');
+const component_helper = require('../utils/component_helper');
+const globalConfig = require('../config/global');
+const fs = require('fs-extra');
+const dust = require('dustjs-linkedin');
+const moment = require("moment");
 
-// Sequelize
-var models = require('../models/');
-var attributes = require('../models/attributes/e_tableau_de_bord');
-var options = require('../models/options/e_tableau_de_bord');
-var model_builder = require('../utils/model_builder');
-var entity_helper = require('../utils/entity_helper');
-var file_helper = require('../utils/file_helper');
-var status_helper = require('../utils/status_helper');
-var component_helper = require('../utils/component_helper');
-var globalConfig = require('../config/global');
-var fs = require('fs-extra');
-var dust = require('dustjs-linkedin');
-var moment = require("moment");
-var SELECT_PAGE_SIZE = 10;
+let SELECT_PAGE_SIZE = 10;
 
 // Enum and radio managment
-var enums_radios = require('../utils/enum_radio.js');
+const enums_radios = require('../utils/enum_radio.js');
 
 // Winston logger
-var logger = require('../utils/logger');
+const logger = require('../utils/logger');
 
 router.get('/display', block_access.isLoggedIn, block_access.actionAccessMiddleware("tableau_de_bord", "read"), function (req, res) {
     var widgetPromises = [];

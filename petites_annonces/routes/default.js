@@ -1,22 +1,21 @@
 // router/routes.js
-var express = require('express');
-var router = express.Router();
-var block_access = require('../utils/block_access');
-var languageConfig = require('../config/language');
-var globalConf = require('../config/global');
-var multer = require('multer');
-var fs = require('fs');
-var fse = require('fs-extra');
-var crypto = require('../utils/crypto_helper');
-var upload = multer().single('file');
-var models = require('../models/');
-var Jimp = require("jimp");
-var entity_helper = require('../utils/entity_helper');
-var dust = require('dustjs-linkedin');
-var enums_radios = require('../utils/enum_radio.js');
-var component_helper = require('../utils/component_helper');
-var options = require('../models/options/e_annonce');
-var SELECT_PAGE_SIZE = 10;
+const express = require('express');
+const router = express.Router();
+const block_access = require('../utils/block_access');
+const globalConf = require('../config/global');
+const multer = require('multer');
+const fs = require('fs-extra');
+const crypto = require('../utils/crypto_helper');
+const upload = multer().single('file');
+const models = require('../models/');
+const Jimp = require("jimp");
+const entity_helper = require('../utils/entity_helper');
+const dust = require('dustjs-linkedin');
+const enums_radios = require('../utils/enum_radio.js');
+const component_helper = require('../utils/component_helper');
+const options = require('../models/options/e_annonce');
+
+let SELECT_PAGE_SIZE = 10;
 
 // ===========================================
 // Redirection Home =====================
@@ -118,7 +117,6 @@ router.get('/search', block_access.isLoggedIn, block_access.moduleAccessMiddlewa
         res.render('default/search', data);
     });
 });
-
 
 router.post('/search', block_access.actionAccessMiddleware('annonce', 'read'), function (req, res) {
 
@@ -230,8 +228,6 @@ router.get('/unauthorized', block_access.isLoggedIn, function (req, res) {
 router.post('/change_language', block_access.isLoggedIn, function (req, res) {
     req.session.lang_user = req.body.lang;
     res.locals.lang_user = req.body.lang;
-    languageConfig.lang = req.body.lang;
-    fs.writeFileSync(__dirname + "/../config/language.json", JSON.stringify(languageConfig, null, 2));
     res.json({
         success: true
     });
@@ -241,16 +237,16 @@ router.post('/change_language', block_access.isLoggedIn, function (req, res) {
 router.post('/file_upload', block_access.isLoggedIn, function (req, res) {
     upload(req, res, function (err) {
         if (err) {
-            console.log(err);
+            console.error(err);
             return res.status(500).end(err);
         }
         var folder = req.file.originalname.split('-');
         var dataEntity = req.body.dataEntity;
         if (folder.length > 1 && !!dataEntity) {
-            var basePath = globalConf.localstorage + dataEntity + '/' + folder[0] + '/';
-            fse.mkdirs(basePath, function (err) {
+            var basePath = globalConfig.localstorage + dataEntity + '/' + folder[0] + '/';
+            fs.mkdirs(basePath, function (err) {
                 if (err) {
-                    console.log(err);
+                    console.error(err);
                     return res.status(500).end(err);
                 }
                 var uploadPath = basePath + req.file.originalname;
@@ -265,17 +261,17 @@ router.post('/file_upload', block_access.isLoggedIn, function (req, res) {
 
                 if (req.body.dataType == 'picture') {
                     //We make thumbnail and reuse it in datalist
-                    basePath = globalConf.localstorage + globalConf.thumbnail.folder + dataEntity + '/' + folder[0] + '/';
-                    fse.mkdirs(basePath, function (err) {
+                    basePath = globalConfig.localstorage + globalConfig.thumbnail.folder + dataEntity + '/' + folder[0] + '/';
+                    fs.mkdirs(basePath, function (err) {
                         if (err)
-                            return console.log(err);
+                            return console.error(err);
 
                         Jimp.read(uploadPath, function (err, imgThumb) {
                             if (err)
-                                return console.log(err);
+                                return console.error(err);
 
-                            imgThumb.resize(globalConf.thumbnail.height, globalConf.thumbnail.width)
-                                    .quality(globalConf.thumbnail.quality)
+                            imgThumb.resize(globalConfig.thumbnail.height, globalConfig.thumbnail.width)
+                                    .quality(globalConfig.thumbnail.quality)
                                     .write(basePath + req.file.originalname);
                         });
                     });
@@ -285,101 +281,93 @@ router.post('/file_upload', block_access.isLoggedIn, function (req, res) {
     });
 });
 
-router.get('/get_file', block_access.isLoggedIn, function (req, res) {
-    var entity = req.query.entity;
-    var src = req.query.src;
-    if (!!entity && !!src) {
-        var partOfFilepath = src.split('-');
-        if (partOfFilepath.length > 1) {
-            var base = partOfFilepath[0];
-            var completeFilePath = globalConf.localstorage + 'thumbnail/' + entity + '/' + base + '/' + src;
-            fs.readFile(completeFilePath, function (err, data) {
-                if (!err) {
-                    var buffer = new Buffer(data).toString('base64');
-                    res.json({
-                        result: 200,
-                        data: buffer,
-                        file: src,
-                        success: true
-                    });
-                } else
-                    res.end();
-            });
-        } else
-            res.end();
-    } else
-        res.end();
+router.get('/get_picture', block_access.isLoggedIn, function (req, res) {
+    try {
+        let entity = req.query.entity;
+        let filename = req.query.src;
+        let cleanFilename = filename.substring(16);
+        let folderName = filename.split("-")[0];
+        let filePath = globalConfig.localstorage + entity + '/' + folderName + '/' + filename;
+
+        if (!block_access.entityAccess(req.session.passport.user.r_group, entity.substring(2)))
+            throw new Error("403 - Access forbidden");
+
+        if (!fs.existsSync(filePath))
+            throw new Error("404 - File not found");
+
+        let picture = fs.readFileSync(filePath);
+
+        res.json({
+            result: 200,
+            data: new Buffer(picture).toString('base64'),
+            file: cleanFilename,
+            success: true
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).send(false);
+    }
 });
 
 router.get('/download', block_access.isLoggedIn, function (req, res) {
-    var entity = req.query.entity;
-    var filepath = req.query.f;
-    // Filename without date and hours prefix
-    var filename = filepath.substring(16);
-    var p = new Promise(function (resolve, reject) {
-        if (!!entity && !!filepath) {
-            var partOfFilepath = filepath.split('-');
-            if (partOfFilepath.length > 1) {
-                var base = partOfFilepath[0];
-                // Taking dirname from globalConf cause a bug on filename param for res.download
-                // So we take again __dirname here and remove it from globalConf
-                var dir = __dirname;
-                var completeFilePath = dir + globalConf.localstorage.substring(dir.length) + entity + '/' + base + '/' + filepath;
-                res.download(completeFilePath, filename, function (err) {
-                    if (err)
-                        reject(err);
-                    else
-                        resolve();
-                });
-            } else
-                reject();
+    try {
+        let entity = req.query.entity;
+        let filename = req.query.f;
+        let cleanFilename = filename.substring(16);
+        let folderName = filename.split("-")[0];
+        let filePath = globalConfig.localstorage + entity + '/' + folderName + '/' + filename;
 
-        } else
-            reject();
-    });
-    p.then(function () {
-        console.log("The file "+filename+" was successfully downloaded !");
-    }).catch(function (err) {
-        console.log(err);
-        req.session.toastr.push({level: 'error', message: "File not found"});
-        res.writeHead(303, {Location: req.headers.referer});
-        res.end();
-    });
+        if (!block_access.entityAccess(req.session.passport.user.r_group, entity.substring(2)))
+            throw new Error("403 - Access forbidden");
+
+        if (!fs.existsSync(filePath))
+            throw new Error("404 - File not found");
+
+        res.download(filePath, cleanFilename, function (err) {
+            if (err)
+                throw err;
+        });
+    } catch (err) {
+        console.error(err);
+        req.session.toastr.push({
+            level: 'error',
+            message: "error.500.file"
+        });
+        res.redirect(req.headers.referer);
+    }
 });
 
-router.post('/delete_file', block_access.isLoggedIn, function (req, res) {
-    var entity = req.body.dataEntity;
-    var dataStorage = req.body.dataStorage;
-    var filename = req.body.filename;
-    if (!!entity && !!dataStorage && !!filename) {
-        var partOfFilepath = filename.split('-');
+router.post('/delete-file-ajax', block_access.isLoggedIn, function (req, res) {
+    let entity = req.body.dataEntity;
+    let dataStorage = req.body.dataStorage;
+    let filename = req.body.filename;
+    if (entity && dataStorage && filename) {
+        let partOfFilepath = filename.split('-');
         if (partOfFilepath.length) {
-            var base = partOfFilepath[0];
-            var completeFilePath = globalConf.localstorage + entity + '/' + base + '/' + filename;
+            let base = partOfFilepath[0];
+            let completeFilePath = globalConfig.localstorage + entity + '/' + base + '/' + filename;
             // thumbnail file to delete
-            var completeThumbnailPath = globalConf.localstorage + globalConf.thumbnail.folder + entity + '/' + base + '/' + filename;
+            let completeThumbnailPath = globalConfig.localstorage + globalConfig.thumbnail.folder + entity + '/' + base + '/' + filename;
             fs.unlink(completeFilePath, function (err) {
                 if (!err) {
-                    req.session.toastr.push({level: 'success', message: "message.delete.success"});
-                    res.json({result: 200, message: ''});
-                    fs.unlink(completeThumbnailPath,function (err) {
-                        if(err)
-                            console.log(err);
+                    res.status(200).json({ message: 'message.delete.success'});
+                    fs.unlink(completeThumbnailPath, function (err) {
+                        if (err)
+                            console.error(err);
                     });
                 } else {
                     req.session.toastr.push({level: 'error', message: "Internal error"});
-                    res.json({result: 500, message: ''});
+                    res.status(500).json({message: ''});
                 }
-
             });
         } else {
             req.session.toastr.push({level: 'error', message: "File syntax not valid"});
-            res.json({result: 404, message: ''});
+            res.status(404).json({message: ''});
         }
 
     } else {
         req.session.toastr.push({level: 'error', message: "File not found"});
-        res.json({result: 404, message: ''});
+        res.status(400).json({message: 'Request parameters must be set'});
     }
 });
 
