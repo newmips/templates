@@ -83,7 +83,7 @@ add field Référence interne
 add field Scan with type qrcode
 add field Spécificités with type text
 add field Validation de l'autorité with type boolean
-add component localfilestorage with name Documents
+add component file storage with name Documents
 
 //*******************//
 //Ressources humaines//
@@ -144,7 +144,7 @@ add field Domaine d'intervention with type text
 add field Principales activités with type text
 add field Autres informations with type text
 
-add component localfilestorage with name Documents
+add component file storage with name Documents
 
 
 

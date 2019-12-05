@@ -238,7 +238,7 @@ router.post('/update_event_drop', block_access.actionAccessMiddleware("agenda_ev
         f_end_date: req.body.end
     };
 
-    models.E_agenda_event.findById(req.body.eventId).then(function(currentEvent){
+    models.E_agenda_event.findByPk(req.body.eventId).then(function(currentEvent){
         currentEvent.update(updateObj, {where: {id: req.body.eventId}}).then(function(updateEvent){
             var users = [];
             if(req.body.idUsers != null){

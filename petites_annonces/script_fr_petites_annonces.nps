@@ -75,7 +75,7 @@ add field Société related to Société using Nom
 add field Site related to Site using Nom
 add field Adresse with type adresse
 add field Contact related to user using Nom
-add component localfilestorage with name Documents
+add component file storage with name Documents
 add field Date expiration prévue with type date
 add field Fournisseur
 add component status with name Statut

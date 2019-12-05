@@ -64,7 +64,7 @@ add component status called Workflow
 select module Home
 select entity Ticket
 add component status called État
-add component localfilestorage with name Documents
+add component file storage with name Documents
 select entity status
 add field Affecté à with type boolean
 

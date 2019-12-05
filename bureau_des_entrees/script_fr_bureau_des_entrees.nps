@@ -50,6 +50,6 @@ add field Titre
 add field Commentaires with type regular text
 
 select entity Collaborateur
-add component localfilestorage with name Documents
+add component file storage with name Documents
 add widget last records with columns Nom, Prénom, Email, Fixe, Mobile
 

@@ -72,7 +72,7 @@ entity Professionnel has many existing Type d'horaire using Nom
 entity Professionnel has one Disponibilité
 
 select entity Professionnel
-add component localfilestorage with name Documents
+add component file storage with name Documents
 
 select entity Métier proposé
 add field Métier related to Métier using Nom

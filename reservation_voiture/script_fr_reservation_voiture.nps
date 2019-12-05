@@ -69,7 +69,7 @@ add field Wifi with type boolean
 add field Téléphone with type boolean
 add field Siège enfant with type boolean
 
-add component localfilestorage with name Documents
+add component file storage with name Documents
 
 
 
@@ -93,7 +93,7 @@ add field Langue related to many Langue using Nom
 
 add field Voiture related to Voiture using Immatriculation
 
-add component localfilestorage with name Documents
+add component file storage with name Documents
 
 
 // *********************

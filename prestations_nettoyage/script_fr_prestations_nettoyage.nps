@@ -127,7 +127,7 @@ add component print with name Impression
 // Stockage de documents
 
 select entity Contrat
-add component localfilestorage called Documents
+add component file storage called Documents
 
 
 
@@ -173,7 +173,7 @@ add component print called Impression
 // Stockage de documents
 
 select entity Chantier
-add component localfilestorage called Documents
+add component file storage called Documents
 
 
 

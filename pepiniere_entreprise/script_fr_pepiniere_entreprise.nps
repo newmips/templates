@@ -34,7 +34,7 @@ add field Email with type email
 add field Téléphone with type phone
 
 select entity Société
-add component localfilestorage with name Documents
+add component file storage with name Documents
 
 create entity Facture
 add field Année with type enum and values 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030
@@ -75,7 +75,7 @@ add field Date de début with type date
 add field Date de fin with type date
 add field Espaces related to many Espace using Référence
 add field Factures related to many Facture using Titre
-add component localfilestorage with name Documents
+add component file storage with name Documents
 
 create entity Facturation
 add field Année with type enum and values 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030

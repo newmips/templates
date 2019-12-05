@@ -34,7 +34,7 @@ add field Type with type enum and values Stand, Forum
 add field Capacité accueil with type number
 add field Fréquentation with type text
 add field Accueil auteur with type boolean
-add component localfilestorage with name Documents
+add component file storage with name Documents
 
 select entity Lieu
 add field Espace related to many Espace using Nom
