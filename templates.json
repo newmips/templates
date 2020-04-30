@@ -1,6 +1,6 @@
 {
 	"templates": [{
 		"name": "Formation alternance",
-		"entry": "template_alternance"
+		"entry": "alternance"
 	}]
 }
