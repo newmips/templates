@@ -1,8 +1,4 @@
-create project Alternance
-
 create application Alternance
-
-
 create module Paramétrage
 
 create entity Centre de formation
@@ -35,7 +31,6 @@ set icon bars
 add field Nom
 set field Nom required
 
-
 create entity Formation
 set icon graduation-cap
 add field Nom
@@ -48,16 +43,12 @@ add field Rémunération with type text
 add field Lieux with type text
 add field Description with type text
 
-
 create entity Type de contrat
 set icon file
 add field Nom
 set field Nom required
 
-
-
 select module home
-
 
 create entity Candidat
 set icon user
@@ -68,7 +59,6 @@ add field Téléphone with type phone
 add field Age with type number
 add field Code postal
 
-
 create entity Demande de formation
 set icon certificate
 add field Candidat related to Candidat using Nom
@@ -76,7 +66,6 @@ add field Centre à contacter related to Centre de formation using Nom
 add field Formation related to Formation using Nom
 add field CV with type file
 add field Message with type text
-
 
 create entity Professionnel
 set icon industry
@@ -86,7 +75,6 @@ add field Prénom
 add field Raison sociale
 add field Email with type email
 add field Téléphone with type phone
-
 
 create entity Offre d'emploi
 set icon file-text-o
@@ -112,9 +100,6 @@ add field Formation related to Formation using Nom
 add field CV with type file
 add field Message with type text
 
-
 add widget stats on entity Demande de formation
 add widget stats on entity Offre d'emploi
 add widget stats on entity Candidature
-
-
