@@ -1,0 +1,84 @@
+select module Administration
+
+// *******************************
+// Programme
+// *******************************
+
+create entity Programme
+set icon wrench
+add field Nom
+set field Nom required
+add field Description with type regular text
+add field Fichier programme with type file
+
+
+// *******************************
+// Page
+// *******************************
+
+entity Programme has many Page
+
+select entity Page
+add field Ordre with type number
+add field Titre
+set field Titre required
+add field delay with type number
+add field timeout with type number
+add field execute on error with type boolean
+add field startwith url with type url
+add field startwith_method with type enum and values GET, POST, HEAD, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH
+add field endwith url with type url
+add field endwith_method with type enum and values GET, POST, HEAD, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH
+add field Type with type enum and values Script, Séquence with default value Script
+add field Script with type regular text
+
+
+// *******************************
+// Error pattern
+// *******************************
+
+entity Programme has many Error pattern
+select entity Error pattern
+hide column id
+add field Code
+set field Code required
+add field Name
+set field Name required
+add field Description with type regular text
+
+
+// *******************************
+// Traitement
+// *******************************
+
+create entity Traitement
+set icon bars
+add field Nom
+set field Nom required
+add field Programme related to Programme using Nom
+
+
+// *******************************
+// Task
+// *******************************
+
+select entity Task
+add field Traitement related to Traitement using Nom
+
+entity Task has many Execution
+select entity Execution
+add field Execution start date with type datetime
+add field Execution finish date with type datetime
+add field State with type enum and values SUCCESS, ERROR
+add field Error cause
+add field Logs with type file
+
+
+// *******************************
+// Media Task
+// *******************************
+
+select entity media task
+add field Traitement related to traitement using nom
+delete field program file
+

@@ -1,0 +1,56 @@
+<table id="table_e_programme" data-url="/programme/datalist" class="dataTable table table-bordered table-striped animated fadeIn" style="display: none;">
+    <thead class="main">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {#__ key="entity.e_programme.id_entity"/}&nbsp;
+                {#__ key="entity.e_programme.label_entity"/}
+            </th>
+            <th data-field="f_nom" data-col="f_nom" data-type="string">
+                {#__ key="entity.e_programme.f_nom"/}
+            </th>
+            <th data-field="f_description" data-col="f_description" data-type="text">
+                {#__ key="entity.e_programme.f_description"/}
+            </th>
+            <th data-field="f_fichier_programme" data-col="f_fichier_programme" data-type="file">
+                {#__ key="entity.e_programme.f_fichier_programme"/}
+            </th>
+            {#actionAccess entity="programme" action="read"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="programme" action="update"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="programme" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <thead class="filters">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {#__ key="entity.e_programme.id_entity"/}&nbsp;
+                {#__ key="entity.e_programme.label_entity"/}
+            </th>
+            <th data-field="f_nom" data-col="f_nom" data-type="string">
+                {#__ key="entity.e_programme.f_nom"/}
+            </th>
+            <th data-field="f_description" data-col="f_description" data-type="text">
+                {#__ key="entity.e_programme.f_description"/}
+            </th>
+            <th data-field="f_fichier_programme" data-col="f_fichier_programme" data-type="file">
+                {#__ key="entity.e_programme.f_fichier_programme"/}
+            </th>
+            {#actionAccess entity="programme" action="read"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="programme" action="update"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="programme" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>

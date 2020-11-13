@@ -1,0 +1,248 @@
+{>"layout_m_administration"/}
+{<header}
+	<h1>{#__ key="module.m_administration"/}<small>{#__ key="module.module"/}</small></h1>
+	<ol class="breadcrumb">
+		<li>
+			<a href="/">
+				<i class="fa fa-home"></i>
+				{#__ key="module.home"/}
+			</a>
+		</li>
+		<li>
+			<a class='sub-module-arianne' href='/default/administration'>
+				{#__ key="module.m_administration"/}
+			</a>
+		</li>
+		<li class="active">
+			{#__ key="entity.e_task.monitoring"/}
+		</li>
+	</ol>
+{/header}
+{<content}
+	<div class="row">
+		<div class="col-xs-12 connectedSortable">
+			{#entityAccess entity="task" }
+			<div id="stats_e_task_widget_1" data-entity="e_task" data-widget-type="custom_task" data-widget-status="1" class="ajax-widget col-sm-3 col-xs-12">
+				<div class="small-box bg-blue">
+					<div class="inner">
+						<h3>0</h3>
+						<p>
+							{#__ key="entity.e_task.label_entity" /} - En attente
+						</p>
+					</div>
+					<div class="icon">
+						<i class="fa fa-cogs task-icon"></i>
+					</div>
+					<a href="/task/list?status=1" class="small-box-footer">
+						{#__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
+					</a>
+				</div>
+			</div>
+			{/entityAccess}
+			
+			{#entityAccess entity="task" }
+			<div id="stats_e_task_widget_2" data-entity="e_task" data-widget-type="custom_task" data-widget-status="2" class="ajax-widget col-sm-3 col-xs-12">
+				<div class="small-box bg-orange">
+					<div class="inner">
+						<h3>0</h3>
+						<p>
+							{#__ key="entity.e_task.label_entity" /} - En cours
+						</p>
+					</div>
+					<div class="icon">
+						<i class="fa fa-cogs task-icon"></i>
+					</div>
+					<a href="/task/list?status=2" class="small-box-footer">
+						{#__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
+					</a>
+				</div>
+			</div>
+			{/entityAccess}
+			
+			{#entityAccess entity="task" }
+			<div id="stats_e_task_widget_3" data-entity="e_task" data-widget-type="custom_task" data-widget-status="3" class="ajax-widget col-sm-3 col-xs-12">
+				<div class="small-box bg-red">
+					<div class="inner">
+						<h3>0</h3>
+						<p>
+							{#__ key="entity.e_task.label_entity" /} - Echouée
+						</p>
+					</div>
+					<div class="icon">
+						<i class="fa fa-cogs task-icon"></i>
+					</div>
+					<a href="/task/list?status=3" class="small-box-footer">
+						{#__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
+					</a>
+				</div>
+			</div>
+			{/entityAccess}
+			
+			{#entityAccess entity="task" }
+			<div id="stats_e_task_widget_4" data-entity="e_task" data-widget-type="custom_task" data-widget-status="4" class="ajax-widget col-sm-3 col-xs-12">
+				<div class="small-box bg-green">
+					<div class="inner">
+						<h3>0</h3>
+						<p>
+							{#__ key="entity.e_task.label_entity" /} - Succès
+						</p>
+					</div>
+					<div class="icon">
+						<i class="fa fa-cogs task-icon"></i>
+					</div>
+					<a href="/task/list?status=4" class="small-box-footer">
+						{#__ key="defaults.widgets.stats.more_info" /}&nbsp; <i class="fa fa-arrow-circle-right"></i>
+					</a>
+				</div>
+			</div>
+			{/entityAccess}
+
+			{#entityAccess entity="demande" }
+			<div id="barchart_e_demande_r_statut_widget_52" data-entity="e_demande" data-field-type="string" data-field="r_statut" data-legend="true" data-widget-type="barchart" class="ajax-widget col-sm-4 col-xs-12">
+				<div class="box box-default">
+					<div class="box-header with-border">
+						<h3 class="box-title">
+							{#__ key="defaults.widgets.piechart.distribution" /}&nbsp;
+							{#__ key="entity.e_demande.label_entity" /}&nbsp;-&nbsp;
+							{#__ key="entity.e_demande.r_statut" /}
+						</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+						</div>
+					</div>
+					<div class="box-body">
+						<em style="display: none;">
+							{#__ key="message.empty" /}</em>
+						<canvas class="barchart"></canvas>
+					</div>
+				</div>
+			</div>
+			{/entityAccess}
+			
+			<!--
+			{#entityAccess entity="task" }
+			<div id="piechart_e_task_r_state_widget_91" data-entity="e_task" data-field-type="string" data-field="r_state" data-legend="true" data-widget-type="piechart" class="ajax-widget col-sm-4 col-xs-12">
+				<div class="box box-default">
+					<div class="box-header with-border">
+						<h3 class="box-title">
+							{#__ key="defaults.widgets.piechart.distribution" /}&nbsp;
+							{#__ key="entity.e_task.label_entity" /}&nbsp;-&nbsp;
+							{#__ key="entity.e_task.r_state" /}
+						</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+						</div>
+					</div>
+					<div class="box-body">
+						<em style="display: none;">
+							{#__ key="message.empty" /}</em>
+						<canvas class="piechart"></canvas>
+					</div>
+				</div>
+			</div>
+			{/entityAccess}
+			-->
+			
+			{#entityAccess entity="execution" }
+			<div id="piechart_e_execution_f_state_widget_23" data-entity="e_execution" data-field-type="enum" data-field="f_state" data-legend="true" data-widget-type="piechart" class="ajax-widget col-sm-4 col-xs-12">
+				<div class="box box-default">
+					<div class="box-header with-border">
+						<h3 class="box-title">
+							{#__ key="defaults.widgets.piechart.distribution" /}&nbsp;
+							{#__ key="entity.e_execution.label_entity" /}&nbsp;-&nbsp;
+							{#__ key="entity.e_execution.f_state" /}
+						</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+						</div>
+					</div>
+					<div class="box-body">
+						<em style="display: none;">
+							{#__ key="message.empty" /}</em>
+						<canvas class="piechart"></canvas>
+					</div>
+				</div>
+			</div>
+			{/entityAccess}
+
+
+			{#entityAccess entity="task" }
+			<div id="lastrecords_e_task_widget" data-entity="e_task" data-widget-type="lastrecords" class="col-xs-12 col-sm-12">
+				<div class="box box-default">
+					<div class="box-header with-border">
+						<h3 class="box-title">
+							{#__ key="entity.e_task.label_entity" /}&nbsp;
+							{#__ key="defaults.widgets.lastrecords.label" /}
+						</h3>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+						</div>
+					</div>
+					<div class="box-body" style="display: block;">
+						<table id="task_lastrecords" data-entity="e_task" data-limit="10" class="widget-lastrecords dataTable table table-striped">
+							<thead>
+								<tr>
+									<th data-field="id" data-col="id">
+										{#__ key="entity.e_task.id_entity"/}&nbsp;
+										{#__ key="entity.e_task.label_entity"/}
+									</th>
+									<th data-field="r_state" data-col="r_state.f_name" data-type="status">
+										{#__ key="entity.e_task.r_state"/}
+									</th>
+									<th data-field="f_title" data-col="f_title" data-type="string">
+										{#__ key="entity.e_task.f_title"/}
+									</th>
+									<th data-field="f_type" data-col="f_type" data-type="enum">
+										{#__ key="entity.e_task.f_type"/}
+									</th>
+									<th data-field="r_traitement" data-col="r_traitement.f_nom" data-type="string">
+										{#__ key="entity.e_task.r_traitement"/}
+									</th>
+									<th data-field="f_execution_start_date" data-col="f_execution_start_date" data-type="datetime">
+										{#__ key="entity.e_task.f_execution_start_date"/}
+									</th>
+									<th data-field="f_execution_finish_date" data-col="f_execution_finish_date" data-type="datetime">
+										{#__ key="entity.e_task.f_execution_finish_date"/}
+									</th>
+									<th data-field="f_duration" data-col="f_duration" data-type="millisecond">
+										{#__ key="entity.e_task.f_duration"/}
+									</th>
+								</tr>
+							</thead>
+						</table>
+						<a class="btn btn-primary" href="/task/list" style="margin-top:10px;">
+							<i class="fa fa-bars"></i>&nbsp;&nbsp;{#__ key="button.list" /}
+						</a>
+					</div>
+				</div>
+			</div>
+			{/entityAccess}
+		</div>
+	</div>
+{/content}
+{<custom_js}
+<script type="text/javascript">
+	$(function() {
+		/* Apply focus on first row's form element */
+		function firstElementFocus(idx) {
+			if(!idx)
+				idx = 0;
+			var element = $(".form-group:eq("+idx+") label:eq(0)").next().focus();
+			if ((element && (!element.is(":visible") || element.prop('disabled') == true || element.prop('readonly') == true))
+			&& ($(".form-group").length > 0 && idx <= $(".form-group").length))
+				firstElementFocus(idx+1);
+		}
+		firstElementFocus();
+	});
+</script>
+<script src="/js/plugins/datatables/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="/js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+<script src="/js/plugins/chart/chartjs.bundle.min.js" type="text/javascript"></script>
+<script src="/js/plugins/palettes/palettes.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/Newmips/widgets.js"></script>
+<script type="text/javascript">
+    $(function() {
+        initWidgets();
+    });
+</script>
+{/custom_js}

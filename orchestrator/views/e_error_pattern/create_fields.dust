@@ -1,0 +1,37 @@
+<div id="fields" class="row">
+    <div data-field="f_code" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+        <div class="form-group">
+            <label for="f_code" class="required">
+                {#__ key="entity.e_error_pattern.f_code"/}&nbsp;
+                {@inline_help field="f_code"}
+                <i data-field="f_code" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_error_pattern.f_code" /}' name="f_code" value="" type="text" maxlength="255" required="">
+        </div>
+    </div>
+    <div data-field="f_name" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_name" class="">
+                {#__ key="entity.e_error_pattern.f_name"/}&nbsp;
+                {@inline_help field="f_name"}
+                <i data-field="f_name" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_error_pattern.f_name" /}' name="f_name" value="" type="text" maxlength="255">
+        </div>
+    </div>
+
+    <div data-field="f_description" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_description">
+                {#__ key="entity.e_error_pattern.f_description"/}&nbsp;
+                {@inline_help field="f_description"}
+                <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_error_pattern.f_description" /}' name="f_description" id="f_description_textareaid" type="text">{f_description|s}</textarea>
+        </div>
+    </div>
+
+</div>

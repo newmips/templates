@@ -1,0 +1,70 @@
+<table id="table_e_execution" data-url="/execution/datalist" class="dataTable table table-bordered table-striped animated fadeIn" style="display: none;">
+    <thead class="main">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {#__ key="entity.e_execution.id_entity"/}&nbsp;
+                {#__ key="entity.e_execution.label_entity"/}
+            </th>
+            <th data-field="f_execution_start_date" data-col="f_execution_start_date" data-type="datetime">
+                {#__ key="entity.e_execution.f_execution_start_date"/}
+            </th>
+            <th data-field="f_execution_finish_date" data-col="f_execution_finish_date" data-type="datetime">
+                {#__ key="entity.e_execution.f_execution_finish_date"/}
+            </th>
+
+            <th data-field="f_state" data-col="f_state" data-type="enum">
+                {#__ key="entity.e_execution.f_state"/}
+            </th>
+            <th data-field="f_error_cause" data-col="f_error_cause" data-type="string">
+                {#__ key="entity.e_execution.f_error_cause"/}
+            </th>
+            <th data-field="f_logs" data-col="f_logs" data-type="file">
+                {#__ key="entity.e_execution.f_logs"/}
+            </th>
+            {#actionAccess entity="execution" action="read"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="execution" action="update"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="execution" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <thead class="filters">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {#__ key="entity.e_execution.id_entity"/}&nbsp;
+                {#__ key="entity.e_execution.label_entity"/}
+            </th>
+            <th data-field="f_execution_start_date" data-col="f_execution_start_date" data-type="datetime">
+                {#__ key="entity.e_execution.f_execution_start_date"/}
+            </th>
+            <th data-field="f_execution_finish_date" data-col="f_execution_finish_date" data-type="datetime">
+                {#__ key="entity.e_execution.f_execution_finish_date"/}
+            </th>
+
+            <th data-field="f_state" data-col="f_state" data-type="enum">
+                {#__ key="entity.e_execution.f_state"/}
+            </th>
+            <th data-field="f_error_cause" data-col="f_error_cause" data-type="string">
+                {#__ key="entity.e_execution.f_error_cause"/}
+            </th>
+            <th data-field="f_logs" data-col="f_logs" data-type="file">
+                {#__ key="entity.e_execution.f_logs"/}
+            </th>
+            {#actionAccess entity="execution" action="read"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="execution" action="update"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="execution" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>

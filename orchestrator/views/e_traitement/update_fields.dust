@@ -1,0 +1,29 @@
+<div id="fields" class="row">
+    <div data-field="f_nom" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_nom" class="required">
+                {#__ key="entity.e_traitement.f_nom"/}&nbsp;
+                {@inline_help field="f_nom"}
+                <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_traitement.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255" required="">
+        </div>
+    </div>
+
+    <div data-field="f_programme" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="r_programme">
+                {#__ key="entity.e_traitement.r_programme" /}&nbsp;
+                {@inline_help field="r_programme"}
+                <i data-field="r_programme" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="ajax form-control" name="r_programme" data-source="programme" data-using="f_nom" width="100%">
+                {#r_programme}
+                <option value="{id}" selected="">{f_nom|string}</option>
+                {/r_programme}
+            </select>
+        </div>
+    </div>
+</div>

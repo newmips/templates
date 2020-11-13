@@ -1,0 +1,130 @@
+<div id="fields" class="row">
+    <div data-field="f_execution_start_date" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_execution_start_date">
+                {#__ key="entity.e_execution.f_execution_start_date"/}&nbsp;
+                {@inline_help field="f_execution_start_date"}
+                <i data-field="f_execution_start_date" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
+                </div>
+                <input class="form-control input" placeholder='{#__ key="entity.e_execution.f_execution_start_date" /}' value="{f_execution_start_date|datetime}" type="text" readonly="">
+            </div>
+        </div>
+    </div>
+
+    <div data-field="f_execution_finish_date" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+        <div class="form-group">
+            <label for="f_execution_finish_date">
+                {#__ key="entity.e_execution.f_execution_finish_date"/}&nbsp;
+                {@inline_help field="f_execution_finish_date"}
+                <i data-field="f_execution_finish_date" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
+                </div>
+                <input class="form-control input" placeholder='{#__ key="entity.e_execution.f_execution_finish_date" /}' value="{f_execution_finish_date|datetime}" type="text" readonly="">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_state" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_state">
+                {#__ key="entity.e_execution.f_state"/}&nbsp;
+                {@inline_help field="f_state"}
+                <i data-field="f_state" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            {^f_state}
+            <input class="form-control input" placeholder='{#__ key="entity.e_execution.f_state" /}' name="f_state" type="text" readonly="">
+            {/f_state}
+            {#enum_radio.e_execution.f_state}
+            {@eq key=f_state value="{.value}" }
+            <input class="form-control input" placeholder='{#__ key="entity.e_execution.f_state" /}' name="f_state" value="{.translation}" type="text" readonly="">
+            {/eq}
+            {/enum_radio.e_execution.f_state}
+        </div>
+    </div>
+    <div data-field="f_error_cause" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_error_cause">
+                {#__ key="entity.e_execution.f_error_cause"/}&nbsp;
+                {@inline_help field="f_error_cause"}
+                <i data-field="f_error_cause" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_execution.f_error_cause" /}' name="f_error_cause" value="{f_error_cause}" type="text" maxlength="255" readonly="">
+        </div>
+    </div>
+    <div data-field="f_logs" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_logs">
+                {#__ key="entity.e_execution.f_logs"/}&nbsp;
+                {@inline_help field="f_logs"}
+                <i data-field="f_logs" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                {?f_logs}
+                <div class="input-group-addon">
+                    <i class="fa fa-download"></i>
+                </div>
+                <input data-entity="e_execution" data-filename="{f_logs}" class="form-control text-left preview_file" name="f_logs" value="{f_logs|filename}">
+                {:else}
+                {#__ key="message.empty_file" /}
+                {/f_logs}
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="actions">
+    <form action="/execution/delete" method="post">
+        <div class="quicklinks">
+            <a class="btn btn-default" href="javascript:history.back();">
+                <i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                {#__ key="button.return"/}
+            </a>
+            {#actionAccess entity="execution" action="delete"}
+            <button class="btn btn-danger btn-confirm">
+                <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                <span>
+                    {#__ key="button.delete"/}
+                </span>
+            </button>
+            <input name="id" type="hidden" value="{e_execution.id}" class="form-control">
+            {/actionAccess}
+            {#actionAccess entity="execution" action="update"}
+            <a href="/execution/update_form?id={e_execution.id}" class="btn btn-warning">
+                <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
+                <span>
+                    {#__ key="button.update"/}
+                </span>
+            </a>
+            {/actionAccess}
+            {^hideButton}
+            {#actionAccess entity="execution" action="create"}
+            <a href="/execution/create_form" class="btn btn-success">
+                <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
+                <span>
+                    {#__ key="button.create"/}
+                </span>
+            </a>
+            {/actionAccess}
+            {#actionAccess entity="execution" action="read"}
+            <a href="/execution/list" type="submit" class="btn btn-primary">
+                <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>
+                <span>
+                    {#__ key="button.list"/}
+                </span>
+            </a>
+            {/actionAccess}
+            {/hideButton}
+        </div>
+    </form>
+</div>

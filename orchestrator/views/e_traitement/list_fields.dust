@@ -1,0 +1,50 @@
+<table id="table_e_traitement" data-url="/traitement/datalist" class="dataTable table table-bordered table-striped animated fadeIn" style="display: none;">
+    <thead class="main">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {#__ key="entity.e_traitement.id_entity"/}&nbsp;
+                {#__ key="entity.e_traitement.label_entity"/}
+            </th>
+            <th data-field="f_nom" data-col="f_nom" data-type="string">
+                {#__ key="entity.e_traitement.f_nom"/}
+            </th>
+            <th data-field="r_programme" data-col="r_programme.f_nom" data-type="string">
+                {#__ key="entity.e_traitement.r_programme"/}
+            </th>
+            {#actionAccess entity="traitement" action="read"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="traitement" action="update"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="traitement" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <thead class="filters">
+        <tr class="fields">
+            <th data-field="id" data-col="id">
+                {#__ key="entity.e_traitement.id_entity"/}&nbsp;
+                {#__ key="entity.e_traitement.label_entity"/}
+            </th>
+            <th data-field="f_nom" data-col="f_nom" data-type="string">
+                {#__ key="entity.e_traitement.f_nom"/}
+            </th>
+            <th data-field="r_programme" data-col="r_programme.f_nom" data-type="string">
+                {#__ key="entity.e_traitement.r_programme"/}
+            </th>
+            {#actionAccess entity="traitement" action="read"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="traitement" action="update"}
+            <th></th>
+            {/actionAccess}
+            {#actionAccess entity="traitement" action="delete"}
+            <th></th>
+            {/actionAccess}
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>

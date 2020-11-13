@@ -1,0 +1,330 @@
+<div id="fields" class="row">
+    <div data-field="f_ordre" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_ordre">
+                {#__ key="entity.e_page.f_ordre"/}&nbsp;
+                {@inline_help field="f_ordre"}
+                <i data-field="f_ordre" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input readonly="" class="form-control input" placeholder='{#__ key="entity.e_page.f_ordre" /}' name="f_ordre" value="{maxOrder}" type="number" max="2147483648">
+        </div>
+    </div>
+    <div data-field="f_titre" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_titre" class="required">
+                {#__ key="entity.e_page.f_titre"/}&nbsp;
+                {@inline_help field="f_titre"}
+                <i data-field="f_titre" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_page.f_titre" /}' name="f_titre" value="" type="text" maxlength="255" required="">
+        </div>
+    </div>
+    <div data-field="f_delay" class="fieldLineHeight col-xs-6">
+        <div class="form-group">
+            <label for="f_delay">
+                {#__ key="entity.e_page.f_delay"/}&nbsp;
+                {@inline_help field="f_delay"}
+                <i data-field="f_delay" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_page.f_delay" /}' name="f_delay" value="" type="number" max="2147483648">
+        </div>
+    </div>
+    <div data-field="f_timeout" class="fieldLineHeight col-xs-6">
+        <div class="form-group">
+            <label for="f_timeout">
+                {#__ key="entity.e_page.f_timeout"/}&nbsp;
+                {@inline_help field="f_timeout"}
+                <i data-field="f_timeout" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_page.f_timeout" /}' name="f_timeout" value="" type="number" max="2147483648">
+        </div>
+    </div>
+    <div data-field="f_execute_on_error" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_execute_on_error">
+                {#__ key="entity.e_page.f_execute_on_error"/}&nbsp;
+                {@inline_help field="f_execute_on_error"}
+                <i data-field="f_execute_on_error" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            &nbsp;
+            <br>
+            <input class="form-control input" name="f_execute_on_error" type="checkbox">
+        </div>
+    </div>
+    <div class="col-xs-6">
+
+        <div class="box box-default">
+            <div class="box-header with-border">
+
+                <label>
+                    {#__ key="entity.e_page.startWith" /}
+                </label>
+
+            </div>
+            <div class="box-body">
+                <div data-field="f_startwith_url" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_startwith_url">
+                            {#__ key="entity.e_page.f_startwith_url"/}&nbsp;
+                            {@inline_help field="f_startwith_url"}
+                            <i data-field="f_startwith_url" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                            {/inline_help}
+                        </label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-link"></i>
+                            </div>
+                            <input class="form-control input" placeholder='{#__ key="entity.e_page.f_startwith_url" /}' name="f_startwith_url" value="" type="url" data-type="url">
+                        </div>
+                    </div>
+                </div>
+
+                <div data-field="f_startwith_method" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_startwith_method">
+                            {#__ key="entity.e_page.f_startwith_method"/}&nbsp;
+                            {@inline_help field="f_startwith_method"}
+                            <i data-field="f_startwith_method" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                            {/inline_help}
+                        </label>
+                        <select class="form-control select" name="f_startwith_method" width="100%">
+                            <option value="" selected="">
+                                {#__ key="select.default" /}
+                            </option>
+                            {#enum_radio.e_page.f_startwith_method}
+                            <option value="{.value}"> {.translation} </option>
+                            {/enum_radio.e_page.f_startwith_method}
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-6">
+
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <label>
+                    {#__ key="entity.e_page.endWith" /}
+                </label>
+            </div>
+
+            <div class="box-body">
+                <div data-field="f_endwith_url" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_endwith_url">
+                            {#__ key="entity.e_page.f_endwith_url"/}&nbsp;
+                            {@inline_help field="f_endwith_url"}
+                            <i data-field="f_endwith_url" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                            {/inline_help}
+                        </label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-link"></i>
+                            </div>
+                            <input class="form-control input" placeholder='{#__ key="entity.e_page.f_endwith_url" /}' name="f_endwith_url" value="" type="url" data-type="url">
+                        </div>
+                    </div>
+                </div>
+                <div data-field="f_endwith_method" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_endwith_method">
+                            {#__ key="entity.e_page.f_endwith_method"/}&nbsp;
+                            {@inline_help field="f_endwith_method"}
+                            <i data-field="f_endwith_method" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                            {/inline_help}
+                        </label>
+                        <select class="form-control select" name="f_endwith_method" width="100%">
+                            <option value="" selected="">
+                                {#__ key="select.default" /}
+                            </option>
+                            {#enum_radio.e_page.f_endwith_method}
+                            <option value="{.value}"> {.translation} </option>
+                            {/enum_radio.e_page.f_endwith_method}
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-field="f_type" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_type">
+                {#__ key="entity.e_page.f_type"/}&nbsp;
+                {@inline_help field="f_type"}
+                <i data-field="f_type" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <select class="form-control select" name="f_type" width="100%">
+                <option value="">
+                    {#__ key="select.default" /}
+                </option>
+                {#enum_radio.e_page.f_type}
+                {@eq key="script" value="{.value}" }
+                <option value="{.value}" selected=""> {.translation} </option>
+                {:else}
+                <option value="{.value}"> {.translation} </option>
+                {/eq}
+                {/enum_radio.e_page.f_type}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_script" class="fieldLineHeight col-xs-2" style="display: none;">
+        <div id="btn-script">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Ajouter une action</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a onclick="script_append('input');">Saisir un champ</a></li>
+                    <li><a onclick="script_append('select');">Choisir une valeur dans une liste déroulante</a></li>
+                    <li><a onclick="script_append('checkbox');">Cocher une case à cocher</a></li>
+                    <li><a onclick="script_append('radio');">Activer un bouton radio</a></li>
+                    <li><a onclick="script_append('submit');">Soumettre un formulaire</a></li>
+                    <li class="divider"></li>
+                    <li><a onclick="script_append('read_text');">Lire un texte</a></li>
+                    <li><a onclick="script_append('read_field');">Lire un champ</a></li>
+                    <li><a onclick="script_append('click_element');">Cliquer sur un élément</a></li>
+                    <li><a onclick="script_append('find_element');">Trouver un élément</a></li>
+                    <li class="divider"></li>
+                    <li><a onclick="script_append('keydown_enter');">Appuyer sur la touche Entrée</a></li>
+                    <li><a onclick="script_append('keydown_tab');">Appuyer sur la touche Tabulation</a></li>
+                    <li><a onclick="script_append('keydown_backspace');">Appuyer sur la touche Backspace</a></li>
+                    <li><a onclick="script_append('keydown_esc');">Appuyer sur la touche Echappement (Esc)</a></li>
+                    <li><a onclick="script_append('keydown_any');">Appuyer sur une touche normale</a></li>
+                    <li class="divider"></li>
+                    <li><a onclick="script_append('open_tab');">Ouvrir un nouvel onglet</a></li>
+                    <li><a onclick="script_append('change_tab');">Changer d'onglet</a></li>
+                    <li><a onclick="script_append('open_url');">Naviguer vers une URL</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="btn-sequence" style="display: none;">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Ajouter une action</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a onclick="sequence_append('test');">Effectuer un test conditionnel</a></li>
+                    <li><a onclick="sequence_append('download');">Télécharger un document</a></li>
+                    <li><a onclick="sequence_append('upload');">Uploader un document</a></li>
+                    <li><a onclick="sequence_append('mapping');">Transformer une valeur suivant une table de paramétrage</a></li>
+                    <li><a onclick="sequence_append('update_entity');">Mettre à jour une entité serveur</a></li>
+                    <li class="divider"></li>
+                    <li><a onclick="sequence_append('mouse_move');">Déplacer la souris à une position donnée</a></li>
+                    <li><a onclick="sequence_append('mouse_click');">Cliquer</a></li>
+                    <li><a onclick="sequence_append('mouse_right_click');">Cliquer avec le bouton droit</a></li>
+                    <li><a onclick="sequence_append('mouse_double_click');">Double-cliquer</a></li>
+                    <li><a onclick="sequence_append('type_text');">Saisir du texte</a></li>
+                    <li class="divider"></li>
+                    <li><a onclick="sequence_append('next_step');">Déclencher une étape</a></li>
+                    <li><a onclick="sequence_append('error');">Interompre le programme en erreur</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fieldLineHeight col-xs-10">
+        <div id="btn-variables-script">
+            <div class="btn-group insert-mosaic">
+                <button type="button" class="btn btn-default">Ajouter une variable</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a onclick="add_script_variable('env');">Variable d'environnement (flux de données)</a></li>
+                    <li><a onclick="add_script_variable('session');">Variable de session</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="btn-variables-sequence" style="display: none;">
+            <div class="btn-group insert-mosaic">
+                <button type="button" class="btn btn-default">Ajouter une variable</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a onclick="add_sequence_variable('env');">Variable d'environnement (flux de données)</a></li>
+                    <li><a onclick="add_sequence_variable('session');">Variable de session</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="f_script">
+            {#__ key="entity.e_page.f_script"/}&nbsp;
+            {@inline_help field="f_script"}
+            <i data-field="f_script" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+            {/inline_help}
+        </label>
+        <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_page.f_script" /}' name="f_script" id="f_script_textareaid" type="text">{f_script|s}</textarea>
+    </div>
+
+    <script type="text/javascript">
+
+
+        var currentMirror = null;
+
+        $(function() {
+
+            var mirrorOptions = {
+                mode: 'javascript',
+                theme: 'darcula',
+                lineNumbers: true,
+                indentUnit: 4,
+                indentWithTabs: true,
+                matchBrackets: true,
+                autoCloseBrackets: true,
+                showTrailingSpace: true,
+                autoCloseTags: true,
+                foldGutter: true,
+            };
+            $("select[name=f_type]").change(function() {
+                var selectedVal = $(this).find("option:selected").val();
+                if (selectedVal != "") {
+                    $("div[data-field=f_script]").show();
+                    var textArea = $("textarea[name=f_script]");
+                    $(".CodeMirror").remove();
+                    if (selectedVal == 'script') {
+                        textArea.text("(_ => {\n\t\n})();");
+                        currentMirror = CodeMirror.fromTextArea(textArea[0], mirrorOptions);
+                        $("#btn-script").show();
+                        $("#btn-variables-script").show();
+                        $("#btn-sequence").hide();
+                        $("#btn-variables-sequence").hide();
+                    } else if (selectedVal == 'sequence') {
+                        textArea.text("module.exports = {\n\texecute: utils => {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\t\n\t\t\tresolve();\n\t\t});\n\t}\n}");
+                        currentMirror = CodeMirror.fromTextArea(textArea[0], mirrorOptions);
+                        $("#btn-script").hide();
+                        $("#btn-variables-script").hide();
+                        $("#btn-sequence").show();
+                        $("#btn-variables-sequence").show();
+                    }
+                }
+            });
+            setTimeout(function() {
+                $("select[name=f_type]").change();
+            }, 500);
+
+            $("div[data-field=f_script]").parents('form').submit(function() {
+                currentMirror.toTextArea();
+            });
+
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.6.8/beautify.min.js"></script>
+    <script src="/js/Newmips/codingButtons.js" type="text/javascript"></script>
+</div>

@@ -1,0 +1,77 @@
+<div id="fields" class="row">
+    <div data-field="f_execution_start_date" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_execution_start_date">
+                {#__ key="entity.e_execution.f_execution_start_date"/}&nbsp;
+                {@inline_help field="f_execution_start_date"}
+                <i data-field="f_execution_start_date" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
+                </div>
+                <input class="form-control input datetimepicker" placeholder='{#__ key="entity.e_execution.f_execution_start_date" /}' name="f_execution_start_date" type="text">
+            </div>
+        </div>
+    </div>
+
+    <div data-field="f_execution_finish_date" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+        <div class="form-group">
+            <label for="f_execution_finish_date">
+                {#__ key="entity.e_execution.f_execution_finish_date"/}&nbsp;
+                {@inline_help field="f_execution_finish_date"}
+                <i data-field="f_execution_finish_date" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i> + <i class="fa fa-clock-o"></i>
+                </div>
+                <input class="form-control input datetimepicker" placeholder='{#__ key="entity.e_execution.f_execution_finish_date" /}' name="f_execution_finish_date" type="text">
+            </div>
+        </div>
+    </div>
+    <div data-field="f_state" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_state">
+                {#__ key="entity.e_execution.f_state"/}&nbsp;
+                {@inline_help field="f_state"}
+                <i data-field="f_state" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <select class="form-control select" name="f_state" width="100%">
+                <option value="" selected="">
+                    {#__ key="select.default" /}
+                </option>
+                {#enum_radio.e_execution.f_state}
+                <option value="{.value}"> {.translation} </option>
+                {/enum_radio.e_execution.f_state}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_error_cause" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_error_cause">
+                {#__ key="entity.e_execution.f_error_cause"/}&nbsp;
+                {@inline_help field="f_error_cause"}
+                <i data-field="f_error_cause" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_execution.f_error_cause" /}' name="f_error_cause" value="" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_logs" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_logs">
+                {#__ key="entity.e_execution.f_logs"/}&nbsp;
+                {@inline_help field="f_logs"}
+                <i data-field="f_logs" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <div class="dropzone dropzone-field" id="f_logs_dropzone" data-entity="e_execution"></div>
+            <input type="hidden" name="f_logs" id="f_logs_dropzone_hidden" value="">
+        </div>
+    </div>
+
+</div>

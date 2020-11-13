@@ -1,0 +1,147 @@
+<div class="nav-tabs-custom" id="tabs">
+    {^hideTab}
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a data-toggle="tab" href="#home">
+                {#__ key="entity.e_programme.label_entity" /}</a>
+        </li>
+        {#entityAccess entity="page"}
+        <li>
+            <a id="r_page-click" data-toggle="tab" data-tabtype="hasMany" href="#r_page">
+                {#__ key="entity.e_programme.r_page" /}
+            </a>
+        </li>
+        {/entityAccess}
+        {#entityAccess entity="error_pattern"}
+        <li>
+            <a id="r_error_pattern-click" data-toggle="tab" data-tabtype="hasMany" href="#r_error_pattern">
+                {#__ key="entity.e_programme.r_error_pattern" /}
+            </a>
+        </li>
+        {/entityAccess}
+    </ul>
+    {/hideTab}
+    <div class="tab-content" style="min-height:275px;">
+        <div id="home" class="tab-pane fade in active">
+            <div id="fields" class="row">
+                <div data-field="f_nom" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_nom">
+                            {#__ key="entity.e_programme.f_nom"/}&nbsp;
+                            {@inline_help field="f_nom"}
+                            <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                            {/inline_help}
+                        </label>
+                        <input class="form-control input" placeholder='{#__ key="entity.e_programme.f_nom" /}' name="f_nom" value="{f_nom}" type="text" maxlength="255" readonly="">
+                    </div>
+                </div>
+                <div data-field="f_description" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_description">
+                            {#__ key="entity.e_programme.f_description"/}&nbsp;
+                            {@inline_help field="f_description"}
+                            <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                            {/inline_help}
+                        </label>
+                        <textarea readonly="readonly" class="show-textarea regular-textarea">{f_description|s}</textarea>
+                    </div>
+                </div>
+                <div data-field="f_fichier_programme" class="fieldLineHeight col-xs-12">
+                    <div class="form-group">
+                        <label for="f_fichier_programme">
+                            {#__ key="entity.e_programme.f_fichier_programme"/}&nbsp;
+                            {@inline_help field="f_fichier_programme"}
+                            <i data-field="f_fichier_programme" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                            {/inline_help}
+                        </label>
+                        <div class="input-group">
+                            {?f_fichier_programme}
+                            <div class="input-group-addon">
+                                <i class="fa fa-download"></i>
+                            </div>
+                            <input data-entity="e_programme" data-filename="{f_fichier_programme}" class="form-control text-left preview_file" name="f_fichier_programme" value="{f_fichier_programme|filename}">
+                            {:else}
+                            {#__ key="message.empty_file" /}
+                            {/f_fichier_programme}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <form action="/programme/delete" method="post">
+                    <div class="quicklinks">
+                        <a class="btn btn-default" href="javascript:history.back();">
+                            <i class="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                            {#__ key="button.return"/}
+                        </a>
+                        {#actionAccess entity="programme" action="delete"}
+                        <button class="btn btn-danger btn-confirm">
+                            <i class="fa fa-trash-o fa-md">&nbsp;&nbsp;</i>
+                            <span>
+                                {#__ key="button.delete"/}
+                            </span>
+                        </button>
+                        <input name="id" type="hidden" value="{e_programme.id}" class="form-control">
+                        {/actionAccess}
+                        {#actionAccess entity="programme" action="update"}
+                        <a href="/programme/update_form?id={e_programme.id}" class="btn btn-warning">
+                            <i class="fa fa-pencil fa-md">&nbsp;&nbsp;</i>
+                            <span>
+                                {#__ key="button.update"/}
+                            </span>
+                        </a>
+                        {/actionAccess}
+                        {^hideButton}
+                        {#actionAccess entity="programme" action="create"}
+                        <a href="/programme/create_form" class="btn btn-success">
+                            <i class="fa fa-plus fa-md">&nbsp;&nbsp;</i>
+                            <span>
+                                {#__ key="button.create"/}
+                            </span>
+                        </a>
+                        {/actionAccess}
+                        {#actionAccess entity="programme" action="read"}
+                        <a href="/programme/list" type="submit" class="btn btn-primary">
+                            <i class="fa fa-list fa-md">&nbsp;&nbsp;</i>
+                            <span>
+                                {#__ key="button.list"/}
+                            </span>
+                        </a>
+                        {/actionAccess}
+                        {/hideButton}
+                        <a href="/programme/generate?id={e_programme.id}" class="btn btn-info">
+                            <i class="fa fa-file-zip-o fa-md">&nbsp;&nbsp;</i>
+                            <span>
+                                {#__ key="button.generate"/}</span>
+                        </a>
+                        <a href="/programme/generate_and_replace?id={e_programme.id}" class="btn btn-info">
+                            <i class="fa fa-file-zip-o fa-md">&nbsp;&nbsp;</i>
+                            <span>
+                                {#__ key="button.generate"/} et remplacer</span>
+                        </a>
+                        <a href="/programme/duplicate?id={e_programme.id}" class="btn btn-info">
+                            <i class="fa fa-copy fa-md">&nbsp;&nbsp;</i>
+                            <span>
+                                {#__ key="button.duplicate"/}
+                            </span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {^hideTab}
+        {#entityAccess entity="page"}
+        <div id="r_page" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_page" data-asso-foreignkey="fk_id_programme" data-asso-flag="{id}" data-asso-source="e_programme" data-asso-url="programme">
+            <div class="ajax-content sub-tab-table"></div>
+        </div>
+        {/entityAccess}
+        {/hideTab}
+        {^hideTab}
+        {#entityAccess entity="error_pattern"}
+        <div id="r_error_pattern" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_error_pattern" data-asso-foreignkey="fk_id_programme" data-asso-flag="{id}" data-asso-source="e_programme" data-asso-url="programme">
+            <div class="ajax-content sub-tab-table"></div>
+        </div>
+        {/entityAccess}
+        {/hideTab}
+    </div>
+</div>

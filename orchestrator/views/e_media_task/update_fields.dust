@@ -1,0 +1,105 @@
+<div id="fields" class="row">
+    <div data-field="f_task_name" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_task_name">
+                {#__ key="entity.e_media_task.f_task_name"/}&nbsp;
+                {@inline_help field="f_task_name"}
+                <i data-field="f_task_name" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+                <br>
+                <div class="btn-group insert-mosaic" style="margin-top:5px;">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cogs"></i>&nbsp;<span class="caret"></span>
+                    </button>
+                    &nbsp;&nbsp;
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="insert" data-type="field">
+                                {#__ key="component.status.choose_from_field" /}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_media_task.f_task_name" /}' name="f_task_name" value="{f_task_name}" type="text" maxlength="255">
+        </div>
+    </div>
+    <div data-field="f_task_type" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_task_type">
+                {#__ key="entity.e_media_task.f_task_type"/}&nbsp;
+                {@inline_help field="f_task_type"}
+                <i data-field="f_task_type" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <br>
+            <select class="form-control select" name="f_task_type" style="width: 100%;">
+                <option value="">
+                    {#__ key="select.default" /}
+                </option>
+                {#enum_radio.e_media_task.f_task_type}
+                {@eq key=f_task_type value="{.value}" }
+                <option value="{.value}" selected=""> {.translation} </option>
+                {:else}
+                <option value="{.value}"> {.translation} </option>
+                {/eq}
+                {/enum_radio.e_media_task.f_task_type}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_traitement" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12" style="">
+        <div class="form-group">
+            <label for="r_traitement">
+                {#__ key="entity.e_media_task.r_traitement" /}&nbsp;
+                {@inline_help field="r_traitement"}
+                <i data-field="r_traitement" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <select class="ajax form-control" name="r_traitement" data-source="traitement" data-using="f_nom" width="100%">
+                {#r_traitement}
+                <option value="{id}" selected="">{f_nom|h}</option>
+                {/r_traitement}
+            </select>
+        </div>
+    </div>
+    <div data-field="f_assignment_logic" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_assignment_logic">
+                {#__ key="entity.e_media_task.f_assignment_logic"/}&nbsp;
+                {@inline_help field="f_assignment_logic"}
+                <i data-field="f_assignment_logic" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_media_task.f_assignment_logic" /}' name="f_assignment_logic" value="{f_assignment_logic}" type="text" maxlength="255">
+        </div>
+    </div>
+
+
+    <div data-field="f_data_flow" class="fieldLineHeight col-xs-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="f_data_flow">
+                {#__ key="entity.e_media_task.f_data_flow"/}&nbsp;
+                {@inline_help field="f_data_flow"}
+                <i data-field="f_data_flow" class="inline-help fa fa-info-circle" style="color: #1085EE"></i>
+                {/inline_help}
+                <br>
+                <div class="btn-group insert-mosaic" style="margin-top:5px;">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cogs"></i>&nbsp;<span class="caret"></span>
+                    </button>
+                    &nbsp;&nbsp;
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="insert" data-type="field">
+                                {#__ key="component.status.choose_from_field" /}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </label>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_media_task.f_data_flow" /}' name="f_data_flow" id="f_data_flow_textareaid" type="text">{f_data_flow|s}</textarea>
+        </div>
+    </div>
+	<input name="id_media_task" type="hidden" class="media-field" value="{id}">
+
+</div>

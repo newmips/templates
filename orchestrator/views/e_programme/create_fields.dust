@@ -1,0 +1,36 @@
+<div id="fields" class="row">
+    <div data-field="f_nom" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_nom" class="required">
+                {#__ key="entity.e_programme.f_nom"/}&nbsp;
+                {@inline_help field="f_nom"}
+                <i data-field="f_nom" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <input class="form-control input" placeholder='{#__ key="entity.e_programme.f_nom" /}' name="f_nom" value="" type="text" maxlength="255" required="">
+        </div>
+    </div>
+    <div data-field="f_description" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_description">
+                {#__ key="entity.e_programme.f_description"/}&nbsp;
+                {@inline_help field="f_description"}
+                <i data-field="f_description" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <textarea class="form-control textarea regular-textarea" placeholder='{#__ key="entity.e_programme.f_description" /}' name="f_description" id="f_description_textareaid" type="text">{f_description|s}</textarea>
+        </div>
+    </div>
+    <div data-field="f_fichier_programme" class="fieldLineHeight col-xs-12">
+        <div class="form-group">
+            <label for="f_fichier_programme">
+                {#__ key="entity.e_programme.f_fichier_programme"/}&nbsp;
+                {@inline_help field="f_fichier_programme"}
+                <i data-field="f_fichier_programme" class="inline-help fa fa-info-circle" style="color: #1085EE;"></i>
+                {/inline_help}
+            </label>
+            <div class="dropzone dropzone-field" id="f_fichier_programme_dropzone" data-entity="e_programme"></div>
+            <input type="hidden" name="f_fichier_programme" id="f_fichier_programme_dropzone_hidden" value="">
+        </div>
+    </div>
+</div>
