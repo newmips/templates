@@ -216,6 +216,7 @@
                     <li><a onclick="script_append('open_tab');">Ouvrir un nouvel onglet</a></li>
                     <li><a onclick="script_append('change_tab');">Changer d'onglet</a></li>
                     <li><a onclick="script_append('open_url');">Naviguer vers une URL</a></li>
+                    <li><a onclick="script_append('error');">Interompre le programme en erreur</a></li>
                 </ul>
             </div>
         </div>
@@ -291,7 +292,7 @@
     <script type="text/javascript">
     	var currentMirror = null;
         $(function() {
-            
+
             var mirrorOptions = {
                 mode: 'javascript',
                 theme: 'darcula',
@@ -309,7 +310,7 @@
             var initialType = $("select[name=f_type]").find("option:selected").val();
             var typeTextAreaValue = {
                 script: "(_ => {\n\t\n})();",
-                sequence: "module.exports = {\n\texecute: utils => {\n\n\t}\n}"
+                sequence: "module.exports = {\n\texecute: async utils => {\n\t\n\t}\n}"
             };
             if (initialType == "script" && initialValue != "") {
                 typeTextAreaValue.script = initialValue;
@@ -343,6 +344,7 @@
                     }
                     $(".CodeMirror").remove();
                     currentMirror = CodeMirror.fromTextArea(textArea[0], mirrorOptions);
+					currentMirror.setSize(null, 500);
                 }
                 previousSelectVal = selectedVal;
             });

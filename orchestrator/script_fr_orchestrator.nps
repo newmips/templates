@@ -80,5 +80,4 @@ add field Logs with type file
 
 select entity media task
 add field Traitement related to traitement using nom
-delete field program file
 

@@ -45,6 +45,15 @@ router.post('/widgets', block_access.isLoggedIn, (req, res) => {
 						resolve();
 					}).catch(resolve);
 					break;
+				case 'occupation':
+					models.sequelize.query(
+						'SELECT AVG(TIMEDIFF(f_execution_finish_date, f_execution_start_date)) AS waiting FROM e_task', {type: models.Sequelize.QueryTypes.SELECT}).then(function(widgetData) {
+						console.log(JSON.stringify(widgetData));
+						widgetRes.data = widgetData;
+						data[widget.widgetID] = widgetRes;
+						resolve();
+					}).catch(resolve);
+					break;
 				case 'piechart':
 				case 'barchart':
 					if (!widget.field) {

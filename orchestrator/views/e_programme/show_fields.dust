@@ -13,11 +13,7 @@
         </li>
         {/entityAccess}
         {#entityAccess entity="error_pattern"}
-        <li>
-            <a id="r_error_pattern-click" data-toggle="tab" data-tabtype="hasMany" href="#r_error_pattern">
-                {#__ key="entity.e_programme.r_error_pattern" /}
-            </a>
-        </li>
+
         {/entityAccess}
     </ul>
     {/hideTab}
@@ -138,9 +134,7 @@
         {/hideTab}
         {^hideTab}
         {#entityAccess entity="error_pattern"}
-        <div id="r_error_pattern" class="ajax-tab tab-pane fade" data-tabtype="hasMany" data-asso-alias="r_error_pattern" data-asso-foreignkey="fk_id_programme" data-asso-flag="{id}" data-asso-source="e_programme" data-asso-url="programme">
-            <div class="ajax-content sub-tab-table"></div>
-        </div>
+
         {/entityAccess}
         {/hideTab}
     </div>

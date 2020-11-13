@@ -204,6 +204,7 @@
                     <li><a onclick="script_append('open_tab');">Ouvrir un nouvel onglet</a></li>
                     <li><a onclick="script_append('change_tab');">Changer d'onglet</a></li>
                     <li><a onclick="script_append('open_url');">Naviguer vers une URL</a></li>
+                    <li><a onclick="script_append('error');">Interompre le programme en erreur</a></li>
                 </ul>
             </div>
         </div>
@@ -300,13 +301,15 @@
                     if (selectedVal == 'script') {
                         textArea.text("(_ => {\n\t\n})();");
                         currentMirror = CodeMirror.fromTextArea(textArea[0], mirrorOptions);
+						currentMirror.setSize(null, 500);
                         $("#btn-script").show();
                         $("#btn-variables-script").show();
                         $("#btn-sequence").hide();
                         $("#btn-variables-sequence").hide();
                     } else if (selectedVal == 'sequence') {
-                        textArea.text("module.exports = {\n\texecute: utils => {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\t\n\t\t\tresolve();\n\t\t});\n\t}\n}");
+                        textArea.text("module.exports = {\n\texecute: async utils => {\n\t\n\t}\n}");
                         currentMirror = CodeMirror.fromTextArea(textArea[0], mirrorOptions);
+						currentMirror.setSize(null, 500);
                         $("#btn-script").hide();
                         $("#btn-variables-script").hide();
                         $("#btn-sequence").show();
